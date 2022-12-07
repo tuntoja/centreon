@@ -28,6 +28,14 @@ runs:
     - name: "Start Centreon container"
       run: docker run -p 4000:80 -d -v "/var/run/docker.sock:/var/run/docker.sock" --name e2e-tests-${{ inputs.module }} ${{ inputs.image }}:${{ inputs.image_version }}
       shell: bash
+
+    - uses: mad9000/actions-find-and-replace-string@2
+      id: format-feature-file-path
+      with:
+        source: ${{ inputs.feature_file_path }}
+        find: '/'
+        replace: ''
+
     - name: Cypress end-to-end testing
       uses: cypress-io/github-action@v4
       with:
@@ -40,7 +48,7 @@ runs:
       uses: actions/upload-artifact@v3
       if: ${{ failure() }}
       with:
-        name: cypress-videos-${{ inputs.feature_file_path }}
+        name: cypress-videos-${{ steps.format-feature-file-path.outputs.value }}
         path: ${{ inputs.module }}/tests/e2e/cypress/results/videos/
 
     - name: Publish tests report
