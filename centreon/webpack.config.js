@@ -1,6 +1,7 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { InjectManifest } = require('workbox-webpack-plugin');
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
@@ -28,6 +29,10 @@ module.exports = (jscTransformConfiguration) =>
           template: './www/front_src/public/index.html',
         }),
         new HtmlWebpackHarddiskPlugin(),
+        new InjectManifest({
+          swSrc: "./src/src-sw.js",
+  swDest: "sw.js"
+        })
       ],
     },
   );
