@@ -12,12 +12,12 @@ module.exports = (jscTransformConfiguration) =>
   merge(
     getBaseConfiguration({ jscTransformConfiguration, moduleName: 'centreon' }),
     {
-      entry: ['./www/front_src/src/index.tsx'],
+      mode: 'development',
+      entry: './www/front_src/src/index.tsx',
       output: {
         crossOriginLoading: 'anonymous',
         library: ['name'],
         path: path.resolve(`${__dirname}/www/static`),
-        publicPath: './static/',
       },
       plugins: [
         new webpack.ProvidePlugin({
@@ -30,9 +30,18 @@ module.exports = (jscTransformConfiguration) =>
         }),
         new HtmlWebpackHarddiskPlugin(),
         new InjectManifest({
-          swSrc: "./src/src-sw.js",
-  swDest: "sw.js"
+          swSrc: './www/front_src/src/service-worker.js',
+          swDest: 'service-worker.js',
+          maximumFileSizeToCacheInBytes: 5*1024*1024,
+          exclude: [
+            /\.map$/,
+            /\.TEXT$/,
+            /manifest$/,
+            /\.htaccess$/,
+            /service-worker\.js$/,
+          ]
         })
       ],
     },
   );
+        

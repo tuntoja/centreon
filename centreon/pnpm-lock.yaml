@@ -120,6 +120,12 @@ importers:
       webpack-cli: ^4.10.0
       webpack-dev-server: ^4.11.1
       webpack-merge: ^5.8.0
+      workbox-core: ^6.5.4
+      workbox-expiration: ^6.5.4
+      workbox-navigation-preload: ^6.5.4
+      workbox-precaching: ^6.5.4
+      workbox-routing: ^6.5.4
+      workbox-strategies: ^6.5.4
       workbox-webpack-plugin: ^6.5.4
       yup: ^0.32.11
     dependencies:
@@ -175,6 +181,12 @@ importers:
       ts.data.json: 2.2.0
       tss-react: 4.4.4_hp5f5nkljdiwilp4rgxyefcplu
       use-deep-compare-effect: 1.8.1_react@18.2.0
+      workbox-core: 6.5.4
+      workbox-expiration: 6.5.4
+      workbox-navigation-preload: 6.5.4
+      workbox-precaching: 6.5.4
+      workbox-routing: 6.5.4
+      workbox-strategies: 6.5.4
       yup: 0.32.11
     devDependencies:
       '@cypress/react': 5.12.5_7kpncxgo44ggdiszigau5mzxdm
@@ -13543,7 +13555,6 @@ packages:
 
   /idb/7.1.1:
     resolution: {integrity: sha512-gchesWBzyvGHRO9W8tzUWFDycow5gwjvFKfyV9FF32Y7F50yZMp7mP+T2mJIWFx49zicqyC4uefHM17o6xKIVQ==}
-    dev: true
 
   /identity-obj-proxy/3.0.0:
     resolution: {integrity: sha512-00n6YnVHKrinT9t0d9+5yZC6UBNJANpYEQvL2LlX6Ab9lnmxzIRcEmTPuyGScvl1+jKuCICX1Z0Ab1pPKKdikA==}
@@ -21547,14 +21558,12 @@ packages:
 
   /workbox-core/6.5.4:
     resolution: {integrity: sha512-OXYb+m9wZm8GrORlV2vBbE5EC1FKu71GGp0H4rjmxmF4/HLbMCoTFws87M3dFwgpmg0v00K++PImpNQ6J5NQ6Q==}
-    dev: true
 
   /workbox-expiration/6.5.4:
     resolution: {integrity: sha512-jUP5qPOpH1nXtjGGh1fRBa1wJL2QlIb5mGpct3NzepjGG2uFFBn4iiEBiI9GUmfAFR2ApuRhDydjcRmYXddiEQ==}
     dependencies:
       idb: 7.1.1
       workbox-core: 6.5.4
-    dev: true
 
   /workbox-google-analytics/6.5.4:
     resolution: {integrity: sha512-8AU1WuaXsD49249Wq0B2zn4a/vvFfHkpcFfqAFHNHwln3jK9QUYmzdkKXGIZl9wyKNP+RRX30vcgcyWMcZ9VAg==}
@@ -21569,7 +21578,6 @@ packages:
     resolution: {integrity: sha512-IIwf80eO3cr8h6XSQJF+Hxj26rg2RPFVUmJLUlM0+A2GzB4HFbQyKkrgD5y2d84g2IbJzP4B4j5dPBRzamHrng==}
     dependencies:
       workbox-core: 6.5.4
-    dev: true
 
   /workbox-precaching/6.5.4:
     resolution: {integrity: sha512-hSMezMsW6btKnxHB4bFy2Qfwey/8SYdGWvVIKFaUm8vJ4E53JAY+U2JwLTRD8wbLWoP6OVUdFlXsTdKu9yoLTg==}
@@ -21577,7 +21585,6 @@ packages:
       workbox-core: 6.5.4
       workbox-routing: 6.5.4
       workbox-strategies: 6.5.4
-    dev: true
 
   /workbox-range-requests/6.5.4:
     resolution: {integrity: sha512-Je2qR1NXCFC8xVJ/Lux6saH6IrQGhMpDrPXWZWWS8n/RD+WZfKa6dSZwU+/QksfEadJEr/NfY+aP/CXFFK5JFg==}
@@ -21600,13 +21607,11 @@ packages:
     resolution: {integrity: sha512-apQswLsbrrOsBUWtr9Lf80F+P1sHnQdYodRo32SjiByYi36IDyL2r7BH1lJtFX8fwNHDa1QOVY74WKLLS6o5Pg==}
     dependencies:
       workbox-core: 6.5.4
-    dev: true
 
   /workbox-strategies/6.5.4:
     resolution: {integrity: sha512-DEtsxhx0LIYWkJBTQolRxG4EI0setTJkqR4m7r4YpBdxtWJH1Mbg01Cj8ZjNOO8etqfA3IZaOPHUxCs8cBsKLw==}
     dependencies:
       workbox-core: 6.5.4
-    dev: true
 
   /workbox-streams/6.5.4:
     resolution: {integrity: sha512-FXKVh87d2RFXkliAIheBojBELIPnWbQdyDvsH3t74Cwhg0fDheL1T8BqSM86hZvC0ZESLsznSYWw+Va+KVbUzg==}
