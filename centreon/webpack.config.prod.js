@@ -4,9 +4,6 @@ const getBaseConfiguration = require('./webpack.config');
 
 module.exports = merge(getBaseConfiguration(), {
   mode: 'development',
-  optimization: {
-    runtimeChunk: true,
-  },
   performance: {
     assetFilter: (assetFilename) => assetFilename.endsWith('.js'),
     hints: 'error',

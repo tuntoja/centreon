@@ -127,6 +127,7 @@ importers:
       workbox-routing: ^6.5.4
       workbox-strategies: ^6.5.4
       workbox-webpack-plugin: ^6.5.4
+      workbox-window: ^6.5.4
       yup: ^0.32.11
     dependencies:
       '@centreon/js-config': link:packages/js-config
@@ -187,6 +188,7 @@ importers:
       workbox-precaching: 6.5.4
       workbox-routing: 6.5.4
       workbox-strategies: 6.5.4
+      workbox-window: 6.5.4
       yup: 0.32.11
     devDependencies:
       '@cypress/react': 5.12.5_7kpncxgo44ggdiszigau5mzxdm
@@ -6827,7 +6829,6 @@ packages:
 
   /@types/trusted-types/2.0.2:
     resolution: {integrity: sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==}
-    dev: true
 
   /@types/uglify-js/3.17.1:
     resolution: {integrity: sha512-GkewRA4i5oXacU/n4MA9+bLgt5/L3F1mKrYvFGm7r2ouLXhRKjuWwo9XHNnbx6WF3vlGW21S3fCvgqxvxXXc5g==}
@@ -21646,7 +21647,6 @@ packages:
     dependencies:
       '@types/trusted-types': 2.0.2
       workbox-core: 6.5.4
-    dev: true
 
   /worker-farm/1.7.0:
     resolution: {integrity: sha512-rvw3QTZc8lAxyVrqcSGVm5yP/IJ2UcB3U0graE3LCFoZ0Yn2x4EoVSqJKdB/T5M+FLcRPjz4TDacRf3OCfNUzw==}

@@ -1,35 +1,36 @@
 import { registerRoute } from 'workbox-routing';
-import { CacheOnly } from 'workbox-strategies';
+import { CacheFirst } from 'workbox-strategies';
 import { ExpirationPlugin } from 'workbox-expiration';
-import { skipWaiting, clientsClaim } from 'workbox-core';
-import { cleanupOutdatedCaches, precacheAndRoute } from 'workbox-precaching'
+import { clientsClaim } from 'workbox-core';
+import { cleanupOutdatedCaches, precacheAndRoute } from 'workbox-precaching';
 import * as navigationPreload from 'workbox-navigation-preload';
 
-skipWaiting();
+self.skipWaiting();
 clientsClaim();
 cleanupOutdatedCaches();
-
-const manifest = self.__WB_MANIFEST
-// precacheAndRoute(toto);
-console.log('Manifest', JSON.stringify(manifest, null, 2))
+precacheAndRoute(self.__WB_MANIFEST);
 
 navigationPreload.enable();
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.ready.then((registration) => {
+    registration.update();
+  });
+}
+
+self.addEventListener('install', (event) => {
+  console.log('Service worker installing...');
+});
+
+console.log('Service worker installed.');
+
 registerRoute(
-  (params) => {
-    console.log('-------------- START MATCH')
-    console.log(params)
-    const { url } = params
-    console.log(url.toString())
-    console.log('-------------- END MATCH')
-    return true
-    return /.(js|css|jpg|svg|png)$/.test(url.toString())
-  },
-  new CacheOnly({
-    cacheName: 'centreon',
+  new RegExp('.*\\.js'),
+  new CacheFirst({
+    cacheName: 'centreon-static-v1',
     plugins: [
       new ExpirationPlugin({
-        maxAgeSeconds: 14 * 24 * 60 * 60, // 14 days
+        maxAgeSeconds: 5 * 60 * 60, // 5 hours
       }),
     ],
   })

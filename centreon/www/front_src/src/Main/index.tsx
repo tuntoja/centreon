@@ -27,7 +27,7 @@ import Provider from './Provider';
 import { MainLoaderWithoutTranslation } from './MainLoader';
 import useMain from './useMain';
 import { areUserParametersLoadedAtom } from './useUser';
-import { useServiceWorker } from './useServiceWorker';
+import useUpdateApp from './useUpdateApp';
 
 dayjs.extend(localizedFormat);
 dayjs.extend(utcPlugin);
@@ -47,8 +47,8 @@ const AppPage = lazy(() => import('./InitializationPage'));
 const Main = (): JSX.Element => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  useServiceWorker();
   useMain();
+  useUpdateApp()
 
   const [areUserParametersLoaded] = useAtom(areUserParametersLoadedAtom);
   const platformInstallationStatus = useAtomValue(

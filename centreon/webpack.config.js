@@ -15,7 +15,6 @@ module.exports = (jscTransformConfiguration) =>
       mode: 'development',
       entry: './www/front_src/src/index.tsx',
       output: {
-        crossOriginLoading: 'anonymous',
         library: ['name'],
         path: path.resolve(`${__dirname}/www/static`),
       },
@@ -32,16 +31,17 @@ module.exports = (jscTransformConfiguration) =>
         new InjectManifest({
           swSrc: './www/front_src/src/service-worker.js',
           swDest: 'service-worker.js',
-          maximumFileSizeToCacheInBytes: 5*1024*1024,
           exclude: [
             /\.map$/,
             /\.TEXT$/,
             /manifest$/,
             /\.htaccess$/,
             /service-worker\.js$/,
-          ]
+          ],
+          modifyURLPrefix: {
+            '': '/centreon/static/',
+          },
         })
       ],
     },
   );
-        
