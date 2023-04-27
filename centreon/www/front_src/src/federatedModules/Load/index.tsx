@@ -1,4 +1,5 @@
 import { lazy, Suspense } from 'react';
+
 import { importRemote } from '@module-federation/utilities';
 import { isEmpty, isNil } from 'ramda';
 
@@ -7,13 +8,17 @@ import { MenuSkeleton, PageSkeleton } from '@centreon/ui';
 import { StyleMenuSkeleton } from '../models';
 import { store } from '../../Main/Provider';
 
+import ErrorBoundary from './ErrorBoundary';
+import FederatedModuleFallback from './FederatedModuleFallback';
+import FederatedPageFallback from './FederatedPageFallback';
+
 interface RemoteProps {
   component: string;
   isFederatedModule?: boolean;
   moduleFederationName: string;
-  styleMenuSkeleton?: StyleMenuSkeleton;
   moduleName: string;
   remoteEntry: string;
+  styleMenuSkeleton?: StyleMenuSkeleton;
 }
 
 export const Remote = ({
@@ -25,37 +30,53 @@ export const Remote = ({
   styleMenuSkeleton,
   ...props
 }: RemoteProps): JSX.Element => {
-  const Component = lazy(() => importRemote({
-    remoteEntryFileName: remoteEntry,
-    bustRemoteEntryCache: false,
-    url: `./modules/${moduleName}/static`,
-    scope: moduleFederationName,
-    module: component
-  }));
+  const Component = lazy(() =>
+    importRemote({
+      bustRemoteEntryCache: false,
+      module: component,
+      remoteEntryFileName: remoteEntry,
+      scope: moduleFederationName,
+      url: `./modules/${moduleName}/static`
+    })
+  );
+
+  const fallback = isFederatedModule ? (
+    <FederatedModuleFallback />
+  ) : (
+    <FederatedPageFallback />
+  );
 
   if (!isNil(styleMenuSkeleton) && !isEmpty(styleMenuSkeleton)) {
     const { height, width, className } = styleMenuSkeleton;
 
     return (
-      <Suspense
-        fallback={
-          isFederatedModule ? (
-            <MenuSkeleton className={className} height={height} width={width} />
-          ) : (
-            <PageSkeleton />
-          )
-        }
-      >
-        <Component {...props} store={store} />
-      </Suspense>
+      <ErrorBoundary fallback={fallback}>
+        <Suspense
+          fallback={
+            isFederatedModule ? (
+              <MenuSkeleton
+                className={className}
+                height={height}
+                width={width}
+              />
+            ) : (
+              <PageSkeleton />
+            )
+          }
+        >
+          <Component {...props} store={store} />
+        </Suspense>
+      </ErrorBoundary>
     );
   }
 
   return (
-    <Suspense
-      fallback={isFederatedModule ? <MenuSkeleton /> : <PageSkeleton />}
-    >
-      <Component {...props} store={store} />
-    </Suspense>
+    <ErrorBoundary fallback={fallback}>
+      <Suspense
+        fallback={isFederatedModule ? <MenuSkeleton /> : <PageSkeleton />}
+      >
+        <Component {...props} store={store} />
+      </Suspense>
+    </ErrorBoundary>
   );
 };
