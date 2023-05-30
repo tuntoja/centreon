@@ -8,9 +8,6 @@ inputs:
   directory:
     description: The package directory
     required: true
-  satisfies:
-    description: The range to compare the version
-    required: true
 
 runs:
   using: "composite"
@@ -43,7 +40,6 @@ runs:
         with:
           version: ${{ env.BASE_VERSION }}
           compare-to: ${{ env.NEW_VERSION }}
-          satisfies: ${{ inputs.satisfies }}
 
       - name: Result comparison
         run: '[[ "<" == "${{ steps.check-versions.outputs.comparison-result }}" || "=" == "${{ steps.check-versions.outputs.comparison-result }}" ]] && echo "The version is valid" || (echo "The version is invalid. Please upgrade your package.json to ${{ env.BASE_VERSION }}" && exit 1)'
