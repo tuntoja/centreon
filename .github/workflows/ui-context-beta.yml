@@ -16,6 +16,11 @@ env:
   base_branch: develop
 
 jobs:
+  get-version:
+    uses: ./.github/workflows/get-version.yml
+    with:
+      version_file: centreon/www/install/insertBaseConf.sql
+
   lint:
     runs-on: ubuntu-22.04
 
@@ -46,6 +51,7 @@ jobs:
           release_branch: ${{ env.base_branch }}
 
   check-package-version:
+  needs: [get-version]
     runs-on: ubuntu-22.04
 
     steps:
@@ -57,3 +63,4 @@ jobs:
         with:
           base_branch: ${{ env.base_branch }}
           directory: ${{ env.directory }}
+          satisfies: ${{ needs.get-version.outputs.major_version }}.${{ needs.get-version.outputs.minor_version }}.x
