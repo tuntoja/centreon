@@ -1,5 +1,5 @@
 import { PieArcDatum, ProvidedProps } from '@visx/shape/lib/shapes/Pie';
-import { useTransition, interpolate, animated } from '@react-spring/web';
+import { useTransition, to, animated } from '@react-spring/web';
 import { equals } from 'ramda';
 
 import { Metric } from '../common/timeSeries/models';
@@ -8,10 +8,10 @@ import { ThresholdType } from './models';
 
 type AnimatedStyles = { endAngle: number; opacity: number; startAngle: number };
 
-const fromLeaveTransition = (): AnimatedStyles => ({
-  endAngle: 0,
+const fromLeaveTransition = ({ endAngle }): AnimatedStyles => ({
+  endAngle,
   opacity: 0,
-  startAngle: 0
+  startAngle: -(Math.PI / 2)
 });
 const enterUpdateTransition = <T,>({
   startAngle,
@@ -54,14 +54,12 @@ const AnimatedPie = <Datum,>({
   return transitions((props, arc, { key }) => (
     <g key={key}>
       <animated.path
-        d={interpolate(
-          [props.startAngle, props.endAngle],
-          (startAngle, endAngle) =>
-            path({
-              ...arc,
-              endAngle,
-              startAngle
-            })
+        d={to([props.startAngle, props.endAngle], (startAngle, endAngle) =>
+          path({
+            ...arc,
+            endAngle,
+            startAngle
+          })
         )}
         data-testid={`${arc.data?.value || arc.data}-arc`}
         fill={getColor(arc)}
