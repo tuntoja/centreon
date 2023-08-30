@@ -2,12 +2,44 @@ import { scaleOrdinal } from '@visx/scale';
 import { Pie } from '@visx/shape';
 import { pluck } from 'ramda';
 
-import { useTheme } from '@mui/material';
+import { Theme, useTheme } from '@mui/material';
 
 import AnimatedPie from './AnimatedPie';
 import { GaugeProps, ThresholdType } from './models';
 
 export const thresholdThickness = 12;
+
+interface GetThresholdsColorRangeProps {
+  disabledThresholds?: boolean;
+  isLowThresholds?: boolean;
+  theme: Theme;
+}
+
+const getThresholdsColorRange = ({
+  disabledThresholds,
+  isLowThresholds,
+  theme
+}: GetThresholdsColorRangeProps): Array<string> => {
+  if (disabledThresholds) {
+    return [
+      theme.palette.success.main,
+      theme.palette.success.main,
+      theme.palette.success.main
+    ];
+  }
+
+  return isLowThresholds
+    ? [
+        theme.palette.error.main,
+        theme.palette.warning.main,
+        theme.palette.success.main
+      ]
+    : [
+        theme.palette.success.main,
+        theme.palette.warning.main,
+        theme.palette.error.main
+      ];
+};
 
 const Thresholds = ({
   thresholds,
@@ -61,23 +93,11 @@ const Thresholds = ({
 
   const getThresholdColor = scaleOrdinal({
     domain: pluck('name', adaptedThresholds),
-    range: disabledThresholds
-      ? [
-          theme.palette.success.main,
-          theme.palette.success.main,
-          theme.palette.success.main
-        ]
-      : isLowThresholds
-      ? [
-          theme.palette.error.main,
-          theme.palette.warning.main,
-          theme.palette.success.main
-        ]
-      : [
-          theme.palette.success.main,
-          theme.palette.warning.main,
-          theme.palette.error.main
-        ]
+    range: getThresholdsColorRange({
+      disabledThresholds,
+      isLowThresholds,
+      theme
+    })
   });
 
   return (
