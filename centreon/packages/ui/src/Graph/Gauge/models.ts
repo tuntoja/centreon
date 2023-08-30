@@ -5,6 +5,7 @@ export interface GaugeProps {
   disabledThresholds?: boolean;
   height: number;
   hideTooltip: () => void;
+  isLowThresholds?: boolean;
   metric: Metric;
   radius: number;
   showTooltip: (args) => void;

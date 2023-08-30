@@ -17,24 +17,40 @@ const Thresholds = ({
   hideTooltip,
   metric,
   thresholdTooltipLabels,
-  disabledThresholds
+  disabledThresholds,
+  isLowThresholds
 }: Omit<GaugeProps, 'width' | 'height'>): JSX.Element => {
   const theme = useTheme();
 
-  const namedThresholds = [
-    {
-      name: ThresholdType.Success,
-      value: thresholds[0]
-    },
-    {
-      name: ThresholdType.Warning,
-      value: thresholds[1]
-    },
-    {
-      name: ThresholdType.Error,
-      value: adaptedMaxValue
-    }
-  ];
+  const namedThresholds = isLowThresholds
+    ? [
+        {
+          name: ThresholdType.Warning,
+          value: thresholds[0]
+        },
+        {
+          name: ThresholdType.Error,
+          value: thresholds[1]
+        },
+        {
+          name: ThresholdType.Success,
+          value: adaptedMaxValue
+        }
+      ]
+    : [
+        {
+          name: ThresholdType.Success,
+          value: thresholds[0]
+        },
+        {
+          name: ThresholdType.Warning,
+          value: thresholds[1]
+        },
+        {
+          name: ThresholdType.Error,
+          value: adaptedMaxValue
+        }
+      ];
 
   const adaptedThresholds = namedThresholds.map(({ name, value }, index) => {
     return {
@@ -49,6 +65,12 @@ const Thresholds = ({
       ? [
           theme.palette.success.main,
           theme.palette.success.main,
+          theme.palette.success.main
+        ]
+      : isLowThresholds
+      ? [
+          theme.palette.error.main,
+          theme.palette.warning.main,
           theme.palette.success.main
         ]
       : [

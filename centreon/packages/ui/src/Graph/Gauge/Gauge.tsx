@@ -1,5 +1,4 @@
 import { Responsive } from '@visx/visx';
-import { sort, subtract } from 'ramda';
 
 import { LineChartData } from '../common/models';
 import { getMetricWithLatestData } from '../common/timeSeries';
@@ -10,6 +9,7 @@ import ResponsiveGauge from './ResponsiveGauge';
 interface Props {
   data?: LineChartData;
   disabledThresholds?: boolean;
+  isLowThresholds?: boolean;
   thresholdTooltipLabels: Array<string>;
   thresholds: Array<number>;
 }
@@ -18,12 +18,12 @@ export const Gauge = ({
   thresholds,
   data,
   thresholdTooltipLabels,
-  disabledThresholds
+  disabledThresholds,
+  isLowThresholds
 }: Props): JSX.Element | null => {
   if (!data) {
     return null;
   }
-  const sortedThresholds = sort(subtract, thresholds);
 
   const metric = getMetricWithLatestData(data) as Metric;
 
@@ -33,9 +33,10 @@ export const Gauge = ({
         <ResponsiveGauge
           disabledThresholds={disabledThresholds}
           height={height}
+          isLowThresholds={isLowThresholds}
           metric={metric}
           thresholdTooltipLabels={thresholdTooltipLabels}
-          thresholds={sortedThresholds}
+          thresholds={thresholds}
           width={width}
         />
       )}

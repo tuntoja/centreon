@@ -12,6 +12,7 @@ const thresholdLineHeight = 60 + 2 * lineMargin;
 
 interface Props {
   hideTooltip: () => void;
+  isLowThresholds?: boolean;
   showTooltip: (args) => void;
   thresholdTooltipLabels: Array<string>;
   thresholds: Array<number>;
@@ -23,7 +24,8 @@ const Thresholds = ({
   thresholds,
   showTooltip,
   hideTooltip,
-  thresholdTooltipLabels
+  thresholdTooltipLabels,
+  isLowThresholds
 }: Props): JSX.Element => {
   const theme = useTheme();
 
@@ -31,6 +33,12 @@ const Thresholds = ({
   const criticalValue = thresholds[1];
   const warningTooltipLabel = thresholdTooltipLabels[0];
   const criticalTooltipLabel = thresholdTooltipLabels[1];
+  const firstLineColor = isLowThresholds
+    ? theme.palette.error.main
+    : theme.palette.warning.main;
+  const secondLineColor = isLowThresholds
+    ? theme.palette.warning.main
+    : theme.palette.error.main;
 
   const bottom = barHeight + margin * 2;
 
@@ -47,7 +55,7 @@ const Thresholds = ({
     <>
       <line
         data-testid="warning-line"
-        stroke={theme.palette.warning.main}
+        stroke={firstLineColor}
         strokeDasharray={4}
         strokeWidth={2}
         x1={xScale(warningValue)}
@@ -57,7 +65,7 @@ const Thresholds = ({
       />
       <line
         data-testid="critical-line"
-        stroke={theme.palette.error.main}
+        stroke={secondLineColor}
         strokeDasharray={4}
         strokeWidth={2}
         x1={xScale(criticalValue)}

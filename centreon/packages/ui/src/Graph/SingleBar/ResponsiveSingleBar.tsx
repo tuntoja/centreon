@@ -35,7 +35,8 @@ const ResponsiveSingleBar = ({
   thresholds,
   width,
   height,
-  disabledThresholds
+  disabledThresholds,
+  isLowThresholds
 }: Props): JSX.Element => {
   const theme = useTheme();
 
@@ -64,6 +65,7 @@ const ResponsiveSingleBar = ({
     () =>
       getColorFromDataAndTresholds({
         data: latestMetricData,
+        isLowThresholds,
         theme,
         thresholds
       }),
@@ -134,6 +136,7 @@ const ResponsiveSingleBar = ({
           {!disabledThresholds && (
             <Thresholds
               hideTooltip={hideTooltip}
+              isLowThresholds={isLowThresholds}
               showTooltip={showTooltip}
               thresholdTooltipLabels={thresholdTooltipLabels}
               thresholds={thresholds}

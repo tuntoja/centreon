@@ -43,3 +43,33 @@ export const critical: Story = {
   },
   render: Template
 };
+
+export const lowThresholdSuccess: Story = {
+  args: {
+    data: dataLastWeek,
+    isLowThresholds: true,
+    thresholdTooltipLabels: ['Critical', 'Warning'],
+    thresholds: [0.1, 0.2]
+  },
+  render: Template
+};
+
+export const lowThresholdWarning: Story = {
+  args: {
+    data: dataLastWeek,
+    isLowThresholds: true,
+    thresholdTooltipLabels: ['Critical', 'Warning'],
+    thresholds: [0.1, 0.6]
+  },
+  render: Template
+};
+
+export const lowThresholdCritical: Story = {
+  args: {
+    data: dataLastWeek,
+    isLowThresholds: true,
+    thresholdTooltipLabels: ['Critical', 'Warning'],
+    thresholds: [0.45, 0.6]
+  },
+  render: Template
+};
