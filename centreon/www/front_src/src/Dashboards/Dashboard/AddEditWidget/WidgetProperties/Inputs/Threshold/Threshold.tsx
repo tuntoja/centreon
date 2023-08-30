@@ -15,7 +15,8 @@ import { WidgetPropertyProps } from '../../../models';
 import {
   labelShowThresholds,
   labelThreshold,
-  labelThresholdsAreAutomaticallyHidden
+  labelThresholdsAreAutomaticallyHidden,
+  labelUseLowThresholds
 } from '../../../../translatedLabels';
 import { WidgetSwitch } from '..';
 import { useThresholdStyles } from '../Inputs.styles';
@@ -63,6 +64,10 @@ const Threshold = ({ propertyName }: WidgetPropertyProps): JSX.Element => {
           </RadioGroup>
         </Box>
       ))}
+      <WidgetSwitch
+        label={t(labelUseLowThresholds)}
+        propertyName={`${propertyName}.isLowThresholds`}
+      />
     </Box>
   );
 };

@@ -86,3 +86,4 @@ export const labelTo = 'to';
 export const labelFrom = 'From';
 export const labelStart = 'Start';
 export const labelEnd = 'End';
+export const labelUseLowThresholds = 'Use low thresholds';

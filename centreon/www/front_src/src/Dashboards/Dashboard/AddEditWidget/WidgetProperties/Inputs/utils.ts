@@ -97,9 +97,12 @@ const getYupValidatorType = ({
       equals<FederatedWidgetOptionType>(FederatedWidgetOptionType.threshold),
       always(
         Yup.object().shape({
-          critical: Yup.number().nullable(),
+          customCritical: Yup.number().nullable(),
+          criticalType: Yup.string(),
           enabled: Yup.boolean(),
-          warning: Yup.number().nullable()
+          customWarning: Yup.number().nullable(),
+          warningType: Yup.string(),
+          useLowThresholds: Yup.boolean()
         })
       )
     ]

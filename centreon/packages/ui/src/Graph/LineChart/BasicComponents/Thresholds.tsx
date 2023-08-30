@@ -15,17 +15,26 @@ interface Props {
   thresholdUnit?: string;
   thresholds?: Array<number>;
   width: number;
+  isLowThresholds?: boolean;
 }
 
 interface GetColorProps {
   index: number;
   theme: Theme;
+  isLowThresholds?: boolean;
 }
 
-const getColor = ({ index, theme }: GetColorProps): string => {
+const getColor = ({ index, theme, isLowThresholds }: GetColorProps): string => {
+  const firstLineColor = isLowThresholds
+    ? theme.palette.error.main
+    : theme.palette.warning.main;
+  const secondLineColor = isLowThresholds
+    ? theme.palette.warning.main
+    : theme.palette.error.main;
+
   return cond([
-    [equals(0), always(theme.palette.warning.main)],
-    [equals(1), always(theme.palette.error.main)]
+    [equals(0), always(firstLineColor)],
+    [equals(1), always(secondLineColor)]
   ])(index);
 };
 
@@ -38,7 +47,8 @@ const Thresholds = ({
   thresholdUnit,
   showTooltip,
   hideTooltip,
-  thresholdLabels
+  thresholdLabels,
+  isLowThresholds
 }: Props): JSX.Element | null => {
   const theme = useTheme();
 
@@ -76,7 +86,8 @@ const Thresholds = ({
             key={`threshold-${thresholdLabels?.[index]}-${threshold}`}
             stroke={getColor({
               index,
-              theme
+              theme,
+              isLowThresholds
             })}
             strokeDasharray="5,5"
             strokeWidth={2}

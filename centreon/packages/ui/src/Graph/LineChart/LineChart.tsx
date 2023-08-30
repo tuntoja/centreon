@@ -45,6 +45,7 @@ interface Props extends LineChartProps {
   thresholdLabels?: Array<string>;
   thresholdUnit?: string;
   thresholds?: Array<number>;
+  isLowThresholds?: boolean;
 }
 
 const baseStyles = {
@@ -73,7 +74,8 @@ const LineChart = ({
   thresholds,
   thresholdUnit,
   thresholdLabels,
-  disabledThresholds
+  disabledThresholds,
+  isLowThresholds
 }: Props): JSX.Element => {
   const { classes } = useStyles();
 
@@ -247,6 +249,7 @@ const LineChart = ({
                   thresholdUnit={thresholdUnit}
                   thresholds={thresholds}
                   width={graphWidth}
+                  isLowThresholds={isLowThresholds}
                 />
               )}
             </Group.Group>

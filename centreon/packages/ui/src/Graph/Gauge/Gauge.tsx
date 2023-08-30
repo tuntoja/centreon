@@ -36,7 +36,7 @@ export const Gauge = ({
           isLowThresholds={isLowThresholds}
           metric={metric}
           thresholdTooltipLabels={thresholdTooltipLabels}
-          thresholds={thresholds}
+          thresholds={thresholds.sort()}
           width={width}
         />
       )}

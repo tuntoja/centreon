@@ -13,7 +13,8 @@
         "customCritical": null,
         "criticalType": "default",
         "customWarning": null,
-        "warningType": "default"
+        "warningType": "default",
+        "isLowThresholds": false
       },
       "label": "threshold"
     },

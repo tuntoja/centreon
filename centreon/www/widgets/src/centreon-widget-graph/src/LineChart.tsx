@@ -42,7 +42,7 @@ const WidgetLineChart = ({
   const { thresholdLabels, thresholdValues } = useThresholds({
     data: graphData,
     metricName: panelData.metrics[0]?.metrics[0]?.name,
-    thresholds: panelOptions.threshold
+    thresholds: panelOptions.threshold,
   });
 
   if (isNil(graphData) && (!isGraphLoading || isMetricIdsEmpty)) {
@@ -71,6 +71,7 @@ const WidgetLineChart = ({
       zoomPreview={{
         enable: false
       }}
+      isLowThresholds={panelOptions.threshold.isLowThresholds}
     />
   );
 };

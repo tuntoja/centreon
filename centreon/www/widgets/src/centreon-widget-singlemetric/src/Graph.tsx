@@ -85,6 +85,7 @@ const Graph = ({
                 disabledThresholds={!threshold.enabled}
                 thresholdTooltipLabels={thresholdLabels}
                 thresholds={thresholdValues}
+                isLowThresholds={threshold.isLowThresholds}
               />
             )
           ],
@@ -96,6 +97,7 @@ const Graph = ({
                 disabledThresholds={!threshold.enabled}
                 thresholdTooltipLabels={thresholdLabels}
                 thresholds={thresholdValues}
+                isLowThresholds={threshold.isLowThresholds}
               />
             )
           ],

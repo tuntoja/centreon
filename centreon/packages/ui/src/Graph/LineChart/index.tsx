@@ -35,6 +35,7 @@ interface Props extends Partial<LineChartProps> {
   thresholdLabels?: Array<string>;
   thresholdUnit?: string;
   thresholds?: Array<number>;
+  isLowThresholds?: boolean;
 }
 
 const WrapperLineChart = ({
@@ -58,7 +59,8 @@ const WrapperLineChart = ({
   thresholds,
   thresholdUnit,
   thresholdLabels,
-  disabledThresholds
+  disabledThresholds,
+  isLowThresholds
 }: Props): JSX.Element | null => {
   const { adjustedData } = useLineChartData({ data, end, start });
   const lineChartRef = useRef<HTMLDivElement | null>(null);
@@ -109,6 +111,7 @@ const WrapperLineChart = ({
               tooltip={tooltip}
               width={width ?? responsiveWidth}
               zoomPreview={zoomPreview}
+              isLowThresholds={isLowThresholds}
             />
           );
         }}

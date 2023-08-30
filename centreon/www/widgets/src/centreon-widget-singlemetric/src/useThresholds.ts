@@ -73,7 +73,7 @@ const useThresholds = ({
   ];
 
   return {
-    thresholdLabels,
+    thresholdLabels: thresholds.isLowThresholds ? thresholdLabels.reverse() : thresholdLabels,
     thresholdValues
   };
 };

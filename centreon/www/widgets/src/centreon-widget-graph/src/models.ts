@@ -35,4 +35,5 @@ export interface FormThreshold {
   customWarning: number;
   enabled: boolean;
   warningType: 'default' | 'custom';
+  isLowThresholds?: boolean;
 }

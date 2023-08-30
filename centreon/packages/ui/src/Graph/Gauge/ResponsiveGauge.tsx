@@ -62,6 +62,7 @@ const ResponsiveGauge = ({
     head(metric.data) as number
   );
 
+
   const pieColor = disabledThresholds
     ? theme.palette.success.main
     : getColorFromDataAndTresholds({
