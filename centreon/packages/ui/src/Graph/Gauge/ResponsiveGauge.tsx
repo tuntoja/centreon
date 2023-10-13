@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import { Group } from '@visx/group';
 import { flatten, head, pluck } from 'ramda';
 import { Tooltip } from '@visx/visx';
+import { scaleLinear } from '@visx/scale';
 
 import { Box, Fade, useTheme } from '@mui/material';
 
@@ -48,11 +49,22 @@ const ResponsiveGauge = ({
     tooltipData
   } = Tooltip.useTooltip();
 
+  const widthHeightRatio = Math.max(width, height) / Math.min(width, height);
+
+  console.log(widthHeightRatio);
+
+  const scale = scaleLinear({
+    domain: [1, 10],
+    range: [2, 1]
+  });
+
   const innerWidth = width - margins.left - margins.right;
   const innerHeight = height - margins.top - margins.bottom;
   const centerY = innerHeight / 2;
   const centerX = innerWidth / 2;
-  const radius = Math.min(innerWidth, innerHeight) / 2;
+  const scaleFactor = scale(widthHeightRatio);
+  console.log(scaleFactor);
+  const radius = Math.min(innerWidth, innerHeight) / scaleFactor;
   const thresholdValues = thresholds.enabled
     ? flatten([
         pluck('value', thresholds.warning),
@@ -94,7 +106,10 @@ const ResponsiveGauge = ({
       }}
     >
       <svg height={height} ref={svgRef} width={width}>
-        <Group left={centerX + margins.left} top={centerY + height / 6}>
+        <Group
+          left={centerX + margins.left}
+          top={centerY + height / (scaleFactor * 2)}
+        >
           <Thresholds
             adaptedMaxValue={adaptedMaxValue}
             hideTooltip={hideTooltip}

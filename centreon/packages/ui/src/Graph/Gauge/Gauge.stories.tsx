@@ -12,7 +12,7 @@ export default meta;
 type Story = StoryObj<typeof Gauge>;
 
 const Template = (props): JSX.Element => (
-  <div style={{ height: '500px', width: '500px' }}>
+  <div style={{ height: '800px', width: '200px' }}>
     <Gauge {...props} />
   </div>
 );
