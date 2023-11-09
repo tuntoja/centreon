@@ -64,8 +64,6 @@ const GlobalSearch = (): JSX.Element => {
       ).filter((v) => v)
     : [];
 
-  console.log(actions, datas);
-
   return (
     <>
       <Backdrop className={classes.container} open={isOpen} onClick={close}>
@@ -91,7 +89,9 @@ const GlobalSearch = (): JSX.Element => {
                   onClick={click}
                 />
               </div>
-              <ActionsList actions={actions} className={classes.actions} />
+              <div>
+                <ActionsList actions={actions} className={classes.actions} />
+              </div>
             </Paper>
           )}
         </div>

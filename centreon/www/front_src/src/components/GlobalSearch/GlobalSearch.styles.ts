@@ -25,17 +25,22 @@ export const useGlobalSearchStyles = makeStyles()((theme) => ({
     width: '100%'
   },
   inputWrapper: {
-    margin: theme.spacing(1.5, 1.5, 1)
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(1.5, 1.5, 1),
+    position: 'sticky',
+    top: 0,
+    zIndex: theme.zIndex.tooltip + 3
   },
   loading: {
     height: 'inherit'
   },
   paper: {
     maxHeight: 'calc(100% - 40%)',
+    overflowY: 'auto',
     transition: theme.transitions.create('height', {
       duration: theme.transitions.duration.standard
     }),
-    zIndex: theme.zIndex.tooltip + 2
+    zIndex: theme.zIndex.tooltip + 1
   }
 }));
 
