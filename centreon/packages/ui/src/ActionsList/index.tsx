@@ -24,6 +24,7 @@ interface ActionsType {
     muiName: string;
   };
   iconPlacement?: 'start' | 'end';
+  key?: string;
   label: string | ReactElement;
   onClick?: (e?) => void;
   secondaryLabel?: string;
@@ -56,8 +57,15 @@ const ActionsList = ({
           return <Divider key={`divider_${idx}`} />;
         }
 
-        const { label, Icon, onClick, variant, secondaryLabel, iconPlacement } =
-          action as ActionsType;
+        const {
+          label,
+          Icon,
+          onClick,
+          variant,
+          secondaryLabel,
+          iconPlacement,
+          key
+        } = action as ActionsType;
 
         return (
           <MenuItem
@@ -65,8 +73,8 @@ const ActionsList = ({
             className={classes.item}
             data-variant={variant}
             disabled={equals(variant, 'group')}
-            id={label}
-            key={label}
+            id={key || label}
+            key={`${key ?? label}_${idx}`}
             onClick={onClick}
           >
             {Icon && (equals(iconPlacement, 'start') || !iconPlacement) && (

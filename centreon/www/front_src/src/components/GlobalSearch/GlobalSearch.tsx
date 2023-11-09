@@ -36,6 +36,7 @@ const GlobalSearch = (): JSX.Element => {
 
           const itemActions = data?.result.map(({ id, name, uuid, links }) => {
             return {
+              key: `${id}_${name}`,
               label: <ActionItem name={name} />,
               onClick: () => {
                 navigate(
@@ -53,6 +54,7 @@ const GlobalSearch = (): JSX.Element => {
           return [
             {
               Icon: globalSearchTypeHelpers.Icon,
+              key: globalSearchTypeHelpers.title,
               label: globalSearchTypeHelpers.title,
               variant: 'group'
             },
@@ -61,6 +63,8 @@ const GlobalSearch = (): JSX.Element => {
         })
       ).filter((v) => v)
     : [];
+
+  console.log(actions, datas);
 
   return (
     <>
@@ -87,7 +91,7 @@ const GlobalSearch = (): JSX.Element => {
                   onClick={click}
                 />
               </div>
-              <ActionsList actions={actions} />
+              <ActionsList actions={actions} className={classes.actions} />
             </Paper>
           )}
         </div>

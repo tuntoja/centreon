@@ -1,6 +1,10 @@
 import { makeStyles } from 'tss-react/mui';
 
 export const useGlobalSearchStyles = makeStyles()((theme) => ({
+  actions: {
+    height: 'calc(100% - 15%)',
+    overflowY: 'auto'
+  },
   container: {
     alignItems: 'start',
     backdropFilter: 'blur(5px)',
@@ -27,6 +31,10 @@ export const useGlobalSearchStyles = makeStyles()((theme) => ({
     height: 'inherit'
   },
   paper: {
+    maxHeight: 'calc(100% - 40%)',
+    transition: theme.transitions.create('height', {
+      duration: theme.transitions.duration.standard
+    }),
     zIndex: theme.zIndex.tooltip + 2
   }
 }));
