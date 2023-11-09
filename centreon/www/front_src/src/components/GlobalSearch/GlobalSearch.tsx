@@ -1,7 +1,7 @@
 import { flatten, isEmpty } from 'ramda';
 import { useNavigate } from 'react-router-dom';
 
-import { Backdrop, Paper } from '@mui/material';
+import { Backdrop, Collapse, Paper, Slide } from '@mui/material';
 
 import { ActionsList, TextField } from '@centreon/ui';
 
@@ -89,9 +89,7 @@ const GlobalSearch = (): JSX.Element => {
                   onClick={click}
                 />
               </div>
-              <div>
-                <ActionsList actions={actions} className={classes.actions} />
-              </div>
+              <ActionsList actions={actions} className={classes.actions} />
             </Paper>
           )}
         </div>

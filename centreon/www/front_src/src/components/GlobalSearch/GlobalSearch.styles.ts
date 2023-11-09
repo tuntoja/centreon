@@ -37,9 +37,6 @@ export const useGlobalSearchStyles = makeStyles()((theme) => ({
   paper: {
     maxHeight: 'calc(100% - 40%)',
     overflowY: 'auto',
-    transition: theme.transitions.create('height', {
-      duration: theme.transitions.duration.standard
-    }),
     zIndex: theme.zIndex.tooltip + 1
   }
 }));
