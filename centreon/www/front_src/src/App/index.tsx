@@ -7,6 +7,7 @@ import { makeStyles } from 'tss-react/mui';
 import { LoadingSkeleton } from '@centreon/ui';
 
 import PageLoader from '../components/PageLoader';
+import { GlobalSearch } from '../components/GlobalSearch';
 
 import useApp from './useApp';
 
@@ -73,6 +74,7 @@ const App = (): JSX.Element => {
             <MainRouter />
           </div>
         </div>
+        <GlobalSearch />
       </div>
     </Suspense>
   );

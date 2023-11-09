@@ -1,6 +1,8 @@
 /* eslint-disable react/no-array-index-key */
+import { ReactElement } from 'react';
+
 import { useTranslation } from 'react-i18next';
-import { equals } from 'ramda';
+import { equals, type } from 'ramda';
 
 import {
   MenuList,
@@ -21,7 +23,8 @@ interface ActionsType {
   Icon?: OverridableComponent<SvgIconTypeMap<object, 'svg'>> & {
     muiName: string;
   };
-  label: string;
+  iconPlacement?: 'start' | 'end';
+  label: string | ReactElement;
   onClick?: (e?) => void;
   secondaryLabel?: string;
   variant?: ActionVariants;
@@ -53,7 +56,7 @@ const ActionsList = ({
           return <Divider key={`divider_${idx}`} />;
         }
 
-        const { label, Icon, onClick, variant, secondaryLabel } =
+        const { label, Icon, onClick, variant, secondaryLabel, iconPlacement } =
           action as ActionsType;
 
         return (
@@ -61,23 +64,31 @@ const ActionsList = ({
             aria-label={label}
             className={classes.item}
             data-variant={variant}
+            disabled={equals(variant, 'group')}
             id={label}
             key={label}
             onClick={onClick}
           >
-            {Icon && (
+            {Icon && (equals(iconPlacement, 'start') || !iconPlacement) && (
               <ListItemIcon>
                 <Icon fontSize="small" />
               </ListItemIcon>
             )}
             <ListItemText
               className={listItemClassName}
-              primary={t(label)}
+              primary={
+                equals(type(label), 'String') ? t(label as string) : label
+              }
               secondary={
                 secondaryLabel &&
                 sanitizedHTML({ initialContent: t(secondaryLabel) })
               }
             />
+            {Icon && equals(iconPlacement, 'end') && (
+              <ListItemIcon>
+                <Icon fontSize="small" />
+              </ListItemIcon>
+            )}
           </MenuItem>
         );
       })}

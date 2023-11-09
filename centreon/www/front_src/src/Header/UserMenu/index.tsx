@@ -34,6 +34,7 @@ import Clock from '../Clock';
 import useNavigation from '../../Navigation/useNavigation';
 import { userEndpoint } from '../api/endpoints';
 import routeMap from '../../reactRoutes/routeMap';
+import { GlobalSearchHeaderButton } from '../../components/GlobalSearch';
 
 import SwitchMode from './SwitchThemeMode';
 import {
@@ -312,6 +313,7 @@ const UserMenu = ({ headerRef }: Props): JSX.Element => {
 
   return (
     <div className={classes.wrapper} ref={profile as RefObject<HTMLDivElement>}>
+      <GlobalSearchHeaderButton />
       <div className={classes.clock}>
         <Clock />
       </div>

@@ -5,10 +5,14 @@ import { equals, isNil, replace } from 'ramda';
 
 import { PageSkeleton } from '@centreon/ui';
 
+import { useExternalSearch } from '../../components/GlobalSearch/useExternalGlobalSearch';
+
 const LegacyRoute = (): JSX.Element => {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
   const navigate = useNavigate();
+
+  useExternalSearch([loading]);
 
   const handleHref = (event): void => {
     const { href } = event.detail;

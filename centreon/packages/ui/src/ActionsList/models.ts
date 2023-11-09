@@ -5,4 +5,5 @@ export type ActionVariants =
   | 'warning'
   | 'error'
   | 'info'
-  | 'pending';
+  | 'pending'
+  | 'group';

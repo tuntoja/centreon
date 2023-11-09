@@ -31,6 +31,15 @@ export const useStyles = makeStyles()((theme) => ({
       },
       color: theme.palette.error.main
     },
+    '&[data-variant="group"]': {
+      '& .MuiTypography-root': {
+        fontSize: theme.typography.h6.fontSize
+      },
+      '&:hover': {
+        color: theme.palette.text.primary
+      },
+      color: theme.palette.text.primary
+    },
     '&[data-variant="info"]': {
       '& .MuiListItemIcon-root': {
         color: getColor({ status: 'info', theme })

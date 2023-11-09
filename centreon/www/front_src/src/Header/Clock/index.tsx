@@ -13,9 +13,9 @@ const useStyles = makeStyles()((theme) => ({
     flexDirection: 'column',
     height: '100%',
     justifyContent: 'space-between',
-    marginLeft: theme.spacing(4),
     [theme.breakpoints.down(769)]: {
-      display: 'none'
+      display: 'none',
+      marginLeft: theme.spacing(4)
     }
   },
   nowrap: {
