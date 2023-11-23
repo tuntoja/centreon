@@ -9,8 +9,7 @@ import { DashboardLayout, getColumnsFromScreenSize } from '@centreon/ui';
 import { dashboardAtom, isEditingAtom, refreshCountsAtom } from '../atoms';
 import { Panel } from '../models';
 import { AddEditWidgetModal, AddWidgetPanel } from '../AddEditWidget';
-import { DeleteWidgetModal } from '../DeleteWidget';
-import { editProperties } from '../useCanEditDashboard';
+import { editProperties } from '../hooks/useCanEditDashboard';
 
 import DashboardPanel from './Panel/Panel';
 import PanelHeader from './Panel/PanelHeader';
@@ -33,7 +32,7 @@ const emptyLayout: Array<Panel> = [
   }
 ];
 
-const Layout = (): JSX.Element => {
+const DashboardPageLayout = (): JSX.Element => {
   const [dashboard, setDashboard] = useAtom(dashboardAtom);
   const [refreshCounts, setRefreshCounts] = useAtom(refreshCountsAtom);
   const isEditing = useAtomValue(isEditingAtom);
@@ -50,7 +49,7 @@ const Layout = (): JSX.Element => {
     }
 
     const newLayout = map<Layout, Panel>((panel) => {
-      const currentWidget = dashboard.layout.find(propEq('i', panel.i));
+      const currentWidget = dashboard.layout.find(propEq(panel.i, 'i'));
 
       return {
         ...panel,
@@ -119,9 +118,8 @@ const Layout = (): JSX.Element => {
         ))}
       </DashboardLayout.Layout>
       <AddEditWidgetModal />
-      <DeleteWidgetModal />
     </>
   );
 };
 
-export default Layout;
+export default DashboardPageLayout;

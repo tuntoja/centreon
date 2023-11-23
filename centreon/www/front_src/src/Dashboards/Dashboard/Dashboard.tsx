@@ -20,12 +20,13 @@ import { DashboardAccessRightsModal } from '../components/DashboardAccessRights/
 import { useDashboardAccessRights } from '../components/DashboardAccessRights/useDashboardAccessRights';
 
 import Layout from './Layout';
-import useDashboardDetails, { routerParams } from './useDashboardDetails';
+import useDashboardDetails, { routerParams } from './hooks/useDashboardDetails';
 import { dashboardAtom, isEditingAtom, refreshCountsAtom } from './atoms';
 import { DashboardEditActions } from './components/DashboardEdit/DashboardEditActions';
 import { AddWidgetButton } from './AddEditWidget';
-import { editProperties } from './useCanEditDashboard';
+import { editProperties } from './hooks/useCanEditDashboard';
 import { useDashboardStyles } from './Dashboard.styles';
+import useUnsavedChangesWarning from './hooks/useUnsavedChangesWarning';
 
 const Dashboard = (): ReactElement => {
   const { classes } = useDashboardStyles();
@@ -36,6 +37,8 @@ const Dashboard = (): ReactElement => {
   });
   const { editDashboard } = useDashboardConfig();
   const { editAccessRights } = useDashboardAccessRights();
+
+  const unsavedChangesWarning = useUnsavedChangesWarning({ panels });
 
   const isEditing = useAtomValue(isEditingAtom);
   const { layout } = useAtomValue(dashboardAtom);
@@ -75,6 +78,7 @@ const Dashboard = (): ReactElement => {
               title={dashboard?.name || ''}
             />
           </PageHeader.Main>
+          <PageHeader.Message message={unsavedChangesWarning} />
         </PageHeader>
       </PageLayout.Header>
       <PageLayout.Body>
@@ -102,7 +106,7 @@ const Dashboard = (): ReactElement => {
                 data-testid="refresh"
                 icon={<RefreshIcon />}
                 size="small"
-                variant="ghost"
+                variant="primary"
                 onClick={refreshAllWidgets}
               />
             </span>

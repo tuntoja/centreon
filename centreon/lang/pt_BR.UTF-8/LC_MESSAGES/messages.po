@@ -4703,7 +4703,7 @@ msgid "Extended information"
 msgstr "Informação Extendida"
 
 #: centreon-web/www/include/monitoring/status/Services/xml/makeXMLForOneService.php:173
-msgid "Meta service"
+msgid "Meta-Service"
 msgstr "Meta-Serviço"
 
 #: centreon-web/www/include/monitoring/status/Services/xml/makeXMLForOneService.php:195
@@ -16829,6 +16829,9 @@ msgstr ""
 #  msgid "View by service"
 #  msgstr ""
 
+#  msgid "Advanced mode"
+#  msgstr ""
+
 #  msgid "Error while adding a token"
 #  msgstr ""
 
@@ -16979,7 +16982,6 @@ msgstr ""
 
 #  msgid "Error while searching for host configurations"
 #  msgstr ""
-
 #  msgid "The '%s' command name already exists"
 #  msgstr ""
 
@@ -17000,3 +17002,60 @@ msgstr ""
 
 #  msgid "Error while retrieving a command"
 #  msgstr ""
+
+# msgid "Save as"
+# msgstr ""
+
+#  msgid "You are not allowed to add media"
+#  msgstr ""
+
+#  msgid "Error while adding a media"
+#  msgstr ""
+
+#  msgid "File extension not authorized"
+#  msgstr ""
+
+#  msgid "Media already exists"
+#  msgstr ""
+
+#  msgid "You are not allowed to access graph templates"
+#  msgstr ""
+
+#  msgid "Error while searching for graph templates"
+#  msgstr ""
+
+#  msgid "You are not allowed to access connectors"
+#  msgstr ""
+
+#  msgid "Error while searching for connectors"
+#  msgstr ""
+
+#  msgid "Error while updating a host"
+#  msgstr ""
+
+#  msgid "You are not allowed to edit a host"
+#  msgstr ""
+
+#  msgid "The token cannot be empty"
+#  msgstr ""
+
+#  msgid "This operation requires an admin user"
+#  msgstr ""
+
+# msgid "Resource access rules"
+# msgstr ""
+
+# msgid "Resource Access Management"
+# msgstr ""
+
+#  msgid "You are not allowed to edit a service"
+#  msgstr ""
+
+#  msgid "Error while updating a service"
+#  msgstr ""
+
+# msgid "Error while searching for media"
+# msgstr ""
+
+# msgid "You are not allowed to list media"
+# msgstr ""

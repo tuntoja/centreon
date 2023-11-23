@@ -1,33 +1,56 @@
-import { useRef, useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
+import { useAtom, useAtomValue, useSetAtom } from 'jotai';
 import {
   always,
   equals,
   ifElse,
+  isEmpty,
   isNil,
   map,
+  mergeRight,
   not,
   pathEq,
   pathOr,
   prop
 } from 'ramda';
-import { useAtomValue, useSetAtom, useAtom } from 'jotai';
 import { useTranslation } from 'react-i18next';
 
-import { getData, useRequest, getUrlQueryParameters } from '@centreon/ui';
 import type { SelectEntry } from '@centreon/ui';
+import {
+  getData,
+  getFoundFields,
+  getUrlQueryParameters,
+  useRequest
+} from '@centreon/ui';
 import { refreshIntervalAtom } from '@centreon/ui-context';
 
-import { ResourceListing, SortOrder, Visualization } from '../../models';
-import { searchableFields } from '../../Filter/Criterias/searchQueryLanguage';
+import { selectedVisualizationAtom } from '../../Actions/actionsAtoms';
 import {
   clearSelectedResourceDerivedAtom,
   detailsAtom,
   selectedResourceDetailsEndpointDerivedAtom,
   selectedResourceUuidAtom,
-  sendingDetailsAtom,
-  selectedResourcesDetailsAtom
+  selectedResourcesDetailsAtom,
+  sendingDetailsAtom
 } from '../../Details/detailsAtoms';
+import { ResourceDetails } from '../../Details/models';
+import { searchableFields } from '../../Filter/Criterias/searchQueryLanguage';
+import {
+  appliedFilterAtom,
+  customFiltersAtom,
+  getCriteriaValueDerivedAtom
+} from '../../Filter/filterAtoms';
+import {
+  resourcesEndpoint as allResourcesEndpoint,
+  hostsEndpoint
+} from '../../api/endpoint';
+import { ResourceListing, SortOrder, Visualization } from '../../models';
+import {
+  labelNoResourceFound,
+  labelSomethingWentWrong
+} from '../../translatedLabels';
+import { listResources } from '../api';
 import {
   enabledAutorefreshAtom,
   limitAtom,
@@ -35,22 +58,8 @@ import {
   pageAtom,
   sendingAtom
 } from '../listingAtoms';
-import { listResources } from '../api';
-import {
-  labelNoResourceFound,
-  labelSomethingWentWrong
-} from '../../translatedLabels';
-import { ResourceDetails } from '../../Details/models';
-import {
-  appliedFilterAtom,
-  customFiltersAtom,
-  getCriteriaValueDerivedAtom
-} from '../../Filter/filterAtoms';
-import { selectedVisualizationAtom } from '../../Actions/actionsAtoms';
-import {
-  hostsEndpoint,
-  resourcesEndpoint as allResourcesEndpoint
-} from '../../api/endpoint';
+
+import { Search } from './models';
 
 export interface LoadResources {
   initAutorefreshAndLoad: () => void;
@@ -64,7 +73,7 @@ const useLoadResources = (): LoadResources => {
 
   const { sendRequest, sending } = useRequest<ResourceListing>({
     getErrorMessage: ifElse(
-      pathEq(['response', 'status'], 404),
+      pathEq(404, ['response', 'status']),
       always(t(labelNoResourceFound)),
       pathOr(t(labelSomethingWentWrong), ['response', 'data', 'message'])
     ),
@@ -74,7 +83,7 @@ const useLoadResources = (): LoadResources => {
   const { sendRequest: sendLoadDetailsRequest, sending: sendingDetails } =
     useRequest<ResourceDetails>({
       getErrorMessage: ifElse(
-        pathEq(['response', 'status'], 404),
+        pathEq(404, ['response', 'status']),
         always(t(labelNoResourceFound)),
         pathOr(t(labelSomethingWentWrong), ['response', 'data', 'message'])
       ),
@@ -139,17 +148,50 @@ const useLoadResources = (): LoadResources => {
       });
   };
 
-  const load = (): void => {
+  const getSearch = (): Search | undefined => {
     const searchCriteria = getCriteriaValue('search');
-    const search = searchCriteria
-      ? {
-          regex: {
-            fields: searchableFields,
-            value: searchCriteria
-          }
-        }
-      : undefined;
 
+    if (!searchCriteria) {
+      return undefined;
+    }
+
+    const fieldMatches = getFoundFields({
+      fields: searchableFields,
+      value: searchCriteria as string
+    });
+
+    if (!isEmpty(fieldMatches)) {
+      const matches = fieldMatches.map((item) => {
+        const field = item?.field;
+        const values = item.value?.split(',')?.join('|');
+
+        return { field, value: `${field}:${values}` };
+      });
+
+      const formattedValue = matches.reduce((accumulator, previousValue) => {
+        return {
+          ...accumulator,
+          value: `${accumulator.value} ${previousValue.value}`
+        };
+      });
+
+      return {
+        regex: {
+          fields: matches.map(({ field }) => field),
+          value: formattedValue.value
+        }
+      };
+    }
+
+    return {
+      regex: {
+        fields: searchableFields,
+        value: searchCriteria as string
+      }
+    };
+  };
+
+  const load = (): void => {
     const getCriteriaIds = (
       name: string
     ): Array<string | number> | undefined => {
@@ -165,7 +207,7 @@ const useLoadResources = (): LoadResources => {
         | Array<SelectEntry>
         | undefined;
 
-      return criteriaValue?.map(prop('name')) as Array<string>;
+      return (criteriaValue || []).map(prop('name')) as Array<string>;
     };
 
     const getCriteriaLevels = (name: string): Array<number> => {
@@ -182,6 +224,9 @@ const useLoadResources = (): LoadResources => {
       return;
     }
 
+    const names = getCriteriaNames('names');
+    const parentNames = getCriteriaNames('parent_names');
+
     sendRequest({
       endpoint: resourcesEndpoint,
       hostCategories: getCriteriaNames('host_categories'),
@@ -192,7 +237,22 @@ const useLoadResources = (): LoadResources => {
       monitoringServers: getCriteriaNames('monitoring_servers'),
       page,
       resourceTypes: getCriteriaIds('resource_types'),
-      search,
+      search: mergeRight(getSearch() || {}, {
+        conditions: [
+          ...names.map((name) => ({
+            field: 'name',
+            values: {
+              $rg: name
+            }
+          })),
+          ...parentNames.map((name) => ({
+            field: 'parent_name',
+            values: {
+              $rg: name
+            }
+          }))
+        ]
+      }),
       serviceCategories: getCriteriaNames('service_categories'),
       serviceGroups: getCriteriaNames('service_groups'),
       serviceSeverities: getCriteriaNames('service_severities'),

@@ -8824,7 +8824,7 @@ msgstr "Macros"
 
 #: centreon-web/www/include/configuration/configNagios/formNagios.php:726
 msgid "Debug Level"
-msgstr "Niveau de débogage"
+msgstr "Niveau de debug"
 
 #: centreon-web/www/include/configuration/configNagios/formNagios.php:766
 msgid "Broker need options to be loaded"
@@ -12596,7 +12596,7 @@ msgid "This Service is flapping"
 msgstr "Le statut du service bagote"
 
 #: centreon-web/www/include/monitoring/status/Services/xml/makeXMLForOneService.php:172
-msgid "Meta service"
+msgid "Meta-Service"
 msgstr "Méta-Service"
 
 #: centreon-web/www/include/monitoring/status/Services/xml/makeXMLForOneService.php:194
@@ -15459,6 +15459,9 @@ msgstr "Sauvegarder le filtre"
 msgid "Save as new"
 msgstr "Créer un nouveau filtre"
 
+msgid "Save as"
+msgstr "Enregistrer sous"
+
 msgid "My filters"
 msgstr "Mes filtres"
 
@@ -18113,6 +18116,9 @@ msgstr "Afficher par hôte"
 msgid "View by service"
 msgstr "Afficher par service"
 
+msgid "Advanced mode"
+msgstr "Mode avancé"
+
 msgid "Error while adding a token"
 msgstr "Erreur lors de l'ajout d'un token"
 
@@ -18252,6 +18258,9 @@ msgstr "Sélection d'un jeu de données"
 msgid "Select resource"
 msgstr "Sélectionner une ressource"
 
+msgid "Select type"
+msgstr "Sélectionner un type"
+
 msgid "Select metric"
 msgstr "Sélectionner une métrique"
 
@@ -18284,3 +18293,102 @@ msgstr "Erreur lors de l'ajout d'une commande"
 
 msgid "Error while retrieving a command"
 msgstr "Erreur lors de la récuparation d'une commande"
+
+msgid "Error while retrieving contact groups"
+msgstr "Erreur lors de la récupération des groupes de contacts"
+
+msgid "If you leave without saving your dashboard, changes will be permanently lost."
+msgstr "Si vous quittez sans enregistrer votre tableau de bord, les modifications seront définitivement perdues."
+
+msgid "You are not allowed to add media"
+msgstr "Vous n'êtes pas autorisé à ajouter des médias"
+
+msgid "Error while adding a media"
+msgstr "Erreur lors de l'ajout d'un média"
+
+msgid "File extension not authorized"
+msgstr "Extension de fichier non autorisée"
+
+msgid "Media already exists"
+msgstr "Le média existe déjà"
+
+msgid "You are not allowed to access graph templates"
+msgstr "Vous n'êtes pas autorisé à accéder aux modèles de graphique"
+
+msgid "Error while searching for graph templates"
+msgstr "Erreur lors de la recherche de modèles de graphique"
+
+msgid "You are not allowed to access connectors"
+msgstr "Vous n'êtes pas autorisé à accéder aux connecteurs"
+
+msgid "Error while searching for connectors"
+msgstr "Erreur lors de la recherche de connecteurs"
+
+msgid "Error while updating a host"
+msgstr "Erreur lors de la mise à jour d'un hôte"
+
+msgid "You are not allowed to edit a host"
+msgstr "Vous n'êtes pas autorisé à éditer un hôte"
+
+msgid "The token cannot be empty"
+msgstr "Le jeton ne peut pas être vide"
+
+msgid "This operation requires an admin user"
+msgstr "Cette opération requiert un utilisateur admin"
+
+msgid "Resource access rules"
+msgstr "Règles d'accès aux ressources"
+
+msgid "Resource Access Management"
+msgstr "Gestion de l'accès aux ressources"
+
+msgid "Refine filter"
+msgstr "Affiner le filtre"
+
+msgid "The order in which dashboards are displayed must be unique."
+msgstr "L'ordre de diffusion des tableaux de bord doit être unique."
+
+msgid "The following dashboard does not exist: [%s]."
+msgstr "Le tableau de bord suivant n'existe pas : [%s]."
+
+msgid "The following playlist already exists: %s."
+msgstr "La liste de diffusion suivante existe déjà : %s."
+
+msgid "Error while retrieving a playlist."
+msgstr "Erreur lors de la récupération d'une liste de diffusion."
+
+msgid "Error while creating a playlist."
+msgstr "Erreur lors de la création d'une liste de diffusion."
+
+msgid "You cannot add the same dashboard to a playlist several times."
+msgstr "Vous ne pouvez pas ajouter le même tableau de bord plusieurs fois dans une liste de diffusion."
+
+msgid "Access not allowed"
+msgstr " Accès non autorisé"
+
+msgid "The following dashboard is not shared with you: [%d]."
+msgstr "Le tableau de bord suivant ne vous est pas partagé : [%d]."
+
+msgid "Huge"
+msgstr "Très grande"
+
+msgid "Large"
+msgstr "Grande"
+
+msgid "Normal"
+msgstr "Normale"
+
+msgid "Small"
+msgstr "Petite"
+
+msgid "You are not allowed to edit a service"
+msgstr "Vous n'êtes pas autorisé à éditer un service"
+
+msgid "Error while updating a service"
+msgstr "Erreur lors de la mise à jour d'un service"
+
+msgid "Error while searching for media"
+msgstr "Erreur lors de la recherche de médias"
+
+msgid "You are not allowed to list media"
+msgstr "Vous n'êtes pas autorisé à lister les médias"

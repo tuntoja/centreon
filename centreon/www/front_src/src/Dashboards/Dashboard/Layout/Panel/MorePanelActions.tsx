@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useAtomValue, useSetAtom } from 'jotai';
 import { equals } from 'ramda';
+import { useSearchParams } from 'react-router-dom';
 
 import { Menu } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -9,18 +10,27 @@ import RefreshIcon from '@mui/icons-material/Refresh';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
-import { ActionsList } from '@centreon/ui';
+import {
+  ActionsList,
+  ActionsListActions,
+  ActionsListActionDivider
+} from '@centreon/ui';
+import { ConfirmationTooltip } from '@centreon/ui/components';
 
 import {
+  labelCancel,
+  labelDelete,
   labelDeleteWidget,
+  labelDoYouWantToDeleteThisWidget,
   labelDuplicate,
   labelEditWidget,
   labelRefresh,
   labelViewProperties
 } from '../../translatedLabels';
-import { askDeletePanelAtom, dashboardAtom, isEditingAtom } from '../../atoms';
+import { dashboardAtom, switchPanelsEditionModeDerivedAtom } from '../../atoms';
 import useWidgetForm from '../../AddEditWidget/useWidgetModal';
-import { editProperties } from '../../useCanEditDashboard';
+import { editProperties } from '../../hooks/useCanEditDashboard';
+import useDeleteWidgetModal from '../../hooks/useDeleteWidget';
 
 interface Props {
   anchor: HTMLElement | null;
@@ -38,23 +48,28 @@ const MorePanelActions = ({
   duplicate
 }: Props): JSX.Element => {
   const { t } = useTranslation();
-
+  const [searchParams, setSearchParams] = useSearchParams(
+    window.location.search
+  );
   const dashboard = useAtomValue(dashboardAtom);
-  const isEditing = useAtomValue(isEditingAtom);
-  const setAskDeletePanel = useSetAtom(askDeletePanelAtom);
+  const switchPanelsEditionMode = useSetAtom(
+    switchPanelsEditionModeDerivedAtom
+  );
+
+  const { deleteWidget } = useDeleteWidgetModal();
 
   const { canEdit } = editProperties.useCanEditProperties();
 
   const { openModal } = useWidgetForm();
 
-  const remove = (): void => {
-    setAskDeletePanel(id);
-    close();
-  };
-
   const edit = (): void => {
     openModal(dashboard.layout.find((panel) => equals(panel.i, id)) || null);
+
     close();
+
+    switchPanelsEditionMode(true);
+    searchParams.set('edit', 'true');
+    setSearchParams(searchParams);
   };
 
   const refresh = (): void => {
@@ -62,15 +77,15 @@ const MorePanelActions = ({
     close();
   };
 
-  const displayEditButtons = canEdit && isEditing;
+  const displayEditButtons = canEdit;
 
-  const editActions = [
+  const editActions = (openConfirmationTooltip): ActionsListActions => [
     {
       Icon: EditIcon,
       label: t(labelEditWidget),
       onClick: edit
     },
-    'divider' as const,
+    ActionsListActionDivider.divider,
     {
       Icon: RefreshIcon,
       label: t(labelRefresh),
@@ -81,11 +96,11 @@ const MorePanelActions = ({
       label: t(labelDuplicate),
       onClick: duplicate
     },
-    'divider' as const,
+    ActionsListActionDivider.divider,
     {
       Icon: DeleteIcon,
       label: t(labelDeleteWidget),
-      onClick: remove
+      onClick: openConfirmationTooltip
     }
   ];
 
@@ -95,7 +110,7 @@ const MorePanelActions = ({
       label: t(labelRefresh),
       onClick: refresh
     },
-    'divider' as const,
+    ActionsListActionDivider.divider,
     {
       Icon: VisibilityOutlinedIcon,
       label: t(labelViewProperties),
@@ -103,9 +118,31 @@ const MorePanelActions = ({
     }
   ];
 
+  const confirmationLabels = {
+    cancel: t(labelCancel),
+    confirm: {
+      label: t(labelDelete),
+      secondaryLabel: t(labelDoYouWantToDeleteThisWidget)
+    }
+  };
+
   return (
     <Menu anchorEl={anchor} open={Boolean(anchor)} onClose={close}>
-      <ActionsList actions={displayEditButtons ? editActions : viewActions} />
+      <ConfirmationTooltip
+        confirmVariant="error"
+        labels={confirmationLabels}
+        onConfirm={deleteWidget(id)}
+      >
+        {(openConfirmationTooltip) => (
+          <ActionsList
+            actions={
+              displayEditButtons
+                ? editActions(openConfirmationTooltip)
+                : viewActions
+            }
+          />
+        )}
+      </ConfirmationTooltip>
     </Menu>
   );
 };

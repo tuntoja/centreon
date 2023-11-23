@@ -27,7 +27,7 @@ interface DashboardItemProps {
   style?: CSSProperties;
 }
 
-const Item = forwardRef(
+const Item = forwardRef<HTMLDivElement, DashboardItemProps>(
   (
     {
       children,
@@ -67,14 +67,17 @@ const Item = forwardRef(
             width: `calc(${prop('width', style) || '0px'} - 12px)`
           }}
         >
-          <Card className={classes.widgetContainer}>
+          <Card
+            className={classes.widgetContainer}
+            data-padding={!disablePadding}
+          >
             {header && (
-              <div
-                {...listeners}
-                className={classes.widgetHeader}
-                data-canMove={canMove}
-                data-testid={`${id}_move_panel`}
-              >
+              <div className={classes.widgetHeader} data-canMove={canMove}>
+                <div
+                  {...listeners}
+                  className={classes.widgetHeaderDraggable}
+                  data-testid={`${id}_move_panel`}
+                />
                 {header}
               </div>
             )}

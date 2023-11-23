@@ -15,7 +15,7 @@ import {
   labelViewWidgetProperties
 } from '../translatedLabels';
 import Title from '../../components/Title';
-import { editProperties } from '../useCanEditDashboard';
+import { editProperties } from '../hooks/useCanEditDashboard';
 import { isSidebarOpenAtom } from '../../../Navigation/navigationAtoms';
 
 import useWidgetForm from './useWidgetModal';
@@ -107,9 +107,7 @@ const AddWidgetModal = (): JSX.Element | null => {
                   <Paper className={classes.preview}>
                     <Preview />
                   </Paper>
-                  <div className={classes.widgetDataset}>
-                    <WidgetData />
-                  </div>
+                  <WidgetData />
                 </div>
               </div>
             </Modal.Body>
