@@ -3,8 +3,7 @@ import { useEffect } from 'react';
 import { Tooltip } from '@visx/visx';
 import { isNil } from 'ramda';
 
-import { useLocaleDateTimeFormat } from '@centreon/ui';
-
+import { useLocaleDateTimeFormat } from '../../../..';
 import { margin, timeFormat } from '../../common/index';
 
 import { TooltipAnchorModel, UseTooltipAnchorPointResult } from './models';

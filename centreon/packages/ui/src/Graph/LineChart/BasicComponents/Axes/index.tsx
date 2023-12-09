@@ -2,8 +2,7 @@ import { Axis } from '@visx/visx';
 import { ScaleLinear } from 'd3-scale';
 import { isNil } from 'ramda';
 
-import { useLocaleDateTimeFormat } from '@centreon/ui';
-
+import { useLocaleDateTimeFormat } from '../../../..';
 import { getXAxisTickFormat } from '../../helpers';
 import { GraphInterval } from '../../models';
 import { getUnits } from '../../../common/timeSeries';

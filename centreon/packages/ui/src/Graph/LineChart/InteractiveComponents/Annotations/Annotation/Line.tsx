@@ -4,8 +4,7 @@ import { pick } from 'ramda';
 import { useAtomValue } from 'jotai';
 import { makeStyles } from 'tss-react/mui';
 
-import { useLocaleDateTimeFormat, useMemoComponent } from '@centreon/ui';
-
+import { useLocaleDateTimeFormat, useMemoComponent } from '../../../../..';
 import {
   annotationHoveredAtom,
   getIconColorDerivedAtom,

@@ -17,10 +17,12 @@ import { autocompleteClasses } from '@mui/material/Autocomplete';
 import { ThemeOptions } from '@mui/material/styles/createTheme';
 
 import { ThemeMode, userAtom } from '@centreon/ui-context';
-import RobotoLightWoff2 from '@centreon/ui/fonts/roboto-light-webfont.woff2';
-import RobotoRegularWoff2 from '@centreon/ui/fonts/roboto-regular-webfont.woff2';
-import RobotoMediumWoff2 from '@centreon/ui/fonts/roboto-medium-webfont.woff2';
-import RobotoBoldWoff2 from '@centreon/ui/fonts/roboto-bold-webfont.woff2';
+
+import '@fontsource/roboto/100.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 import { getPalette } from './palettes';
 
@@ -159,30 +161,6 @@ export const getTheme = (mode: ThemeMode): ThemeOptions => ({
           height: 100%;
           padding: 0;
           width: 100%;
-        }
-        @font-face {
-          font-family: 'Roboto';
-          font-style: normal;
-          font-weight: 300;
-          src: local('Roboto'), local('Roboto-Light'), url(${RobotoLightWoff2}) format('woff2');
-        }
-        @font-face {
-          font-family: 'Roboto';
-          font-style: normal;
-          font-weight: 400;
-          src: local('Roboto'), local('Roboto-Regular'), url(${RobotoRegularWoff2}) format('woff2');
-        }
-        @font-face {
-          font-family: 'Roboto';
-          font-style: normal;
-          font-weight: 500;
-          src: local('Roboto'), local('Roboto-Medium'), url(${RobotoMediumWoff2}) format('woff2');
-        }
-        @font-face {
-          font-family: 'Roboto';
-          font-style: normal;
-          font-weight: 700;
-          src: local('Roboto'), local('Roboto-Bold'), url(${RobotoBoldWoff2}) format('woff2');
         }
       `
     },

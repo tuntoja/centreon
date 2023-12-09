@@ -9,8 +9,7 @@ import {
   buildListingEndpoint,
   useFetchQuery,
   useIntersectionObserver
-} from '@centreon/ui';
-
+} from '..';
 import type { Listing } from '../api/models';
 import { Parameters } from '../api/buildListingEndpoint/models';
 

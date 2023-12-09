@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom';
 
 import { List, ListItem } from '@mui/material';
 
-import { SeverityCode, getStatusColors } from '@centreon/ui';
 import { ThemeMode } from '@centreon/ui-context';
+
+import { SeverityCode, getStatusColors } from '..';
 
 const useStyles = makeStyles()((theme) => ({
   count: {

@@ -3,8 +3,7 @@ import { isNil } from 'ramda';
 
 import Typography from '@mui/material/Typography';
 
-import { useLocaleDateTimeFormat, useMemoComponent } from '@centreon/ui';
-
+import { useLocaleDateTimeFormat, useMemoComponent } from '../../..';
 import { useStyles } from '../LineChart.styles';
 import useTickGraph from '../InteractiveComponents/AnchorPoint/useTickGraph';
 import { LineChartHeader } from '../models';

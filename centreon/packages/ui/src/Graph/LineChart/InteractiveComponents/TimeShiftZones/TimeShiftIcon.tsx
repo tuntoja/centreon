@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { makeStyles } from 'tss-react/mui';
 
-import { useMemoComponent } from '@centreon/ui';
+import { useMemoComponent } from '../../../..';
 
 import { TimeShiftDirection } from './models';
 

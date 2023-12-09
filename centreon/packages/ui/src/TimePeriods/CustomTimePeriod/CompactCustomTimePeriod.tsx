@@ -4,8 +4,7 @@ import { useTranslation } from 'react-i18next';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import { Button, Typography } from '@mui/material';
 
-import { dateTimeFormat, useLocaleDateTimeFormat } from '@centreon/ui';
-
+import { dateTimeFormat, useLocaleDateTimeFormat } from '../..';
 import { customTimePeriodAtom } from '../timePeriodsAtoms';
 import {
   labelCompactTimePeriod,

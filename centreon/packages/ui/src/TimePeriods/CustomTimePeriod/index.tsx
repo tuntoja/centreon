@@ -2,8 +2,7 @@ import { MouseEvent, useState } from 'react';
 
 import { useAtomValue, useSetAtom } from 'jotai';
 
-import { useDebounce } from '@centreon/ui';
-
+import { useDebounce } from '../..';
 import {
   changeCustomTimePeriodDerivedAtom,
   customTimePeriodAtom

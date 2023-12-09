@@ -3,7 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 
 import { Badge, Tooltip } from '@mui/material';
 
-import { getStatusColors, SeverityCode } from '@centreon/ui';
+import { getStatusColors, SeverityCode } from '..';
 
 export interface StyleProps {
   severityCode?: SeverityCode | null;

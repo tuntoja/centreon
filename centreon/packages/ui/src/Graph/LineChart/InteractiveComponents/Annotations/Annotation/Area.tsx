@@ -4,8 +4,7 @@ import { max, pick, prop } from 'ramda';
 import { useAtom, useAtomValue } from 'jotai';
 import { makeStyles } from 'tss-react/mui';
 
-import { useLocaleDateTimeFormat, useMemoComponent } from '@centreon/ui';
-
+import { useLocaleDateTimeFormat, useMemoComponent } from '../../../../..';
 import { labelFrom, labelTo } from '../../../translatedLabels';
 import {
   annotationHoveredAtom,

@@ -5,8 +5,7 @@ import { useAtomValue } from 'jotai';
 
 import { Box, alpha, useTheme } from '@mui/material';
 
-import { useMemoComponent } from '@centreon/ui';
-
+import { useMemoComponent } from '../../..';
 import { maxLinesDisplayedLegend } from '../common';
 import { formatMetricValue } from '../../common/timeSeries';
 import { Line, TimeValue } from '../../common/timeSeries/models';
