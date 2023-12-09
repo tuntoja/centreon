@@ -20,6 +20,9 @@
   "exclude": [
     "./node_modules",
     "./dist",
-    "../../node_modules"
+    "../../node_modules",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.stories.tsx"
   ],
 }
