@@ -5,7 +5,7 @@ import { Typography } from '@mui/material';
 
 import FluidTypography from '../Typography/FluidTypography';
 
-import { DashboardLayout } from '.';
+import DashboardLayout from '.';
 
 interface CustomLayout extends Layout {
   content: string;

@@ -14,7 +14,7 @@ import { useMemoComponent } from '../utils';
 
 import { useDashboardItemStyles } from './Dashboard.styles';
 
-interface DashboardItemProps {
+type DashboardItemProps = {
   canMove?: boolean;
   children: ReactElement;
   className?: string;
@@ -25,9 +25,9 @@ interface DashboardItemProps {
   onMouseUp?: (e: MouseEvent<HTMLDivElement>) => void;
   onTouchEnd?: (e) => void;
   style?: CSSProperties;
-}
+};
 
-const Item = forwardRef<HTMLDivElement, DashboardItemProps>(
+export const Item = forwardRef<HTMLDivElement, DashboardItemProps>(
   (
     {
       children,
@@ -96,5 +96,3 @@ const Item = forwardRef<HTMLDivElement, DashboardItemProps>(
     });
   }
 );
-
-export default Item;

@@ -1,9 +1,11 @@
-import Layout from './Layout';
-import Item from './Item';
+import { DashboardLayout as Layout } from './Layout';
+import { Item } from './Item';
 
 export * from './utils';
 
-export const DashboardLayout = {
+const DashboardLayout = {
   Item,
   Layout
 };
+
+export default DashboardLayout;

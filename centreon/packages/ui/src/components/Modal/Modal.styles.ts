@@ -49,7 +49,6 @@ const useStyles = makeStyles<{
     }
   },
   modalActions: {
-    bottom: 0,
     bottom: theme.spacing(2),
     display: 'flex',
     flexDirection: 'row',

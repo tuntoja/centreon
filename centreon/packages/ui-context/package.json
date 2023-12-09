@@ -2,12 +2,19 @@
   "name": "@centreon/ui-context",
   "version": "24.4.0",
   "description": "Centreon UI shared context",
-  "main": "src/index.ts",
+  "main": "dist/index.umd.js",
   "keywords": [],
   "author": "centreon@centreon.com",
   "license": "GPL-2.0",
   "scripts": {
+    "build": "vite build",
+    "build:dev": "vite build -m development",
     "eslint": "eslint ./src --ext .ts --max-warnings 0",
     "eslint:fix": "pnpm eslint --fix"
+  },
+  "devDependencies": {
+    "speed-measure-vite-plugin": "^0.1.2",
+    "vite": "^4.3.5",
+    "vite-plugin-dts": "^3.6.4"
   }
 }

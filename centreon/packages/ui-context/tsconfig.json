@@ -1,0 +1,26 @@
+{
+  "extends": "../js-config/tsconfig/index.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "typeRoots": [
+      "./src/@types",
+      "./node_modules/@types"
+    ],
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "pretty": true,
+    "types": [],
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "types",
+    "emitDeclarationOnly": true
+  },
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./dist",
+    "../../node_modules"
+  ],
+}

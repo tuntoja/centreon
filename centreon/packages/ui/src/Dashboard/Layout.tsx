@@ -15,15 +15,15 @@ import Grid from './Grid';
 
 const ReactGridLayout = WidthProvider(GridLayout);
 
-interface DashboardLayoutProps<T> {
+type DashboardLayoutProps<T> = {
   changeLayout?: (newLayout: Array<Layout>) => void;
   children: Array<JSX.Element>;
   displayGrid?: boolean;
   isStatic?: boolean;
   layout: Array<T>;
-}
+};
 
-const DashboardLayout = <T extends Layout>({
+export const DashboardLayout = <T extends Layout>({
   children,
   changeLayout,
   displayGrid,
@@ -75,5 +75,3 @@ const DashboardLayout = <T extends Layout>({
     memoProps: [columns, layout, displayGrid, isStatic]
   });
 };
-
-export default DashboardLayout;

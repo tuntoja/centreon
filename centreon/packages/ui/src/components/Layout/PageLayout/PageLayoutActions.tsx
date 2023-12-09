@@ -2,10 +2,10 @@ import { ReactElement, ReactNode } from 'react';
 
 import { useStyles } from './PageLayout.styles';
 
-interface PageLayoutActionsProps {
+type PageLayoutActionsProps = {
   children: Array<ReactNode> | ReactNode;
   rowReverse?: boolean;
-}
+};
 
 export const PageLayoutActions = ({
   children,
