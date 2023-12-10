@@ -36,6 +36,7 @@ module.exports = (jscTransformConfiguration, enableCoverage = false) =>
       ],
       resolve: {
         alias: {
+          '@centreon/ui': path.resolve(__dirname, 'packages', 'ui', 'src'),
           'centreon-widgets': path.resolve(__dirname, 'www', 'widgets', 'src')
         },
         modules: [path.resolve(__dirname, '.'), 'node_modules']

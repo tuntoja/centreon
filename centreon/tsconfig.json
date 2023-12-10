@@ -7,7 +7,7 @@
       "./node_modules/@types"
     ],
     "paths": {
-      "@centreon/ui/components": ["./packages/ui/src/components"]
+      "@centreon/ui/components": ["./packages/ui/src/components"],
     }
   },
   "include": [
