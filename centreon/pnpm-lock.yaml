@@ -799,6 +799,9 @@ importers:
       '@storybook/theming':
         specifier: ^7.0.9
         version: 7.5.3(react-dom@18.2.0)(react@18.2.0)
+      '@swc/cli':
+        specifier: ^0.1.61
+        version: 0.1.62(@swc/core@1.3.100)
       '@swc/core':
         specifier: ^1.3.100
         version: 1.3.100
@@ -8230,6 +8233,26 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
+    dev: true
+
+  /@swc/cli@0.1.62(@swc/core@1.3.100):
+    resolution: {integrity: sha512-kOFLjKY3XH1DWLfXL1/B5MizeNorHR8wHKEi92S/Zi9Md/AK17KSqR8MgyRJ6C1fhKHvbBCl8wboyKAFXStkYw==}
+    engines: {node: '>= 12.13'}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': ^1.2.66
+      chokidar: ^3.5.1
+    peerDependenciesMeta:
+      chokidar:
+        optional: true
+    dependencies:
+      '@mole-inc/bin-wrapper': 8.0.1
+      '@swc/core': 1.3.100
+      commander: 7.2.0
+      fast-glob: 3.3.2
+      semver: 7.5.4
+      slash: 3.0.0
+      source-map: 0.7.4
     dev: true
 
   /@swc/cli@0.1.62(@swc/core@1.3.96):

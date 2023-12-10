@@ -1,0 +1,16 @@
+{
+  "exclude": [".*\\.stories.tsx$", ".*\\.test.tsx?$", "__mocks__"],
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": false,
+      "dynamicImport": true
+    }
+  },
+  "minify": true,
+  "module": {
+    "type": "es6"
+  },
+  "sourceMaps": true
+}

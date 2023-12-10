@@ -9,13 +9,9 @@ import svg from 'rollup-plugin-svg';
 
 import pkg from './package.json' assert { type: 'json' };
 
-const input = './src/index.ts';
+const input = './src/';
 
 const external = (id) => !id.startsWith('.') && !path.isAbsolute(id);
-
-const umdGlobals = {
-  react: 'React'
-};
 
 const swcConfig = swc({
   exclude: /node_modules/,
@@ -25,8 +21,9 @@ const swcConfig = swc({
     parser: {
       syntax: "typescript",
       tsx: true,
+    },
   },
-},
+  sourceMaps: true,
   tsconfig: 'tsconfig.json'
 })
 
@@ -37,7 +34,26 @@ export default [
     output: {
       file: pkg.main,
       format: 'cjs',
-      sourcemap: true
+      sourcemap: true,
+      sourcemapFileNames: '[name].[format].map.js'
+    },
+    plugins: [
+      typescript(),
+      svg(),
+      swcConfig,
+      nodeResolve(),
+      commonjs(),
+      visualizer()
+    ]
+  },
+  {
+    external,
+    input,
+    output: {
+      file: pkg.module,
+      format: 'es',
+      sourcemap: true,
+      sourcemapFileNames: '[name].[format].map.js'
     },
     plugins: [
       typescript(),
