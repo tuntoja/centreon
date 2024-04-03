@@ -1159,7 +1159,7 @@ function install_central() {
 		CENTREON_PKG="centreon"
 		CENTREON_DBMS_PKG="centreon-mariadb"
 	else
-		CENTREON_PKG="centreon-central"
+		CENTREON_PKG="centreon"
 		CENTREON_DBMS_PKG="centreon-mysql"
 	fi
 
