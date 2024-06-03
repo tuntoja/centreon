@@ -18,7 +18,7 @@
 								"id": "58e1d086-076b-4607-98bf-93482d5724f4",
 								"exec": [
 									"const responseJson = pm.response.json();\r",
-									"console.log('test commit')\r",
+									"console.log('test change line')\r",
 									"pm.test(\"Login successful. The account displayed in response matches with credentials and has admin rights.\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"    pm.expect(responseJson.contact.alias).to.eql(pm.environment.get('api_login'));\r",
