@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "ebcbd1dd-32c1-4290-a61c-b426ec57fffd",
+		"_postman_id": "d4e996a3-f533-4c49-a1c2-e691df2bc45c",
 		"name": "03 - Local Provider Configuration",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "16182525",
-		"_collection_link": "https://centreon-api-v2-configuration.postman.co/workspace/Migration-of-%2522behat%2522-tests~e335ae07-f9ab-4b8d-bc6c-19b9f0078df4/collection/16182525-ebcbd1dd-32c1-4290-a61c-b426ec57fffd?action=share&source=collection_link&creator=16182525"
+		"_uid": "28117716-d4e996a3-f533-4c49-a1c2-e691df2bc45c"
 	},
 	"item": [
 		{
@@ -27,10 +26,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0a02ae85-3283-4d5c-84b8-ed0842eb322f"
 							}
 						}
 					],
+					"id": "05798960-e63a-4bce-9890-8a8a96744cd5",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -89,10 +90,12 @@
 									"    );\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "52f21199-8d40-468c-8d12-57d6c8c732a0"
 							}
 						}
 					],
+					"id": "dab64a55-52c5-4152-9aaa-8712806435ab",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -135,10 +138,12 @@
 									"    pm.response.to.have.status(204);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fb9acd01-9ac0-4f22-ac5b-9e2692395301"
 							}
 						}
 					],
+					"id": "7df508b8-8229-46f8-bb16-5991690ff9b4",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -199,10 +204,12 @@
 									"    });\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4bd7932b-52eb-4a5c-abca-1c20ef52662e"
 							}
 						}
 					],
+					"id": "5b43a155-18c1-4c30-959f-bbfbdcf041c1",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -248,7 +255,8 @@
 									"  pm.expect(responseJson).to.be.eql(\"Your password must be 13 characters long and must contain : uppercase characters, numbers.\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6f5d37e7-6dc0-41e5-84c3-44d1d3d7ef42"
 							}
 						},
 						{
@@ -257,10 +265,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "dc569487-8754-4841-9c80-6fa1e5522e49"
 							}
 						}
 					],
+					"id": "5952ee28-6aa5-41f0-80d9-b984284305b5",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -288,7 +298,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "dc3ceace-ee0a-459f-b45b-f0a5713f71b3"
 		},
 		{
 			"name": "0302 - Update Local Provider Configuration information with invalid properties",
@@ -307,10 +318,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[password_security_policy.password_min_length] The property password_min_length is required\\n[password_security_policy.has_uppercase] The property has_uppercase is required\\n[password_security_policy.has_lowercase] The property has_lowercase is required\\n[password_security_policy.has_number] The property has_number is required\\n[password_security_policy.has_special_character] The property has_special_character is required\\n[password_security_policy.attempts] The property attempts is required\\n[password_security_policy.blocking_duration] The property blocking_duration is required\\n[password_security_policy.password_expiration] The property password_expiration is required\\n[password_security_policy.can_reuse_passwords] The property can_reuse_passwords is required\\n[password_security_policy.delay_before_new_password] The property delay_before_new_password is required\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ea1715e3-e1b9-4cec-87c1-f4d1f5be9de0"
 							}
 						}
 					],
+					"id": "3d5bde01-7f12-4bfe-a8e6-973c59e327ea",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -355,10 +368,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[password_security_policy.password_min_length] Must have a minimum value of 8\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "67dc2a88-b199-43a5-ae77-50a0f49020dd"
 							}
 						}
 					],
+					"id": "9a7e63bf-b601-4a18-9d48-3d7bfa2180a0",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -403,10 +418,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[password_security_policy.password_min_length] Must have a maximum value of 128\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0dcb454f-6792-40af-8257-00f8c9a82ff6"
 							}
 						}
 					],
+					"id": "0b83eeff-1181-4e94-a61c-c4ba38bc78b6",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -451,10 +468,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[password_security_policy.attempts] Must have a minimum value of 1\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "682e4154-8667-4ec5-a752-45491c48367c"
 							}
 						}
 					],
+					"id": "1a008023-dbcd-4162-afa2-15a00e8f1bb6",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -499,10 +518,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[password_security_policy.attempts] Must have a maximum value of 10\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "dd6fd8b8-83d5-4813-aa5f-4079160520b1"
 							}
 						}
 					],
+					"id": "edbb494f-1fa0-4a46-8a13-c639febfb51e",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -547,10 +568,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[password_security_policy.blocking_duration] Must have a maximum value of 604800\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "978a8bf6-1712-41cb-8151-635eb9a2a901"
 							}
 						}
 					],
+					"id": "4b05f1e6-8a70-45a8-8573-cd18193c03ff",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -595,10 +618,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[password_security_policy.password_expiration.expiration_delay] Must have a minimum value of 604800\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9dc0af5c-fa05-4dc2-b93c-cf4db114b165"
 							}
 						}
 					],
+					"id": "0bf83590-14c5-43f8-a356-c5c5793df57a",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -643,10 +668,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[password_security_policy.password_expiration.expiration_delay] Must have a maximum value of 31536000\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "26dd831a-7c7e-4698-b45a-fdfdf0332f55"
 							}
 						}
 					],
+					"id": "3eea26ce-fac1-4431-98f4-1f28775e5924",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -691,10 +718,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[password_security_policy.delay_before_new_password] Must have a minimum value of 3600\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "18ad8f18-339c-4e8f-814d-4d8d8033ef76"
 							}
 						}
 					],
+					"id": "f879d63d-288c-4f9d-aa00-b1f487c8ae05",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -739,10 +768,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[password_security_policy.delay_before_new_password] Must have a maximum value of 604800\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "03278e49-96cc-43fd-96f0-d5f070f923cf"
 							}
 						}
 					],
+					"id": "218c204e-966a-4853-a9d0-503f30746c08",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -803,10 +834,12 @@
 									"    });\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "153b4f38-4166-4a3e-88c2-4f8feb19ce0b"
 							}
 						}
 					],
+					"id": "9eac36ca-7aac-4dd1-9e5b-0844cf67f03a",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -838,7 +871,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "675a6a14-7200-4c19-ba7e-e00b5876ea16"
 		},
 		{
 			"name": "0303 - Update and retrieve Local Provider Configuration information as logged non-admin user without Reach API rights",
@@ -854,7 +888,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ea9676dc-28d0-4be3-a03a-fb53feda143f"
 							}
 						},
 						{
@@ -863,10 +898,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ee0e2eba-ffb5-462d-9f26-b33a05b9e625"
 							}
 						}
 					],
+					"id": "94860b73-fed5-4c7d-afb1-f391f588cf2a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -910,10 +947,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b57af2a1-7282-4e6f-91bf-5cc4ce375952"
 							}
 						}
 					],
+					"id": "a0ec0abb-f6f0-4557-836a-85e18d99bc58",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -989,10 +1028,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f3af1a12-681f-4e3a-800a-42af5021d090"
 							}
 						}
 					],
+					"id": "46b05436-f5a4-4314-b05e-cb4c9e34d15b",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1031,10 +1072,12 @@
 									"    pm.response.to.have.status(403);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1f99468d-ca57-4e63-a9f4-85df6bf65f27"
 							}
 						}
 					],
+					"id": "d3282f66-944a-4ed7-ae09-09e96b988395",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1076,10 +1119,12 @@
 									"    pm.response.to.have.status(403);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ed2d8ac1-f623-46e2-9853-2750586a2dde"
 							}
 						}
 					],
+					"id": "11a9eeb9-c3c4-451a-b426-9c1cf1bf1e04",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -1127,10 +1172,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9edb8b3d-ecd9-435f-a12a-305924e1e3aa"
 							}
 						}
 					],
+					"id": "b7336689-d22e-440d-9db8-4cd774623b60",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1189,7 +1236,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "770c307e-630b-4ba8-9893-282e17a2982a"
 		},
 		{
 			"name": "0304 - Update and retrieve Local Provider Configuration information as logged non-admin user with Reach API rights",
@@ -1211,10 +1259,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "033cbaa0-7ff9-4882-bfb7-cb1e5b137a6f"
 							}
 						}
 					],
+					"id": "5f138964-b882-4b23-ae5e-111a94482d49",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1251,7 +1301,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3ee47e6d-3cdd-4294-af25-555aacb32684"
 							}
 						},
 						{
@@ -1262,10 +1313,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c0741f20-22db-41ab-8359-f990f2613f01"
 							}
 						}
 					],
+					"id": "8a0d4571-561e-429f-927d-50cdb529a3b3",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1302,7 +1355,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f9da2700-3590-48b2-9eb7-9bb8d883f8ed"
 							}
 						},
 						{
@@ -1313,10 +1367,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "07d1b2ed-5d74-46b4-b181-0d282d8c3ad9"
 							}
 						}
 					],
+					"id": "14b749ff-93f9-4075-8ea6-156457c9c01b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1353,7 +1409,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2f2649e9-adc7-4b11-ac76-b85e31354f93"
 							}
 						},
 						{
@@ -1364,10 +1421,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5dc7a5ba-b364-4e1f-898c-8ed0c7b8d1b5"
 							}
 						}
 					],
+					"id": "8b027ef0-03cf-4939-8e97-3b87163223de",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1404,7 +1463,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "657aa1f9-6d5d-471d-ad31-4e6a92d580d0"
 							}
 						},
 						{
@@ -1415,10 +1475,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a5ab60f9-1705-4f7b-8355-4edbcbc7cf59"
 							}
 						}
 					],
+					"id": "5cc7251a-5b0f-4729-b09c-d6e3d9e0d706",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1455,7 +1517,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e7d4e703-0a19-41ca-9459-2e831e5c0a48"
 							}
 						},
 						{
@@ -1466,10 +1529,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2450a0f5-f0e2-44ea-891b-de9bb05391b0"
 							}
 						}
 					],
+					"id": "26b84079-fab9-4781-898d-1a802d6cc37a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1513,10 +1578,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e9be32e7-bc77-41ca-902b-74edccaf2993"
 							}
 						}
 					],
+					"id": "baa91358-6c53-4e69-8869-dd22b5483a4a",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1592,10 +1659,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "54a95713-73fd-45d5-bdd8-205adc255cf4"
 							}
 						}
 					],
+					"id": "9507a583-9d9a-4f4e-92c1-5f1ed09beb44",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1634,10 +1703,12 @@
 									"    pm.response.to.have.status(204);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "75cf5164-9123-42ff-a002-d201785247a1"
 							}
 						}
 					],
+					"id": "5a9335c4-0043-48be-8165-a054eb63e5dc",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1699,10 +1770,12 @@
 									"    );\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "237748e1-5db6-463b-a5d8-faf8695d968b"
 							}
 						}
 					],
+					"id": "120b755e-6a08-4f15-8568-9e837677ae48",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -1750,10 +1823,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8626f50f-455f-4498-9bdd-93e1b0795725"
 							}
 						}
 					],
+					"id": "c6447ed1-cf37-4771-a14f-ec01b42f21a7",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1812,7 +1887,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "f371ee23-f3bc-4513-b38e-cd681e6d39bd"
 		}
 	],
 	"auth": {
@@ -1837,7 +1913,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "88fbf363-8bd2-403f-81fa-10bdee36efd3"
 			}
 		},
 		{
@@ -1846,7 +1923,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "e264cb86-330a-4cca-aa5a-e146f9b872c7"
 			}
 		}
 	]

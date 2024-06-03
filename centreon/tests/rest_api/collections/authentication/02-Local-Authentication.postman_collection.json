@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "7a4a5e81-a3a7-4855-9383-885e133c3408",
+		"_postman_id": "09244c37-2a09-448c-8d07-9c2113e65337",
 		"name": "02 - Local Authentication",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "16182525",
-		"_collection_link": "https://centreon-api-v2-configuration.postman.co/workspace/Migration-of-%2522behat%2522-tests~e335ae07-f9ab-4b8d-bc6c-19b9f0078df4/collection/16182525-7a4a5e81-a3a7-4855-9383-885e133c3408?action=share&source=collection_link&creator=16182525"
+		"_uid": "28117716-09244c37-2a09-448c-8d07-9c2113e65337"
 	},
 	"item": [
 		{
@@ -27,10 +26,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4b9f9e32-bb9a-414b-9cad-1996ec87d90e"
 							}
 						}
 					],
+					"id": "21e63d4d-9c10-495a-8e47-2ac64efc16c6",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -69,7 +70,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2ca43a81-ef75-4415-a3dc-fb21e701e75f"
 							}
 						},
 						{
@@ -79,10 +81,12 @@
 									"pm.collectionVariables.set(\"api_login_user_non_admin\", \"user-non-admin\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "75d2a886-9ff7-4709-b211-aad06fbebe1c"
 							}
 						}
 					],
+					"id": "3edb9fc4-9a9d-483e-ba98-ce6fedce1e13",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -119,7 +123,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1c14e156-4528-4882-8825-0919f415a70c"
 							}
 						},
 						{
@@ -130,10 +135,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4ea1871b-0128-4f7d-9f3a-bb6adc7502b9"
 							}
 						}
 					],
+					"id": "6198c755-4640-4011-b41b-a71620adeb8c",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -170,7 +177,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f7dfdc74-21ea-47a8-8478-f9640a54aee0"
 							}
 						},
 						{
@@ -181,10 +189,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ded6a2ca-fcf8-4589-abfd-c51b88af3eb5"
 							}
 						}
 					],
+					"id": "119514d3-c9f0-40c7-a305-ba44484efffd",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -228,10 +238,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0cbeb62b-a520-4021-90ce-263a6c4ea29d"
 							}
 						}
 					],
+					"id": "989953f7-2244-4be3-831a-296182cba720",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -290,7 +302,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "e003ece7-665f-451f-b5f6-3702b690804e"
 		},
 		{
 			"name": "0202 - Wrong credentials for admin once",
@@ -309,10 +322,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"Authentication failed\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "269886ff-8595-409d-9b04-7bd077149a10"
 							}
 						}
 					],
+					"id": "63e1cd26-41e7-4123-8a39-c89a8f788f75",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -340,7 +355,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "fbe9b8b8-cbd2-472c-a92d-c04bdb4592b0"
 		},
 		{
 			"name": "0203 - Successful login with admin after 1 wrong",
@@ -362,10 +378,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bf8d5226-baa0-4e1a-910f-fd906b56f446"
 							}
 						}
 					],
+					"id": "d57a67bf-0b95-44ca-88cd-d10dab541e86",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -409,10 +427,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e6362e34-d7de-49ed-891e-6a69dec8c261"
 							}
 						}
 					],
+					"id": "89f5b053-b918-4060-9852-d393ca26f392",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -471,7 +491,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "d145d4d8-290a-4b6e-be77-e98203d5cc63"
 		},
 		{
 			"name": "0204 - Wrong credentials for admin multiple times",
@@ -506,10 +527,12 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "86470492-6c67-4c1f-89bd-345c9a229647"
 							}
 						}
 					],
+					"id": "27090bb8-99e1-4776-a404-8b4e4f04e8af",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -551,10 +574,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"Authentication failed\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7b987ba0-8562-43b4-b3a1-a07524cd77b7"
 							}
 						}
 					],
+					"id": "50c08beb-afcf-43bf-9977-23cb3b22fa63",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -582,7 +607,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "5e39cd2e-73b1-49df-a21c-e3460abe3a83"
 		},
 		{
 			"name": "0205 - Wrong credentials for user once",
@@ -601,10 +627,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"Authentication failed\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ee60febf-3214-4211-ab31-e44dd826c5b4"
 							}
 						}
 					],
+					"id": "203f60eb-2009-49f4-81b7-f55da7ba5c3c",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -632,7 +660,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "c6ea6096-f182-41a0-b3a6-964cd23bf25e"
 		},
 		{
 			"name": "0206 - Successful login with user after 1 wrong",
@@ -654,10 +683,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ff7501be-bd58-4aed-b308-f9bde7d1f148"
 							}
 						}
 					],
+					"id": "1f6e9287-ee70-4ad4-b9cf-a36457009672",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -701,10 +732,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "76195c31-98ef-4e8d-a017-c2d3c7ef4a53"
 							}
 						}
 					],
+					"id": "3738bd04-d912-4d5a-85c0-112a2a6bec43",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -763,7 +796,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "4192bd55-9a6c-40b6-aa1c-a45e6f89c4d3"
 		},
 		{
 			"name": "0207 - Wrong credentials for user multiple times",
@@ -798,10 +832,12 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "acefa274-f436-4231-a3b7-d1bbd972f903"
 							}
 						}
 					],
+					"id": "9cefcbb7-ce02-4f20-81a8-e9205cc1f99b",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -843,10 +879,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"Authentication failed\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1bc00b9b-b286-4f15-a246-8d7fc0c50cee"
 							}
 						}
 					],
+					"id": "d3be5f11-dd92-4d54-9c98-0dd2265c3823",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -874,7 +912,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "5f1794e9-54f4-4edf-aecb-c321bb812dfd"
 		}
 	],
 	"auth": {
@@ -899,7 +938,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "2bc6c269-a22a-4365-81da-16b8ab3f2289"
 			}
 		},
 		{
@@ -908,12 +948,14 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "442eceb4-3c31-450c-a3a0-61a201e42f16"
 			}
 		}
 	],
 	"variable": [
 		{
+			"id": "b35b43c8-df9f-4c3f-a270-7d3879622236",
 			"key": "api_login_user_non_admin",
 			"value": ""
 		}

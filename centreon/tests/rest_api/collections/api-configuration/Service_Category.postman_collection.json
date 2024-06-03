@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "f06fc448-b4e5-468d-80b6-cb1ffe044aa3",
+		"_postman_id": "33df5b01-e6bb-4e7b-9fc4-dd47f0017c69",
 		"name": "Service_Category",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "16182525",
-		"_collection_link": "https://centreon-api-v2-configuration.postman.co/workspace/API-v2~d8660f05-3c64-4c5b-af73-1a5543bff4e1/collection/16182525-f06fc448-b4e5-468d-80b6-cb1ffe044aa3?action=share&source=collection_link&creator=16182525"
+		"_uid": "28117716-33df5b01-e6bb-4e7b-9fc4-dd47f0017c69"
 	},
 	"item": [
 		{
@@ -27,10 +26,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5824ffd5-c535-4c98-9be8-7c539ed91581"
 							}
 						}
 					],
+					"id": "0a1d19f8-9d1f-4709-93d4-32f491df1675",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -58,7 +59,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "defdced3-f348-4091-976b-691623b7c47e"
 		},
 		{
 			"name": "user_with_RW_rights",
@@ -74,7 +76,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f2f718db-cfe2-403c-8959-df02a1ce52e7"
 							}
 						},
 						{
@@ -84,10 +87,12 @@
 									"pm.collectionVariables.set(\"api_login_user_RW\", \"user_with_RW_rights\");\r",
 									"pm.collectionVariables.set(\"api_password_user_RW\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e5d654b1-91db-45db-8f65-46c45b5ed35c"
 							}
 						}
 					],
+					"id": "82f66f42-77c9-4a43-98c9-33e89febb3e3",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -124,7 +129,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a004c7ce-2b20-4956-8aa9-aaa142b19809"
 							}
 						},
 						{
@@ -135,10 +141,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e39c74b8-7087-4a83-91f2-05b2eba6107e"
 							}
 						}
 					],
+					"id": "969102cb-f16c-4545-96db-69ac1cb1d836",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -175,7 +183,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "832bae5a-9582-4902-aec7-ba26ee6bbd10"
 							}
 						},
 						{
@@ -186,10 +195,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "72aa85e7-b5c5-4b89-888e-f359bc8ff016"
 							}
 						}
 					],
+					"id": "6b1355aa-2ed5-496e-920d-ad68f939afff",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -226,7 +237,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ac18b01d-4b6c-467e-9be8-d2f8b582c791"
 							}
 						},
 						{
@@ -237,10 +249,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "043080eb-fe90-489a-810a-5972d6fb0a11"
 							}
 						}
 					],
+					"id": "b674d48f-e53e-4d59-b77f-11b7416a3c35",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -277,7 +291,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3b8c7ae8-8a7f-451b-8d66-0f94263a1a53"
 							}
 						},
 						{
@@ -288,10 +303,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ec088fa9-dc4b-4847-89ba-aa9b4bdeee78"
 							}
 						}
 					],
+					"id": "1b211c38-4190-4aa0-9fc4-8b3c03f2e629",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -328,7 +345,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a51f5a5d-df45-4e63-8b97-32c940f58079"
 							}
 						},
 						{
@@ -339,10 +357,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e9f6d4c0-a273-4f1c-bf8e-095129516e28"
 							}
 						}
 					],
+					"id": "b39ee260-846f-4c68-884b-0483ecc622e8",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -379,7 +399,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7ee8678c-fb08-4a2f-91a0-bab98166db05"
 							}
 						},
 						{
@@ -390,10 +411,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b38441e4-2b65-46d5-b97b-d2edd8970b71"
 							}
 						}
 					],
+					"id": "48b9046a-cdec-4816-a9f9-6c23e221819e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -430,7 +453,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fc477eb4-639a-47dd-83e4-c33880ab5dd3"
 							}
 						},
 						{
@@ -441,10 +465,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7086a47f-def0-4c01-8376-9cbe4c34afc6"
 							}
 						}
 					],
+					"id": "7a38f2fd-e66f-483b-84b6-5f52ab823137",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -481,7 +507,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "37e5840c-5fb7-4171-bb4c-25249748c0ab"
 							}
 						},
 						{
@@ -492,10 +519,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b2da3d47-45fe-473e-8782-8e1be83fa992"
 							}
 						}
 					],
+					"id": "38e27f7c-d039-403b-aa24-bc177c1a108e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -523,7 +552,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "9d7833ed-c63a-4472-b4d2-0dff469c569b"
 		},
 		{
 			"name": "user_with_RW_rights_filters",
@@ -538,7 +568,8 @@
 									"pm.collectionVariables.set(\"api_login_user_RW_filters\", \"user_with_RW_rights_filters\");\r",
 									"pm.collectionVariables.set(\"api_password_user_RW_filters\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "25dcdbaf-ac7d-4916-82f3-2cce241c8fae"
 							}
 						},
 						{
@@ -549,10 +580,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f6635602-0069-4503-b206-d3d51c95abcd"
 							}
 						}
 					],
+					"id": "0471cd0c-22e6-4adc-921f-12875f4ceab9",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -589,7 +622,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ff6cc50f-605d-41f3-8dea-58f8dced6551"
 							}
 						},
 						{
@@ -600,10 +634,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "40db4b8c-ef3c-4b80-a7e5-84b17f138802"
 							}
 						}
 					],
+					"id": "22854030-0c0d-478c-ba22-c6dadf5f9bdb",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -640,7 +676,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ce0ffd4f-97be-4126-8400-24c5cf07f930"
 							}
 						},
 						{
@@ -651,10 +688,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "60a40f00-1395-41f6-8bd0-6eee80073e26"
 							}
 						}
 					],
+					"id": "73965934-e387-4297-8d1e-d975a36ec6e4",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -691,7 +730,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f92c2ab5-136c-465f-b8d6-e7d8863f3c84"
 							}
 						},
 						{
@@ -702,10 +742,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1ac0622e-e970-4d1e-83ef-5a5428fb879b"
 							}
 						}
 					],
+					"id": "8ae93dfa-d583-4ad2-927c-ecc59aa9abdd",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -742,7 +784,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9990880b-16f2-42b5-87ad-b85dab0c3425"
 							}
 						},
 						{
@@ -753,10 +796,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "dce394b8-e360-4b09-b9f1-892d085dac22"
 							}
 						}
 					],
+					"id": "007d8f73-1dd4-4308-a9c7-ce6c95cd5db6",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -793,7 +838,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e4261cf3-9d5d-4fd5-b381-7960db6a402c"
 							}
 						},
 						{
@@ -804,10 +850,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b467e6ac-7a6b-43e5-bdcb-8e6e681955a0"
 							}
 						}
 					],
+					"id": "144e3506-686c-42d7-86f7-d82e1b1648be",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -844,7 +892,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "752638ba-1178-4a57-b22c-279debadc19a"
 							}
 						},
 						{
@@ -855,10 +904,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8a1cb8e5-b755-43fe-8089-32f12b2e1935"
 							}
 						}
 					],
+					"id": "2e98cb67-d313-4369-9280-79d1b7aecb2b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -895,7 +946,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "167a2630-81ff-4f3b-a652-76e82f944d1a"
 							}
 						},
 						{
@@ -906,10 +958,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b1a7245b-1816-435a-9517-327c52f452fb"
 							}
 						}
 					],
+					"id": "14841f3b-1c7c-4973-bf4e-ee90c1ac0458",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -937,7 +991,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "7c0a30b3-f55d-4a30-bbf9-2f2d2400a8a1"
 		},
 		{
 			"name": "user_with_R_rights",
@@ -953,7 +1008,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4041e77f-cafe-4a15-b60e-bac5f2e0380c"
 							}
 						},
 						{
@@ -963,10 +1019,12 @@
 									"pm.collectionVariables.set(\"api_login_user_Read\", \"user_with_R_rights\");\r",
 									"pm.collectionVariables.set(\"api_password_user_Read\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ca46b841-5533-4df4-b21a-42be46f5e283"
 							}
 						}
 					],
+					"id": "8a090b6e-324d-49be-a738-c7128dc93716",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1003,7 +1061,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a96154cb-4cc9-4919-afdb-cd58b0de5014"
 							}
 						},
 						{
@@ -1014,10 +1073,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b50e660e-6523-40c2-aa49-62973e780562"
 							}
 						}
 					],
+					"id": "a779f178-5984-4835-9ee4-c661bfdd2b9d",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1054,7 +1115,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "55fde1dc-bf0b-497d-9c01-f9e09ed6e6ae"
 							}
 						},
 						{
@@ -1065,10 +1127,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "58794aa1-4568-4450-949f-83b0af6d15ab"
 							}
 						}
 					],
+					"id": "53d8b346-2819-4bb9-9da4-738f61cce05a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1105,7 +1169,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f735a6e4-6dce-41b0-b8b7-dfa86153e8e5"
 							}
 						},
 						{
@@ -1116,10 +1181,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "56875f47-eba1-4e31-aedb-ff018114f089"
 							}
 						}
 					],
+					"id": "f558bc02-685e-4a70-b26f-41cdda728c68",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1156,7 +1223,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "25387840-1409-4249-ae91-b1414eaeb20f"
 							}
 						},
 						{
@@ -1167,10 +1235,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "12ad1ea1-1e81-48dc-9046-f2865d6bcc56"
 							}
 						}
 					],
+					"id": "08872a68-0dc9-46ed-9c9a-8fb6d999fdd4",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1207,7 +1277,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d5124b62-2910-4444-a5a6-b86d254344f7"
 							}
 						},
 						{
@@ -1218,10 +1289,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e2e01f14-5a9c-47dd-ac85-29323c032bd7"
 							}
 						}
 					],
+					"id": "90af1ec7-8329-4760-8719-aec0881c9262",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1258,7 +1331,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "651a21ca-4611-4313-a4e5-5f45dae7a83d"
 							}
 						},
 						{
@@ -1269,10 +1343,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "17ba520d-5a22-4171-a149-8e93b6094da7"
 							}
 						}
 					],
+					"id": "99b41a7a-e349-4fd8-b81b-a17a7255f18a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1309,7 +1385,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2a2c5886-b7f2-413c-8c81-bcf5f71b166d"
 							}
 						},
 						{
@@ -1320,10 +1397,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a4ea9f74-aa4a-4b3a-899c-83cbf50cbaa6"
 							}
 						}
 					],
+					"id": "9e9b1b75-40c5-4707-8c83-4638d52e0343",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1360,7 +1439,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c2b12c70-7661-4c3e-84d3-4dce3b3f38f0"
 							}
 						},
 						{
@@ -1371,10 +1451,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "23ab4d7d-b6c4-4e7e-8a11-e4e471121c90"
 							}
 						}
 					],
+					"id": "c1102743-2305-4dc5-a144-b58e9154b5ea",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1402,7 +1484,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "c75cc5a6-9261-4c81-84bf-44d5a75dfebb"
 		},
 		{
 			"name": "user_with_R_rights_filters",
@@ -1418,7 +1501,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6b095281-3977-4034-b481-72b624c6e590"
 							}
 						},
 						{
@@ -1428,10 +1512,12 @@
 									"pm.collectionVariables.set(\"api_login_user_Read_filters\", \"user_with_R_rights_filters\");\r",
 									"pm.collectionVariables.set(\"api_password_user_Read_filters\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9debcd27-02cc-4d47-a31f-46e9e8b6c792"
 							}
 						}
 					],
+					"id": "cfe26d3d-82eb-4c69-83a2-07c419694877",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1468,7 +1554,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "76a5d4db-54ab-46f8-b265-78ed539322cb"
 							}
 						},
 						{
@@ -1479,10 +1566,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f0d7ba01-70ef-4ccb-962b-06a66093407a"
 							}
 						}
 					],
+					"id": "994b5682-56be-4503-a1f2-a18836fb958a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1519,7 +1608,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4977b03b-00f2-465f-88f9-5242abd0bf83"
 							}
 						},
 						{
@@ -1530,10 +1620,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5f490d36-fdc1-49ec-99fb-ce4b2b041407"
 							}
 						}
 					],
+					"id": "1c0d03da-fe2b-4b0f-b354-5c062c89dac1",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1570,7 +1662,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8d8612f9-5c49-41d4-a925-f9faca3266b6"
 							}
 						},
 						{
@@ -1581,10 +1674,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ae5c0150-5b7b-4493-a0bc-844c59a7dbf2"
 							}
 						}
 					],
+					"id": "19be3a09-8606-4778-bf58-6e85b86ef7dc",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1621,7 +1716,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "daa6df4c-b2f5-4920-b46b-da6b3295e88e"
 							}
 						},
 						{
@@ -1632,10 +1728,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bbd67eba-9713-485d-b917-a9f2bd405ebc"
 							}
 						}
 					],
+					"id": "a23fe79a-3c1c-4928-ac6e-a41ba42df255",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1672,7 +1770,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5476d85b-03f1-4131-9519-3a17b5e2f604"
 							}
 						},
 						{
@@ -1683,10 +1782,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4900da7a-90b8-47d3-8699-b6111ef23a0f"
 							}
 						}
 					],
+					"id": "d7d7c058-c151-480a-80af-dba06b720b14",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1723,7 +1824,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1bab0939-0d94-4721-8ba8-71e683ab09de"
 							}
 						},
 						{
@@ -1734,10 +1836,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d24a019d-5b83-4b94-8c77-93529b567ce0"
 							}
 						}
 					],
+					"id": "5538cba9-e4d3-4c23-aae6-430ee7fe2f2e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1765,7 +1869,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "52335578-7be2-42bb-9db1-718f50673bff"
 		},
 		{
 			"name": "user_nothing",
@@ -1781,7 +1886,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e5c23a38-d950-4086-a7b8-2488e1e3da11"
 							}
 						},
 						{
@@ -1791,10 +1897,12 @@
 									"pm.collectionVariables.set(\"api_login_user_Nothing\", \"user_nothing\");\r",
 									"pm.collectionVariables.set(\"api_password_user_Nothing\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "83fc7334-7131-4517-aceb-f77848568a4a"
 							}
 						}
 					],
+					"id": "f09d8d45-2874-47ce-a0b2-6bf313d29ed1",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1831,7 +1939,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "43c107f4-7450-4cd5-b898-452e8c817ce2"
 							}
 						},
 						{
@@ -1842,10 +1951,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fca07f5f-cef6-4553-a559-178d9be7b1fc"
 							}
 						}
 					],
+					"id": "dc83ce9b-6449-4987-8206-cb3bd23101cd",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1882,7 +1993,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "af757048-1d23-42b2-ba0f-7efbb7d4d84a"
 							}
 						},
 						{
@@ -1893,10 +2005,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4f602737-ee38-4381-b9fd-eb5aa664741b"
 							}
 						}
 					],
+					"id": "e752852f-3277-4aae-84a1-033e5de95f15",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1933,7 +2047,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6a2dbff1-7ed9-4deb-a45a-8b21133887e9"
 							}
 						},
 						{
@@ -1944,10 +2059,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3027a2d1-fa6c-4137-8749-01352c5f0e89"
 							}
 						}
 					],
+					"id": "2c713a09-d1d5-4efc-acdd-b41ef13ccb52",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1984,7 +2101,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "773e02a6-3be0-43e9-89f7-8cd077685763"
 							}
 						},
 						{
@@ -1995,10 +2113,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "cf7af4c6-38b7-4fae-9820-a09030a0ad45"
 							}
 						}
 					],
+					"id": "575ef43e-524e-4c81-bfb0-64d94c4e7115",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2035,7 +2155,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7458549c-0eaa-452a-9b07-2da88208955e"
 							}
 						},
 						{
@@ -2046,10 +2167,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a54362cb-6c5e-4149-98ff-de520c432ac6"
 							}
 						}
 					],
+					"id": "2c4467cb-adbe-472b-a139-d4dc318cfa1f",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2086,7 +2209,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2611c946-1db6-416a-b677-03105e5ac8b7"
 							}
 						},
 						{
@@ -2097,10 +2221,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6f74f3b3-9829-4e1f-87cc-cb481378335b"
 							}
 						}
 					],
+					"id": "0fc05fbc-cb20-4f06-9602-d9696abc87e4",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2137,7 +2263,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6c0d9809-431f-46ed-9313-73b7167f87f6"
 							}
 						},
 						{
@@ -2148,10 +2275,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9f633051-66f6-4008-9fa6-7a4ca569dfda"
 							}
 						}
 					],
+					"id": "c932f684-2831-4fa6-a581-412efcf9d108",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2179,7 +2308,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "3df9ad6d-fc80-4b28-9398-c56e7210fda9"
 		},
 		{
 			"name": "Service Category by Admin",
@@ -2201,10 +2331,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1a3c49ac-6995-4339-9f0f-907ab00851ad"
 							}
 						}
 					],
+					"id": "000fe88d-82ee-4aa1-9975-86a2a4519c8d",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -2254,7 +2386,8 @@
 									"    });\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "29d03044-3c3e-40d4-b054-aa3fa96303cc"
 							}
 						},
 						{
@@ -2265,10 +2398,12 @@
 									"pm.collectionVariables.set(\"ServiceCategory1Alias\", \"I'm a service category!\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9c0e8e1c-cab9-4a2f-b6da-d24dfa7dcbf1"
 							}
 						}
 					],
+					"id": "8d27431d-dfad-4753-8ce5-74ea04366224",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2355,10 +2490,12 @@
 									"\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f9ee309e-9832-496d-a880-f035d2ce5995"
 							}
 						}
 					],
+					"id": "53462965-4bb0-4df6-8032-876d9a3e565d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2416,7 +2553,8 @@
 									"    });\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "71b660e7-12e9-4ecc-b088-cf5f5b331cf7"
 							}
 						},
 						{
@@ -2427,10 +2565,12 @@
 									"pm.collectionVariables.set(\"ServiceCategory2Alias\", \"Oh I'm your second category!\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a45f2ce4-2163-4633-aac1-4b1e0ea5a1ce"
 							}
 						}
 					],
+					"id": "8cf88f06-19b5-42a9-85a7-2917974f0f44",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2524,10 +2664,12 @@
 									"\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "076f2caf-780e-476e-9ec3-aeab89e1814e"
 							}
 						}
 					],
+					"id": "a9705ec5-c0e1-444b-a0fb-ea0e73255397",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2577,7 +2719,8 @@
 									"    pm.expect(responseJson.message).to.eql(\"[name] The property name is required\\n\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a63cc154-08ff-4de6-bade-9ef4e58e8e9a"
 							}
 						},
 						{
@@ -2586,10 +2729,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "93ea4fc8-5359-4a58-b0bb-9d593a99723f"
 							}
 						}
 					],
+					"id": "41f2f008-7d57-42df-bdf1-3e76aa46e460",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2630,7 +2775,8 @@
 									"    pm.expect(responseJson.message).to.eql(\"[NewServiceCategory::name] The value \\\"\\\" is too short, it should have at least 1 characters, but only has 0 characters\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c3f11a80-542d-4f0d-9cd2-e16bc6a81cbf"
 							}
 						},
 						{
@@ -2639,10 +2785,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b470d401-b6be-41d9-a38c-d6206b1173dc"
 							}
 						}
 					],
+					"id": "1d06d57e-98c1-478e-bdf2-2618ce7de053",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2683,7 +2831,8 @@
 									"    pm.expect(responseJson.message).to.eql(\"[alias] The property alias is required\\n\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5349dd14-c688-4fcd-be10-2fa97e6a2203"
 							}
 						},
 						{
@@ -2692,10 +2841,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4a7fb1ff-7ec1-47a0-a3c4-772033b331ab"
 							}
 						}
 					],
+					"id": "244e8b7d-38d2-458b-b543-806c87b40b63",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2736,7 +2887,8 @@
 									"    pm.expect(responseJson.message).to.eql(\"[name] Boolean value found, but a string is required\\n[alias] NULL value found, but a string is required\\n[is_activated] String value found, but a boolean is required\\n\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4bf38aae-6ef6-426a-b202-021a381ba898"
 							}
 						},
 						{
@@ -2745,10 +2897,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7a279537-ff96-4a58-a414-1cd7cb4205be"
 							}
 						}
 					],
+					"id": "a2d3c7c7-7145-4402-8546-a6f57158ea1e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2797,7 +2951,8 @@
 									"    });\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bb9dd5b6-2741-4022-82a0-07065abdfbb3"
 							}
 						},
 						{
@@ -2808,10 +2963,12 @@
 									"pm.collectionVariables.set(\"ServiceCategory3Alias\", \"Finally, a third successful category!\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3b6c12d8-65a1-4659-b809-d8f2d50b3c6a"
 							}
 						}
 					],
+					"id": "fbeb5d1e-46a5-4e49-8fb0-66c8f70ccd6b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2912,10 +3069,12 @@
 									"\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ee81c795-97ba-4f25-bb7f-0482953b5b81"
 							}
 						}
 					],
+					"id": "6562f9bc-d455-4bee-b7ae-067733794ba9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2965,7 +3124,8 @@
 									"    pm.collectionVariables.unset(\"ServiceCategory1Id\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ed85662e-05e7-45c8-8e21-eb25b56f250d"
 							}
 						},
 						{
@@ -2974,10 +3134,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9f76ace9-274e-400d-8908-7138ad7d4648"
 							}
 						}
 					],
+					"id": "49111f39-80e5-48f4-a380-7ab07915250f",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -3072,10 +3234,12 @@
 									"\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "cdfa764b-6e2c-4cdb-a779-e99b3bbac780"
 							}
 						}
 					],
+					"id": "7d964dbb-aa8d-4cc2-a481-62caf386dc72",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3127,10 +3291,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ce5d239d-ab8e-4a44-9853-1138be494e36"
 							}
 						}
 					],
+					"id": "4f3328a8-113f-4c73-a2c9-27755b56b6d8",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3189,7 +3355,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "47ca808c-e3d7-470b-970a-bf63566c4bb5"
 		},
 		{
 			"name": "Service Category by user R/W without filters",
@@ -3211,10 +3378,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b493dc68-247c-44be-82c6-abc25443b2fa"
 							}
 						}
 					],
+					"id": "ced8ac93-1c0e-46eb-ab88-e1c55472ec81",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -3265,7 +3434,8 @@
 									"\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "76ce4752-f6c8-42dc-b9ba-b1e4df80bbce"
 							}
 						},
 						{
@@ -3276,10 +3446,12 @@
 									"pm.collectionVariables.set(\"ServiceCategory4Alias\", \"I'm the fourth successful category!\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0483cd2f-61cc-4f5e-9ba2-da56dc3217de"
 							}
 						}
 					],
+					"id": "e3281190-f052-4346-9757-6fc393c674bf",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3380,10 +3552,12 @@
 									"\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bf1ed42d-3f5f-41f7-867d-d038b6e93467"
 							}
 						}
 					],
+					"id": "115fda57-d6b1-49f3-8cba-97cd06bf3b45",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3433,7 +3607,8 @@
 									"    pm.collectionVariables.unset(\"ServiceCategory2Id\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "25192686-5c99-4c93-9323-e23e9ec96662"
 							}
 						},
 						{
@@ -3442,10 +3617,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "838e6bca-45a2-415a-a4b5-69140adb6aa6"
 							}
 						}
 					],
+					"id": "a32595f4-258c-4218-a7cd-1bce029528f1",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -3540,10 +3717,12 @@
 									"\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5e74f849-0187-491f-bd63-2a39e9a092f0"
 							}
 						}
 					],
+					"id": "1a792757-6297-40d4-9496-6365c18e439f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3595,10 +3774,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "889a1da4-b629-496a-8f46-7f3a749d0de9"
 							}
 						}
 					],
+					"id": "de55b551-7f30-4772-abdc-7ff00ccbb397",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3657,7 +3838,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "983be141-31e8-4d0a-9640-07754afe7250"
 		},
 		{
 			"name": "Service Category by user R/W with filters",
@@ -3682,10 +3864,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "3b5f2d5d-05ac-4e08-bbaa-63831a06e348"
 									}
 								}
 							],
+							"id": "15764e49-8342-4c3c-88bf-950a091ce15c",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -3727,7 +3911,8 @@
 											"    pm.collectionVariables.set(\"ACLResources\", response.result[1].name);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "6a2e0db7-b566-46fb-94a2-25f41a46bfeb"
 									}
 								},
 								{
@@ -3736,10 +3921,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "e7d21d39-e27f-4c18-a83a-424832f5e5d0"
 									}
 								}
 							],
+							"id": "584c2fea-e309-4a7b-8ea4-f6ccf9805fdb",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -3757,7 +3944,7 @@
 									"raw": "{\n  \"action\": \"show\",\n  \"object\": \"ACLRESOURCE\"\n}"
 								},
 								"url": {
-									"raw": "{{baseUriCentreonCLAPI}}",
+									"raw": "{{baseUriCentreonCLAPI}}?action=action&object=centreon_clapi",
 									"host": [
 										"{{baseUriCentreonCLAPI}}"
 									],
@@ -3786,7 +3973,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "e0b7fa52-fb75-4c6b-817f-a180144d77c6"
 									}
 								},
 								{
@@ -3795,10 +3983,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "7002ef9a-e012-42eb-a3ba-93f8b956987a"
 									}
 								}
 							],
+							"id": "9b124186-eef9-4def-92d3-845aad7b94aa",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -3816,7 +4006,7 @@
 									"raw": "{\n  \"action\": \"addfilter_servicecategory\",\n  \"object\": \"ACLRESOURCE\",\n  \"values\": \"{{ACLResources}};{{ServiceCategory3Name}}\"\n}"
 								},
 								"url": {
-									"raw": "{{baseUriCentreonCLAPI}}",
+									"raw": "{{baseUriCentreonCLAPI}}?action=action&object=centreon_clapi",
 									"host": [
 										"{{baseUriCentreonCLAPI}}"
 									],
@@ -3850,10 +4040,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "154de550-dd6f-4a58-9eee-0792f8e36016"
 									}
 								}
 							],
+							"id": "3bc8d65c-8b69-4811-b4ec-94eecc77be95",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -3912,7 +4104,8 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"id": "be7e6402-6191-4673-adab-438eddc249c0"
 				},
 				{
 					"name": "Login with Read/Write user",
@@ -3931,10 +4124,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "08c0876b-ebd2-414e-9459-7e65e9d1558e"
 							}
 						}
 					],
+					"id": "63bf7e82-e5c4-463a-b112-855b17c6f534",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -3985,7 +4180,8 @@
 									"    \r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7856cefc-61c5-4b81-bcfb-3f89453569c5"
 							}
 						},
 						{
@@ -3996,10 +4192,12 @@
 									"pm.collectionVariables.set(\"ServiceCategory5Alias\", \"I'm the fifth successful category!\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "67321dc7-9841-4c4a-8683-407f9fa6d2dd"
 							}
 						}
 					],
+					"id": "a116054e-9099-4012-9f7e-305a4e761ca7",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4058,10 +4256,12 @@
 									"    \r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2c160585-e57a-4ecb-a9c9-8ad558c8e74e"
 							}
 						}
 					],
+					"id": "ae9d3e44-01f5-4859-a0b3-80b5493969fe",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4110,7 +4310,8 @@
 									"    pm.expect(responseJson.message).to.eql(\"Service category not found\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ee7e425f-5b06-49f2-80b3-0c7e9938a0c3"
 							}
 						},
 						{
@@ -4119,10 +4320,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7fae3d23-482f-4694-bb64-6d840d8f8d06"
 							}
 						}
 					],
+					"id": "e3a765e6-57f7-4980-b8a3-2db1e0c165a4",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -4166,10 +4369,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2d6dfe06-207d-42ea-88e2-a901b08633ff"
 							}
 						}
 					],
+					"id": "1ce2f438-094d-4c63-89d3-6c19eb3e7a27",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4228,7 +4433,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "44b1fa34-e010-40a2-a93b-2340f25c6a0e"
 		},
 		{
 			"name": "Service Category by user Read Only without filters",
@@ -4250,10 +4456,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b0113a17-d68b-4402-b027-24ea5d0cf8e2"
 							}
 						}
 					],
+					"id": "3ea2bc3e-c7a5-4e04-a7aa-56d632123f38",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -4295,7 +4503,8 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to create service categories\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "cba58778-ddfe-4500-96a2-ca3b97752bd8"
 							}
 						},
 						{
@@ -4304,10 +4513,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "625fd979-caf9-4392-8063-0fca46e2f5f2"
 							}
 						}
 					],
+					"id": "ce426c45-c6d0-45e5-a7c7-8c9a81653760",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4347,7 +4558,8 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to delete service categories\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "973121cd-b165-49d7-8fe9-7244e9370856"
 							}
 						},
 						{
@@ -4356,10 +4568,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d8e0326d-4bc2-4415-8740-bb37babc47c2"
 							}
 						}
 					],
+					"id": "9e6b3b9a-1f78-4f82-abdd-9e0a0a34c1eb",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -4461,10 +4675,12 @@
 									"\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a8da8adc-9cef-494f-88db-f4a10b0da08b"
 							}
 						}
 					],
+					"id": "8f48621d-c153-4bbb-9b9c-bed218013468",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4516,10 +4732,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0583d03c-6a24-423c-92b9-46c44cc36d72"
 							}
 						}
 					],
+					"id": "f355b28d-2954-4a9d-b27b-e058793f7ca6",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4578,7 +4796,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "8d470446-040c-4bd9-91c4-8aa23e9ae7cd"
 		},
 		{
 			"name": "Service Category by user Read Only with filters",
@@ -4603,10 +4822,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "a1844d7c-af3e-446e-a86f-a0ce8b4d626a"
 									}
 								}
 							],
+							"id": "a40a283d-890f-4875-98fd-c746b1c81ede",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -4645,7 +4866,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "e9d23e13-0126-4365-bffd-868470b3d56c"
 									}
 								},
 								{
@@ -4654,10 +4876,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "5aa876f8-302b-4a89-9e80-488c831c1d30"
 									}
 								}
 							],
+							"id": "de7a702e-7a2f-4576-b7c1-bcfd9f1a8a18",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -4675,7 +4899,7 @@
 									"raw": "{\n  \"action\": \"delfilter_servicecategory\",\n  \"object\": \"ACLRESOURCE\",\n  \"values\": \"{{ACLResources}};{{ServiceCategory3Name}}\"\n}\n"
 								},
 								"url": {
-									"raw": "{{baseUriCentreonCLAPI}}",
+									"raw": "{{baseUriCentreonCLAPI}}?action=action&object=centreon_clapi",
 									"host": [
 										"{{baseUriCentreonCLAPI}}"
 									],
@@ -4704,7 +4928,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "eb5f5921-2b09-4fd5-9f87-85798900dd09"
 									}
 								},
 								{
@@ -4713,10 +4938,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "98e21442-0f8b-4ca3-8fa4-f8e98906ccad"
 									}
 								}
 							],
+							"id": "a887088f-63ce-4bd4-b766-66947f31495a",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -4734,7 +4961,7 @@
 									"raw": "{\n  \"action\": \"addfilter_servicecategory\",\n  \"object\": \"ACLRESOURCE\",\n  \"values\": \"{{ACLResources}};{{ServiceCategory5Name}}\"\n}"
 								},
 								"url": {
-									"raw": "{{baseUriCentreonCLAPI}}",
+									"raw": "{{baseUriCentreonCLAPI}}?action=action&object=centreon_clapi",
 									"host": [
 										"{{baseUriCentreonCLAPI}}"
 									],
@@ -4768,10 +4995,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "495cd9f9-52ec-49e6-8773-4293f96e0b82"
 									}
 								}
 							],
+							"id": "e0dff98d-9e00-4f12-8e02-ca0298bfbcdd",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -4830,7 +5059,8 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"id": "a709a0a0-cd8e-45ea-8b1a-5f736833dde5"
 				},
 				{
 					"name": "Login with Read Only user",
@@ -4849,10 +5079,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7a3f6643-f321-4537-8f2a-cc47cb613e99"
 							}
 						}
 					],
+					"id": "e8610360-2524-4ad1-8e35-32b56d340a73",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -4894,7 +5126,8 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to create service categories\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "46755e3b-7bb3-424b-9c7d-9e56ad1b1750"
 							}
 						},
 						{
@@ -4903,10 +5136,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4ba34712-ed43-46ca-bcbf-3cbec9ae2cd1"
 							}
 						}
 					],
+					"id": "833f7a8c-4acb-4b6b-8b33-4c3ac4cdab2b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4965,10 +5200,12 @@
 									"    \r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b756e0fa-edc1-416c-838d-408b27093aab"
 							}
 						}
 					],
+					"id": "8c7e0f0a-75e8-4233-8f89-862a1a984660",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -5017,7 +5254,8 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to delete service categories\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "11d289f4-1437-4472-99e9-3411d9c5b4d1"
 							}
 						},
 						{
@@ -5026,10 +5264,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3602791c-4e90-4a50-aff9-49ddcb2dd127"
 							}
 						}
 					],
+					"id": "a4f23ce6-3753-46c4-9494-df3cd5a891b8",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -5073,10 +5313,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "56954d2e-860e-413e-a612-ef15079cfc91"
 							}
 						}
 					],
+					"id": "ccdbdaa2-7495-4d52-a5a4-90e29dc54acb",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -5135,7 +5377,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "72b7f488-7417-49b5-8760-91c845c53ad6"
 		},
 		{
 			"name": "Service Category By User with No Access",
@@ -5157,10 +5400,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5260a838-99b4-43e9-88b9-cc7977e91a0a"
 							}
 						}
 					],
+					"id": "11bfff00-156a-477b-b76e-4e0a6192a124",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -5202,7 +5447,8 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to create service categories\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2ccbb34d-a3db-4939-95f6-f70dc38aee37"
 							}
 						},
 						{
@@ -5211,10 +5457,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d31ddfd0-5953-44aa-8ef2-535cc7471c3e"
 							}
 						}
 					],
+					"id": "5363baec-9911-433d-83cf-6f0e691c5d9d",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -5254,7 +5502,8 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to delete service categories\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "53f8316b-a53d-49c9-943b-b4574964ea44"
 							}
 						},
 						{
@@ -5263,10 +5512,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "eacb8b34-4f67-40bc-bd65-6dffa70fc4a4"
 							}
 						}
 					],
+					"id": "347c5137-3ff0-44b1-ae73-fda5d775cd53",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -5310,10 +5561,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to access service categories\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "89f3e767-eb1d-4de9-9b4a-80ebe021363b"
 							}
 						}
 					],
+					"id": "a5181e50-3bb0-4c72-a87b-7c600ba177a9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -5365,10 +5618,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "223c130d-bef4-474a-a248-1e4a08463028"
 							}
 						}
 					],
+					"id": "6366bfda-ae08-45bd-836e-1dd1343a44c1",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -5427,7 +5682,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "fd51adec-9058-49c9-9c77-508e55c80ae9"
 		},
 		{
 			"name": "Reset",
@@ -5449,10 +5705,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1ecbd6f6-390e-4a7e-b2ea-16ada4d6687f"
 							}
 						}
 					],
+					"id": "6344b2fc-bba7-4709-9933-8c769b43c7de",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -5489,7 +5747,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e6095a82-779d-4de5-8b2a-69415eb1f417"
 							}
 						},
 						{
@@ -5501,10 +5760,12 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c89c8828-df80-4b4c-9385-71981330b483"
 							}
 						}
 					],
+					"id": "830578b3-cd94-4aa7-afa2-f5b1a531763e",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -5532,7 +5793,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c9434466-6d09-46ef-a8c9-9c82e9c06d02"
 							}
 						},
 						{
@@ -5544,10 +5806,12 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0194b370-3f54-496d-b57c-28777ec65134"
 							}
 						}
 					],
+					"id": "01840011-4397-43ce-88a7-84c75ec294c7",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -5575,7 +5839,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b45868c0-aa09-4c99-b941-85df8776b3c1"
 							}
 						},
 						{
@@ -5587,10 +5852,12 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "11cfbf6e-6666-424c-bcff-50abb78beacf"
 							}
 						}
 					],
+					"id": "0b483f11-6581-4437-aae4-c06f0fbaccef",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -5625,10 +5892,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b2459526-a1cf-4e91-8808-ac8895bb76e2"
 							}
 						}
 					],
+					"id": "d3dc964e-f239-44f7-958c-4e2f3f993f1b",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -5687,7 +5956,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "b670f5a5-f2d7-4ccd-89ba-ee4264032204"
 		}
 	],
 	"auth": {
@@ -5712,7 +5982,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "566e83d7-e686-4f60-8218-756b1f9b4e49"
 			}
 		},
 		{
@@ -5721,7 +5992,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "bfe4c8dc-9b83-4277-bbe9-799410500372"
 			}
 		}
 	]

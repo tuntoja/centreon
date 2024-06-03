@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "066a7fc3-f87f-46d8-ad63-1a7918fd5223",
+		"_postman_id": "38a66226-6b09-4846-984f-49a514cc14df",
 		"name": "21 - Contact management - Centreon Web Refactored API Test Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "16182525"
+		"_uid": "28117716-38a66226-6b09-4846-984f-49a514cc14df"
 	},
 	"item": [
 		{
@@ -33,10 +33,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "af9bd1a2-6a21-44cb-b396-ffea00388a0a"
 							}
 						}
 					],
+					"id": "47021408-7262-49b6-8f36-00099d00c9d7",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -92,10 +94,12 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "271ec03d-8b25-48e3-989d-0bc9710c41e5"
 							}
 						}
 					],
+					"id": "9eda4e94-0397-4230-a12e-28d6a802f0d3",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -122,7 +126,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f6c4a13c-5b56-4e2d-830d-04e2a009e400"
 							}
 						},
 						{
@@ -144,10 +149,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2dda0ba0-56b5-42b6-b61c-e292c5050e78"
 							}
 						}
 					],
+					"id": "88a71b99-1098-4bab-bd3e-444709bbe92a",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -211,7 +218,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "3bb0eabc-7b67-4965-bf1a-b2ce723ee58c"
 		},
 		{
 			"name": "2102 - Listing default users and check the presence of the admin user",
@@ -239,10 +247,12 @@
 									"    pm.environment.set(\"currentUserEmail\", responseJson.contact.email);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "042670fd-9775-4aac-b88b-785be26a6ed2"
 							}
 						}
 					],
+					"id": "a2f64444-d01b-411d-8036-1651ef4dba62",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -304,10 +314,12 @@
 									"    } \r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3d9ce0a3-d6bf-41ae-b503-0f026434fc96"
 							}
 						}
 					],
+					"id": "5ad810e0-fdd7-48fd-9dde-738ae3e827be",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -344,10 +356,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d7e6792a-dc9b-4a95-abbf-0920f3f0ac63"
 							}
 						}
 					],
+					"id": "5b77ab22-cf4e-405a-b433-1f36bbc50b4e",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -411,7 +425,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "bb3fadbf-27a5-4b7e-9a76-0e606be0d8f0"
 		},
 		{
 			"name": "2103 - Adding a new non-admin user and assess it is listed",
@@ -438,10 +453,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b979fd8a-8c99-475f-8931-e4f6e6249cdb"
 							}
 						}
 					],
+					"id": "3d694c6b-4145-46ec-82b7-b9904512ee38",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -493,10 +510,12 @@
 									"\r",
 									"pm.collectionVariables.set(\"numberOfListedUsers\", responseJson.result.length);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1f438e83-20e3-488d-bfcb-6b88fdf4e81b"
 							}
 						}
 					],
+					"id": "864d96d6-747c-43f3-a4db-aa7e8b15e709",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -529,7 +548,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "47ce2d1e-df36-41d2-a2ba-c84f960240bb"
 							}
 						},
 						{
@@ -540,10 +560,12 @@
 									"pm.collectionVariables.set(\"testUserLogin\", \"testUser\");\r",
 									"pm.collectionVariables.set(\"testUserEmail\", \"testUser@localhost\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "55c0d6f1-69c4-4f22-9918-27ce90e922aa"
 							}
 						}
 					],
+					"id": "86250c57-9230-4650-8aca-f8594c8c6667",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -625,10 +647,12 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e2d8b191-4519-4d0c-8792-5b451d7e3262"
 							}
 						}
 					],
+					"id": "1f798633-2069-4886-96bf-edad1c00f4e2",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -665,7 +689,8 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4927c540-9c17-4618-81c6-bae37db7c103"
 							}
 						},
 						{
@@ -674,10 +699,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "affa511b-08de-44d4-8009-ca9e46b996d7"
 							}
 						}
 					],
+					"id": "3c02c4b7-bcee-479e-93ce-5c8d71435c64",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -744,10 +771,12 @@
 									"\r",
 									"pm.collectionVariables.set(\"numberOfListedUsers\", responseJson.result.length);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0be1088e-7799-412e-8945-4c49756efb5a"
 							}
 						}
 					],
+					"id": "5ff0efd8-af20-4354-8481-0e979bb3d58b",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -784,10 +813,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "58a29d06-ece9-4a78-9a09-0a2070c23f70"
 							}
 						}
 					],
+					"id": "ffb9f292-dff2-4516-9a57-a8968ab78be7",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -851,7 +882,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "0d1c2da2-a755-4d1e-9e34-946990ccf422"
 		},
 		{
 			"name": "2104 - Adding a non-admin user and disable/enable it",
@@ -878,10 +910,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d2dff37c-551c-475a-8c0f-ffba91e7be5a"
 							}
 						}
 					],
+					"id": "8753280b-e299-4f6c-86db-10e0a2718e20",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -925,7 +959,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b10bfd7f-c6d8-4af4-923b-7b458c632865"
 							}
 						},
 						{
@@ -936,10 +971,12 @@
 									"pm.collectionVariables.set(\"testUserLogin\", \"testUser\");\r",
 									"pm.collectionVariables.set(\"testUserEmail\", \"testUser@localhost\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "616e12f3-ae15-40b3-92c2-c7a4d5c273b0"
 							}
 						}
 					],
+					"id": "c4900552-e26b-460b-b9fa-817e6b609c8f",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1004,10 +1041,12 @@
 									"    }\r",
 									"}"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7472e46e-a8e2-45c9-8a57-d6c2af5acf4a"
 							}
 						}
 					],
+					"id": "3276c6df-9803-4f96-a9ee-f5d4fcdeae06",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -1040,7 +1079,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1e8cbbfe-37d1-4ef0-a40e-5695ef08db8a"
 							}
 						},
 						{
@@ -1049,10 +1089,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "92811436-f61c-4928-a89f-379a1eba686e"
 							}
 						}
 					],
+					"id": "d07df3a5-feec-4e0e-af18-27d290e6c3aa",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1119,10 +1161,12 @@
 									"    }\r",
 									"}"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "eaa1425e-5310-4b6a-acb8-db109a3d039a"
 							}
 						}
 					],
+					"id": "26d353e2-dafa-4257-a0e6-0908b3bbe4f7",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1181,7 +1225,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "46c9bda1-ad41-4835-a02b-64e8b2054ecb"
 							}
 						},
 						{
@@ -1190,10 +1235,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a7884ff4-5bf8-4025-954b-122ef12aea79"
 							}
 						}
 					],
+					"id": "389e736b-bb49-46be-9a0a-fb94bb4d541b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1261,10 +1308,12 @@
 									"    }\r",
 									"}"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b570bf03-427a-4740-9e73-30331486205c"
 							}
 						}
 					],
+					"id": "c759ecc5-993c-4c39-9985-b9864580a3b0",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1321,7 +1370,8 @@
 									"    pm.collectionVariables.unset(\"testUserEmail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "386fcb08-8e36-4e44-9e62-4ab2af577f10"
 							}
 						},
 						{
@@ -1330,10 +1380,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3c61e7fa-6d26-4cdf-ad3e-6396991a0d06"
 							}
 						}
 					],
+					"id": "b8c80f05-5401-40d5-823c-76f9ef50d6d1",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1396,10 +1448,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1d80ff6d-bb26-4534-bd44-911332c28195"
 							}
 						}
 					],
+					"id": "6942faec-b4cc-4424-aed3-01a1913ea983",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1463,7 +1517,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "2b8cdb11-1812-47e4-b45b-9fea5bd17229"
 		},
 		{
 			"name": "2106 - Adding a non-admin user, give it API access and log in on it",
@@ -1490,10 +1545,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3953e2d0-38ac-4306-a912-61270db86564"
 							}
 						}
 					],
+					"id": "4d0990bc-c2ed-4f11-9ba7-bb5deaba18ec",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1537,7 +1594,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "982fdd69-6695-4e88-9ffb-347785eaf16d"
 							}
 						},
 						{
@@ -1549,10 +1607,12 @@
 									"pm.collectionVariables.set(\"testUserEmail\", \"testUser@localhost\");\r",
 									"pm.collectionVariables.set(\"testUserPassword\", \"Centreon!2021\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "620422c9-1171-40d2-b8c3-a593db5e5748"
 							}
 						}
 					],
+					"id": "4ce5dc45-f72e-4d03-846a-ed54b47bee9a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1618,7 +1678,8 @@
 									"pm.collectionVariables.set(\"listOfParameters\", parameters);\r",
 									"pm.collectionVariables.set(\"listOfValues\", values);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c18a1ecd-c611-4e30-a897-7c1a356bc3c5"
 							}
 						},
 						{
@@ -1646,10 +1707,12 @@
 									"    }\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ad929bb6-4767-45b3-9ee3-db6945537d2c"
 							}
 						}
 					],
+					"id": "b86cc663-31de-4051-a5dc-fc517836399d",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1713,10 +1776,12 @@
 									"    pm.environment.unset(\"currentUserEmail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ed77e3b7-016e-426f-a7dc-267c3fe7c07a"
 							}
 						}
 					],
+					"id": "825bd730-a3a5-4880-9022-8a254e71add7",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1802,7 +1867,8 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2457336c-6c5f-4cbc-9d00-b6eaa5ec8c88"
 							}
 						},
 						{
@@ -1811,10 +1877,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9980b833-9e88-455e-b4ab-5039d2ffc61b"
 							}
 						}
 					],
+					"id": "225fcc53-479d-4829-9651-c85d27b25ea7",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1897,10 +1965,12 @@
 									"    pm.expect(valuesMetaservices).to.not.include(true);\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a6638425-f2c0-41c4-8f8b-5e3b61a09318"
 							}
 						}
 					],
+					"id": "6fde3e86-f435-4336-b8d8-737e29cc8f73",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1939,10 +2009,12 @@
 									"    pm.response.to.have.status(403);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c12aac99-40bd-432f-8896-9ae4bac1e9b4"
 							}
 						}
 					],
+					"id": "5e1dc22b-6165-4f7b-9938-b71440b68e99",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -1978,10 +2050,12 @@
 									"    pm.environment.unset(\"currentUserEmail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b1bce734-2c66-429c-9b9e-692badabf17f"
 							}
 						}
 					],
+					"id": "58dcdd9d-8da6-4219-9a8c-8ea8571c442d",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2067,10 +2141,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8be81844-9e77-4d19-afd5-7b179c2c0f2c"
 							}
 						}
 					],
+					"id": "1b79659e-8507-451a-81d8-fd5d85e80552",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -2113,7 +2189,8 @@
 									"    pm.collectionVariables.unset(\"testUserPassword\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "270505fa-7ee2-43e3-a67a-d268a0bf4429"
 							}
 						},
 						{
@@ -2122,10 +2199,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "46bfefc9-542d-45ef-95b0-f575d0ceeaa4"
 							}
 						}
 					],
+					"id": "41c0bd75-bdd7-46cd-91fa-7df974d020a0",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2188,10 +2267,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "28200e0e-fb3a-4995-ad2d-a01af0a4e171"
 							}
 						}
 					],
+					"id": "473aef1c-ab2a-494a-a9cd-571262e57dca",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2255,7 +2336,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "e282d98e-7c13-42da-9512-4ed3b56a9a80"
 		},
 		{
 			"name": "2107 - Adding an admin user, give it API access and log in on it",
@@ -2282,10 +2364,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "27d8b685-d811-442a-9d1e-dcaae3f02585"
 							}
 						}
 					],
+					"id": "3967f006-c49c-458f-868d-c230f6ece634",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -2329,7 +2413,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fd92378a-2f05-4b65-bd3a-f08fe9489691"
 							}
 						},
 						{
@@ -2341,10 +2426,12 @@
 									"pm.collectionVariables.set(\"testUserEmail\", \"testUser@localhost\");\r",
 									"pm.collectionVariables.set(\"testUserPassword\", \"Centreon!2021\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6e416180-cfa0-4ab0-b485-ce8b43ed4ca3"
 							}
 						}
 					],
+					"id": "6a76abb5-a48a-40f6-956b-446229b6e6f7",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2410,7 +2497,8 @@
 									"pm.collectionVariables.set(\"listOfParameters\", parameters);\r",
 									"pm.collectionVariables.set(\"listOfValues\", values);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "97f3813d-c5a5-4ac6-bb07-600b6c4510f3"
 							}
 						},
 						{
@@ -2438,10 +2526,12 @@
 									"    }\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e3934f6b-ff49-4e8e-b293-e441bef6523e"
 							}
 						}
 					],
+					"id": "b9df93d5-381b-4af0-9b0b-1990610edc5e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2505,10 +2595,12 @@
 									"    pm.environment.unset(\"currentUserEmail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3a3519c0-ce58-43ba-a371-8c6fee7f5002"
 							}
 						}
 					],
+					"id": "d0d5c8f1-93e6-4d46-98ed-5d6203a61a82",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2594,7 +2686,8 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "927f8607-259e-4c7d-8db3-c26e33eeb1d4"
 							}
 						},
 						{
@@ -2603,10 +2696,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2d188657-8126-4221-8a3b-08f6ac18e486"
 							}
 						}
 					],
+					"id": "1de684eb-63d4-4fa7-912d-52b678682f31",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2689,10 +2784,12 @@
 									"    pm.expect(valuesMetaservices).to.not.include(false);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5165ab88-f460-4084-aeb2-dce1634abfb6"
 							}
 						}
 					],
+					"id": "b43b8201-ea94-4b7a-9b0a-a2bace95f4c8",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -2735,10 +2832,12 @@
 									"    pm.environment.unset(\"currentUserEmail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c294e088-ab1b-49c8-85ef-b51f470d15eb"
 							}
 						}
 					],
+					"id": "7142a1a0-d10d-4667-957c-ff670a47d110",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2824,10 +2923,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "21c904c6-1b73-4c90-9efe-3b94a8007c94"
 							}
 						}
 					],
+					"id": "50b209af-30a9-4138-90ff-405c23af94f2",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -2870,7 +2971,8 @@
 									"    pm.collectionVariables.unset(\"testUserPassword\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d368a9ca-487b-416d-93ca-06dbb6e0c99c"
 							}
 						},
 						{
@@ -2879,10 +2981,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "54738d22-45a9-4298-ba59-56e81b0a2aea"
 							}
 						}
 					],
+					"id": "abc4bd72-74bc-4e86-8715-7d95feb1bdb0",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2945,10 +3049,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "625050bb-7831-4d97-8d66-73b85ee00810"
 							}
 						}
 					],
+					"id": "d46d1ed0-2df4-410a-9493-bd1ba45fcf4e",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3012,7 +3118,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "eb3d7736-f405-4b41-bcd0-1127a236f97d"
 		},
 		{
 			"name": "2108 - Adding a user and trying to log in with it without API access rights",
@@ -3039,10 +3146,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3d55249b-6fca-4121-8879-eaf21056b61f"
 							}
 						}
 					],
+					"id": "1cd04624-84d3-4fe2-9837-7188e0d62b42",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -3086,7 +3195,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f19f4028-e53a-4fbb-a9b5-b12ae0eb4c87"
 							}
 						},
 						{
@@ -3098,10 +3208,12 @@
 									"pm.collectionVariables.set(\"testUserEmail\", \"testUser@localhost\");\r",
 									"pm.collectionVariables.set(\"testUserPassword\", \"Centreon!2021\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e8224e4e-1e07-4317-9d5b-25ecd9a0279e"
 							}
 						}
 					],
+					"id": "4cc74eff-8cf5-49a6-8f7c-2ff958abf38d",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3163,10 +3275,12 @@
 									"    pm.environment.unset(\"currentUserEmail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e94e1d63-88a3-46dd-9741-10f5e29fed05"
 							}
 						}
 					],
+					"id": "e5734643-0af1-46dd-a20b-4f1145d794ce",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3252,7 +3366,8 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "aeed6915-cf4a-4747-a848-63a2c71e33ab"
 							}
 						},
 						{
@@ -3261,10 +3376,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a587b3e2-9ae3-41b1-8c95-e5fef2a04c3a"
 							}
 						}
 					],
+					"id": "3492686d-d43e-4781-b32d-70a4fd452c77",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3336,10 +3453,12 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "046a8e71-6f7c-4983-904b-8bb28746d160"
 							}
 						}
 					],
+					"id": "771c76f5-770f-48c8-90e5-0468d3616e6b",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -3375,10 +3494,12 @@
 									"    pm.environment.unset(\"currentUserEmail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e496175b-e95e-4594-9a52-0e189a03b7b8"
 							}
 						}
 					],
+					"id": "a5b260af-889a-4ca9-ac3b-b849354140b0",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3464,10 +3585,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "28dc9b92-8ef6-4af8-8476-f21e455d2737"
 							}
 						}
 					],
+					"id": "424b7072-ffd2-484e-82f5-d3e2d1ddb1d2",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -3510,7 +3633,8 @@
 									"    pm.collectionVariables.unset(\"testUserPassword\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3836e1a0-dfa7-4071-9244-a3023d663f62"
 							}
 						},
 						{
@@ -3519,10 +3643,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "17adfa3c-0fc4-428b-8577-70747b84b162"
 							}
 						}
 					],
+					"id": "cf688586-1c6d-4e5e-a04d-f464ba8bfc5f",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3585,10 +3711,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "91501755-5130-4640-9a86-34844ea7e6da"
 							}
 						}
 					],
+					"id": "747492ff-7926-4d9a-a17c-f097d6f7c44c",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3652,7 +3780,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "53cb1081-edc6-40a6-a0d3-833b3648fc54"
 		},
 		{
 			"name": "2110 - Trying to add a user with a password that is non-compliant with the password policy",
@@ -3679,10 +3808,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9bdd76d3-e4ad-46fd-8310-5a189895c4c1"
 							}
 						}
 					],
+					"id": "d9c9a484-8d3b-4c8f-b61c-5c35053a84ec",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -3737,7 +3868,8 @@
 									"    }\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f124efeb-da79-4d20-af9f-a45d9902ed48"
 							}
 						},
 						{
@@ -3758,10 +3890,12 @@
 									"}\r",
 									"pm.environment.set(\"incorrectPasswords\", incorrectPasswords);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2d0b51fe-0458-4077-92fe-fd88ca430361"
 							}
 						}
 					],
+					"id": "54f5435b-1248-48f5-95a9-91dab2048a9e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3824,10 +3958,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2b319c45-3bb6-43e9-9dff-5842e0e604e5"
 							}
 						}
 					],
+					"id": "0b259898-3d9b-4659-8fdc-46abec08700e",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3891,7 +4027,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "5e19d6d9-9927-40dc-a82e-8983b04542c3"
 		},
 		{
 			"name": "2111 - Updating the password policy and then creating a user whose password is compliant with the new password policy",
@@ -3918,10 +4055,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "65c0d296-d9f0-42ba-b4a9-1b0eb2604cc4"
 							}
 						}
 					],
+					"id": "292577f6-30c8-4412-997d-025896c80c59",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -3964,7 +4103,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4bb9f2c0-f4fe-4d21-a24a-6090738a7157"
 							}
 						},
 						{
@@ -3999,10 +4139,12 @@
 									"pm.collectionVariables.set(\"listOfCurrentNumberConfig\", listOfCurrentNumberConfig);\r",
 									"pm.collectionVariables.set(\"listOfCurrentSpecialParameterConfig\", listOfCurrentSpecialParameterConfig);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9e7e49a0-bb73-4aad-89a5-6a05c5da6cf5"
 							}
 						}
 					],
+					"id": "60ac8a35-8632-44f9-983e-3abf06901181",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -4046,7 +4188,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "70b23590-80a8-4d88-b8ae-5675e4fe39b3"
 							}
 						},
 						{
@@ -4077,10 +4220,12 @@
 									"    pm.collectionVariables.set(\"testUserLogin\", \"testUser-No-Special-Character\");        \r",
 									"}"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "02cb1429-e6e5-4fb2-9508-873b4ae13efd"
 							}
 						}
 					],
+					"id": "09fda45d-08d1-4385-b0ae-98489579d766",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4145,7 +4290,8 @@
 									"pm.collectionVariables.set(\"currentValue\", currentValue);\r",
 									"pm.collectionVariables.set(\"listOfValues\", values);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "95a5dfc7-e40b-4793-90c2-41c2950b0195"
 							}
 						},
 						{
@@ -4175,10 +4321,12 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0e32ee60-686f-49de-a49a-bbad96b2f627"
 							}
 						}
 					],
+					"id": "0167dcbe-33da-4474-acc6-47bce22ebc5c",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4242,10 +4390,12 @@
 									"    pm.environment.unset(\"currentUserEmail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "30abe826-83d4-46c6-b915-b8de84bce21d"
 							}
 						}
 					],
+					"id": "83980cef-821d-4638-b3b3-86e9855c32ab",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4331,7 +4481,8 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "62ef3001-2642-4a67-bc9c-2b34880e718a"
 							}
 						},
 						{
@@ -4340,10 +4491,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "de284bb3-7299-40fc-861f-3c0013790034"
 							}
 						}
 					],
+					"id": "884bfac6-f137-4789-b31c-f19757ba9e7f",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4419,10 +4572,12 @@
 									"    pm.environment.unset(\"currentUserEmail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7ab54cdb-2628-4cb3-99f3-43c56d4e89aa"
 							}
 						}
 					],
+					"id": "5633900d-7e22-4954-a470-7d2847be1e25",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4508,10 +4663,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "57a6f1ad-bc6a-44d7-8b06-72ed24d437a9"
 							}
 						}
 					],
+					"id": "007bf126-2e08-40e3-80a4-5543ea0d8083",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -4578,7 +4735,8 @@
 									"    }\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "253cc6e1-2711-4a57-b49f-ae229000a730"
 							}
 						},
 						{
@@ -4587,10 +4745,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a461079e-6058-43e3-9977-e7ef07ed1259"
 							}
 						}
 					],
+					"id": "e8a279f9-1ff2-4530-8a3c-c3182d1b95b4",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4644,7 +4804,8 @@
 									"    pm.response.to.have.status(204);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7ea4072b-b0e5-400e-8c52-2efdd3e7f70c"
 							}
 						},
 						{
@@ -4653,10 +4814,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "29c2f0dd-0b25-4aaa-8e04-5ac5dafd922e"
 							}
 						}
 					],
+					"id": "4bad387b-6d70-4319-b0c5-b7ed9b3ce5f3",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -4704,10 +4867,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "46545c5c-b027-4410-9335-df6dc5d10f33"
 							}
 						}
 					],
+					"id": "f323dd8a-ae9b-46f1-8283-5a3b3dbde3d2",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4771,7 +4936,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "93039566-0bbc-49c1-8e43-5fa2c90b2c76"
 		}
 	],
 	"auth": {
@@ -4796,7 +4962,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "51d3034d-8bef-4a68-88be-3634c99d5c7d"
 			}
 		},
 		{
@@ -4824,7 +4991,8 @@
 					"        console.log(\"Response has the expected status code \" + pm.response.code + \" | Running the next tests\")",
 					"    }",
 					"  }"
-				]
+				],
+				"id": "07407a1d-baf6-468c-ad46-76d975bef90d"
 			}
 		}
 	]

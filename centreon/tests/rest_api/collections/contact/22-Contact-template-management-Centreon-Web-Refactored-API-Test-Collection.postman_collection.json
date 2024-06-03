@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "9d1d001b-a38a-41f9-89b0-12d51c40dcce",
+		"_postman_id": "c4b2b9fc-3b33-4487-b83d-ca2de17fe7ef",
 		"name": "22 - Contact template management - Centreon Web Refactored API Test Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "22770334",
-		"_collection_link": "https://centreon-api-v2-monitoring-clapi.postman.co/workspace/Refacto-Tests-API~937020c6-b43d-4380-8c50-a2069c131e07/collection/22770334-9d1d001b-a38a-41f9-89b0-12d51c40dcce?action=share&source=collection_link&creator=22770334"
+		"_uid": "28117716-c4b2b9fc-3b33-4487-b83d-ca2de17fe7ef"
 	},
 	"item": [
 		{
@@ -34,10 +33,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3e6d5a5a-922a-4a20-a1f0-7d90d848fc1f"
 							}
 						}
 					],
+					"id": "67c8e358-752c-4d5f-9e3e-eb0497fda024",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -86,10 +87,12 @@
 									"    pm.expect(responseJson.meta.total).to.eql(1);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "403546d8-6b60-4c8f-83b3-7f49b8383e43"
 							}
 						}
 					],
+					"id": "945e19b6-64c9-49ef-a4fe-4ec7f71309e1",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -123,7 +126,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "900a18ce-46f6-4cb4-9bca-2a401e9cf6d8"
 							}
 						},
 						{
@@ -134,10 +138,12 @@
 									"pm.collectionVariables.set(\"contactTemplateAlias\", \"Contact_Template_for_API_Testing\");\r",
 									"pm.collectionVariables.set(\"contactTemplateMail\", \"dummymail@centreon\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "57c66b9d-be24-49e1-baa4-09f397cbfe32"
 							}
 						}
 					],
+					"id": "7e46b387-8b26-40ba-a5fd-fa3730301795",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -202,10 +208,12 @@
 									"    pm.expect(responseJson.result[1].name).to.eql(pm.collectionVariables.get(\"contactTemplateName\"));\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2aa2f63e-a0d4-4db0-b86b-4481b7ef3235"
 							}
 						}
 					],
+					"id": "c053d023-4b85-4b11-8ff7-02bd52999fb8",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -242,7 +250,8 @@
 									"    pm.collectionVariables.unset(\"contactTemplateMail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "51b31bc7-7c10-4fb8-ae8a-f1adfa7be688"
 							}
 						},
 						{
@@ -251,10 +260,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6949a37e-400f-4eee-a333-bfaac7e24660"
 							}
 						}
 					],
+					"id": "de4aab4c-b5de-4cb4-b3ad-f0114d16390f",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -318,10 +329,12 @@
 									"    pm.expect(responseJson.meta.total).to.eql(1);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5dc292c8-78c2-4eb3-aa5a-1ac8ef62ca69"
 							}
 						}
 					],
+					"id": "e43f4c60-31cd-4ff5-9f12-0a86db337cf5",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -348,7 +361,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d70dc050-69d8-4047-ae73-78c4997a960d"
 							}
 						},
 						{
@@ -370,10 +384,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "52a37be0-7a36-4873-8f2f-f41fbf3dffa5"
 							}
 						}
 					],
+					"id": "f50eedfd-06b4-4a2c-a014-ff8f2c1c430e",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -437,7 +453,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "a1c4a286-c6c2-4793-8dde-25f273ea968a"
 		},
 		{
 			"name": "2202 - Create contact templates with duplicate fields",
@@ -464,10 +481,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7e046b0f-b217-4199-9b1b-da9feb8daa0e"
 							}
 						}
 					],
+					"id": "b173c2fe-d8a1-4f5e-a3fc-0312fe433008",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -511,7 +530,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4b3f6eac-34bd-4431-86e0-9c906ce648e4"
 							}
 						},
 						{
@@ -522,10 +542,12 @@
 									"pm.collectionVariables.set(\"contactTemplateAlias\", \"Contact_Template_for_API_Testing\");\r",
 									"pm.collectionVariables.set(\"contactTemplateMail\", \"dummymail@centreon\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a2bbf17a-6292-4f35-ada0-52d1265df11d"
 							}
 						}
 					],
+					"id": "51b4e07e-3f8a-4be0-ab38-90f9bf5460a5",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -584,7 +606,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8fd28c72-3258-4189-a18c-cec78b5288d4"
 							}
 						},
 						{
@@ -594,10 +617,12 @@
 									"pm.collectionVariables.set(\"contactTemplateAliasBis\", pm.collectionVariables.get(\"contactTemplateAlias\").concat(\"\", \"-bis\"));\r",
 									"pm.collectionVariables.set(\"contactTemplateMailBis\", \"dummymail2@centreon\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "29c90cb4-213a-4160-8241-425772fc74b8"
 							}
 						}
 					],
+					"id": "285852ac-a31d-472d-9d1b-ba93bd887ce3",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -656,7 +681,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9332d372-0d68-479e-aa70-db431791f1f2"
 							}
 						},
 						{
@@ -666,10 +692,12 @@
 									"pm.collectionVariables.set(\"contactTemplateNameBis\", pm.collectionVariables.get(\"contactTemplateName\").concat(\"\", \"-bis\"));\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f0754267-7820-4ea7-8e1b-2b350431f502"
 							}
 						}
 					],
+					"id": "12dfb7e9-083d-4179-ad76-156f26245233",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -728,7 +756,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5fcc65dd-0d05-4cc6-be1d-1625d0447ec5"
 							}
 						},
 						{
@@ -738,10 +767,12 @@
 									"pm.collectionVariables.set(\"contactTemplateAliasTer\", pm.collectionVariables.get(\"contactTemplateAlias\").concat(\"\", \"-ter\"));\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0f9caea9-e4f8-4810-b260-b8fd75ddcbfb"
 							}
 						}
 					],
+					"id": "647d173b-57c0-4628-9780-286a6af2a6ab",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -808,7 +839,8 @@
 									"    pm.expect(responseJson.result[2].alias).to.not.eql(responseJson.result[3].alias);\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8009aae1-a25d-4a56-9c15-d68d89163cb8"
 							}
 						},
 						{
@@ -817,10 +849,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c01ded52-3979-45c0-8965-f59c246ccdc5"
 							}
 						}
 					],
+					"id": "6085e3a5-72df-4c7b-b8f1-29f83754087b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -896,7 +930,8 @@
 									"    }\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1d5f7332-973d-4f2b-af51-653b628986c5"
 							}
 						},
 						{
@@ -914,10 +949,12 @@
 									"pm.collectionVariables.set(\"contactTemplateList\", contactTemplateList);\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ed6674b5-7ed0-41ce-9fba-d86cffac6a59"
 							}
 						}
 					],
+					"id": "fe20b472-3796-4f88-a630-58d0f7f44443",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -969,7 +1006,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "89a3f24a-c489-4018-ad68-1258866666f3"
 							}
 						},
 						{
@@ -988,10 +1026,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4e802395-8a31-493c-9a1b-7240fe966247"
 							}
 						}
 					],
+					"id": "5791bb02-8ffc-435c-8b2f-e24e5df2b05b",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1055,7 +1095,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "20a6bc42-abcb-4244-9c1c-db31c505aad8"
 		},
 		{
 			"name": "2204 - Assigning a contact template to a contact",
@@ -1082,10 +1123,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "055f025e-bbe7-4652-9fbd-0d938f546e31"
 							}
 						}
 					],
+					"id": "6e4cadac-7172-4b2e-8a02-5ba38823d43b",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1129,7 +1172,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "28494efe-b83f-48db-b677-a4614e727117"
 							}
 						},
 						{
@@ -1140,10 +1184,12 @@
 									"pm.collectionVariables.set(\"contactTemplateAlias\", \"Contact_Template_for_API_Testing\");\r",
 									"pm.collectionVariables.set(\"contactTemplateMail\", \"dummymail@centreon\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "98c92289-b80f-4bb3-b80b-e2d42e2b1e25"
 							}
 						}
 					],
+					"id": "c7ebb5b2-dca9-4c72-8f24-b00e7559754d",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1202,7 +1248,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ac8dfbe2-ea9e-420f-9e4c-20f560c1f3d8"
 							}
 						},
 						{
@@ -1213,10 +1260,12 @@
 									"pm.collectionVariables.set(\"testUserLogin\", \"Contact_for_API_Testing\");\r",
 									"pm.collectionVariables.set(\"testUserEmail\", \"testUser@localhost\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f844e2bf-0e21-4afc-854a-b8bcfdad9e1f"
 							}
 						}
 					],
+					"id": "5c23ec97-cb99-4e22-a437-d16fcfed8fa1",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1275,7 +1324,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b1bf44cf-9a91-4b03-abcb-aaae96d01bd7"
 							}
 						},
 						{
@@ -1286,10 +1336,12 @@
 									"pm.collectionVariables.set(\"contactTemplateAlias\", \"Contact_Template_for_API_Testing\");\r",
 									"pm.collectionVariables.set(\"contactTemplateMail\", \"dummymail@centreon\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5b4a95a5-90af-4f23-8381-60b58b1ae76b"
 							}
 						}
 					],
+					"id": "911444be-c835-414e-9c09-81ddb80301a2",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1346,7 +1398,8 @@
 									"    pm.collectionVariables.unset(\"testUserEmail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8432fe42-154f-486b-a0b2-cd3c9bdd730f"
 							}
 						},
 						{
@@ -1357,10 +1410,12 @@
 									"pm.collectionVariables.set(\"testUserLogin\", \"Contact_for_API_Testing\");\r",
 									"pm.collectionVariables.set(\"testUserEmail\", \"testUser@localhost\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6b600ba0-cc40-4ef9-9fe1-62924578eb3a"
 							}
 						}
 					],
+					"id": "ff0c649d-bd20-4ee7-9dd4-3226a17a4e9b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1417,7 +1472,8 @@
 									"    pm.collectionVariables.unset(\"contactTemplateMail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "11bed11d-4eb1-4d63-a7dd-34192ecffef9"
 							}
 						},
 						{
@@ -1428,10 +1484,12 @@
 									"pm.collectionVariables.set(\"contactTemplateAlias\", \"Contact_Template_for_API_Testing\");\r",
 									"pm.collectionVariables.set(\"contactTemplateMail\", \"dummymail@centreon\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "89aed93e-4fe2-4908-a228-18c8bc9f8685"
 							}
 						}
 					],
+					"id": "74f7f01f-7eaa-48d6-8e42-d755ac3a5809",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1483,7 +1541,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fb254750-8e34-4ffd-abf6-68797a1be842"
 							}
 						},
 						{
@@ -1503,10 +1562,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "24e0b711-a428-445c-a180-6d8bae9a8a8f"
 							}
 						}
 					],
+					"id": "0a06a0fc-a5e2-4011-863c-f203d8bdb8b6",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1570,7 +1631,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "d6051f80-ef3f-4111-8beb-8ef48b22d039"
 		}
 	],
 	"auth": {
@@ -1595,7 +1657,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "046e7ec0-f828-435b-be54-b28c5dffee58"
 			}
 		},
 		{
@@ -1623,7 +1686,8 @@
 					"        console.log(\"Response has the expected status code \" + pm.response.code + \" | Running the next tests\")",
 					"    }",
 					"  }"
-				]
+				],
+				"id": "1493ca7b-b21d-4cea-8eaa-9c921d1e1e1d"
 			}
 		}
 	]

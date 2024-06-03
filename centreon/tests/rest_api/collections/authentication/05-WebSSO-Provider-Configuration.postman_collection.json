@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "f8cadaca-aa3b-4c07-8ae3-2746384946ee",
+		"_postman_id": "29eb234b-3425-4d7d-a5cc-bce24adf7dec",
 		"name": "05 - WebSSO Provider Configuration",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "16182525",
-		"_collection_link": "https://centreon-api-v2-configuration.postman.co/workspace/Migration-of-%2522behat%2522-tests~e335ae07-f9ab-4b8d-bc6c-19b9f0078df4/collection/16182525-f8cadaca-aa3b-4c07-8ae3-2746384946ee?action=share&source=collection_link&creator=16182525"
+		"_uid": "28117716-29eb234b-3425-4d7d-a5cc-bce24adf7dec"
 	},
 	"item": [
 		{
@@ -27,10 +26,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "694a5d6d-b431-4558-92cd-8ccbbc28afa2"
 							}
 						}
 					],
+					"id": "6405dce2-e628-46c9-80ef-0956290dc630",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -80,10 +81,12 @@
 									"    });\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4428d427-2864-4c34-9f22-f3593d33adf9"
 							}
 						}
 					],
+					"id": "7a6280b8-0a4f-4aa0-830d-89dee3814fc2",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -126,10 +129,12 @@
 									"    pm.response.to.have.status(204);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b40c4f43-9330-4e71-b8c9-c1dbf48cf3f6"
 							}
 						}
 					],
+					"id": "bfec8c38-4b03-4216-a037-6285a261a7be",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -182,10 +187,12 @@
 									"    pm.expect(responseJson.blacklist_client_addresses).to.include(\"127.0.0.3\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "02a6b468-569f-4fbd-8a2a-006ce50e9f77"
 							}
 						}
 					],
+					"id": "9c3eb762-228d-4bf5-8a15-09a4d0643d0c",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -217,7 +224,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "2384adb2-7df3-430c-b966-45a8bb9a8fb9"
 		},
 		{
 			"name": "0502 - Update WebSSO Provider Configuration with invalid information",
@@ -236,10 +244,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[is_active] The property is_active is required\\n[is_forced] The property is_forced is required\\n[trusted_client_addresses] The property trusted_client_addresses is required\\n[blacklist_client_addresses] The property blacklist_client_addresses is required\\n[login_header_attribute] The property login_header_attribute is required\\n[pattern_matching_login] The property pattern_matching_login is required\\n[pattern_replace_login] The property pattern_replace_login is required\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5ca3479e-420a-43ec-800c-316b5c219571"
 							}
 						}
 					],
+					"id": "040572e1-d9bc-4a33-8d79-7763ee7f6092",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -284,10 +294,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[is_active] String value found, but a boolean is required\\n[is_forced] String value found, but a boolean is required\\n[trusted_client_addresses[0]] Integer value found, but a string is required\\n[blacklist_client_addresses[0]] Integer value found, but a string is required\\n[login_header_attribute] Boolean value found, but a string or a null is required\\n[pattern_matching_login] Integer value found, but a string or a null is required\\n[pattern_replace_login] Boolean value found, but a string or a null is required\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c62868b7-09f2-49b8-b3a1-ab9462a05018"
 							}
 						}
 					],
+					"id": "cade564e-3ca4-4198-86b6-e007d5437139",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -332,10 +344,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[WebSSOConfiguration::blacklistClientAddresses] The value '.@' was expected to be a valid ip address\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9a01ddda-184c-47a3-bda2-93ff24e5578d"
 							}
 						}
 					],
+					"id": "ee3eade2-dd16-49a0-bdcc-f7399230e84d",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -380,10 +394,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[WebSSOConfiguration::trustedClientAddresses] The value '.@' was expected to be a valid ip address\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0666765c-5caa-4f36-b9cd-93d1b029e24b"
 							}
 						}
 					],
+					"id": "4d47f270-2d6c-41fa-8bea-fc5736c433f4",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -414,7 +430,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "817d348a-0b93-4958-88a4-89edf11a1b51"
 		},
 		{
 			"name": "0503 - Update and retrieve WebSSO Provider Configuration information as logged non-admin user without Reach API rights",
@@ -430,7 +447,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5845166d-716f-4be2-ba3c-f253496767eb"
 							}
 						},
 						{
@@ -439,10 +457,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f233d767-2699-4b19-a212-a717f9e4a2c9"
 							}
 						}
 					],
+					"id": "8406d867-dd43-4cb3-8355-abeb8513b161",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -486,10 +506,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f71b9f21-8d93-423e-b7b4-8cde65f0fec9"
 							}
 						}
 					],
+					"id": "c8812b33-b200-4018-b5e2-d44095707b20",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -565,10 +587,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "71ba754b-dd6b-4026-bc28-5997c8580519"
 							}
 						}
 					],
+					"id": "168348bf-015a-4e6f-93fa-c15776d028ea",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -607,10 +631,12 @@
 									"    pm.response.to.have.status(403);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "77b7b564-758c-40d9-956e-d2e960e47936"
 							}
 						}
 					],
+					"id": "0f2bf1f0-e26e-49e9-bf6c-5ff914b035d0",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -652,10 +678,12 @@
 									"    pm.response.to.have.status(403);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9b220480-68e3-4b8c-879a-182758e1a7c6"
 							}
 						}
 					],
+					"id": "57d5d9f7-0c4e-4966-ac40-c3c96b8d6a9e",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -703,10 +731,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "39159b60-eeea-4dbf-b04f-ca5471258c15"
 							}
 						}
 					],
+					"id": "46cb6b66-b5cc-4d9f-a818-f3ea6a9217d5",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -765,7 +795,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "d8bca3a9-520d-4f2a-8d31-2bfa456f1b89"
 		},
 		{
 			"name": "0504 - Update and retrieve WebSSO Provider Configuration information as logged non-admin user with Reach API rights",
@@ -787,10 +818,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9e38d84a-9420-496e-be0e-c80cd4d1f992"
 							}
 						}
 					],
+					"id": "5b81b5c1-8c47-443c-9827-4051abc38646",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -827,7 +860,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ae718f48-afb1-4927-89e3-651a349115f0"
 							}
 						},
 						{
@@ -838,10 +872,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f4a33bc3-0562-4003-bae1-c98df8d2c48f"
 							}
 						}
 					],
+					"id": "82dd4740-24b5-4f0d-a527-e93184f5c050",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -878,7 +914,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "223b92d4-2fbf-4798-b234-15343bc540d1"
 							}
 						},
 						{
@@ -889,10 +926,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ea534ef5-a8a7-4e1c-9feb-af3d8895b28d"
 							}
 						}
 					],
+					"id": "17751433-6d37-46a9-949c-ec76c78f796e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -929,7 +968,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "10ef3ee6-d390-4e08-b070-ee93412415f7"
 							}
 						},
 						{
@@ -940,10 +980,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "26ac8745-5955-46dd-8ff5-89b8864b40f3"
 							}
 						}
 					],
+					"id": "34b1132c-8fc0-4be9-94a7-bb095c459297",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -980,7 +1022,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "be792ffa-eda2-4cac-93e9-33149b47878d"
 							}
 						},
 						{
@@ -991,10 +1034,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "778c5102-a576-4d52-b087-247d51163297"
 							}
 						}
 					],
+					"id": "67e2d97f-0090-47f7-88f5-acd5f29a28c9",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1031,7 +1076,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4017c978-da02-4ac3-852a-a5ad009ab9f8"
 							}
 						},
 						{
@@ -1042,10 +1088,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bdcc512b-e67b-4d04-aaf2-a7414b39dba7"
 							}
 						}
 					],
+					"id": "3283e177-cdac-4131-aaa6-ac40c2ed462b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1089,10 +1137,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2a70afe5-1cbf-4858-bfd9-ef0dda52541c"
 							}
 						}
 					],
+					"id": "9a008906-aaf6-4714-8aff-449af0b95b18",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1168,10 +1218,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "93a0cab5-295a-4b90-9cc6-cafaf4f50b73"
 							}
 						}
 					],
+					"id": "e54a26f6-dae9-4bfb-87af-d91cbe1c9cc3",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1210,10 +1262,12 @@
 									"    pm.response.to.have.status(204);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4aec394b-dfd9-4fbd-aa9f-221aa8d9a870"
 							}
 						}
 					],
+					"id": "d7694280-03f8-44b0-8c41-95090634d5ed",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1266,10 +1320,12 @@
 									"    pm.expect(responseJson.blacklist_client_addresses).to.include(\"127.0.0.6\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a1ebc61d-a839-4e88-a9f9-8d78a626a3dd"
 							}
 						}
 					],
+					"id": "6f852c65-849a-43bb-ae6e-9d2bfa212a77",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -1317,10 +1373,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a6257b7c-b2e9-4511-96b4-59bf64dbfd5a"
 							}
 						}
 					],
+					"id": "fed85dd8-fd04-4ca8-9ef9-91eb9d812be8",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1379,7 +1437,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "bf12d6dc-0161-4927-a936-eeecb240593c"
 		}
 	],
 	"auth": {
@@ -1404,7 +1463,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "9693a60d-674e-43c5-91d0-a0398106f2b6"
 			}
 		},
 		{
@@ -1413,7 +1473,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "e36f63ba-ed6c-4f32-888d-40cdf6420463"
 			}
 		}
 	]

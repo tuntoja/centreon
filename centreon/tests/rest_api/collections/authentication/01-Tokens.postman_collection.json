@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "a14087e9-4fe4-4fb5-b449-5c6853c10f44",
+		"_postman_id": "a9f18438-b5d5-442b-b340-e7cc80d3967b",
 		"name": "01 - Tokens",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "16182525",
-		"_collection_link": "https://centreon-api-v2-configuration.postman.co/workspace/Migration-of-%2522behat%2522-tests~e335ae07-f9ab-4b8d-bc6c-19b9f0078df4/collection/16182525-a14087e9-4fe4-4fb5-b449-5c6853c10f44?action=share&source=collection_link&creator=16182525"
+		"_uid": "28117716-a9f18438-b5d5-442b-b340-e7cc80d3967b"
 	},
 	"item": [
 		{
@@ -16,8 +15,10 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "58e1d086-076b-4607-98bf-93482d5724f4",
 								"exec": [
 									"const responseJson = pm.response.json();\r",
+									"console.log('test commit')\r",
 									"pm.test(\"Login successful. The account displayed in response matches with credentials and has admin rights.\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"    pm.expect(responseJson.contact.alias).to.eql(pm.environment.get('api_login'));\r",
@@ -27,12 +28,15 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
+					"id": "4e0a05cd-dbb4-483b-9580-03e3ace93682",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -58,7 +62,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "3d7bca86-ea9b-4af2-baac-ae345cc85b3f"
 		},
 		{
 			"name": "0102 - user_with_menu_action",
@@ -74,7 +79,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2a52022a-d0a3-4250-b392-59de8dd59e38"
 							}
 						},
 						{
@@ -84,17 +90,21 @@
 									"pm.collectionVariables.set(\"api_login_user_menu_action\", \"user_with_menu_action\");\r",
 									"pm.collectionVariables.set(\"api_password_user_menu_action\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d004ce59-18f9-45b9-83dc-d2f7d2429768"
 							}
 						}
 					],
+					"id": "74f8e3d6-d295-4890-98a0-af8f35f5ebb5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -124,7 +134,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7205c10b-4f06-42b4-b0fc-6ef593eea373"
 							}
 						},
 						{
@@ -135,17 +146,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "191f73cf-cd33-404d-ad9b-3966bfd2aab3"
 							}
 						}
 					],
+					"id": "663475d8-2634-4261-b04d-05de72769efb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -175,7 +190,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e025465c-2474-467a-9202-e6d97baca376"
 							}
 						},
 						{
@@ -186,17 +202,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c0c30b5a-da83-4bd7-9ff8-d245211e9c55"
 							}
 						}
 					],
+					"id": "132fd918-3172-41a7-9825-5e6ffb1374fb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -226,7 +246,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7a599d22-9201-4d53-a2c6-d5adc607ab32"
 							}
 						},
 						{
@@ -237,17 +258,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a15b8006-ced5-4e3a-bf67-465d35da6020"
 							}
 						}
 					],
+					"id": "56cb1b6a-7627-4668-9b15-6d11780ca893",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -277,7 +302,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1713234f-a68f-4f6b-abef-1931c03c44ea"
 							}
 						},
 						{
@@ -288,17 +314,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d4bef0cc-6d8b-41bc-bd77-932816ac4388"
 							}
 						}
 					],
+					"id": "1ada1515-16de-4cd9-98c7-1dd9b5c95e54",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -328,7 +358,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c0f8620f-f595-42f0-be27-aa482fcf21da"
 							}
 						},
 						{
@@ -339,17 +370,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d0477dd5-b32a-446d-a300-46f2cfaa8e98"
 							}
 						}
 					],
+					"id": "1ec08960-2a49-46fc-87e9-d134e1cf08dd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -379,7 +414,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "baa37018-48ce-43b2-a4b7-4bd4ac8c562b"
 							}
 						},
 						{
@@ -390,17 +426,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7d5cff19-01b1-45b9-a0e6-a06528e9493c"
 							}
 						}
 					],
+					"id": "e2aab491-ad80-460e-aa65-d503fd9af53f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -430,7 +470,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4df2971e-7689-4c5e-bd7d-51ad19417a6e"
 							}
 						},
 						{
@@ -441,17 +482,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1d94052e-218f-420e-941d-a2ed6d1d011c"
 							}
 						}
 					],
+					"id": "2596602e-01c9-4d6c-91a4-b27c08df2840",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -481,7 +526,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8e746cbe-4970-4c0b-a4b2-2b2f78202862"
 							}
 						},
 						{
@@ -492,17 +538,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9ba3696c-3008-451f-99ce-c97eaab65db6"
 							}
 						}
 					],
+					"id": "3a1b45cb-3c0f-458b-a70e-92c7958862de",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -532,7 +582,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "aea33b72-be8d-415d-816c-d0b838e059db"
 							}
 						},
 						{
@@ -543,17 +594,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b79fd379-2eb4-4d49-b252-c92d219d2825"
 							}
 						}
 					],
+					"id": "a9113e90-e00c-4e1b-9111-0e065963f109",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -583,7 +638,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3d901a1b-4619-4549-a7d9-3e63d6766035"
 							}
 						},
 						{
@@ -594,17 +650,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "21f7b5e6-0b7e-45b5-9e75-e1faf0c268e3"
 							}
 						}
 					],
+					"id": "a69d1c28-2c76-4db3-80b3-f861427005e7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -634,7 +694,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0a0dd585-deec-4d26-9efe-ca90212872b9"
 							}
 						},
 						{
@@ -645,17 +706,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0ecf2fe2-7253-422b-8e90-7dd852f4d489"
 							}
 						}
 					],
+					"id": "1eccfc00-8e48-4f23-a198-5383b9554494",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -676,7 +741,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "2a5b64ae-7192-4b84-a5ec-7af780dbbc52"
 		},
 		{
 			"name": "0103 - user_with_menu",
@@ -691,7 +757,8 @@
 									"pm.collectionVariables.set(\"api_login_user_menu\", \"user_with_menu\");\r",
 									"pm.collectionVariables.set(\"api_password_user_menu\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1a8fb7a2-e9a8-4b02-837c-5021f26e17f2"
 							}
 						},
 						{
@@ -702,17 +769,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "11646158-f613-435d-ac8a-5cb9143643e1"
 							}
 						}
 					],
+					"id": "06f267f1-c69b-4363-9114-56afa25726ff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -742,7 +813,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1b8c596d-b598-49de-9841-a44497c56742"
 							}
 						},
 						{
@@ -753,17 +825,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a0e2b773-dfef-4618-a748-b173a171ceb1"
 							}
 						}
 					],
+					"id": "3dccb24a-f211-4595-b089-688e220ed5bc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -793,7 +869,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2b424b57-bb9a-4e72-a98c-f2da62209027"
 							}
 						},
 						{
@@ -804,17 +881,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e051285a-0c4f-47b4-b3d9-7f41a8a48dd6"
 							}
 						}
 					],
+					"id": "1d7e5d34-e4cb-4286-88ed-cabc42562c9c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -844,7 +925,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e1f1d4d1-e1cc-47e0-b216-752c70e601cc"
 							}
 						},
 						{
@@ -855,17 +937,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4235d7c1-7aa0-4772-9e64-6aae425bf086"
 							}
 						}
 					],
+					"id": "97ae7fde-78cf-462b-b4db-eb3cfd319a22",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -895,7 +981,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3525fe50-03ab-4abc-9870-3821abf635f8"
 							}
 						},
 						{
@@ -906,17 +993,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1a471893-f671-42c4-a043-baca001f318d"
 							}
 						}
 					],
+					"id": "8bd7e55a-5cbd-4299-a2e8-576318c95ade",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -946,7 +1037,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "99c88991-d3fa-4150-9418-8b778c078f9a"
 							}
 						},
 						{
@@ -957,17 +1049,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5eb1e7fe-49d0-43bf-b242-ef9d1e8fee4b"
 							}
 						}
 					],
+					"id": "d653e687-41c0-4616-9cec-b3644e13d02c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -997,7 +1093,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2e782cab-1735-486d-b61e-baac3cca7b9f"
 							}
 						},
 						{
@@ -1008,17 +1105,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "057ab03a-44e8-48cb-aee3-754c7e0fe206"
 							}
 						}
 					],
+					"id": "a7905e1a-bc01-46b4-a18f-53b2348b582a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -1039,7 +1140,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "7fba79a4-a52e-486f-82f0-f5f706132069"
 		},
 		{
 			"name": "0104 - user_no_access",
@@ -1055,7 +1157,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6fc36ded-4016-4b0e-8337-de20e9defbef"
 							}
 						},
 						{
@@ -1065,17 +1168,21 @@
 									"pm.collectionVariables.set(\"api_login_user_no_access_Token\", \"user_no_access_Token\");\r",
 									"pm.collectionVariables.set(\"api_password_user_no_access_Token\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b51d3abd-487d-47e0-b392-e6a58e85342a"
 							}
 						}
 					],
+					"id": "2fc18865-0379-4d39-9fa2-6d8c31aa8fca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -1105,7 +1212,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "413a122b-4a8b-48ef-9d0c-1bebff1c1789"
 							}
 						},
 						{
@@ -1116,17 +1224,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "87e06c93-52cb-4f97-aadc-d7301c656c98"
 							}
 						}
 					],
+					"id": "bccc1399-625c-47b1-adbc-07919cd775a8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -1156,7 +1268,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5cec76b8-b60b-45ac-861c-423a7f39fef1"
 							}
 						},
 						{
@@ -1167,17 +1280,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "aa6ce460-7633-4454-a0bb-b8421b071b03"
 							}
 						}
 					],
+					"id": "46332e0d-f69f-4317-8fef-e9e8584920b1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -1207,7 +1324,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d12521f6-b098-47af-95be-66c32c90c115"
 							}
 						},
 						{
@@ -1218,17 +1336,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "96a98a72-30a9-4d93-aab2-af618e64a4b4"
 							}
 						}
 					],
+					"id": "d1837ea2-f829-44f6-8dfc-e6cd50b0cf6d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -1258,7 +1380,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "309cf2a0-b543-4003-9abc-3bad028b536a"
 							}
 						},
 						{
@@ -1269,17 +1392,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2a29a90e-6697-4040-9f3e-a9506d410c74"
 							}
 						}
 					],
+					"id": "d94f5efc-0ebd-4356-a83e-df41bc27d658",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -1309,7 +1436,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6c17245d-0796-4c7f-84a2-11b5611ac407"
 							}
 						},
 						{
@@ -1320,17 +1448,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a6602681-3d2f-4be0-be85-4eaa63447d0f"
 							}
 						}
 					],
+					"id": "c3684f34-96f1-4225-a36b-b168735cabd5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -1360,7 +1492,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c8ee38ab-c5d8-4325-a14d-83615faba1a4"
 							}
 						},
 						{
@@ -1371,17 +1504,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "62e39746-69df-41e4-80d8-9b3797712487"
 							}
 						}
 					],
+					"id": "5fbad5ca-fd56-4a75-b0d9-024ba07c023f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -1411,7 +1548,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a06165f5-578b-47f4-92ad-607d6f4a0f7f"
 							}
 						},
 						{
@@ -1422,17 +1560,21 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8a99aa3e-8ef3-42e2-a7da-d6185cc7373a"
 							}
 						}
 					],
+					"id": "8b6785eb-ed30-4071-9b63-ffd1f192ed40",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -1453,7 +1595,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "f31369b2-02a4-4897-99f4-48bd6d0febad"
 		},
 		{
 			"name": "0105 - By Admin",
@@ -1475,12 +1618,15 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1d562ab7-7853-4e5e-984c-2f2936d5bff6"
 							}
 						}
 					],
+					"id": "0078b3b3-db96-440a-836d-7785d1a7147d",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -1530,17 +1676,21 @@
 									"    }\r",
 									"}"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2cd7ccab-1bc6-4c6a-8435-bf85cafba927"
 							}
 						}
 					],
+					"id": "855c6aba-c416-40e2-bf91-f9dd94d92c43",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -1580,17 +1730,21 @@
 									"    }\r",
 									"}"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5c62347c-a75d-44f2-86f1-1b333e6d490c"
 							}
 						}
 					],
+					"id": "f39c9af5-2e93-456d-9575-e9423d40976b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "centreon-auth-token",
-								"value": "{{token}}",
-								"type": "text"
+								"value": "{{token}}"
 							}
 						],
 						"body": {
@@ -1638,12 +1792,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4b87e80a-8c42-4b65-b946-6d00d1ce92e8"
 							}
 						}
 					],
+					"id": "e0f742e1-b6af-493f-b115-27fb10a5abbe",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -1705,10 +1862,12 @@
 									"\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "70b9c516-4811-46ad-b17b-9273576c7a03"
 							}
 						}
 					],
+					"id": "8bcc4617-8422-45bc-9795-144d0443e73c",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -1776,12 +1935,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fcda6f68-8144-46ba-83e1-4d1117974784"
 							}
 						}
 					],
+					"id": "a1dc9510-c8bf-43d5-9d06-ea8f6943df63",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -1853,10 +2015,12 @@
 									"    \r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e132eeb5-a26f-4288-8e46-36bac2ae1144"
 							}
 						}
 					],
+					"id": "440f490d-64d9-4abe-9f80-1ea35ae5be6f",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -1924,12 +2088,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a27bfc06-7aad-476d-b5da-13ce3c8688d0"
 							}
 						}
 					],
+					"id": "ad788b11-95fc-4d08-9ac0-c214b89a9543",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -2011,10 +2178,12 @@
 									"    \r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c7b04f6c-4120-4889-a0f9-079cab5dea74"
 							}
 						}
 					],
+					"id": "c9b2633a-4570-4822-9600-4d297526cef9",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -2069,12 +2238,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9dfbbd4b-bf3b-40de-904c-1cbd4592008e"
 							}
 						}
 					],
+					"id": "a4ad30b6-1367-4e37-b6e5-e8d9f2972e66",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -2116,12 +2288,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "cd27331c-328c-409d-b9bd-18191dce0624"
 							}
 						}
 					],
+					"id": "fd3f03b2-eca4-4b0c-bb41-dd1b750a5984",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -2162,12 +2337,15 @@
 									"    pm.expect(response.message).to.include(\"Token not found\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c7d7a9c6-1221-4982-83aa-7a5a8302c0d6"
 							}
 						}
 					],
+					"id": "a54494e4-d537-4593-ad77-4dd9eab71b36",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "DELETE",
@@ -2207,12 +2385,15 @@
 									"    pm.collectionVariables.unset(\"Token3Name\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "254c454d-529e-483b-aae4-133b23c2cb27"
 							}
 						}
 					],
+					"id": "7da1f221-d14b-4b28-af9f-1f55ba8e8bb0",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "DELETE",
@@ -2287,10 +2468,12 @@
 									"    \r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d143d50c-bd2d-450d-ae5a-2229998d8874"
 							}
 						}
 					],
+					"id": "c1d3bbbd-fd5d-4e92-aa17-c201deec614f",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -2342,10 +2525,15 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5cb9abdc-4ddd-4e58-a938-fcc47a7b4215"
 							}
 						}
 					],
+					"id": "0b918915-62bf-4786-80e1-cfa07490205d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2404,7 +2592,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "af6299dd-0ef3-4dbc-b18d-b3ad6a94fda5"
 		},
 		{
 			"name": "0106 - By User with Menu",
@@ -2426,12 +2615,15 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "231554f0-cf92-4793-8146-7b56e301cbd1"
 							}
 						}
 					],
+					"id": "2b51bc92-616c-49fb-87a8-205450bc1eeb",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -2489,12 +2681,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2f193538-11ab-4194-8a18-4b0ea63cb9ec"
 							}
 						}
 					],
+					"id": "bcff234a-617d-4198-82f6-1de28c82656f",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -2537,12 +2732,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "eccd09ba-70c0-4207-9a62-bd2987e22c31"
 							}
 						}
 					],
+					"id": "e778eae4-bce9-4211-a3dc-1969a66218ff",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -2614,10 +2812,12 @@
 									"\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5ff77ebb-4e33-4e35-99e4-32428502ab83"
 							}
 						}
 					],
+					"id": "637db6dc-2c71-4b80-8bab-ba0e831b9abf",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -2665,12 +2865,15 @@
 									"    pm.collectionVariables.unset(\"Token4Name\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0b08417f-a923-41a8-bfd8-ebae25d36920"
 							}
 						}
 					],
+					"id": "130cc81b-452a-439c-8980-fc30c5bbd4db",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "DELETE",
@@ -2714,12 +2917,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f67bced1-64ea-4b76-872b-c1ca9ec58777"
 							}
 						}
 					],
+					"id": "d8003d9a-7952-4ee7-a4c9-a9135655e1d6",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "DELETE",
@@ -2784,10 +2990,12 @@
 									"\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0f714e46-c5c0-44ba-acfc-b5edca543dd1"
 							}
 						}
 					],
+					"id": "51c71cc5-16e3-4bf9-bcca-dfbbc78b3c01",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -2839,10 +3047,15 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fd2c76b3-531e-4096-ace0-704d2ab2a6c0"
 							}
 						}
 					],
+					"id": "ecfc050f-2160-40ae-9d36-409c8eb36b90",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2901,7 +3114,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "efa10af5-f4f7-4538-a1c6-3a5e26579a68"
 		},
 		{
 			"name": "0107 - By User with No Access",
@@ -2923,12 +3137,15 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "739794f9-16ba-42cb-bc47-4e9b7070d905"
 							}
 						}
 					],
+					"id": "cccdb840-5fca-4dd4-93cd-58a86e3de3f9",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -2970,12 +3187,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "08551341-fc98-47ea-8eae-c5334087586f"
 							}
 						}
 					],
+					"id": "45b73a32-4acf-45e0-a3c6-d6394888f19d",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -3018,10 +3238,12 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "77d5db60-54b5-4606-8569-e7d6447c2804"
 							}
 						}
 					],
+					"id": "29d316ac-5e57-4d83-8398-b08c7e4e1373",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -3067,12 +3289,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "18d764ef-53d9-46d9-9791-ed5356e06dec"
 							}
 						}
 					],
+					"id": "76d838fb-1ae6-4a58-9a52-20fc84f084de",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "DELETE",
@@ -3116,10 +3341,15 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0a2b8107-2151-4b9b-9c69-f001f7071d0b"
 							}
 						}
 					],
+					"id": "ed50558f-8df5-488d-8107-122217a66f89",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3178,7 +3408,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "7deeccbe-ac0c-49f9-b97a-0081ed3ab339"
 		},
 		{
 			"name": "0108 - By User with Menu & Action",
@@ -3200,12 +3431,15 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "007680ca-cddf-4da9-be30-1c3d8ad52dd3"
 							}
 						}
 					],
+					"id": "395dcf2f-41e1-452a-9116-387f34340e79",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -3263,12 +3497,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "09d96b8a-6888-40d5-982f-b7e11dd292ee"
 							}
 						}
 					],
+					"id": "121150b4-c466-4010-982b-69b6daf52814",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -3317,12 +3554,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f1a54c0d-8085-4bdb-8021-a6ae51538fd8"
 							}
 						}
 					],
+					"id": "7964bcf5-4dfa-4505-b203-652eac3f67b8",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -3381,12 +3621,15 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7d7113f3-ae3b-470f-8165-7f3e6f2d9c48"
 							}
 						}
 					],
+					"id": "7c3127cf-ceb5-41b0-b054-00462d9db186",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
@@ -3478,10 +3721,12 @@
 									"\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ab55ad9f-f5c4-4b03-abbd-f083865fa793"
 							}
 						}
 					],
+					"id": "f36c21fe-711f-43e4-ab06-fa226ad6b96c",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -3529,12 +3774,15 @@
 									"    pm.collectionVariables.unset(\"Token5Name\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c95d8067-9c75-48de-9e24-88ee5cabb04b"
 							}
 						}
 					],
+					"id": "4d0c79b0-2205-4d09-b918-6a63c51b226e",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "DELETE",
@@ -3574,12 +3822,15 @@
 									"    pm.collectionVariables.unset(\"Token1Name\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "753bac00-f5d0-408e-9a07-53ecf448e8a1"
 							}
 						}
 					],
+					"id": "0d491565-3413-4287-9503-6117b6fd667f",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "DELETE",
@@ -3621,12 +3872,15 @@
 									"    pm.collectionVariables.unset(\"Token2Name\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0250ad21-c8a1-40e7-8234-9087615dc42b"
 							}
 						}
 					],
+					"id": "dfd4c106-f26f-4545-a437-eb790097cbe5",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "DELETE",
@@ -3668,12 +3922,15 @@
 									"    pm.collectionVariables.unset(\"Token6Name\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1220ab91-f1b0-4a74-9eb4-08a3e17d2d94"
 							}
 						}
 					],
+					"id": "57ef658b-0990-469a-8862-182128da2f7a",
 					"protocolProfileBehavior": {
-						"disableCookies": true
+						"disableCookies": true,
+						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "DELETE",
@@ -3719,10 +3976,15 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "84f4d6ff-0c35-453e-95cd-e1d9aded3688"
 							}
 						}
 					],
+					"id": "f1131201-40c4-4a23-955e-ce1957ecfa75",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3781,7 +4043,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "3133f657-0db2-4d05-b96b-be06595fceff"
 		}
 	],
 	"auth": {
@@ -3806,7 +4069,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "cdcda0cb-1892-4f99-8af2-ee43a6572c60"
 			}
 		},
 		{
@@ -3815,7 +4079,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "e834dc9d-4f03-49df-91b1-73c65fc25227"
 			}
 		}
 	]

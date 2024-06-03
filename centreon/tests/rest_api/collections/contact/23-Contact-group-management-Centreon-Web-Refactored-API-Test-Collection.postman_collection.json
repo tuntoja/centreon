@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "35079df6-8c7c-4aa0-84be-fcfecb2f4f72",
+		"_postman_id": "3d349802-2a93-4ca9-970b-1d69abb79011",
 		"name": "23 - Contact group management - Centreon Web Refactored API Test Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "22770334",
-		"_collection_link": "https://centreon-api-v2-monitoring-clapi.postman.co/workspace/Refacto-Tests-API~937020c6-b43d-4380-8c50-a2069c131e07/collection/22770334-35079df6-8c7c-4aa0-84be-fcfecb2f4f72?action=share&creator=22770334&source=collection_link"
+		"_uid": "28117716-3d349802-2a93-4ca9-970b-1d69abb79011"
 	},
 	"item": [
 		{
@@ -34,10 +33,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9569035d-16ef-4943-8ce3-7546458a3c58"
 							}
 						}
 					],
+					"id": "33ce6a23-9346-41b0-b99b-55e3aee7e83a",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -87,10 +88,12 @@
 									"    pm.expect(responseJson.result[1].name).to.eql(\"Supervisors\");\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "05eedcb3-66ec-4a32-a15d-8fdaee9e4fe5"
 							}
 						}
 					],
+					"id": "f2d5f0a1-e169-4499-9472-5e6d6e309302",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -129,7 +132,8 @@
 									"    pm.expect(responseJson.result[0].name).to.eql(pm.environment.get(\"api_login\"));\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ff4b72a0-eb80-4375-80c0-c66a14c57efe"
 							}
 						},
 						{
@@ -138,10 +142,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c0ac5bba-9faa-4cff-86b5-af80d8350e35"
 							}
 						}
 					],
+					"id": "ef5859b3-541d-4c1d-9b04-0b571b461e49",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -162,8 +168,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -205,7 +212,8 @@
 									"    pm.expect(responseJson.result[1].name).to.eql(\"user\");\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "52a9e97b-2863-43e5-96c9-27f2e6d289e5"
 							}
 						},
 						{
@@ -214,10 +222,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "87846ae1-7b4a-4ab0-86b5-c6a70a7e8ef8"
 							}
 						}
 					],
+					"id": "420e68c7-4112-4dcc-b880-fedcea53a446",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -238,8 +248,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -281,10 +292,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c36cab56-0692-4d50-ad76-6f86f24d20f7"
 							}
 						}
 					],
+					"id": "84ee77c6-c6a7-4054-93c6-e63f8992f35d",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -348,7 +361,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "776dd90e-f7cc-4593-94ac-56b4a5434dad"
 		},
 		{
 			"name": "2302 - Adding a new contact to default contact group",
@@ -375,10 +389,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "22e0a419-7e60-4fa9-bd11-7d309c970dee"
 							}
 						}
 					],
+					"id": "27058508-d73b-45e1-8a47-0030c69fd7b5",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -428,10 +444,12 @@
 									"    pm.expect(responseJson.result[1].name).to.eql(\"Supervisors\");\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8886a5ad-2a09-4ea5-b8e5-e84a3bd67788"
 							}
 						}
 					],
+					"id": "89d18bd7-9076-4928-9db2-e61186228b29",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -465,7 +483,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "65bcc8bc-e2fb-4ca8-af1e-73b7a8356662"
 							}
 						},
 						{
@@ -477,10 +496,12 @@
 									"pm.collectionVariables.set(\"testUserEmail\", \"testUser@localhost\");\r",
 									"pm.collectionVariables.set(\"testUserPassword\", \"Centreon!2021\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6529a099-c838-44b7-a392-a1297977a895"
 							}
 						}
 					],
+					"id": "82d211ac-0322-4a9e-a31e-380125de7978",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -501,8 +522,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -538,7 +560,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fcb2188a-e65e-42c9-9bfe-0139a0d0c522"
 							}
 						},
 						{
@@ -547,10 +570,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "405ff976-0fb7-42f3-9ee4-11800daf2e4c"
 							}
 						}
 					],
+					"id": "34a8c3e2-ad20-42f0-999b-bae4917d5d31",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -571,8 +596,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -619,7 +645,8 @@
 									"    pm.expect(tableOfUserNames).to.contain(pm.collectionVariables.get(\"testUserLogin\"));\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6903e8b6-55d0-44e6-9f33-1009196c1a51"
 							}
 						},
 						{
@@ -628,10 +655,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8cb1acab-c230-470f-9af2-60eb776f7cc5"
 							}
 						}
 					],
+					"id": "5a2a3e26-52a6-49a9-a6b9-feced25d9753",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -652,8 +681,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -688,7 +718,8 @@
 									"    pm.collectionVariables.unset(\"testUserEmail\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "63e50335-3922-4608-8d54-ba7ead845fcf"
 							}
 						},
 						{
@@ -697,10 +728,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "cff2d6df-9bc4-4cb2-9295-e4166db17ef9"
 							}
 						}
 					],
+					"id": "7f39541f-1ea2-423f-bf20-1a3ed9fd6cce",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -721,8 +754,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -762,10 +796,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d52d2fcc-53b7-4dbf-ab07-9bcf3d30f488"
 							}
 						}
 					],
+					"id": "ae2af05d-8630-489d-865e-05addbe707f8",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -829,7 +865,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "bb347df1-9125-4d12-932a-ae2c360da677"
 		},
 		{
 			"name": "2303 - Creating a new contact group",
@@ -856,10 +893,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3de838b2-8a9d-4935-b523-c0939613eed0"
 							}
 						}
 					],
+					"id": "a4b5fe1d-6fcb-45b3-b282-71e5cbbf2999",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -910,10 +949,12 @@
 									"    pm.collectionVariables.set(\"numberOfListedContactGroups\", responseJson.meta.total);\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2c9a55ae-8aa5-497c-a894-75944793dc27"
 							}
 						}
 					],
+					"id": "e1d0d40c-0ad5-4896-bfd0-92bc8e12c406",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -947,7 +988,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2018909c-d7e5-4653-ad4d-a65aa327dcef"
 							}
 						},
 						{
@@ -957,10 +999,12 @@
 									"pm.collectionVariables.set(\"contactGroupName\", \"CG-Test-API-2303\");\r",
 									"pm.collectionVariables.set(\"contactGroupAlias\", \"Contact Group Test API\")"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ba7db596-7444-4457-ae11-712e0d205752"
 							}
 						}
 					],
+					"id": "cd50b719-17e1-4959-b95b-fbff7b90f4a1",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -981,8 +1025,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -1026,10 +1071,12 @@
 									"    pm.expect(responseJson.result[2].name).to.eql(pm.collectionVariables.get(\"contactGroupName\"));\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f95b03d7-ce1d-47a4-9620-8a910444a6c3"
 							}
 						}
 					],
+					"id": "cfd9dbce-d0a4-470f-a428-fdc5256b62cc",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -1067,7 +1114,8 @@
 									"    pm.expect(responseJson.result).to.be.empty;\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f623ef94-b94c-45e3-b3b0-207b7da4e698"
 							}
 						},
 						{
@@ -1076,10 +1124,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "af06b0eb-49e6-455d-8ba3-a0c7e867d96a"
 							}
 						}
 					],
+					"id": "0b5eefcb-f660-42f4-87f9-9b81953e14b2",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1100,8 +1150,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -1139,7 +1190,8 @@
 									"    pm.collectionVariables.unset(\"contactGroupAlias\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8bc5ed80-30d6-4f7c-9e5d-76982db4fa31"
 							}
 						},
 						{
@@ -1148,10 +1200,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fa52cda8-c0b5-484b-ba53-92d39567c3ed"
 							}
 						}
 					],
+					"id": "82e8b77d-0b43-4d93-919a-480bdc9856e5",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1172,8 +1226,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -1215,10 +1270,12 @@
 									"    pm.expect(responseJson.result[1].name).to.eql(\"Supervisors\");\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "707c2576-6146-4f9d-aad4-d8b1cfb6d5bb"
 							}
 						}
 					],
+					"id": "73d4aeea-d55c-44f3-b4bd-0408406a5799",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -1256,10 +1313,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7fedfdf7-279e-44ad-9703-527627e10ea3"
 							}
 						}
 					],
+					"id": "ad1d4bc9-f936-49f3-beae-58526f33da9d",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1323,7 +1382,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "373156c1-01f9-4fcc-9ad4-51ad3020e3f7"
 		},
 		{
 			"name": "2304 - Adding dummy users to new contact group",
@@ -1350,10 +1410,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e006991c-697b-498e-866d-2e38664d78cf"
 							}
 						}
 					],
+					"id": "77267783-9007-4592-a269-7fde6f95bcf4",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1397,7 +1459,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7f6a77e4-c5ee-4299-9910-fbf62e148c76"
 							}
 						},
 						{
@@ -1407,10 +1470,12 @@
 									"pm.collectionVariables.set(\"contactGroupName\", \"CG-Test-API-2304\");\r",
 									"pm.collectionVariables.set(\"contactGroupAlias\", \"Contact Group Test API\")"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "91a2d453-c965-4bf9-b4a3-091ab42de9a3"
 							}
 						}
 					],
+					"id": "02316c8f-f8ed-48ff-96e6-855b07b2fe50",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1431,8 +1496,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -1478,7 +1544,8 @@
 									"    }\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e8279d1a-4436-458d-b8d8-3713f7b76e92"
 							}
 						},
 						{
@@ -1499,10 +1566,12 @@
 									"pm.collectionVariables.set(\"usersCreated\", usersCreated);\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0b37efae-7ed9-4620-8ee9-5f93a949ae3d"
 							}
 						}
 					],
+					"id": "7f4db42f-adae-4044-9930-db04d6e09275",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1523,8 +1592,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -1561,7 +1631,8 @@
 									"    pm.collectionVariables.unset(\"listOfUsersToAddToContactGroup\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "289a20f4-4244-4b86-84cf-001a25011e5c"
 							}
 						},
 						{
@@ -1578,10 +1649,12 @@
 									"\r",
 									"pm.collectionVariables.set(\"listOfUsersToAddToContactGroup\", finalParameter.substring(1));"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6fd76949-225c-4ebd-a8f8-bb8f5113ff74"
 							}
 						}
 					],
+					"id": "ea24d354-2a9c-4d9a-9554-37ef3dde970b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1602,8 +1675,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -1650,7 +1724,8 @@
 									"    }\r",
 									"}"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f379c3a0-7538-4683-9afc-4fa0ad523954"
 							}
 						},
 						{
@@ -1659,10 +1734,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "da7a002a-2bf4-4279-b191-5467b0e7c2ba"
 							}
 						}
 					],
+					"id": "dc148fb6-a5ec-48a2-a45c-c432c1f9e02e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1683,8 +1760,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -1720,7 +1798,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ccf4c55a-3f5a-4332-b10a-fd0f61ae9cda"
 							}
 						},
 						{
@@ -1730,10 +1809,12 @@
 									"usersCreated = pm.collectionVariables.get(\"usersCreated\");\r",
 									"pm.collectionVariables.set(\"userToRemoveFromTheContactGroup\", usersCreated[usersCreated.length - 1]);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "16835eaf-25c8-4027-b31c-59c89a5f4bcf"
 							}
 						}
 					],
+					"id": "74044ee4-9550-4f75-bb0c-e0e3f6e068de",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1754,8 +1835,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -1802,7 +1884,8 @@
 									"    pm.collectionVariables.unset(\"userToRemoveFromTheContactGroup\");\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7776c16a-59cf-4765-b4d9-5df6212b506f"
 							}
 						},
 						{
@@ -1811,10 +1894,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "40232bbe-dc23-48c4-af61-fd03835e1ade"
 							}
 						}
 					],
+					"id": "9d23652f-a69a-40fd-b8a5-df0d8458b91e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1835,8 +1920,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -1883,7 +1969,8 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "76e20739-821a-41c3-bff6-a299c41297d2"
 							}
 						},
 						{
@@ -1894,10 +1981,12 @@
 									"pm.collectionVariables.set(\"currentUser\", usersCreated.shift());\r",
 									"pm.collectionVariables.set(\"usersCreated\", usersCreated);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "89a07610-ddef-426d-8015-8af8b2320b00"
 							}
 						}
 					],
+					"id": "e96a4d1f-0c3f-490d-af1b-536a4f679ee9",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1918,8 +2007,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -1961,7 +2051,8 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b813424a-5f8a-4ee2-86fc-b0c67f9aa1b5"
 							}
 						},
 						{
@@ -1970,10 +2061,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7721b872-439f-4e51-ad42-4f60ac2bf1d3"
 							}
 						}
 					],
+					"id": "779ac492-7e20-430b-a1f6-13c2e9799cb4",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1994,8 +2087,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -2028,7 +2122,8 @@
 									"    pm.collectionVariables.unset(\"contactGroupAlias\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "efd12e31-7581-4f95-9fbc-528cbae6eac6"
 							}
 						},
 						{
@@ -2037,10 +2132,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "46f784c1-9221-428d-b7c9-cb205b684bac"
 							}
 						}
 					],
+					"id": "cb3ba7b6-7c91-42f2-9cfd-cc8ff917e965",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2061,8 +2158,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -2102,10 +2200,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f59b0749-0b75-4da9-abf2-d08ab78a1e74"
 							}
 						}
 					],
+					"id": "15776cee-f2dd-473f-84d6-f913a8599a1c",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2169,7 +2269,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "ca3646d3-e531-4aca-b1af-73edf7ec80fe"
 		},
 		{
 			"name": "2305 - Disabling/enabling a new contact group",
@@ -2196,10 +2297,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a859f9aa-7e36-4adf-aecf-319f779c8591"
 							}
 						}
 					],
+					"id": "26dea616-478e-4dbe-b075-f965c82a9468",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -2243,7 +2346,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "40cd4ed7-9854-4eab-ac2e-243fdd4f2a0a"
 							}
 						},
 						{
@@ -2253,10 +2357,12 @@
 									"pm.collectionVariables.set(\"contactGroupName\", \"CG-Test-API-2305\");\r",
 									"pm.collectionVariables.set(\"contactGroupAlias\", \"Contact Group Test API\")"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f6da2f58-49e9-45ce-86c9-ddbdebe04d69"
 							}
 						}
 					],
+					"id": "802ad3a4-7959-4ea1-9bb9-9eac69b4bc96",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2277,8 +2383,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -2325,10 +2432,12 @@
 									"    pm.expect(tableOfUserNames).to.contain(pm.collectionVariables.get(\"contactGroupName\"));\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "99ce927d-930a-4783-b09e-bdc670ecd39d"
 							}
 						}
 					],
+					"id": "7897bab7-95d1-4cb2-8468-b9db36c01e75",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -2362,10 +2471,12 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "315874c5-e0dc-475b-8282-33eb937d78db"
 							}
 						}
 					],
+					"id": "fb693f63-e4c1-41fc-b76c-04dd393141e0",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2386,8 +2497,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -2434,10 +2546,12 @@
 									"    pm.expect(tableOfUserNames).to.not.contain(pm.collectionVariables.get(\"contactGroupName\"));\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "76251332-9624-4d90-b3ac-7f4643097296"
 							}
 						}
 					],
+					"id": "30aa913c-a498-418c-94fa-1981dcd16cbc",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -2471,10 +2585,12 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "74d3b48a-fa35-47d4-aca0-b77158e7a55b"
 							}
 						}
 					],
+					"id": "d423cd85-cc10-4fb1-b36a-6d8028ff801a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2495,8 +2611,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -2543,10 +2660,12 @@
 									"    pm.expect(tableOfUserNames).to.contain(pm.collectionVariables.get(\"contactGroupName\"));\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0744380f-16f0-447f-903b-86e3bedc661b"
 							}
 						}
 					],
+					"id": "fd351c5f-de8b-4d56-a12d-aec09a19f2d9",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -2577,7 +2696,8 @@
 									"    pm.collectionVariables.unset(\"contactGroupAlias\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "716bf054-4e10-4dea-ac64-edb5b59fe45d"
 							}
 						},
 						{
@@ -2586,10 +2706,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "aff5876d-ed42-4fb8-b580-ead70318c6db"
 							}
 						}
 					],
+					"id": "0ea7d8ee-4733-4751-8cf6-fe6cfd631605",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2610,8 +2732,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -2651,10 +2774,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7ec06e55-3e1e-4dd0-bd27-c8c08070d1d3"
 							}
 						}
 					],
+					"id": "05ca5822-001b-4ef7-ab89-6c97c87961a3",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2718,7 +2843,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "4393b2c9-cc60-415b-9202-c0b37945ccac"
 		},
 		{
 			"name": "2306 - Adding a user to a disabled contact group",
@@ -2745,10 +2871,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d27a8424-be7f-48e0-be0b-e1dbe1f643ce"
 							}
 						}
 					],
+					"id": "1789bd22-202a-408c-b657-f22892558a95",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -2792,7 +2920,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "dc777431-90a0-42aa-a5c5-2826f8f28f45"
 							}
 						},
 						{
@@ -2802,10 +2931,12 @@
 									"pm.collectionVariables.set(\"contactGroupName\", \"CG-Test-API-2306\");\r",
 									"pm.collectionVariables.set(\"contactGroupAlias\", \"Contact Group Test API\")"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "12912503-1d1c-4c3a-81a1-c4bc5c2dfef0"
 							}
 						}
 					],
+					"id": "0c6c8e86-2d8e-4dc5-9818-8003878819b6",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2826,8 +2957,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -2863,7 +2995,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e7576428-32d0-43c5-9a61-6e0c8b9bbffb"
 							}
 						},
 						{
@@ -2875,10 +3008,12 @@
 									"pm.collectionVariables.set(\"testUserEmail\", \"testUser@localhost\");\r",
 									"pm.collectionVariables.set(\"testUserPassword\", \"Centreon!2021\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b76da103-c6c4-4b8f-9715-c52a66b0d4d2"
 							}
 						}
 					],
+					"id": "04cb8fac-4967-4dd8-ba99-f6994542eb81",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2899,8 +3034,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -2936,7 +3072,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "11867e9e-a368-430b-9cd9-c76ed49210ec"
 							}
 						},
 						{
@@ -2945,10 +3082,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "adb2db3e-27f4-44ca-8a14-1dab3c5ee725"
 							}
 						}
 					],
+					"id": "79e314b5-3f62-4af9-ae00-c83753bbe4bb",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2969,8 +3108,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3006,7 +3146,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "98ec1a62-c535-48fb-b4a5-839923fabe9c"
 							}
 						},
 						{
@@ -3015,10 +3156,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "cf056fb7-a37a-4f07-afad-176946f0e5e0"
 							}
 						}
 					],
+					"id": "8429f386-ca8c-4f86-aceb-24f90c1998df",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3039,8 +3182,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3076,10 +3220,12 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8016d3a6-d6c9-4ecc-8431-93c265e86539"
 							}
 						}
 					],
+					"id": "361e1e02-2f15-4b6f-aa56-bbbe3d0c7d38",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3100,8 +3246,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3142,7 +3289,8 @@
 									"    pm.expect(responseJson.result[0].name).to.eql(pm.collectionVariables.get(\"testUserLogin\"));\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a07d3ddf-d2a9-4cea-bf4a-c9d26dd016e9"
 							}
 						},
 						{
@@ -3151,10 +3299,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8f0ad5d6-08b1-47fb-9bb4-2e9d5ed111c0"
 							}
 						}
 					],
+					"id": "2a9cfa69-c84f-4531-9888-ef80c6f70719",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3175,8 +3325,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3212,7 +3363,8 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8d9c0bf2-a923-470c-895d-ea64d8252967"
 							}
 						},
 						{
@@ -3221,10 +3373,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f58cc552-1e6c-4be7-ae14-67f8286b00d4"
 							}
 						}
 					],
+					"id": "53129c50-5170-4ac8-ba9e-001b9f9193d3",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3245,8 +3399,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3279,7 +3434,8 @@
 									"    pm.collectionVariables.unset(\"contactGroupAlias\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "70e32f08-3c61-40ec-a2f5-ab3af41ad71f"
 							}
 						},
 						{
@@ -3288,10 +3444,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2782380d-20b4-4d2e-b05e-4bc8f63a1190"
 							}
 						}
 					],
+					"id": "d0de6a38-c86b-4bd2-b334-60d61e93d196",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3312,8 +3470,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3353,10 +3512,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c750a82c-0d0f-41c8-ae93-de3aea9dfd38"
 							}
 						}
 					],
+					"id": "e841f8f5-c37e-4fc6-90a6-fcfbc3c6d397",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3420,7 +3581,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "6afcd839-b2f4-4417-8aae-32eb90fceed1"
 		},
 		{
 			"name": "2307 - Checking addcontact/setcontact properties on contact groups",
@@ -3447,10 +3609,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9db0a127-24aa-4c40-9ba9-a65e62c3ac3a"
 							}
 						}
 					],
+					"id": "5d1126ae-15dd-4a4e-823b-17190d594bd0",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -3508,7 +3672,8 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2c514da6-b591-4d31-8d31-09d36d8a19c6"
 							}
 						},
 						{
@@ -3525,10 +3690,12 @@
 									"pm.collectionVariables.set(\"currentUser\", currentUser);\r",
 									"pm.collectionVariables.set(\"listOfUserNames\", listOfUserNames);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "da24a9e9-f341-41f9-bf82-e5eae82120c7"
 							}
 						}
 					],
+					"id": "5e778a35-482a-41a4-9eca-4b4fadfd9b21",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3549,8 +3716,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3586,7 +3754,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9bd6436a-0a98-4ab3-acab-12a11ec01872"
 							}
 						},
 						{
@@ -3596,10 +3765,12 @@
 									"pm.collectionVariables.set(\"contactGroupName\", \"CG-Test-API-2307\");\r",
 									"pm.collectionVariables.set(\"contactGroupAlias\", \"Contact Group Test API\")"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "94a78559-cb89-4875-aac4-9d5e0f02aa80"
 							}
 						}
 					],
+					"id": "02a35cff-9fee-4491-8aaa-c87e0b93292a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3620,8 +3791,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3657,7 +3829,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c9807cc1-7f63-4547-83aa-229ee684968a"
 							}
 						},
 						{
@@ -3666,10 +3839,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "732111c0-7972-4d4b-9ab2-081020f4e7fd"
 							}
 						}
 					],
+					"id": "3d5c8eef-71d6-45cd-8a14-7fc968e6eff6",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3690,8 +3865,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3732,7 +3908,8 @@
 									"    pm.expect(responseJson.result[0].name).to.eql(pm.collectionVariables.get(\"userAdd\"));\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a68169cd-cf0f-45e0-904b-c6fd078d260e"
 							}
 						},
 						{
@@ -3741,10 +3918,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0cdab04b-366c-4af1-93d4-22b239745115"
 							}
 						}
 					],
+					"id": "93f1350e-4223-434d-b765-24d5ff16cc55",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3765,8 +3944,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3802,7 +3982,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "06ca6087-5337-4d68-a6ab-4da8e3c1ca07"
 							}
 						},
 						{
@@ -3811,10 +3992,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e74c12f6-c6bc-4bb2-8fcc-f9937508dd9b"
 							}
 						}
 					],
+					"id": "3670785f-e486-4c79-ad97-78663a874698",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3835,8 +4018,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3877,7 +4061,8 @@
 									"    pm.expect(responseJson.result[0].name).to.eql(pm.collectionVariables.get(\"userSet\"));\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "880fac53-6e4c-4a49-86f1-3dfd4283c390"
 							}
 						},
 						{
@@ -3886,10 +4071,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "18aadf67-cfef-4330-a6ea-982e752b2599"
 							}
 						}
 					],
+					"id": "22731d95-0d0c-4364-94ed-6beb14fe667b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3910,8 +4097,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -3947,7 +4135,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0cdeb70d-0004-456d-bf89-151088eb7645"
 							}
 						},
 						{
@@ -3956,10 +4145,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d33143ed-48a9-4e4b-a592-9c4cbbfc092d"
 							}
 						}
 					],
+					"id": "b7a33e35-ee17-4543-83e3-a234877564c0",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3980,8 +4171,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -4023,7 +4215,8 @@
 									"    pm.expect(responseJson.result[1].name).to.eql(pm.collectionVariables.get(\"userAdd\"));\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8aa7fbfa-a22c-4ef4-b864-cc4c79bd8d30"
 							}
 						},
 						{
@@ -4032,10 +4225,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2eaf1d74-e6b5-4438-b638-5b869e588f34"
 							}
 						}
 					],
+					"id": "0ea68e5c-a9e6-484a-b9ed-5968e3d70f9c",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4056,8 +4251,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -4090,7 +4286,8 @@
 									"    pm.collectionVariables.unset(\"contactGroupAlias\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "0b36a24b-dbbd-4473-a7c4-c47612846db4"
 							}
 						},
 						{
@@ -4099,10 +4296,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5095507a-34b4-47e8-822b-8b4b12a865fc"
 							}
 						}
 					],
+					"id": "c6126fa2-e48e-447f-9a98-88643de03b6e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4123,8 +4322,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -4167,7 +4367,8 @@
 									"    postman.setNextRequest(\"[2307-cleanup] Logout from admin user and clear collection variables\");\r",
 									"}"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "203f1cb9-68e2-40bc-aa43-f2579852a465"
 							}
 						},
 						{
@@ -4184,10 +4385,12 @@
 									"pm.collectionVariables.set(\"currentUser\", currentUser);\r",
 									"pm.collectionVariables.set(\"listOfUserNames\", listOfUserNames);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3e59d935-f209-4e9a-9e19-592b9dcefcc5"
 							}
 						}
 					],
+					"id": "29448417-50ba-437b-bcbf-eab092006f7f",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4208,8 +4411,9 @@
 							"raw": "{{protocol}}://{{server}}:{{port}}/centreon/api/index.php?action=action&object=centreon_clapi",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{server}}:{{port}}"
+								"{{server}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"centreon",
 								"api",
@@ -4249,10 +4453,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "48cce51b-4b82-4069-acd8-e4091b6c5cf4"
 							}
 						}
 					],
+					"id": "907faf29-eeec-4afe-aeca-0d492b267479",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4316,7 +4522,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "2ba8188e-812b-43e8-9a14-954d58a66d8e"
 		}
 	],
 	"auth": {
@@ -4341,7 +4548,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "dd887927-ce65-48f7-9071-cfaff22ac1fe"
 			}
 		},
 		{
@@ -4368,7 +4576,8 @@
 					"        console.log(\"Response has the expected status code \" + pm.response.code + \" | Running the next tests\")",
 					"    }",
 					"  }"
-				]
+				],
+				"id": "99541783-5692-4b63-8b2c-eb1f57de2154"
 			}
 		}
 	]

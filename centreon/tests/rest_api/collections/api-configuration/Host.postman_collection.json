@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "c9abdc91-3f82-4793-becb-4bbcc38f5198",
+		"_postman_id": "bf6d5aa6-840b-4781-836f-136ebfd2b2be",
 		"name": "Host",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "16182525",
-		"_collection_link": "https://centreon-api-v2-configuration.postman.co/workspace/API-v2~d8660f05-3c64-4c5b-af73-1a5543bff4e1/collection/16182525-c9abdc91-3f82-4793-becb-4bbcc38f5198?action=share&source=collection_link&creator=16182525"
+		"_uid": "28117716-bf6d5aa6-840b-4781-836f-136ebfd2b2be"
 	},
 	"item": [
 		{
@@ -27,10 +26,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "21a627c1-0a34-4935-b291-ae5e2b954501"
 							}
 						}
 					],
+					"id": "1b0b3e75-dd4e-45de-9871-f5210ea24665",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -58,7 +59,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "1b3754cb-9521-49ed-8cc3-64010966983d"
 		},
 		{
 			"name": "user_with_RW_rights    ",
@@ -74,7 +76,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9ca00dc7-8b02-49b6-8f29-af88d45c3087"
 							}
 						},
 						{
@@ -84,10 +87,12 @@
 									"pm.collectionVariables.set(\"api_login_user_RW\", \"user_with_RW_rights\");\r",
 									"pm.collectionVariables.set(\"api_password_user_RW\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "493c5150-8b47-47a0-9e93-1ad5cab7d612"
 							}
 						}
 					],
+					"id": "c6c83f3e-0417-4ed2-a6cc-2970675277e9",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -124,7 +129,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1c8e23f7-edc8-46e0-9b6e-5697e929cf33"
 							}
 						},
 						{
@@ -135,10 +141,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "02345a3c-1373-453c-a344-036e37aba092"
 							}
 						}
 					],
+					"id": "5df5f7c9-f599-4649-9cde-833d41c47319",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -175,7 +183,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b6c967bc-0079-475a-a3ab-37f5a86a00fd"
 							}
 						},
 						{
@@ -186,10 +195,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c9ad2a5d-79be-4c9f-adc6-c9e8c2702b0b"
 							}
 						}
 					],
+					"id": "e9484b89-3e72-44be-9ef8-690c7fe3ce4f",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -226,7 +237,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "76f4cf26-8a52-4fe3-9fd2-223cf0b94b32"
 							}
 						},
 						{
@@ -237,10 +249,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "31699673-9e9a-403e-a6a9-985108758470"
 							}
 						}
 					],
+					"id": "0a8eb645-cc8b-4db5-8f80-cb5f6138137c",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -277,7 +291,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2a37af1c-a174-4856-88c1-8360396f4afe"
 							}
 						},
 						{
@@ -288,10 +303,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "80db585f-a4d8-4715-8e5d-35858e39ff3f"
 							}
 						}
 					],
+					"id": "c1f72c32-7846-49ba-a479-281ddb211192",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -328,7 +345,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c9842bdb-69f9-4050-a10d-e83a4dc34983"
 							}
 						},
 						{
@@ -339,10 +357,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bffdccd7-875f-47ee-b843-4b2395c19897"
 							}
 						}
 					],
+					"id": "f25d3487-efe2-4aa4-b3ed-249f184a9d87",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -379,7 +399,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7169ea83-b5ad-4502-9ea9-175107e16e0b"
 							}
 						},
 						{
@@ -390,10 +411,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d657e581-f989-406f-a818-a8c401b6388a"
 							}
 						}
 					],
+					"id": "9bc36a11-10b9-4dab-ba7d-d47f79d61f8d",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -430,7 +453,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "47975124-a6e3-4170-8980-3f412ebb5a83"
 							}
 						},
 						{
@@ -441,10 +465,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d15207af-44bb-486d-a4cf-0099003b7b21"
 							}
 						}
 					],
+					"id": "8d9ca41d-1546-4e2d-81c4-73038294fb20",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -481,7 +507,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f67e67cc-db50-40f0-926a-660e16bcda04"
 							}
 						},
 						{
@@ -492,10 +519,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a4d95a01-0104-4128-acdf-a2712abe134e"
 							}
 						}
 					],
+					"id": "8d9f248e-cef5-4933-ab92-2a30c3bb0961",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -523,7 +552,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "2082f781-e6eb-46ff-96c7-b180a699334d"
 		},
 		{
 			"name": "user_with_RW_rights_filters    ",
@@ -538,7 +568,8 @@
 									"pm.collectionVariables.set(\"api_login_user_RW_filters\", \"user_with_RW_rights_filters\");\r",
 									"pm.collectionVariables.set(\"api_password_user_RW_filters\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "665c1442-e87a-488c-bcd7-c175bbdd5abf"
 							}
 						},
 						{
@@ -549,10 +580,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "eb95970b-6321-4cd9-a71c-e1c2dcebc2f2"
 							}
 						}
 					],
+					"id": "5b04039d-53cb-47ac-8596-8dfeb755f628",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -589,7 +622,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2fde0295-e8d2-431e-b6e4-f0884787b016"
 							}
 						},
 						{
@@ -600,10 +634,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "92aea107-9f99-47df-af39-9da94298a6af"
 							}
 						}
 					],
+					"id": "8b2ddca9-58f0-47ec-9a2b-348e60f50198",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -640,7 +676,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "aedbb6b5-ad85-4e37-a16b-86c94cd053df"
 							}
 						},
 						{
@@ -651,10 +688,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "96b75d8b-a91e-4585-a01f-cfc32aab7825"
 							}
 						}
 					],
+					"id": "a2eda9dd-ae86-4bed-bbba-70accda51cbf",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -691,7 +730,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c039ddb3-2f5d-4ab9-9029-a32a79f982d3"
 							}
 						},
 						{
@@ -702,10 +742,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "02f52f32-d19e-451a-8ae8-7045a35b1e80"
 							}
 						}
 					],
+					"id": "8cee0fc0-f8d8-4cec-943d-64d363d93054",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -742,7 +784,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "961cc4a1-1c03-44e4-94ad-f78581783f6c"
 							}
 						},
 						{
@@ -753,10 +796,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "371842fd-a8c6-4b63-b5d5-4d58280dae48"
 							}
 						}
 					],
+					"id": "5601b842-3861-4393-893f-d5dde174c785",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -793,7 +838,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7f5c2f80-be8c-4ccc-ae43-4ae9ecbd6c6f"
 							}
 						},
 						{
@@ -804,10 +850,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c2b1f2ab-f039-4994-b9e9-4618b8e2197a"
 							}
 						}
 					],
+					"id": "ccdd721d-d43a-4a65-b9b6-9594aa753159",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -844,7 +892,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ce11a4d5-02d3-4964-9ce8-e84fdcbb02b4"
 							}
 						},
 						{
@@ -855,10 +904,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "053a7168-ee8d-4e5e-86df-484c6d8955b8"
 							}
 						}
 					],
+					"id": "b33d8623-b6c3-456f-b60d-6340c200ea33",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -895,7 +946,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "cb184f35-b80f-4b63-b300-30c6d24bde70"
 							}
 						},
 						{
@@ -906,10 +958,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "af4b9dc3-278b-4d81-abb1-1e37d883feed"
 							}
 						}
 					],
+					"id": "7b40fa79-288a-4f3e-8ffe-480eecaedba3",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -937,7 +991,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "b4e7fc31-187f-4949-bda0-2041d88584a4"
 		},
 		{
 			"name": "user_with_R_rights    ",
@@ -953,7 +1008,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1904a36d-6268-4265-8684-56a564946b3d"
 							}
 						},
 						{
@@ -963,10 +1019,12 @@
 									"pm.collectionVariables.set(\"api_login_user_Read\", \"user_with_R_rights\");\r",
 									"pm.collectionVariables.set(\"api_password_user_Read\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "38b1efdb-8d4d-470b-bb75-599d7918b051"
 							}
 						}
 					],
+					"id": "799875d7-466b-4605-866f-aa3ecd16efa4",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1003,7 +1061,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7684d5d8-9a8d-4312-a7f4-5e65eeca8147"
 							}
 						},
 						{
@@ -1014,10 +1073,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "92edc4af-78bb-4559-89a1-33b1757b8787"
 							}
 						}
 					],
+					"id": "c570d559-2583-4372-9bff-cbcb44ac8dc0",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1054,7 +1115,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8312c813-154e-4e7b-8e89-840b98fde66f"
 							}
 						},
 						{
@@ -1065,10 +1127,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1ec429bf-72b9-4bcb-884c-95f6b03725f0"
 							}
 						}
 					],
+					"id": "fcc64f34-bd59-4389-a076-a50e4b2a66de",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1105,7 +1169,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "843df44a-0bfb-4bde-956a-90f2bfdb4137"
 							}
 						},
 						{
@@ -1116,10 +1181,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9d3e7bad-f034-41f1-b443-82a6ef3a5e01"
 							}
 						}
 					],
+					"id": "708f80f2-5a83-4e14-bb80-782755575653",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1156,7 +1223,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f80dd998-4c2b-4a8e-81ad-a0593fa63e3e"
 							}
 						},
 						{
@@ -1167,10 +1235,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c6e4868b-3d07-459f-b6dc-352616108b79"
 							}
 						}
 					],
+					"id": "eda3151c-6536-4336-9cc8-3a6cafba7b95",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1207,7 +1277,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "527c60b2-ddcf-4f56-8d85-9d517d6a8cc4"
 							}
 						},
 						{
@@ -1218,10 +1289,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "60f841cd-dd89-4a9a-9c2a-92bfb0592acf"
 							}
 						}
 					],
+					"id": "3a69451c-7bba-48cd-9936-d34125cf483c",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1258,7 +1331,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1323100b-1de9-48ee-a73b-9f60df4efb0d"
 							}
 						},
 						{
@@ -1269,10 +1343,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e0e7041f-5942-4a2c-a4b0-9652c69608a5"
 							}
 						}
 					],
+					"id": "1bbc1a52-11f8-4e4f-bcbd-48ce07a1d602",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1309,7 +1385,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bc88f729-6238-45af-9469-9dc29d311ff2"
 							}
 						},
 						{
@@ -1320,10 +1397,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "93b752f1-79d5-40d6-bd69-f6a28f0ebc70"
 							}
 						}
 					],
+					"id": "d566dae1-55ee-47e5-9e09-e0ea58519bc3",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1360,7 +1439,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c8d77853-236a-4d40-aca8-4b189641eea9"
 							}
 						},
 						{
@@ -1371,10 +1451,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "dd19ba48-cb76-4dea-b1fc-5cf41181505a"
 							}
 						}
 					],
+					"id": "6ce467a3-1c79-4786-8582-f47c336b7379",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1402,7 +1484,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "4e7241a0-a6c1-4187-9813-4d97d149a51d"
 		},
 		{
 			"name": "user_with_R_rights_filters      ",
@@ -1418,7 +1501,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9ce82975-7b15-4a6b-8677-0d629b348533"
 							}
 						},
 						{
@@ -1428,10 +1512,12 @@
 									"pm.collectionVariables.set(\"api_login_user_Read_filters\", \"user_with_R_rights_filters\");\r",
 									"pm.collectionVariables.set(\"api_password_user_Read_filters\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d3bcbb13-53c7-4d48-821a-2a37f895dca0"
 							}
 						}
 					],
+					"id": "cf186614-a223-4509-b2ed-0eef9f1a5311",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1468,7 +1554,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "961044c2-571b-4cb8-aa4a-a6e208033d58"
 							}
 						},
 						{
@@ -1479,10 +1566,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c8a57174-3ffb-48f0-99e7-329805c9419b"
 							}
 						}
 					],
+					"id": "d7db8402-4752-4033-886c-2048c9edb92e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1519,7 +1608,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "cb6f096f-4db8-43d9-b0c8-c5f998746146"
 							}
 						},
 						{
@@ -1530,10 +1620,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5701a666-2a18-45a8-9ec6-6355a61af2b4"
 							}
 						}
 					],
+					"id": "ecc32ce3-54d1-4f5b-a5bf-45a0857a2d5b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1570,7 +1662,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "65cdd7ca-fb13-42f9-9bc9-b62a80c71c82"
 							}
 						},
 						{
@@ -1581,10 +1674,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d4378061-df03-4939-ba6b-7c97641ea3b5"
 							}
 						}
 					],
+					"id": "3f29df00-4bb6-4409-b78b-174ba0d1cd73",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1621,7 +1716,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "56b54453-0f3a-4e2e-bb58-96297469f771"
 							}
 						},
 						{
@@ -1632,10 +1728,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6b40e18e-0032-4e1f-ae02-1007233e137f"
 							}
 						}
 					],
+					"id": "3867b09d-d393-4392-b611-176b09b4ea1b",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1672,7 +1770,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "26d388b6-62b2-49c4-b307-dc862e13ce66"
 							}
 						},
 						{
@@ -1683,10 +1782,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c4029fc6-2885-48d3-b274-6cf8666371b5"
 							}
 						}
 					],
+					"id": "a0f40080-fc47-459a-af6d-c596ffaa8c69",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1723,7 +1824,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "54a3bc06-46ca-46bc-afce-4d27fbd09f18"
 							}
 						},
 						{
@@ -1734,10 +1836,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c2591e9e-74bf-4129-9978-32a708f7eb3d"
 							}
 						}
 					],
+					"id": "5283ba55-6958-45ba-9e06-379ec793f055",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1765,7 +1869,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "75f9e8e0-33be-445a-b363-06548fdfe407"
 		},
 		{
 			"name": "user_nothing      ",
@@ -1781,7 +1886,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3de30104-3363-4a43-afae-4102ce76c0a6"
 							}
 						},
 						{
@@ -1791,10 +1897,12 @@
 									"pm.collectionVariables.set(\"api_login_user_Nothing\", \"user_nothing\");\r",
 									"pm.collectionVariables.set(\"api_password_user_Nothing\", \"Centreon!123\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "aa8933bb-d810-4943-9a01-fa1e9c1a1d59"
 							}
 						}
 					],
+					"id": "9d3d753e-c9c3-483f-97bb-3da03d48a32d",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1831,7 +1939,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ebd905b0-8ee2-4dd5-b371-c6f10af6f40b"
 							}
 						},
 						{
@@ -1842,10 +1951,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "87622b5d-a510-4a06-9c2f-fd583ffc09d6"
 							}
 						}
 					],
+					"id": "839e3f71-75b8-483f-9b69-6012444f740a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1882,7 +1993,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bf4d0e3d-55db-45ad-bab0-73d5ccafb681"
 							}
 						},
 						{
@@ -1893,10 +2005,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b0087fbe-f4db-4764-8879-7913f973af34"
 							}
 						}
 					],
+					"id": "5d43a0fc-d229-40be-93bb-c613ab24cc63",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1933,7 +2047,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5d1bd1e2-e147-49ab-8196-44a857e2dc01"
 							}
 						},
 						{
@@ -1944,10 +2059,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2bc11413-c311-4881-beeb-0e4dd9760531"
 							}
 						}
 					],
+					"id": "cd882253-cbd9-4c6d-a670-5041e2d8c722",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1984,7 +2101,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "458f1c03-3a13-4c15-9050-296990180c3b"
 							}
 						},
 						{
@@ -1995,10 +2113,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "98548bb5-f49c-46ba-9afe-629f13aa5109"
 							}
 						}
 					],
+					"id": "2642477e-3f20-4046-8fae-3986b4f13836",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2035,7 +2155,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a90b9bbc-b33b-4f3b-9191-3ea584a7c5d1"
 							}
 						},
 						{
@@ -2046,10 +2167,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3325b16c-5913-4f82-a4e2-9ededeb44eb9"
 							}
 						}
 					],
+					"id": "2dca3d8b-b644-4bed-8cc4-9d8b327139a6",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2086,7 +2209,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bbba9859-ab59-4f66-947f-aee9e067d280"
 							}
 						},
 						{
@@ -2097,10 +2221,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c414ba73-52ed-44b8-8c34-33fc16ed18c5"
 							}
 						}
 					],
+					"id": "0f73eb73-0933-45e7-87f1-c222a26587fd",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2137,7 +2263,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "12f08ec4-dfbc-447a-9f5d-babe8cef757c"
 							}
 						},
 						{
@@ -2148,10 +2275,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e27cb1b5-a7ba-4859-86ef-55f37bb10c7b"
 							}
 						}
 					],
+					"id": "484375bc-987e-4be1-a053-293f84985c5e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2179,7 +2308,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "a0a041b0-8f49-4c1c-bf08-d55c05f6defd"
 		},
 		{
 			"name": "Admin",
@@ -2201,10 +2331,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5b52213c-67be-44cc-a3b4-17251c476460"
 							}
 						}
 					],
+					"id": "25ad3d92-7d9d-4830-a23d-ef9262c8c323",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -2258,7 +2390,8 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "79eb43e3-2fce-4043-891a-8c72abbc71c2"
 							}
 						},
 						{
@@ -2269,10 +2402,12 @@
 									"pm.collectionVariables.set(\"HostSeverity1Alias\", \"I'm a host severity!\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "41a6dc7d-38f4-429c-9725-860dadc61d9c"
 							}
 						}
 					],
+					"id": "a129cb9b-2e18-4502-bd60-88055237eb9a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2325,7 +2460,8 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2a117edf-e54d-4f7b-86e7-431d2f2fe932"
 							}
 						},
 						{
@@ -2336,10 +2472,12 @@
 									"pm.collectionVariables.set(\"HostSeverity2Alias\", \"I'm a host severity!\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1a373945-7ca4-4811-b8fe-df987fdde9dd"
 							}
 						}
 					],
+					"id": "b9ab753b-7e48-4075-8105-5de03b69c8cd",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2389,7 +2527,8 @@
 									"    });\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "82bdb265-a2bc-4776-8ba0-1e6ddfe398d3"
 							}
 						},
 						{
@@ -2400,10 +2539,12 @@
 									"pm.collectionVariables.set(\"HostCategory1Alias\", \"I'm a host category!\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "08305213-7d9c-4785-9c9d-773f77de9f59"
 							}
 						}
 					],
+					"id": "c546f6bc-5758-4d5e-a59a-d7faaf5d9c0f",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2453,7 +2594,8 @@
 									"    });\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "eee653dd-65c1-4951-b932-b6f05ecb6d02"
 							}
 						},
 						{
@@ -2464,10 +2606,12 @@
 									"pm.collectionVariables.set(\"HostCategory2Alias\", \"I'm a host category!\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "96821d85-a084-4707-b66e-c2a2f05e47ae"
 							}
 						}
 					],
+					"id": "0e610894-469b-4f88-b0f4-496f00ee2437",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2528,7 +2672,8 @@
 									"    pm.response.to.have.header(\"Location\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "79b99b34-a2cf-4a03-97de-ed9db65769de"
 							}
 						},
 						{
@@ -2539,10 +2684,12 @@
 									"pm.collectionVariables.set(\"HostGroup1Alias\", \"I should be successful !\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ffea3f92-5085-4186-ad1c-440be399bee0"
 							}
 						}
 					],
+					"id": "9fab22ff-9350-427d-8bcc-b19f25936ea7",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2579,7 +2726,8 @@
 									"pm.collectionVariables.set(\"Command1Name\", \"check-host-alive\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6582b911-0665-4ca1-b82b-205846026388"
 							}
 						},
 						{
@@ -2610,10 +2758,12 @@
 									"    pm.expect(response.macros).to.be.an('Array').that.is.empty;\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "96ddffd7-c9ba-4333-8c64-60edd91bbb14"
 							}
 						}
 					],
+					"id": "0e0da8e7-2083-4c09-b69f-c04b11af8dc6",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2651,7 +2801,8 @@
 									"pm.collectionVariables.set(\"HostTemplate1Alias\", \"I'm the first host template created by admin\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3958ef2d-fe15-4e62-a2b3-e72875252238"
 							}
 						},
 						{
@@ -2724,10 +2875,12 @@
 									"\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2e858d05-afc4-4b54-894a-045011d7907f"
 							}
 						}
 					],
+					"id": "e0d7520e-62fc-45bf-9a10-b45faa473e33",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2766,7 +2919,8 @@
 									"pm.collectionVariables.set(\"Host1Alias\", \"I'm the first host created by admin\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1f8f37fa-d897-4863-9af2-c01195cdbec8"
 							}
 						},
 						{
@@ -2851,10 +3005,12 @@
 									"\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fd0d5d6a-8a7b-46b6-8bd0-ed692f371ab3"
 							}
 						}
 					],
+					"id": "a54d8b8f-0427-4efe-98f9-24350e8edf64",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2948,10 +3104,12 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "af491e0b-526f-416a-908e-d737758f5457"
 							}
 						}
 					],
+					"id": "cfcbfc93-f5d8-4322-996a-1454ffa75753",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2996,7 +3154,8 @@
 									"pm.collectionVariables.set(\"Host2Name\", \"host_002\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3678d5ef-4f8f-4fc7-822f-38e75299b5bc"
 							}
 						},
 						{
@@ -3060,10 +3219,12 @@
 									"\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f3f27229-1137-44c8-83e1-abaef8d188ce"
 							}
 						}
 					],
+					"id": "4f5a15a7-f467-4446-b970-a205e2618b18",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3178,10 +3339,12 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ef71eb87-3d46-4c48-b625-9b32e2245435"
 							}
 						}
 					],
+					"id": "70e1b102-72ff-4570-9ca6-5e1dd8169350",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3225,7 +3388,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "812db077-c1d3-483d-b034-a9084359686f"
 							}
 						},
 						{
@@ -3239,10 +3403,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"[name] The property name is required\\n\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "27737365-b7fc-4c7a-b5aa-15742290e0f2"
 							}
 						}
 					],
+					"id": "2aba1681-da43-4f4f-9650-4f230c75994d",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3278,7 +3444,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "444acb88-0cfc-44d6-85d0-4db1baa38c0d"
 							}
 						},
 						{
@@ -3292,10 +3459,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"[address] The property address is required\\n\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d0e4e79a-457b-490b-9473-bead0c39ea8b"
 							}
 						}
 					],
+					"id": "ba0f1b94-3e47-4aca-965f-6d2f26ef4416",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3331,7 +3500,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f52d3b08-b583-4bb2-80bb-00864e57ec65"
 							}
 						},
 						{
@@ -3345,10 +3515,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"[monitoring_server_id] The property monitoring_server_id is required\\n\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a0b69944-3a8d-4121-bf5d-5c92585c210c"
 							}
 						}
 					],
+					"id": "98add8f9-e18f-4135-a7e2-b9e9f7dc23dc",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3384,7 +3556,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fbbc70d4-8ff5-479b-ba0a-7cf00a5d7b89"
 							}
 						},
 						{
@@ -3398,10 +3571,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"[NewHost::name] The string is empty, but non empty string was expected\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a58769cb-0460-4fe5-97f8-6f1ceb96817c"
 							}
 						}
 					],
+					"id": "8617203b-2dc5-4150-a6a3-c45ac86257fa",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3437,7 +3612,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1084969d-8c51-438f-a68d-9b5104b17652"
 							}
 						},
 						{
@@ -3451,10 +3627,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"[NewHost::address] The value \\\"\\\" was expected to be a valid ip address or domain name\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "615149d5-7c4f-42f6-b7ea-da0104e8b635"
 							}
 						}
 					],
+					"id": "5a31ecdc-e372-462f-843f-f012efd1247a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3490,7 +3668,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "dd583257-7c30-42ca-b829-2ca0524e4a78"
 							}
 						},
 						{
@@ -3504,10 +3683,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"[name] Boolean value found, but a string is required\\n[alias] Integer value found, but a null or a string is required\\n[snmp_version] Boolean value found, but a null or a string is required\\n[snmp_version] Does not have a value in the enumeration [null,\\\"1\\\",\\\"2c\\\",\\\"3\\\"]\\n[snmp_community] Integer value found, but a null or a string is required\\n[timezone_id] String value found, but a null or an integer is required\\n[severity_id] String value found, but a null or an integer is required\\n[check_command_id] String value found, but a null or an integer is required\\n[check_command_args[0]] Integer value found, but a string is required\\n[check_timeperiod_id] String value found, but a null or an integer is required\\n[max_check_attempts] String value found, but a null or an integer is required\\n[normal_check_interval] Boolean value found, but a null or an integer is required\\n[retry_check_interval] Boolean value found, but a null or an integer is required\\n[active_check_enabled] Does not have a value in the enumeration [null,0,1,2]\\n[passive_check_enabled] Boolean value found, but a null or an integer is required\\n[passive_check_enabled] Does not have a value in the enumeration [null,0,1,2]\\n[notification_enabled] String value found, but a null or an integer is required\\n[notification_enabled] Does not have a value in the enumeration [null,0,1,2]\\n[notification_options] String value found, but an integer or a null is required\\n[notification_interval] String value found, but a null or an integer is required\\n[notification_timeperiod_id] String value found, but a null or an integer is required\\n[add_inherited_contact_group] String value found, but a null or a boolean is required\\n[add_inherited_contact] Integer value found, but a null or a boolean is required\\n[first_notification_delay] String value found, but a null or an integer is required\\n[recovery_notification_delay] String value found, but a null or an integer is required\\n[acknowledgement_timeout] String value found, but a null or an integer is required\\n[freshness_checked] Does not have a value in the enumeration [null,0,1,2]\\n[freshness_threshold] String value found, but a null or an integer is required\\n[flap_detection_enabled] String value found, but a null or an integer is required\\n[flap_detection_enabled] Does not have a value in the enumeration [null,0,1,2]\\n[low_flap_threshold] String value found, but a null or an integer is required\\n[high_flap_threshold] String value found, but a null or an integer is required\\n[event_handler_enabled] String value found, but a null or an integer is required\\n[event_handler_enabled] Does not have a value in the enumeration [null,0,1,2]\\n[event_handler_command_id] String value found, but a null or an integer is required\\n[event_handler_command_args[0]] Integer value found, but a string is required\\n[note_url] Boolean value found, but a null or a string is required\\n[note] Integer value found, but a null or a string is required\\n[action_url] Boolean value found, but a null or a string is required\\n[icon_id] String value found, but a null or an integer is required\\n[icon_alternative] Integer value found, but a null or a string is required\\n[comment] Boolean value found, but a null or a string is required\\n[categories[0]] String value found, but an integer is required\\n[templates[0]] String value found, but an integer is required\\n[macros[0].name] Integer value found, but a string is required\\n[macros[0].value] Boolean value found, but a null or a string is required\\n[macros[0].is_password] Integer value found, but a boolean is required\\n[macros[0].description] Integer value found, but a null or a string is required\\n[address] Integer value found, but a string is required\\n[monitoring_server_id] String value found, but an integer is required\\n\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f2e5ad42-982b-4ec4-a683-891ff667f688"
 							}
 						}
 					],
+					"id": "7a551be9-54c1-49ef-8e77-b2a20971b8de",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3545,7 +3726,8 @@
 									"pm.collectionVariables.set(\"Host3Alias\", \"I'm the third host créated by admin!\");\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bcf71c4d-a53a-4988-b765-831c3ee14a0d"
 							}
 						},
 						{
@@ -3618,10 +3800,12 @@
 									"\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "587ff6e9-7874-4e5b-8e18-bb8a19debcb3"
 							}
 						}
 					],
+					"id": "e8df57f2-6cc6-42c9-b222-2b5f2ba20d34",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3771,10 +3955,12 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3a351f51-ba88-4f65-ac7b-8ef237ca6fd9"
 							}
 						}
 					],
+					"id": "995e972d-753a-4258-b3da-f82ee4e13a8b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3826,10 +4012,12 @@
 									"    pm.collectionVariables.unset(\"Host1Id\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6e6af104-c702-4424-ab56-c156ff86d312"
 							}
 						}
 					],
+					"id": "540cd2e0-0fb3-4d7c-bf93-9cd99a0ee888",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -3876,10 +4064,12 @@
 									"    pm.response.to.have.status(204);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7c8d0255-a4d7-432c-9aa5-c6c895d6a1ff"
 							}
 						}
 					],
+					"id": "8580593f-e305-48dd-b373-c725ac91609a",
 					"request": {
 						"method": "PATCH",
 						"header": [
@@ -4013,10 +4203,12 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f43bd84e-d138-401d-9723-8aaa878c1ec4"
 							}
 						}
 					],
+					"id": "e33837ac-8727-4ed0-a71a-94693de0f7b6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4067,10 +4259,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2ad2faa2-8bb8-4e7d-b1bd-0b593fa15286"
 							}
 						}
 					],
+					"id": "93bae5ad-475d-4340-a655-eeab69cf7165",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4129,7 +4323,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "4ff3ea21-6fc7-48fb-b07f-956b2f5e5790"
 		},
 		{
 			"name": "user with R/W rights with host directly linked",
@@ -4154,10 +4349,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "8922a1eb-0a63-43bf-9a33-4ef0afcf5cff"
 									}
 								}
 							],
+							"id": "b8da8ffe-bec0-4e6a-abf5-76bb60f092eb",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -4196,7 +4393,8 @@
 											"pm.collectionVariables.set(\"Host4Alias\", \"I'm the fourth host but I was created by user R/W\");\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "50ba1719-e7b2-41f8-9509-bfdad173134d"
 									}
 								},
 								{
@@ -4270,10 +4468,12 @@
 											"    });\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "ec3109d3-ca44-45ab-8c91-a25151e17101"
 									}
 								}
 							],
+							"id": "7f1710c3-8c93-4a22-ac4e-857a4b3feaf6",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -4316,10 +4516,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "5ea7bb29-9c16-468a-b891-c103fd4c8e48"
 									}
 								}
 							],
+							"id": "1f953284-53f6-4474-9e31-13061bdfa15f",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -4395,10 +4597,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "f8323006-c3bc-48cd-ab40-06e45fdb29a6"
 									}
 								}
 							],
+							"id": "d9023f8a-cddb-4d5d-98c0-a0b4fa7fffa0",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -4437,7 +4641,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "ebb09013-e544-40e3-baa0-bf9ddbc76474"
 									}
 								},
 								{
@@ -4446,10 +4651,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "b67bd77a-80c4-4cd0-b974-42e41dab4f6c"
 									}
 								}
 							],
+							"id": "2ec9910f-56f0-4cde-a8d4-ac88347fc74a",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -4501,10 +4708,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "7090a0b4-fb10-45d2-b6e3-509c1ec412a5"
 									}
 								}
 							],
+							"id": "7be4606e-f2dd-412d-b956-caa5fac68b4b",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -4580,10 +4789,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "04a72c7c-6c84-4248-ad86-3568c92a813f"
 									}
 								}
 							],
+							"id": "ae26678d-abda-4f5c-9432-904c4ceb3807",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -4740,10 +4951,12 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "3777dec8-53e4-42ad-8e68-d724c0c3a12d"
 									}
 								}
 							],
+							"id": "ddefb44e-d5be-4a48-8bc6-6c8aaafa5fe8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4792,10 +5005,12 @@
 											"    pm.response.to.have.status(204);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "980f1dd3-5d4a-4c95-b7f6-0e018e04e746"
 									}
 								}
 							],
+							"id": "1362bbbf-b8d7-4d6e-997d-0653e029fda1",
 							"request": {
 								"method": "PATCH",
 								"header": [
@@ -4962,10 +5177,12 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "e5ade948-7e97-402f-89dc-e7a460429232"
 									}
 								}
 							],
+							"id": "4d6da5a1-61c4-4d6a-a822-d7fb666b7d2a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5017,10 +5234,12 @@
 											"    pm.collectionVariables.unset(\"Host4Id\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "73840f37-9f3e-4e69-b9db-09f2a056fce2"
 									}
 								}
 							],
+							"id": "ead27fa7-6400-4eef-9dc1-2fe5bcbc17f1",
 							"request": {
 								"method": "DELETE",
 								"header": [
@@ -5154,10 +5373,12 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "36a499b1-b431-42df-a580-f5587d251469"
 									}
 								}
 							],
+							"id": "9f029830-0481-4373-8182-18ebafc8feb6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5192,7 +5413,8 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"id": "e2e8a2ad-0a0c-4608-8cda-a8a92756cc00"
 				},
 				{
 					"name": "Host + filter on HC not linked",
@@ -5208,7 +5430,8 @@
 											"pm.collectionVariables.set(\"Host5Alias\", \"I'm the fifth host and I was created by user R/W\");\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "03fedd77-3d66-4116-9c17-37bed68eeeb9"
 									}
 								},
 								{
@@ -5279,10 +5502,12 @@
 											"    });\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "78ec4820-3bd2-49d6-8213-ef53aa961d06"
 									}
 								}
 							],
+							"id": "83032733-1431-415d-9ba3-47fa55a78a98",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -5320,7 +5545,8 @@
 											"pm.collectionVariables.set(\"Host6Alias\", \"I'm the sixth host and I was created by user R/W\");\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "bc5d12ed-e712-407a-884c-aa466e2747a8"
 									}
 								},
 								{
@@ -5394,10 +5620,12 @@
 											"    });\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "31abf3f4-54e5-4e2d-bd0d-b7bc3e72d80c"
 									}
 								}
 							],
+							"id": "c9aff6e0-a0f0-402d-a8f1-a62bec0f6383",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -5440,10 +5668,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "1928c732-07da-452f-9495-a63db6dc1c94"
 									}
 								}
 							],
+							"id": "63647f95-311c-4752-ba27-21a9134c5ec9",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -5519,10 +5749,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "e2197e53-7498-4470-9fab-fba9b8066ed8"
 									}
 								}
 							],
+							"id": "a790217a-4b2c-4db5-80b5-b664c5cb58f9",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -5561,7 +5793,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "616c5c94-d3c2-497b-8e31-69a53d030f3d"
 									}
 								},
 								{
@@ -5570,10 +5803,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "5251df1a-23f2-40bf-af4e-55958fe3e476"
 									}
 								}
 							],
+							"id": "5db6c85d-4584-42d6-ab86-40acad7bf42a",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -5620,7 +5855,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "17507f7b-8c1f-4506-883f-15aacf6b5d10"
 									}
 								},
 								{
@@ -5629,10 +5865,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "6f65e5c9-5679-4aee-b98c-8cc839e466ec"
 									}
 								}
 							],
+							"id": "d3820c5d-9be7-484b-b4cf-e6d1c6dc6af9",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -5684,10 +5922,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "8626e7b3-6606-48b5-bb58-fd9c3daabddb"
 									}
 								}
 							],
+							"id": "b35b283e-7088-49ca-a408-d6dd33d0f7dc",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -5763,10 +6003,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "70bfbd67-0b76-4b9c-9932-257c9598ee8f"
 									}
 								}
 							],
+							"id": "9eaf79a5-52bb-4b2d-a24e-0a9b9874a645",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -5939,10 +6181,12 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "3fe5e158-8ddf-4b77-81cf-e4b6011c8f40"
 									}
 								}
 							],
+							"id": "4af0f83e-7244-4477-ab79-fd371eeb48bb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5994,10 +6238,12 @@
 											"    pm.collectionVariables.unset(\"Host5Id\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "8f469a71-b0c2-45f3-8d82-2291f8c56d0f"
 									}
 								}
 							],
+							"id": "7a9d4501-ed8f-4b0c-a230-23b980ab3163",
 							"request": {
 								"method": "DELETE",
 								"header": [
@@ -6046,10 +6292,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "510d3aa1-c1e6-4ca2-ac44-78b3df0334e5"
 									}
 								}
 							],
+							"id": "746289e0-16b6-418c-979d-c12b5480fd95",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -6108,7 +6356,8 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"id": "15e09ed2-d5df-4ef5-b1f5-2d317a8fa6da"
 				},
 				{
 					"name": "Host + filter on HC linked",
@@ -6130,10 +6379,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "fd8eed9e-607e-47e8-a217-5e43ff5a4ee5"
 									}
 								}
 							],
+							"id": "dbef7482-9bd0-48e1-a742-07bad5036ff1",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -6172,7 +6423,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "cd808149-bca4-4dfa-ae29-7cfe3be5e153"
 									}
 								},
 								{
@@ -6181,10 +6433,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "d7cb661a-3cba-4288-967d-dfa592cab262"
 									}
 								}
 							],
+							"id": "939734aa-d39f-4877-be50-630ef825511b",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -6231,7 +6485,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "03dd04d0-1fdc-47e6-8ea2-f382c92f036a"
 									}
 								},
 								{
@@ -6240,10 +6495,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "89f6714c-b4ef-4ea3-9732-0c3c504392d5"
 									}
 								}
 							],
+							"id": "1fe24874-ae7b-46d2-8250-e36e05bf67ee",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -6295,10 +6552,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "9969e4a7-5550-4990-b89b-9016ab079c03"
 									}
 								}
 							],
+							"id": "a41f5fb2-8c10-4fd0-b618-bf18a3004964",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -6374,10 +6633,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "3852b8f9-c7f0-46f3-aec8-cacd849d22cf"
 									}
 								}
 							],
+							"id": "0f9fcf62-fb06-42a3-8902-11ecacca17a7",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -6526,10 +6787,12 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "a2df8d67-bc38-4064-8249-d1c2b22a395c"
 									}
 								}
 							],
+							"id": "a22fffe9-2451-4699-9234-24780365d372",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6581,10 +6844,12 @@
 											"    pm.collectionVariables.unset(\"Host6Id\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "958399fa-43ce-4ac8-aff1-df7bd5962f30"
 									}
 								}
 							],
+							"id": "0a69a447-b2fd-4f45-9dcf-1195a91c1af3",
 							"request": {
 								"method": "DELETE",
 								"header": [
@@ -6710,10 +6975,12 @@
 											"});\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "174ad3e0-9ae7-420d-81f9-83bd53115f8f"
 									}
 								}
 							],
+							"id": "cb639f6c-2557-4c45-a450-4af9aa386518",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6764,10 +7031,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "e43ff69a-3fe6-4be2-b743-66e6b6f5925c"
 									}
 								}
 							],
+							"id": "4d16b7a4-5c50-4bb4-bab8-67f822ed9f69",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -6826,7 +7095,8 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"id": "6f81279d-585f-4caa-9a57-a4874224241d"
 				},
 				{
 					"name": "Host excluded",
@@ -6848,10 +7118,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "2325f16b-abfb-4c82-b8e0-bdf60392c961"
 									}
 								}
 							],
+							"id": "9ce31071-9375-4c8b-b80f-2621548e9569",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -6890,7 +7162,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "485b7abd-44e9-43de-a24c-88da5ec52539"
 									}
 								},
 								{
@@ -6899,10 +7172,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "a5c1ccb7-9513-49dd-8e6f-011d3dfe418a"
 									}
 								}
 							],
+							"id": "bd435abb-845c-4e54-8526-857f83275e9a",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -6949,7 +7224,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "48214d57-f74b-4b06-a9ea-9053cd6875cc"
 									}
 								},
 								{
@@ -6958,10 +7234,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "b956fcba-df3d-4336-8eee-37cfa6ecf896"
 									}
 								}
 							],
+							"id": "d79b83a7-049d-4df5-bed9-16078fa1654e",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -7013,10 +7291,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "8f131e5f-9619-4fec-8f50-efbab2716fe1"
 									}
 								}
 							],
+							"id": "861a79af-5c0e-45fb-8d97-c06cb63516bc",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -7092,10 +7372,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "30018bc3-e624-4411-a6b2-a7f5cbb68d0a"
 									}
 								}
 							],
+							"id": "6fad194d-b7cc-4ecd-94f1-b343d8bf1532",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -7182,10 +7464,12 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "30f3e4b4-4b1e-4630-84e2-fe629c1dd56d"
 									}
 								}
 							],
+							"id": "db36777e-c80c-43a1-8450-8a0b3fabec05",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7237,10 +7521,12 @@
 											"    pm.expect(responseJson.message).to.eql(\"Host not found\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "48c59eda-2497-48d1-9c0a-63eae5dcf332"
 									}
 								}
 							],
+							"id": "c70fc65c-fc04-45a1-8542-c11700f47f4f",
 							"request": {
 								"method": "PATCH",
 								"header": [
@@ -7290,10 +7576,12 @@
 											"    pm.expect(responseJson.message).to.eql(\"Host not found\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "9e66991e-c25d-49dc-9bf9-898e93d0ceb3"
 									}
 								}
 							],
+							"id": "b135d901-02f1-4653-ad92-9fc44deb12ca",
 							"request": {
 								"method": "DELETE",
 								"header": [
@@ -7342,10 +7630,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "740cb511-9369-471a-a5f6-abadd71cda97"
 									}
 								}
 							],
+							"id": "7af13a12-031d-4392-aad0-0b5c9f42769b",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -7421,10 +7711,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "dd01d71b-5d7d-43e9-94a6-8c68b0730211"
 									}
 								}
 							],
+							"id": "ba8424e8-5bda-4da6-8fc4-da7a74d188d2",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -7463,7 +7755,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "fc3b9929-2980-4e78-a77f-f06bf94bd10a"
 									}
 								},
 								{
@@ -7472,10 +7765,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "f586d9f5-961b-4ecf-9f50-90e1cf311941"
 									}
 								}
 							],
+							"id": "158d6ab9-e3d8-4c20-8b06-c6c307e9e4d9",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -7522,7 +7817,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "ad445b60-e9eb-4807-9c5a-fc96b03dcdfd"
 									}
 								},
 								{
@@ -7531,10 +7827,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "ee9dbe62-39e5-4be0-ad6c-04788be64996"
 									}
 								}
 							],
+							"id": "f81f0804-cad3-4c54-8e36-237f1382d825",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -7581,7 +7879,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "4e6429d3-a6e1-4b03-9a26-44864ee0c5e4"
 									}
 								},
 								{
@@ -7590,10 +7889,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "11c50863-ba3e-429f-b578-2b59813d349a"
 									}
 								}
 							],
+							"id": "ee42e46e-2cbb-44c9-a853-cf79fdeae29e",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -7645,10 +7946,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "7e3ea4e5-6447-4b87-8c62-04f0f5e1527f"
 									}
 								}
 							],
+							"id": "52487933-93f1-4c34-bbbf-b2f8b6b7165b",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -7707,9 +8010,11 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"id": "f194a8a9-6cd5-49ab-9dd9-67cbe4e75144"
 				}
-			]
+			],
+			"id": "60136a34-b79c-458a-a80c-60289f573913"
 		},
 		{
 			"name": "user with R/W rights with host not directly linked",
@@ -7734,10 +8039,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "288f91c0-b098-437d-a641-8432f7dd4544"
 									}
 								}
 							],
+							"id": "80ee6e41-e2eb-43bc-aa1f-733ef67725c5",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -7776,7 +8083,8 @@
 											"pm.collectionVariables.set(\"Host7Alias\", \"I'm the seventh host\");\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "a40848e8-277e-4dfb-baf5-2378a3899d8a"
 									}
 								},
 								{
@@ -7849,10 +8157,12 @@
 											"    \r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "0e36f1f0-e7a5-4d7a-ad99-e2c010b794a6"
 									}
 								}
 							],
+							"id": "7ad12525-c260-4cdc-b9c5-a3d29419baef",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -7890,7 +8200,8 @@
 											"pm.collectionVariables.set(\"Host8Alias\", \"I'm the eighth host\");\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "4cfaffdb-e513-4b57-af11-1e7279ebc84a"
 									}
 								},
 								{
@@ -7963,10 +8274,12 @@
 											"\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "c37a564e-1052-48f3-a257-c139f1059f04"
 									}
 								}
 							],
+							"id": "08409a8c-9ce6-4784-9750-8b768ddc194c",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -8009,10 +8322,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "1b246ca4-ee54-4ead-8347-a08c303de65b"
 									}
 								}
 							],
+							"id": "ab11e437-cd54-4c2a-b022-05f4844992af",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -8088,10 +8403,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "177ee7f7-1754-4316-999b-d69aadf11e97"
 									}
 								}
 							],
+							"id": "8aa4dadf-3c05-474e-8153-7b756f1f4f6b",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -8145,10 +8462,12 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "eccc768b-7064-4dbc-b17e-aae654ee1bb7"
 									}
 								}
 							],
+							"id": "3f98b509-231e-4b77-8a84-d60dc3a3eae0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -8200,10 +8519,12 @@
 											"    pm.expect(responseJson.message).to.eql(\"Host not found\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "6ff9c660-1409-4401-8f2a-6d9dc296b2f0"
 									}
 								}
 							],
+							"id": "b3937667-76a8-466d-9f24-56a356de9bc5",
 							"request": {
 								"method": "DELETE",
 								"header": [
@@ -8252,10 +8573,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "0bc73b5f-190f-43f6-8c7c-02c60624541e"
 									}
 								}
 							],
+							"id": "024a931a-92ea-4e1f-b1cf-eab059e24a84",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -8314,7 +8637,8 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"id": "48854be1-edad-4cc4-8902-392d3d26361e"
 				},
 				{
 					"name": "Access only to the host group",
@@ -8336,10 +8660,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "1804825a-6782-447b-846f-ee0a369bb9f1"
 									}
 								}
 							],
+							"id": "aeb94c0b-c6ab-441e-9dc7-ce2aa29594ab",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -8381,7 +8707,8 @@
 											"    pm.collectionVariables.set(\"ACLResources\", response.result[1].name);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "192eb91b-04ac-4d4d-8af0-cdaa1ca76779"
 									}
 								},
 								{
@@ -8390,10 +8717,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "0670ac4b-0fba-44fd-b176-38d4485d2a8b"
 									}
 								}
 							],
+							"id": "c14b0535-a86d-4a66-9723-5b6b8b9230d6",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -8440,7 +8769,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "e02b8eae-44b2-40db-9ded-6bbeb7a9c5fe"
 									}
 								},
 								{
@@ -8449,10 +8779,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "fa245ade-7162-4f29-94b6-6d8b7b93602b"
 									}
 								}
 							],
+							"id": "dedf74f6-5642-4add-baa2-8724e4538078",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -8499,7 +8831,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "37abfff7-5d6b-442f-a03d-b2ff8ef3de2f"
 									}
 								},
 								{
@@ -8508,10 +8841,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "d202de3c-fa98-4e62-bf9b-94dd22559896"
 									}
 								}
 							],
+							"id": "59851eb4-0d70-4732-8555-a083fa50b9b8",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -8558,7 +8893,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "784fd3be-2f48-449f-871b-63b3412ca531"
 									}
 								},
 								{
@@ -8567,10 +8903,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "54836920-30e1-4e06-9429-0e9833492b7f"
 									}
 								}
 							],
+							"id": "3c095901-5781-4d03-bcc3-67b64b61a0dd",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -8622,10 +8960,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "37bad008-41df-413a-bd2d-ff347e9ad4b8"
 									}
 								}
 							],
+							"id": "500f266a-7cdf-4dba-8a29-9f851d1aa1d2",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -8701,10 +9041,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "a6a8cd9d-ac15-4164-bdec-b2159dd4cb58"
 									}
 								}
 							],
+							"id": "8312060c-68d0-42cb-8066-64b209385d6a",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -8795,10 +9137,12 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "7d184f68-cf18-421b-8392-c03376870ccd"
 									}
 								}
 							],
+							"id": "69e7a77d-72ef-4097-84b6-083dfcc107c2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -8849,10 +9193,12 @@
 											"    pm.collectionVariables.unset(\"Host2Id\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "ed7d6ad2-b680-4d96-9e8b-50a8c55d70e2"
 									}
 								}
 							],
+							"id": "adaf701a-add3-4b4f-b415-e6cfc57510d0",
 							"request": {
 								"method": "DELETE",
 								"header": [
@@ -8911,10 +9257,12 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "f3030018-cfbd-43df-9d4c-67b495b49016"
 									}
 								}
 							],
+							"id": "f5b963f3-9e2b-4fe5-800b-0151576be3f3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -8965,10 +9313,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "d92519c7-c288-49b3-9678-00e8147e9201"
 									}
 								}
 							],
+							"id": "f391bf0b-d9d0-4fd9-a5a4-ad7c3b8b2358",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -9027,7 +9377,8 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"id": "9e77dc74-e625-4437-92bf-102d1c3186fd"
 				},
 				{
 					"name": "Access to the host group and filter on host category",
@@ -9049,10 +9400,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "c878edf8-a2ac-4816-96cd-cf887ff5fe53"
 									}
 								}
 							],
+							"id": "e6f89582-8111-45fc-acc1-729e89ba12f0",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -9091,7 +9444,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "c72de7c1-6361-44b4-bd0b-3366a2d28707"
 									}
 								},
 								{
@@ -9100,10 +9454,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "9371f114-6664-4b9f-a372-95f34d6a1c1f"
 									}
 								}
 							],
+							"id": "3d43ba3d-d387-4414-8d10-22eafaad768d",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -9150,7 +9506,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "8f02a40f-0d67-4759-8732-5a33a06b607f"
 									}
 								},
 								{
@@ -9159,10 +9516,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "f2174d96-fabc-40c5-994e-c4cf2f5bbcd3"
 									}
 								}
 							],
+							"id": "36253e90-8832-42d7-b69b-65ed28e4b3d6",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -9214,10 +9573,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "578a661d-1bcb-4c38-aee7-375f65667430"
 									}
 								}
 							],
+							"id": "519d057a-7a74-4589-ab44-f7b4f490f208",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -9293,10 +9654,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "40937a24-d9b6-4678-8863-ccaba3fe1666"
 									}
 								}
 							],
+							"id": "b0f9dcf7-746d-4544-8163-21ae2e42807c",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -9446,10 +9809,12 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "33fd3f2f-5a59-45d3-a953-4583a34d9fd5"
 									}
 								}
 							],
+							"id": "cf78e4df-e152-4dbd-acd3-8d3eae6730be",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -9501,10 +9866,12 @@
 											"    pm.collectionVariables.unset(\"Host8Id\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "350b0458-9bc8-46ff-bf94-74cfa240ccf0"
 									}
 								}
 							],
+							"id": "c783fa9f-a042-4d84-b3f9-f13d11cb2050",
 							"request": {
 								"method": "DELETE",
 								"header": [
@@ -9628,10 +9995,12 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "c496e4b9-12b4-4ac1-b528-c8623da4d211"
 									}
 								}
 							],
+							"id": "1f047bce-9ab0-49c3-bf88-b6cf837fcdcc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -9682,10 +10051,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "01ce187b-2216-4109-8d6d-b8c4379e8189"
 									}
 								}
 							],
+							"id": "41b127d6-b14b-45eb-89ee-289ebb239415",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -9744,7 +10115,8 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"id": "dd80aa60-3274-4e2b-9c18-fc6a3953060c"
 				},
 				{
 					"name": "Host excluded",
@@ -9766,10 +10138,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "3e94a0d5-bef0-43e0-84fd-bdbe496e4d50"
 									}
 								}
 							],
+							"id": "e12d048a-921e-4995-a7bf-9b619588a9d0",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -9808,7 +10182,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "d0f65e9c-b507-46c3-a610-345085f8f883"
 									}
 								},
 								{
@@ -9817,10 +10192,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "89e29ba6-6133-4cf8-9ff4-8f8ca20d58ad"
 									}
 								}
 							],
+							"id": "745692b1-2def-4288-a8af-378ddd93cdc3",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -9867,7 +10244,8 @@
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "3e91d3aa-f6d5-44a5-a8cd-b7f369bbb338"
 									}
 								},
 								{
@@ -9876,10 +10254,12 @@
 										"exec": [
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "9b565c6b-409e-4352-b3ec-08171024566b"
 									}
 								}
 							],
+							"id": "b35ad2cd-b2e0-4ef4-9361-386aa75f3797",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -9931,10 +10311,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "e05c3197-9321-48da-9679-666021e8179b"
 									}
 								}
 							],
+							"id": "6f35b945-aca5-41ee-899f-e1525f8b3209",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -10010,10 +10392,12 @@
 											"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "3bbae9f9-383b-4cee-ade4-729a57ff5179"
 									}
 								}
 							],
+							"id": "5bead0b3-7d70-4946-b834-079d3efde387",
 							"protocolProfileBehavior": {
 								"disableCookies": true
 							},
@@ -10097,10 +10481,12 @@
 											"});\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "87e76356-5ad7-4eea-add6-0353c14e0790"
 									}
 								}
 							],
+							"id": "e4d3d5d5-8173-4274-aa3d-9c84a5e52ab5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10152,10 +10538,12 @@
 											"    pm.expect(responseJson.message).to.eql(\"Host not found\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "ddfa8c6b-bf27-4e94-9cbc-8458bc407b9d"
 									}
 								}
 							],
+							"id": "d000d601-0366-4459-b8a1-b83fb420d502",
 							"request": {
 								"method": "DELETE",
 								"header": [
@@ -10204,10 +10592,12 @@
 											"    pm.environment.unset(\"currentUserID\");\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"id": "1d3720cf-0cac-4a0d-ae07-2506473791dd"
 									}
 								}
 							],
+							"id": "9dd2383b-5894-4dce-9ca4-28df2ee307dc",
 							"request": {
 								"auth": {
 									"type": "apikey",
@@ -10266,9 +10656,11 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"id": "b81ca865-276f-41a2-826e-5d268a505229"
 				}
-			]
+			],
+			"id": "4713a0d2-bc22-4b61-9a5b-66a9ee61cb28"
 		},
 		{
 			"name": "user with Read Only rights",
@@ -10290,10 +10682,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2f7f2db5-2c6c-4cdf-9a1c-d343e285d5b5"
 							}
 						}
 					],
+					"id": "a33495d9-1d86-47e9-af2f-a35dfdd051bc",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -10409,10 +10803,12 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ea3d30b7-5d7f-42ee-b5cc-b3899d5fda99"
 							}
 						}
 					],
+					"id": "29c2904f-6c94-4a32-97e7-bce331092dfa",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -10456,7 +10852,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3a3108dd-f294-40c7-bbf0-17231c27a59c"
 							}
 						},
 						{
@@ -10470,10 +10867,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to add hosts\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b8df529d-dd27-4adf-b784-6aa85b8552c5"
 							}
 						}
 					],
+					"id": "1cbf9ac6-6fc5-4432-8bf3-ed3691205b77",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -10514,10 +10913,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to edit a host\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3c728943-5ecf-419b-84e5-db6c83f24d03"
 							}
 						}
 					],
+					"id": "c19728b1-8e65-47b2-9210-108f7e1b27dd",
 					"request": {
 						"method": "PATCH",
 						"header": [
@@ -10567,10 +10968,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to delete a host\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "14c8b807-9286-4746-b792-192dde3222c1"
 							}
 						}
 					],
+					"id": "cdba1d9a-0082-4f8c-8b73-f4cdbaaf2a81",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -10619,10 +11022,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "36caed0f-a008-41da-95d1-eec005a9638c"
 							}
 						}
 					],
+					"id": "30002b1a-93c7-4d61-bc38-98d012357919",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -10681,7 +11086,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "5bdc3ae5-1e13-4138-acd3-217401e80c11"
 		},
 		{
 			"name": "user with no rights",
@@ -10703,10 +11109,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "37aa7f47-70f9-4d22-8c70-87e1c31d2127"
 							}
 						}
 					],
+					"id": "4e1e1362-f2c7-41f1-811d-3a9b8edefb8d",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -10748,10 +11156,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to list hosts\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "135edc4e-cc0e-4758-8110-e19e4b476463"
 							}
 						}
 					],
+					"id": "3b9baf16-26c4-4d9f-b35f-afe4c2396dfe",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -10795,7 +11205,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c3e05dfa-f365-4aeb-895f-e9ef781bc864"
 							}
 						},
 						{
@@ -10809,10 +11220,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to add hosts\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e45a7cef-d9f9-4265-93b4-f0166c61254d"
 							}
 						}
 					],
+					"id": "0e74651f-c8dc-49b6-b8fe-56fdf0f6f31e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -10853,10 +11266,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to edit a host\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "33686692-a22d-408c-be77-bb6b8f46d4a2"
 							}
 						}
 					],
+					"id": "0bcf5698-f654-4b21-a55c-13bd507a2b57",
 					"request": {
 						"method": "PATCH",
 						"header": [
@@ -10906,10 +11321,12 @@
 									"    pm.expect(responseJson.message).to.eql(\"You are not allowed to delete a host\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "35e71191-e5d6-463c-ac20-2f2ef5855d9a"
 							}
 						}
 					],
+					"id": "5b2f4d91-78f0-4470-b60a-b0ab5e9b4a3c",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -10958,10 +11375,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f389c0d1-51be-4db3-b648-59b8ffaf9987"
 							}
 						}
 					],
+					"id": "9e6c13ac-ff0d-4dd9-a87a-7eccdcd44248",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -11020,7 +11439,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "3305c885-bc4f-484b-bf39-69741fccd013"
 		},
 		{
 			"name": "Reset",
@@ -11042,10 +11462,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "17bdebac-dbd4-4005-b0bf-d6ee08c09941"
 							}
 						}
 					],
+					"id": "6dd05cb7-cc64-45ac-8ced-b99f317781a1",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -11090,10 +11512,12 @@
 									"    pm.collectionVariables.unset(\"Host3Id\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b6d7c2c5-177a-4ea5-9538-bc376513543c"
 							}
 						}
 					],
+					"id": "d080d602-33dd-406e-8653-793026d847ae",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -11143,10 +11567,12 @@
 									"    pm.collectionVariables.unset(\"Host7Id\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ed827f5c-ffb9-4f25-aae9-737499e29787"
 							}
 						}
 					],
+					"id": "02b4c52d-7ddb-4c51-aa6f-3a62536398b3",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -11193,7 +11619,8 @@
 									"    pm.collectionVariables.unset(\"HostSeverity1Id\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "e66e0c63-d6a8-4c99-8c2b-6adf4b5b0cbc"
 							}
 						},
 						{
@@ -11202,10 +11629,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c3bf4f15-6468-443c-8b54-d4eb4ecc79bc"
 							}
 						}
 					],
+					"id": "b97a2b36-e129-4b4d-937c-9222c8392b42",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -11247,7 +11676,8 @@
 									"    pm.collectionVariables.unset(\"HostSeverity2Id\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b1016ec3-75ec-4e36-8a14-e7bbd292eb43"
 							}
 						},
 						{
@@ -11256,10 +11686,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "79f3e45a-c7d0-4c83-bf83-1dcdec0dd4b6"
 							}
 						}
 					],
+					"id": "f2325da4-8bd2-4354-b8b8-924639d1f8c5",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -11301,7 +11733,8 @@
 									"    pm.collectionVariables.unset(\"HostCategory1Id\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "afdc761f-2570-4692-bf67-80d3e1dd1eaa"
 							}
 						},
 						{
@@ -11310,10 +11743,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bedcb482-d008-4af3-a61d-e434e2d36a55"
 							}
 						}
 					],
+					"id": "c3ad9758-1ad1-436e-936a-5d0794379a01",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -11355,7 +11790,8 @@
 									"    pm.collectionVariables.unset(\"HostCategory2Id\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "989525a0-63ad-4d83-8339-2ee2635e1999"
 							}
 						},
 						{
@@ -11364,10 +11800,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "9fd9f75a-fb3d-41e9-895b-a6e8a7499c1b"
 							}
 						}
 					],
+					"id": "9e3e1928-d662-49a8-8a25-43b6ce69fec7",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -11409,7 +11847,8 @@
 									"    pm.collectionVariables.unset(\"HostGroup1Id\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "24ffe9d2-4307-4fe4-889c-e6fe2b09120e"
 							}
 						},
 						{
@@ -11418,10 +11857,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5ebb2fda-95e3-4d9e-b6ee-c5e7ec73da53"
 							}
 						}
 					],
+					"id": "8ef2ab70-638a-4f94-872e-c0665349032d",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -11466,10 +11907,12 @@
 									"    pm.collectionVariables.unset(\"HostTemplate1Id\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bda7a1ac-e2af-4394-a127-57f6d4e90fbd"
 							}
 						}
 					],
+					"id": "ff912809-9520-4ca2-bc66-bcef05cae837",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -11528,7 +11971,8 @@
 									"    pm.collectionVariables.unset(\"CommandId\");",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c5ebb8d0-4bae-49a5-9b16-2ddfb2156f84"
 							}
 						},
 						{
@@ -11537,10 +11981,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c8dacfd1-3b60-49a3-b24f-4d3ec8c662eb"
 							}
 						}
 					],
+					"id": "a0b4c5bc-3575-4b56-9258-2ae10778a221",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -11592,10 +12038,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "bb91fd20-a497-4e83-8f0d-d7d6e57b1779"
 							}
 						}
 					],
+					"id": "76c5b1f5-8757-4278-955a-41f23d13ffad",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -11654,7 +12102,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "ad217013-90c6-4e09-8d6a-f283b5f73e4a"
 		}
 	],
 	"auth": {
@@ -11679,7 +12128,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "8f40f851-b638-471d-8dcd-7c2e8bea96e0"
 			}
 		},
 		{
@@ -11688,7 +12138,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "4ec4459b-a59c-4e38-9ae2-8a0d915022e1"
 			}
 		}
 	]

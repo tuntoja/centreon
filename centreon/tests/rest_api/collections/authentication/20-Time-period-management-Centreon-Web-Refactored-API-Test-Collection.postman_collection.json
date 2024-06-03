@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "d595dcb2-b97a-45fe-9fc3-df43fc81aeba",
+		"_postman_id": "4e2be83d-8655-48c5-8274-3ade5754e9cd",
 		"name": "20 - Time period management - Centreon Web Refactored API Test Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "22770334",
-		"_collection_link": "https://centreon-api-v2-monitoring-clapi.postman.co/workspace/Refacto-Tests-API~937020c6-b43d-4380-8c50-a2069c131e07/collection/22770334-d595dcb2-b97a-45fe-9fc3-df43fc81aeba?action=share&source=collection_link&creator=22770334"
+		"_uid": "28117716-4e2be83d-8655-48c5-8274-3ade5754e9cd"
 	},
 	"item": [
 		{
@@ -34,10 +33,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ae78f92b-1934-4408-8767-10007258450d"
 							}
 						}
 					],
+					"id": "95f4203c-67f4-4236-b952-65ace16074d9",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -94,10 +95,12 @@
 									"    pm.expect(tableOfTestPeriodNames).to.contain(\"workhours\");\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "920daf45-f56b-4574-ab5b-d26b5fcab6e0"
 							}
 						}
 					],
+					"id": "ab8e6f18-c796-415b-a5d3-222ff5b95f34",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -157,7 +160,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "078cabbe-cfd0-4c8d-8ac4-8fd22369194b"
 							}
 						},
 						{
@@ -169,10 +173,12 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "cb67ff09-4c95-4e21-8fca-a886d2f0c5a3"
 							}
 						}
 					],
+					"id": "dcc43040-0301-4873-9fc5-999da08c985f",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -257,10 +263,12 @@
 									"    pm.expect(responseJson.result[indexOfNewTimePeriodInResponse].saturday).to.eql(\"\");\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "827193fd-f947-466b-936b-d760d29fac1b"
 							}
 						}
 					],
+					"id": "150bd327-f6c2-4be5-858f-c7729a9bbdb8",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -323,7 +331,8 @@
 									"    pm.collectionVariables.unset(\"timePeriodAlias\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "abd31cea-ac8a-4cf2-b7e1-e989b944a955"
 							}
 						},
 						{
@@ -332,10 +341,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2f481c2c-1f55-417f-8962-20be99fbf155"
 							}
 						}
 					],
+					"id": "afde0909-07e7-4d5e-a98b-6de4a3f0e7fa",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -407,10 +418,12 @@
 									"    pm.expect(tableOfTestPeriodNames).to.contain(\"workhours\");\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7de6903a-9ed7-49e2-875a-c53601c4297b"
 							}
 						}
 					],
+					"id": "f2c4361f-7e32-4504-92fc-5772566a9924",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -477,10 +490,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "abb40082-1e00-4764-9938-00eababca160"
 							}
 						}
 					],
+					"id": "2e876cd8-0cd4-4369-b6c4-4a9622ef01f7",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -544,7 +559,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "f4e060e5-4742-4d0b-9179-ec9b6a333b40"
 		},
 		{
 			"name": "2002 - Adding a time period with a duplicate name",
@@ -571,10 +587,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4e1f6b92-efb8-4499-8d6a-cb0d70c8483d"
 							}
 						}
 					],
+					"id": "5914f124-887b-4288-a051-fb06090f5011",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -618,7 +636,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "3d848cf6-2b5e-4a3f-903c-4f6bbe17bfd5"
 							}
 						},
 						{
@@ -628,10 +647,12 @@
 									"pm.collectionVariables.set(\"timePeriodName\", \"TP-Test-API-2002\");\r",
 									"pm.collectionVariables.set(\"timePeriodAlias\", \"Time period used for API tests\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d085b6a2-8fc3-41e1-82e6-9208a46553b2"
 							}
 						}
 					],
+					"id": "bbe7e8df-ede5-4593-8ff9-2c44c419b1b6",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -692,7 +713,8 @@
 									"    pm.collectionVariables.unset(\"timePeriodAliasBis\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b1c24504-40d3-4344-9f2e-17c596c4d50a"
 							}
 						},
 						{
@@ -701,10 +723,12 @@
 								"exec": [
 									"pm.collectionVariables.set(\"timePeriodAliasBis\", \"Duplicate time period for API tests.\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "29f51a30-9d0e-4eab-8a97-afb5e089715b"
 							}
 						}
 					],
+					"id": "0239641f-0e85-4678-b066-846b2d197f08",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -779,10 +803,12 @@
 									"    pm.expect(responseJson.result[indexOfNewTimePeriodInResponse].alias).to.eql(pm.collectionVariables.get(\"timePeriodAlias\"));\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f9bb3d92-697f-4575-8ec0-431081917854"
 							}
 						}
 					],
+					"id": "4151f286-13e5-44e9-a42c-d307f07eb043",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -840,7 +866,8 @@
 									"    pm.collectionVariables.unset(\"timePeriodAlias\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4e164568-2b94-4444-ad6a-cdf12bc56c9d"
 							}
 						},
 						{
@@ -849,10 +876,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "78e80662-4573-4418-aaee-629a563f59bd"
 							}
 						}
 					],
+					"id": "07ca4468-16e7-4df0-b94d-72a01cbef98a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -914,10 +943,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "40799b74-0a31-410f-afb5-674adb025233"
 							}
 						}
 					],
+					"id": "0b20d60d-c168-4e5b-a7fe-723a39e362cb",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -981,7 +1012,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "4ed1b8df-1067-4656-8001-b15e8cc80c23"
 		},
 		{
 			"name": "2003 - Adding a new time period with an empty name",
@@ -1008,10 +1040,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a9ee5319-5509-4d7b-9de6-7fb942199fe9"
 							}
 						}
 					],
+					"id": "4941ad85-b895-4bb3-9f33-4cc75aad7c29",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1055,7 +1089,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2fb0c471-5bc2-4b49-878b-55f2864ec80d"
 							}
 						},
 						{
@@ -1064,10 +1099,12 @@
 								"exec": [
 									"pm.collectionVariables.set(\"timePeriodName\", \"TP-Test-API-2003\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "8255e901-a75d-4def-9afc-a3195e9f047e"
 							}
 						}
 					],
+					"id": "f141b89f-9b21-4457-a35b-a6a33ec1c6d4",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1130,10 +1167,12 @@
 									"    postman.setNextRequest(\"[2003-cleanup] Logout from admin user and clear collection variables\");\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ab4ef13b-2d60-47b5-9724-e2923290410b"
 							}
 						}
 					],
+					"id": "03a4cbca-c705-492d-a415-4485460c45db",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1187,10 +1226,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b6f74a2a-be6b-46c6-b939-99beedba682c"
 							}
 						}
 					],
+					"id": "c904b02f-0f0e-4536-a441-922d6612bdee",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1254,7 +1295,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "db7b9727-c4a5-4567-bbf7-7eb57d48ca9a"
 		},
 		{
 			"name": "2004 - Setting parameters for default time period",
@@ -1281,10 +1323,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f926e1bd-7e5c-4c42-83c9-df2f0f9b25c3"
 							}
 						}
 					],
+					"id": "45cf3fd4-0e0d-4f94-8f0f-7d8795b0f362",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1341,10 +1385,12 @@
 									"    pm.expect(tableOfTestPeriodNames).to.contain(\"workhours\");\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b7f8a120-a18c-4f69-a354-ab05abbffd9f"
 							}
 						}
 					],
+					"id": "d8059b28-93b5-4391-a300-9bdf72c2a9c9",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1417,7 +1463,8 @@
 									"    }    \r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fdd4f0a0-ac73-450f-843b-ae8e7914f096"
 							}
 						},
 						{
@@ -1447,10 +1494,12 @@
 									"pm.collectionVariables.set(\"listOfValues\", values);\r",
 									"pm.collectionVariables.set(\"parametersToCheck\", parametersToCheck);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "db6d3426-693b-4f87-9a1e-a5f669d15516"
 							}
 						}
 					],
+					"id": "1319bb8c-7e4e-450e-bbda-d43d3fc2ef4e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1532,10 +1581,12 @@
 									"    }\r",
 									"}"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4c94d694-5538-4c55-9327-b25a62dabdde"
 							}
 						}
 					],
+					"id": "b8e1a45b-1b97-4c7c-a447-8e0e503c488c",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1608,7 +1659,8 @@
 									"    }    \r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "963695d1-0020-424b-ace7-fdfedee7a390"
 							}
 						},
 						{
@@ -1638,10 +1690,12 @@
 									"pm.collectionVariables.set(\"listOfValues\", values);\r",
 									"pm.collectionVariables.set(\"parametersToCheck\", parametersToCheck);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5cb494d9-bab3-4ec3-9ce2-ac7b327ee6e5"
 							}
 						}
 					],
+					"id": "8f91dfa8-64d8-465d-9713-1b4fefb686d6",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1720,10 +1774,12 @@
 									"    }\r",
 									"}"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "26c53b44-d6cf-49cc-98ea-619f431aa28d"
 							}
 						}
 					],
+					"id": "e8608720-2014-43c6-ac25-12e3a8d40161",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1787,10 +1843,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d6c573e8-d285-4f9c-b3ba-a9e1dd361f25"
 							}
 						}
 					],
+					"id": "def7f68f-d6a0-4ab9-9f34-4618b229f1b6",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1854,7 +1912,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "ce175e8d-0d7b-47db-a136-45e3c360bbff"
 		},
 		{
 			"name": "2005 - Setting parameters for a new time period",
@@ -1881,10 +1940,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c81f6f8f-935d-43a6-a7b1-eb6f5d63b41d"
 							}
 						}
 					],
+					"id": "b33b5890-c952-4e84-9178-46706689dac7",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1927,7 +1988,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b06b9346-92e2-4ef0-88bc-90f2c385d084"
 							}
 						},
 						{
@@ -1937,10 +1999,12 @@
 									"pm.collectionVariables.set(\"timePeriodName\", \"TP-Test-API-2005\");\r",
 									"pm.collectionVariables.set(\"timePeriodAlias\", \"Time period used for API tests\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5e14ff17-e79a-4bb2-87ff-ba052b33577d"
 							}
 						}
 					],
+					"id": "e1b70fe2-feab-40fd-984c-555ca9892bab",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2021,7 +2085,8 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a3ea9611-b6d4-45a7-9f56-b479e9b0d4f4"
 							}
 						},
 						{
@@ -2051,10 +2116,12 @@
 									"pm.collectionVariables.set(\"listOfValues\", values);\r",
 									"pm.collectionVariables.set(\"parametersToCheck\", parametersToCheck);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ee2d0b83-a7a1-44cd-9180-17f85b4e78fe"
 							}
 						}
 					],
+					"id": "d0508817-04e1-462b-9b35-e77c4cd04276",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2137,10 +2204,12 @@
 									"    }\r",
 									"}"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "38fa22bb-9a7a-4f56-b4ca-ea5639179dd0"
 							}
 						}
 					],
+					"id": "64bc9f2d-83ed-40db-9994-1670adbbdcf4",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2203,7 +2272,8 @@
 									"    pm.collectionVariables.unset(\"timePeriodAlias\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b5fd63b6-1b18-424f-a0ae-1b56335677af"
 							}
 						},
 						{
@@ -2212,10 +2282,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "af486216-d0e5-4de1-bbd5-c885fa7cdff5"
 							}
 						}
 					],
+					"id": "67cc0437-3768-4e03-a00a-525bcaf23674",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2277,10 +2349,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "be1465f4-ddb9-4634-9206-2c9d7ee2dda1"
 							}
 						}
 					],
+					"id": "9599f8bb-a2a8-40da-b6c3-d39a75549d20",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2344,7 +2418,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "95d7ef3a-bbc5-4690-8731-1b9fa2bf051b"
 		},
 		{
 			"name": "2006 - Setting non-compliant day parameters on new time period",
@@ -2371,10 +2446,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "811a6c93-162c-4020-aa3c-874699968adf"
 							}
 						}
 					],
+					"id": "eeb503a4-585b-4670-8e32-c311f866d43c",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -2418,7 +2495,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "84b3724b-db79-4831-80bf-3984e6417563"
 							}
 						},
 						{
@@ -2427,10 +2505,12 @@
 								"exec": [
 									"pm.collectionVariables.set(\"timePeriodName\", \"TP-Test-API-2006\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "540f747d-85b0-4b05-be20-40a3de41c842"
 							}
 						}
 					],
+					"id": "0328c9b9-dcc8-40d4-b1a5-09e6105aaf4c",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2476,7 +2556,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a7be4872-e16a-4fc8-a8ba-92514beaf5d0"
 							}
 						},
 						{
@@ -2485,10 +2566,12 @@
 								"exec": [
 									"pm.collectionVariables.set(\"timePeriodName\", \"TP-Test-API-2006\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d2fda96f-efd9-4bcb-9e7e-6a0b0ffeca50"
 							}
 						}
 					],
+					"id": "c7b876e1-010b-4894-986b-f5ea532c54d6",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2549,10 +2632,12 @@
 									"    postman.setNextRequest(\"[2006-cleanup] Logout from admin user and clear collection variables\");\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "19544ebe-6455-4892-a7a6-aaa101978e87"
 							}
 						}
 					],
+					"id": "f71f48f9-cce1-43e8-8d58-d512c4f8464c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2604,10 +2689,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "39af5f69-81f2-46e5-aa45-d78ca4015e83"
 							}
 						}
 					],
+					"id": "bbf78eb2-3fd6-442a-8cb8-68427b9c101e",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2671,7 +2758,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "bddc47cf-7238-413a-8695-2bd3e3a18302"
 		},
 		{
 			"name": "2007 - Setting exceptions on new time period",
@@ -2698,10 +2786,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "116298df-07a9-41a8-abfb-3226a9a4bf83"
 							}
 						}
 					],
+					"id": "33d22bb2-092f-4c06-bdd9-6ffb5f655ece",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -2745,7 +2835,8 @@
 									"    pm.response.to.have.status(expectedResponseCode);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d833e0b5-e5dc-45ea-8ce4-497d2be0c95f"
 							}
 						},
 						{
@@ -2755,10 +2846,12 @@
 									"pm.collectionVariables.set(\"timePeriodName\", \"TP-Test-API-2007\");\r",
 									"pm.collectionVariables.set(\"timePeriodAlias\", \"Time period used for API tests\");"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "23df02cc-7c31-4a35-a799-407ff0614dd4"
 							}
 						}
 					],
+					"id": "9aa9f35a-8f1c-4897-bb1e-8775365b0953",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2831,7 +2924,8 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ad1c9e83-e5c2-48d9-951b-9abd271a020b"
 							}
 						},
 						{
@@ -2864,10 +2958,12 @@
 									"pm.collectionVariables.set(\"listOfExceptionDates\", exceptionDates);\r",
 									"pm.collectionVariables.set(\"listOfExceptionTimeranges\", exceptionTimeranges);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "41f93870-8afe-4a09-b01c-1bd41f545437"
 							}
 						}
 					],
+					"id": "a5e5b2d1-f5a6-4aa7-b1b9-aaca62bae4a4",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2951,10 +3047,12 @@
 									"    pm.collectionVariables.unset(\"totalNumberOfExceptions\");",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "29d36cd2-9a75-4bb2-af24-fcce706aa6ba"
 							}
 						}
 					],
+					"id": "9bc48620-6295-4834-a961-ce031583cf8a",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3010,7 +3108,8 @@
 									"    pm.collectionVariables.unset(\"timePeriodAlias\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "6f04ad5d-508f-4647-ba0f-d0ac36d40b45"
 							}
 						},
 						{
@@ -3019,10 +3118,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "a910b1c7-a109-40a6-8e68-6404c3fde157"
 							}
 						}
 					],
+					"id": "a8c2fe5e-dd2a-4c00-82cb-a00fdb710546",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3084,10 +3185,12 @@
 									"    pm.collectionVariables.clear();\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d37319e3-586a-43f1-a2c2-db637ece978d"
 							}
 						}
 					],
+					"id": "0b51a80a-a09d-4530-82a8-add16cc49dd7",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3151,7 +3254,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "1045111c-fe82-455e-81ef-83c9d8a5ed9b"
 		}
 	],
 	"auth": {
@@ -3176,7 +3280,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "a0ca506c-bc17-4302-a3f9-10cd28895244"
 			}
 		},
 		{
@@ -3204,7 +3309,8 @@
 					"        console.log(\"Response has the expected status code \" + pm.response.code + \" | Running the next tests\")",
 					"    }",
 					"  }"
-				]
+				],
+				"id": "d2102412-9e5f-4c93-b119-c8214fc1dc72"
 			}
 		}
 	]

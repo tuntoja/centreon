@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "57a4cb10-e276-46a1-bf48-10552dbbab41",
+		"_postman_id": "faf04176-31e6-4d20-ba9b-5f2d05759690",
 		"name": "04 - OpenID Provider Configuration",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "16182525",
-		"_collection_link": "https://centreon-api-testing.postman.co/workspace/Migration-of-%2522behat%2522-tests~e335ae07-f9ab-4b8d-bc6c-19b9f0078df4/collection/16182525-57a4cb10-e276-46a1-bf48-10552dbbab41?action=share&source=collection_link&creator=16182525"
+		"_uid": "28117716-faf04176-31e6-4d20-ba9b-5f2d05759690"
 	},
 	"item": [
 		{
@@ -27,10 +26,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "98fc30bd-5982-4e75-9d1e-9cd30b6a471e"
 							}
 						}
 					],
+					"id": "6fc31208-a9ac-4c76-a43a-03803ac7e345",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -69,7 +70,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "184fe8bf-0f1e-4195-8ea5-ea59ee07f43f"
 							}
 						},
 						{
@@ -78,10 +80,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "35e17269-37e0-4b3a-9126-37d7e7df99c5"
 							}
 						}
 					],
+					"id": "ca5c83bd-b67c-45da-856e-cac881f52454",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -126,7 +130,8 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "313b1700-d091-41ae-9660-467d54bf197e"
 							}
 						},
 						{
@@ -135,10 +140,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "5814cdeb-0caa-45be-bfc5-c0d6c1c21fae"
 							}
 						}
 					],
+					"id": "088870e9-59f9-4ce6-8801-7a48e1c2f5d5",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -230,10 +237,12 @@
 									"    });\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "973730fa-c7f7-4837-98d6-c9325246da79"
 							}
 						}
 					],
+					"id": "ac8ff2cd-49fa-4d5a-b9b2-a27ca0c7e13d",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -276,10 +285,12 @@
 									"    pm.response.to.have.status(204);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b7e5b2db-6fa6-49eb-bb7e-5424bc8aca62"
 							}
 						}
 					],
+					"id": "63bdbf53-444a-4493-b686-f06817d01982",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -386,10 +397,12 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"id": "032c0b91-281c-4eb5-84cf-ef979cf1eeab"
 							}
 						}
 					],
+					"id": "5ca62c96-d182-4bae-9cd3-b22961aa306f",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -433,10 +446,12 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"id": "e5ec4289-b30c-4eb9-98cf-2ca1c8053ebf"
 							}
 						}
 					],
+					"id": "56d41d38-b6fd-49e7-bcaf-0571327d8854",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -542,10 +557,12 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"id": "3bdbf6bd-33a3-404e-aad9-cf5dd75a1ffe"
 							}
 						}
 					],
+					"id": "2c095772-8ed2-463e-a45a-73e88d734611",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -577,7 +594,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "cd4ac7d0-908d-4e68-bf85-a126106eac5e"
 		},
 		{
 			"name": "0402 - Update OpenId Provider Configuration with invalid information",
@@ -596,10 +614,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[is_active] The property is_active is required\\n[is_forced] The property is_forced is required\\n[base_url] The property base_url is required\\n[authorization_endpoint] The property authorization_endpoint is required\\n[token_endpoint] The property token_endpoint is required\\n[introspection_token_endpoint] The property introspection_token_endpoint is required\\n[userinfo_endpoint] The property userinfo_endpoint is required\\n[endsession_endpoint] The property endsession_endpoint is required\\n[connection_scopes] The property connection_scopes is required\\n[login_claim] The property login_claim is required\\n[client_id] The property client_id is required\\n[client_secret] The property client_secret is required\\n[authentication_type] The property authentication_type is required\\n[verify_peer] The property verify_peer is required\\n[auto_import] The property auto_import is required\\n[contact_template] The property contact_template is required\\n[email_bind_attribute] The property email_bind_attribute is required\\n[fullname_bind_attribute] The property fullname_bind_attribute is required\\n[authentication_conditions] The property authentication_conditions is required\\n[groups_mapping] The property groups_mapping is required\\n[roles_mapping] The property roles_mapping is required\\n[redirect_url] The property redirect_url is required\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "67d71601-fb43-4456-b1c5-e3f587ffffe0"
 							}
 						}
 					],
+					"id": "0cbe9aa8-7511-45f9-b4bd-e9bc24458f45",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -644,10 +664,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[is_active] Integer value found, but a boolean is required\\n[is_forced] String value found, but a boolean is required\\n[base_url] Boolean value found, but a string or a null is required\\n[authorization_endpoint] Integer value found, but a string or a null is required\\n[token_endpoint] Integer value found, but a string or a null is required\\n[introspection_token_endpoint] Integer value found, but a string or a null is required\\n[userinfo_endpoint] Boolean value found, but a string or a null is required\\n[endsession_endpoint] Boolean value found, but a string or a null is required\\n[connection_scopes[0]] Boolean value found, but a string is required\\n[connection_scopes[1]] Integer value found, but a string is required\\n[login_claim] Integer value found, but a string or a null is required\\n[client_id] Boolean value found, but a string or a null is required\\n[client_secret] Integer value found, but a string or a null is required\\n[authentication_type] Does not have a value in the enumeration [\\\"client_secret_post\\\",\\\"client_secret_basic\\\"]\\n[verify_peer] String value found, but a boolean is required\\n[auto_import] String value found, but a boolean is required\\n[contact_template.id] String value found, but a number is required\\n[contact_template.name] Integer value found, but a string is required\\n[email_bind_attribute] Integer value found, but a string or a null is required\\n[fullname_bind_attribute] Integer value found, but a string or a null is required\\n[authentication_conditions.is_enabled] String value found, but a boolean is required\\n[authentication_conditions.attribute_path] Boolean value found, but a string is required\\n[authentication_conditions.endpoint.type] Does not have a value in the enumeration [\\\"introspection_endpoint\\\",\\\"user_information_endpoint\\\",\\\"custom_endpoint\\\"]\\n[authentication_conditions.endpoint.custom_endpoint] Integer value found, but a string or a null is required\\n[authentication_conditions.authorized_values[0]] Boolean value found, but a string is required\\n[authentication_conditions.trusted_client_addresses[0]] Integer value found, but a string is required\\n[authentication_conditions.blacklist_client_addresses[0]] Integer value found, but a string is required\\n[groups_mapping.is_enabled] String value found, but a boolean is required\\n[groups_mapping.attribute_path] Integer value found, but a string is required\\n[groups_mapping.endpoint.type] Does not have a value in the enumeration [\\\"introspection_endpoint\\\",\\\"user_information_endpoint\\\",\\\"custom_endpoint\\\"]\\n[groups_mapping.endpoint.custom_endpoint] Boolean value found, but a string or a null is required\\n[groups_mapping.relations[0]] String value found, but an object is required\\n[roles_mapping.is_enabled] Integer value found, but a boolean is required\\n[roles_mapping.apply_only_first_role] String value found, but a boolean is required\\n[roles_mapping.attribute_path] Integer value found, but a string or a null is required\\n[roles_mapping.endpoint.type] Integer value found, but a string is required\\n[roles_mapping.endpoint.type] Does not have a value in the enumeration [\\\"introspection_endpoint\\\",\\\"user_information_endpoint\\\",\\\"custom_endpoint\\\"]\\n[roles_mapping.endpoint.custom_endpoint] Integer value found, but a string or a null is required\\n[roles_mapping.relations[0].claim_value] Integer value found, but a string is required\\n[roles_mapping.relations[0].access_group_id] String value found, but an integer is required\\n[roles_mapping.relations[0].priority] String value found, but an integer is required\\n[redirect_url] Integer value found, but a string or a null is required\\n\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "490716d8-0fd6-43f1-b65b-859515f06cff"
 							}
 						}
 					],
+					"id": "9ab6e5a7-321c-46b5-9023-3e71d7635a6b",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -692,10 +714,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[AuthenticationConditions::trustedClientAddresses] The value \\\".@\\\" was expected to be a valid ip address or domain name\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2fd72d76-8609-4e64-8390-97b0b0aff785"
 							}
 						}
 					],
+					"id": "9de718ff-a2b9-4493-b83d-fd238ebfc400",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -740,10 +764,12 @@
 									"    pm.expect(responseJson.message).to.be.eql(\"[AuthenticationConditions::blacklistClientAddresses] The value \\\".@\\\" was expected to be a valid ip address or domain name\")\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "41aad2b6-afb6-42a1-8f49-63062ac38480"
 							}
 						}
 					],
+					"id": "f6058a51-56ea-4dd1-8689-57781d4bc913",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -789,10 +815,12 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"id": "506f994e-d0ef-4f7b-8562-b1d61071eb28"
 							}
 						}
 					],
+					"id": "de2824c8-dbe0-404e-9b2c-e2d2c6fad78e",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -838,10 +866,12 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"id": "1e3e1a4d-4973-471b-b3bf-79718f353b98"
 							}
 						}
 					],
+					"id": "b00a8050-6e94-4637-8aa9-0ae9e4f41bc5",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -887,10 +917,12 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"id": "8c353edc-5f3e-4672-893f-2bd1817117e3"
 							}
 						}
 					],
+					"id": "e2bcaf89-27c7-48c4-b6d0-025879634531",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -921,7 +953,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "f28df083-687c-4c43-b9bd-914bea2d1244"
 		},
 		{
 			"name": "0403 - Update and retrieve OpenId Provider Configuration information as logged non-admin user without Reach API rights",
@@ -937,7 +970,8 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "119d6612-ddef-4e64-b67e-4913d8103428"
 							}
 						},
 						{
@@ -946,10 +980,12 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4df6bf33-124d-451e-8ed2-89bc205b7b47"
 							}
 						}
 					],
+					"id": "dc012f8e-9630-49e0-87ac-6e75ee08822e",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -993,10 +1029,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "40acdc8f-057f-4ebb-bc49-8bc352eff3bc"
 							}
 						}
 					],
+					"id": "c241cff0-7d19-42b4-aba7-45025dd63d29",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1072,10 +1110,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "08f5fdf4-2984-4d9a-8631-fce456bc4cf4"
 							}
 						}
 					],
+					"id": "44e8259d-c497-4369-aa19-aa1015ec8a92",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1114,10 +1154,12 @@
 									"    pm.response.to.have.status(403);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7d9af31c-96c5-4ba7-8080-82f985f7dcd5"
 							}
 						}
 					],
+					"id": "32826741-6cad-493b-ac72-d42a4905bfb0",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1160,10 +1202,12 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"id": "858dd43b-8d95-4df4-bc9e-602d51fcc7a9"
 							}
 						}
 					],
+					"id": "c76b0a17-2dc8-410f-b786-de30cd297534",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1205,10 +1249,12 @@
 									"    pm.response.to.have.status(403);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "ccbebc94-849d-4d49-85cb-49d8e29f2ae0"
 							}
 						}
 					],
+					"id": "c9bd669b-fdc3-4eb4-9667-add4258587ed",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -1256,10 +1302,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "4943bd70-784b-4705-976c-997ef492b696"
 							}
 						}
 					],
+					"id": "f049d5d8-1ad2-4fe3-beea-dcfb1e091996",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1318,7 +1366,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "0c833b12-220f-4136-9a74-fe90925e860a"
 		},
 		{
 			"name": "0404 - Update and retrieve OpenId Provider Configuration information as logged non-admin user with Reach API rights",
@@ -1340,10 +1389,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "33223b73-9e51-4548-8bbf-71e4b9d68d8d"
 							}
 						}
 					],
+					"id": "15497358-3425-4587-848d-149cb26b3ddd",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1380,7 +1431,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "f98beb79-60be-4e67-85bb-f12b2541dbf9"
 							}
 						},
 						{
@@ -1391,10 +1443,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "42f2a2e8-b01a-4965-90a8-78c9f77eeddb"
 							}
 						}
 					],
+					"id": "e9ef3afe-dd47-4c12-afa7-89983e812ea2",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1431,7 +1485,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "b9217353-190d-4289-9912-bd8421c1c98c"
 							}
 						},
 						{
@@ -1442,10 +1497,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "740ca3ad-4d6c-4b6b-ba1c-c38b3adc89cc"
 							}
 						}
 					],
+					"id": "f035e31a-e8fe-4f32-85bb-1697f9e64a77",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1482,7 +1539,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "c68ccb16-cd06-47a0-9168-40eb731c9371"
 							}
 						},
 						{
@@ -1493,10 +1551,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "869734a0-e71a-4f6c-8866-0ea6b1bb4b47"
 							}
 						}
 					],
+					"id": "0446716a-ecd5-4b63-b96c-4b47942ed318",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1533,7 +1593,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "1720fa7f-2285-491a-a720-0976f0de2a83"
 							}
 						},
 						{
@@ -1544,10 +1605,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "fda67aa0-b87f-4615-b3e4-cd1006e1ccc6"
 							}
 						}
 					],
+					"id": "f1941ee6-8743-49ce-8f95-e512ce7a5003",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1584,7 +1647,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "d7bde03e-50b0-4964-9a50-77b260d95be0"
 							}
 						},
 						{
@@ -1595,10 +1659,12 @@
 									"  pm.response.to.have.status(200);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "2a9ef97f-048f-4d01-997c-a8fd07aeffe5"
 							}
 						}
 					],
+					"id": "b7795d48-cb71-4f31-bd16-e823d465542f",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1642,10 +1708,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "7d0a3d32-882b-4b62-8df3-da5fba33a8fe"
 							}
 						}
 					],
+					"id": "e74608e7-2cb2-4f06-9cc0-651bc0adac59",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -1721,10 +1789,12 @@
 									"    pm.environment.set(\"currentUserID\", responseJson.contact.id);\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "18773ccf-d544-48cb-a2bb-d1ca8a209c60"
 							}
 						}
 					],
+					"id": "8ea3593f-a69a-4e2f-80b9-09a7ba9c7b4c",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1764,10 +1834,12 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"id": "62c9d5d2-cb99-4b82-9862-ad144b0064ca"
 							}
 						}
 					],
+					"id": "047898fc-9379-49ea-8164-715281aadee3",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -1879,10 +1951,12 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"id": "1e7e6a13-bdaf-46b7-a8a2-303b793d7f89"
 							}
 						}
 					],
+					"id": "334e1d60-b251-448f-9b30-8f98bd096c79",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -1926,10 +2000,12 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"id": "1f7803e9-edbc-4f8d-a530-8916b4c23c67"
 							}
 						}
 					],
+					"id": "b2f462dd-52f4-41e4-916c-8191972a404c",
 					"protocolProfileBehavior": {
 						"disableCookies": true
 					},
@@ -2024,10 +2100,12 @@
 									"    });\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "37d8fc63-9bfa-4a05-bd5d-c069fb2f484a"
 							}
 						}
 					],
+					"id": "43ce14da-25c4-45d6-ac06-ccd0386724bc",
 					"protocolProfileBehavior": {
 						"disableCookies": true,
 						"disableBodyPruning": true
@@ -2075,10 +2153,12 @@
 									"    pm.environment.unset(\"currentUserID\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"id": "41250641-82c2-4c87-9e18-c4f39a901012"
 							}
 						}
 					],
+					"id": "0d795c6b-3383-43cf-93e2-ee405bbe9a9f",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2137,7 +2217,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"id": "c24ba974-013c-42bb-bbd6-6e9f6fe17ede"
 		}
 	],
 	"auth": {
@@ -2162,7 +2243,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "4498bb0a-a51c-4449-8bbe-a8ff77fcd029"
 			}
 		},
 		{
@@ -2171,7 +2253,8 @@
 				"type": "text/javascript",
 				"exec": [
 					""
-				]
+				],
+				"id": "5e7af021-7089-4136-90ce-67c94af4afba"
 			}
 		}
 	]
