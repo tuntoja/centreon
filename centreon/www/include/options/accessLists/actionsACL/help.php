@@ -36,7 +36,7 @@ $help['tip_display_poller_listing'] = dgettext(
  */
 $help['create_edit_pollers'] = dgettext(
     'help',
-    'Allows user to perform “Add”, “Add (advanced)” and “Duplicate” actions on pollers.'
+    'Allows user to perform "Add", "Add (advanced)" and "Duplicate" actions on pollers.'
 );
 $help['delete_pollers'] = dgettext(
     'help',
