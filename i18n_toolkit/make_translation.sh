@@ -103,46 +103,64 @@ fi
 
 if [ "$PROJECT" = "centreon" ]; then
     BASE_DIR_PROJECT="$BASE_DIR/../$PROJECT"
-    echo -e "Removing previous POT files"
+    echo -n "Removing previous POT files"
     if [ -f "$BASE_DIR_PROJECT/lang/messages.pot" ]; then
         rm $BASE_DIR_PROJECT/lang/messages.pot -f >> /dev/null 2>&1
     fi
     if [ -f "$BASE_DIR_PROJECT/lang/help.pot" ]; then
         rm $BASE_DIR_PROJECT/lang/help.pot -f >> /dev/null 2>&1
     fi
+    echo -n " - 0K"
+    echo
 
-    echo -e "Extracting strings to translate for menus"
+    echo -n "Extracting strings to translate for menus"
     $PHP $BASE_DIR/pareInsertTopologyForTranslation.php > $BASE_DIR_PROJECT/www/install/menu_translation.php
-    echo -e "Extracting strings to translate from Centreon Broker forms"
+    echo -n " - 0K"
+    echo
+    echo -n "Extracting strings to translate from Centreon Broker forms"
     $PHP $BASE_DIR/pareInsertBaseConfForTranslation.php > $BASE_DIR_PROJECT/www/install/centreon_broker_translation.php
-    echo -e "Extracting strings to translate from legacy pages"
+    echo -n " - 0K"
+    echo
+    echo -n "Extracting strings to translate from legacy pages"
     $PHP $BASE_DIR/tsmarty2centreon.php $BASE_DIR_PROJECT > $BASE_DIR_PROJECT/www/install/smarty_translate.php
-    echo -e "Extracting strings to translate from ReactJS pages"
+    echo -n " - 0K"
+    echo
+    echo -n "Extracting strings to translate from ReactJS pages"
     $PHP $BASE_DIR/reachjs2centreon.php $BASE_DIR_PROJECT > $BASE_DIR_PROJECT/www/install/front_translate.php
+    echo -n " - 0K"
+    echo
 
     echo -e ""
-    echo -e "List all PHP files excluding help.php files"
+    echo -n "List all PHP files excluding help.php files"
     find $BASE_DIR_PROJECT -name '*.php' | grep -v "help" > $PO_SRC
-    echo -e "Generate messages.pot file including all strings to translate"
+    echo -n " - 0K"
+    echo
+    echo -n "Generate messages.pot file including all strings to translate"
     $XGETTEXT --default-domain=messages -k_ --files-from=$PO_SRC --output=$BASE_DIR_PROJECT/lang/messages.pot > /dev/null 2>&1
+    echo -n " - 0K"
+    echo
 
     # Merge exiusting translation file with new POT file
     $MSGMERGE $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/messages.po $BASE_DIR_PROJECT/lang/messages.pot -o $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/messages_new.po
     mv -f $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/messages_new.po $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/messages.po
 
     missing_translation=$(msggrep -v -T -e "." $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/messages.po | grep -c ^msgstr)
-    echo -e "Missing $missing_translation strings to translate from $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/messages.po"
+    echo -e "Missing $missing_translation strings to translate from $PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/messages.po"
 
     echo -e ""
-    echo -e "List all help.php files"
+    echo -n "List all help.php files"
     find $BASE_DIR_PROJECT/www -name 'help.php' > $PO_SRC
-    echo -e "Generate help.pot file including all strings to translate"
+    echo -n " - 0K"
+    echo
+    echo -n "Generate help.pot file including all strings to translate"
     $XGETTEXT --default-domain=messages -k_ --files-from=$PO_SRC --output=$BASE_DIR_PROJECT/lang/help.pot > /dev/null 2>&1
+    echo -n " - 0K"
+    echo
 
     # Merge exiusting translation file with new POT file
     $MSGMERGE $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/help.po $BASE_DIR_PROJECT/lang/help.pot -o $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/help_new.po
     mv -f $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/help_new.po $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/help.po
 
     missing_translation=$(msggrep -v -T -e "." $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/help.po | grep -c ^msgstr)
-    echo -e "Missing $missing_translation strings to translate from $BASE_DIR_PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/help.po"
+    echo -e "Missing $missing_translation strings to translate from $PROJECT/lang/$LANG.UTF-8/LC_MESSAGES/help.po"
 fi
