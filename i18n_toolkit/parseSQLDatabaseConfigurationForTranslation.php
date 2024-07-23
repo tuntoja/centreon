@@ -85,6 +85,36 @@ if (strcmp(basename($file), "insertBaseConf.sql") == 0) {
             }
         }
     }
+} elseif (strcmp(basename($file), "install.sql") == 0) {
+    $topologyPattern = "/INSERT INTO `topology` \(.*\) VALUES/";
+    $startBrokerAnalisys = false;
+
+    foreach ($content as $line) {
+        if (empty($line) || preg_match('/^\s/', $line)) {
+            $startBrokerAnalisys = false;
+        }
+
+        if ($startBrokerAnalisys) {
+            $line = substr($line, strpos($line, '(') + 1, strpos($line, ')'));
+            # Removing spaces before and after
+            $line = trim($line);
+            $aValues = explode(',', $line);
+            if (count($aValues)) {
+                if (
+                    preg_match('/NULL/', trim($aValues[0]))
+                    || preg_match('/\d+/', trim($aValues[0]))
+                )  {
+                    $data[$aValues[1]] = $aValues[1];
+                } else {
+                    $data[$aValues[0]] = $aValues[0];
+                }
+            }
+        }
+
+        if (preg_match($topologyPattern , $line)){
+            $startBrokerAnalisys = true;
+        }
+    }
 }
 
 if (count($data) > 0) {
