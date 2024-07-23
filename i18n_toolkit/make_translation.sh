@@ -114,11 +114,11 @@ if [ "$PROJECT" = "centreon" ]; then
     echo
 
     echo -n "Extracting strings to translate for menus"
-    $PHP $BASE_DIR/pareInsertTopologyForTranslation.php > $BASE_DIR_PROJECT/www/install/menu_translation.php
+    $PHP $BASE_DIR/parseSQLDatabaseConfigurationForTranslation.php $BASE_DIR_PROJECT/www/install/insertTopology.sql > $BASE_DIR_PROJECT/www/install/menu_translation.php
     echo -n " - 0K"
     echo
     echo -n "Extracting strings to translate from Centreon Broker forms"
-    $PHP $BASE_DIR/pareInsertBaseConfForTranslation.php > $BASE_DIR_PROJECT/www/install/centreon_broker_translation.php
+    $PHP $BASE_DIR/parseSQLDatabaseConfigurationForTranslation.php $BASE_DIR_PROJECT/www/install/insertBaseConf.sql > $BASE_DIR_PROJECT/www/install/centreon_broker_translation.php
     echo -n " - 0K"
     echo
     echo -n "Extracting strings to translate from legacy pages"
