@@ -203,6 +203,11 @@ if [ "$PROJECT" = "centreon-bam" ]; then
     echo -n " - 0K"
     echo
 
+    echo
+    echo -n "Remove translation already present in Centreon: "
+    $PHP translationDuplicationRemoval.php $BASE_DIR $PROJECT
+    echo
+
     if [ -f "$BASE_DIR_PROJECT/www/modules/centreon-bam-server/locale/$LANG.UTF-8/LC_MESSAGES/messages.po" ]; then
         # Merge existing translation file with new POT file
         $MSGMERGE $BASE_DIR_PROJECT/www/modules/centreon-bam-server/locale/$LANG.UTF-8/LC_MESSAGES/messages.po $BASE_DIR_PROJECT/www/modules/centreon-bam-server/locale/messages.pot -o $BASE_DIR_PROJECT/www/modules/centreon-bam-server/locale/$LANG.UTF-8/LC_MESSAGES/messages_new.po
