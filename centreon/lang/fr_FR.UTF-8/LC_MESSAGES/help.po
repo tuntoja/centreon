@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Centreon web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-22 14:23+0200\n"
-"PO-Revision-Date: 2017-03-17 09:57+0100\n"
+"POT-Creation-Date: 2024-07-26 13:41+0200\n"
+"PO-Revision-Date: 2024-07-25 18:18+0200\n"
 "Last-Translator: Laurent Pinsivy <lpinsivy@centreon.com>\n"
 "Language-Team: Centreon Team\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.7.7\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/resourcesACL/help.php:8
 msgid "Name of resource rule."
@@ -145,12 +145,11 @@ msgstr ""
 "pour les pages \"Supervision -> Hôtes\" et \"Supervision -> Services\"."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/actionsACL/help.php:39
-#, fuzzy
 msgid ""
 "Allows user to perform \"Add\", \"Add (advanced)\" and \"Duplicate\" actions "
 "on pollers."
 msgstr ""
-"Permet à l'utilisateur de créer des collecteurs (boutons Ajouter, Ajouter "
+"Permet à l'utilisateur de créer des collecteurs (actions Ajouter, Ajouter "
 "(avancé) et Dupliquer)."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/actionsACL/help.php:43
@@ -166,6 +165,8 @@ msgid ""
 "Allows user to generate and export configuration, and restart centreontrapd "
 "process."
 msgstr ""
+"Permet à l'utilisateur de générer et exporter la configuration, et de "
+"redémarrer le processus centreontrapd."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/actionsACL/help.php:58
 msgid "Allows users to stop the monitoring systems."
@@ -451,6 +452,10 @@ msgid ""
 "(parameters). This timezone is used for hosts which have not configured "
 "timezone."
 msgstr ""
+"Définissez le fuseau horaire du collecteur: il sera utilisé pour les hôtes "
+"pour lequel aucun fuseau horaire n'est configuré. Si vous ne définissez pas "
+"de fuseau horaire pour le collecteur, le fuseau horaire par défaut de "
+"Centreon sera utilisé."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/help.php:44
 msgid ""
@@ -1249,7 +1254,6 @@ msgstr ""
 "option."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/help.php:426
-#, fuzzy
 msgid ""
 "This is the maximum number of seconds that the monitoring engine will allow "
 "service checks to run. If checks exceed this limit, they are killed and an "
@@ -1263,15 +1267,14 @@ msgid ""
 msgstr ""
 "Ceci est le nombre maximum de secondes allouées par le moteur de supervision "
 "pour la vérification d'un service. Si la vérification dépasse ce délai, "
-"celle-ci est tuée et un état INCONNU est retourné. Une erreur de "
-"temporisation est également enregistrée dans le fichier de journalisation. "
-"Cette option est destinée à être utilisée comme dernier recours pour tuer "
-"les sondes qui se comportent mal et qui ne se terminent pas dans le temps "
-"imparti. La valeur doit être suffisamment élevée (quelque chose comme 60 "
-"secondes ou plus), de sorte que chaque vérification puisse se terminer avant "
-"ce délai. Si une vérification de service s'exécute au-delà de cette limite, "
-"le moteur de supervision la tuera, pensant que c'est un processus ayant des "
-"problèmes."
+"celle-ci est tuée et un état INCONNU est retourné. Une erreur de timeout est "
+"également enregistrée dans le log. Cette option est destinée à être utilisée "
+"comme dernier recours pour tuer les sondes qui se comportent mal et qui ne "
+"se terminent pas dans le temps imparti. La valeur doit être suffisamment "
+"élevée (quelque chose comme 60 secondes ou plus), de sorte que chaque "
+"vérification puisse se terminer avant ce délai. Si une vérification de "
+"service s'exécute au-delà de cette limite, le moteur de supervision la "
+"tuera, pensant que c'est un processus ayant des problèmes."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/help.php:436
 msgid ""
@@ -1481,16 +1484,15 @@ msgstr ""
 "date/heure."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/help.php:524
-#, fuzzy
 msgid ""
 "Time interval in seconds between two heartbeat events. This event is the one "
 "responsible of the 'Last Update' column update in the Pollers listing. Value "
 "must be between 5 and 600. Default value is 30."
 msgstr ""
-"Intervalle de temps en secondes entre deux événements heartbeat. Cet "
-"événement est le responsable de la mise à jour de la colonne 'Dernière mise "
-"à jour' dans la liste des Poller. La valeur doit être comprise entre 5 et "
-"600. La valeur par défaut est 30."
+"Intervalle de temps en secondes entre deux évènements \"heartbeat\". Ces "
+"évènements entraînent la mise à jour de la colonne 'Dernière mise à jour' "
+"dans la liste des collecteurs. La valeur doit être comprise entre 5 et 600. "
+"Valeur par défaut : 30."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/help.php:529
 msgid ""
@@ -1590,12 +1592,17 @@ msgid ""
 "filtering of macros sent to broker.If you don't understand the purpose of "
 "enabling this option, please do not enable it."
 msgstr ""
+"Cette option de configuration avancée d'Engine active ou désactive le "
+"filtrage de macros envoyés à Broker. Si vous ne comprenez pas le but de "
+"cette option, ne l'activez pas."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/help.php:578
 msgid ""
 "This field should be filled only if filtering option is enabled. You can "
 "define the list of macros that should be sent to Centreon Broker."
 msgstr ""
+"Ce champ ne doit être rempli que si l'option de filtrage est activée. Vous "
+"pouvez définir la liste des macros à envoyer à Centreon Broker."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/help.php:583
 msgid ""
@@ -2128,6 +2135,9 @@ msgid ""
 "Define the default page for this user (displayed when they log in). ACLs "
 "must be defined so the user can access the page"
 msgstr ""
+"Définissez la page par défaut pour cet utilisateur (qui s'affichera "
+"lorsqu'il se connectera). Les ACLs de cet utilisateur doivent lui permettre "
+"d'accéder à cette page."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/contact/help.php:90
 msgid ""
@@ -2169,10 +2179,11 @@ msgid "Allow this user to access to Centreon Rest API with its account."
 msgstr "Autoriser ce compte à accéder à l'API REST Centreon."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/contact/help.php:108
-#, fuzzy
 msgid ""
 "Allow this user to access to Centreon Rest API Realtime with its account."
-msgstr "Autoriser ce compte à accéder à l'API REST Centreon."
+msgstr ""
+"Autoriser ce compte utilisateur à accéder à l'API REST temps réel de "
+"Centreon."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/contact/help.php:115
 msgid ""
@@ -2242,15 +2253,16 @@ msgid "ACL groups of user."
 msgstr "Groupe d'utilisateurs utilisé pour la configuration des ACL."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/host/help.php:14
-#, fuzzy
 msgid ""
 "Name of the host or template. The name defined here is used in host group "
 "and service definitions to reference this particular host. It must be unique "
 "and cannot contain white spaces, or special characters like ~!$%^&*\"|'<>?,"
 "()="
 msgstr ""
-"Nom du groupe d’hôtes. Il doit être unique et ne peut pas contenir de "
-"caractères spéciaux tels que ~!$%^&*\"|'<>?,()=."
+"Nom de l'hôte ou du modèle. Le nom défini ici est utilisé dans les "
+"définitions de groupes d'hôtes ou de services. Il doit être unique et ne "
+"peut pas contenir d'espaces, ou de caractères spéciaux tels que ~!$%^&*"
+"\"|'<>?,()="
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/host/help.php:18
 msgid "The alias is used to define a longer name or description for the host."
@@ -3424,15 +3436,14 @@ msgstr ""
 "caractères spéciaux tels que ~!$%^&*\"|'<>?,()=."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/hostgroup/help.php:11
-#, fuzzy
 msgid ""
 "This directive is used to define is a longer name or description used to "
 "identify the host group.It is provided in order to allow you to more easily "
 "identify a particular host group."
 msgstr ""
-"Cette directive est utilisée pour définir un nom long ou une description "
-"identifiant le groupe d'hôtes. Il est prévu pour vous permettre d'identifier "
-"plus facilement un groupe d'hôte en particulier."
+"Utilisez cette option pour définir un nom long ou une description "
+"identifiant le groupe d'hôtes. Cela vous permet d'identifier plus facilement "
+"un groupe d'hôtes particulier."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/hostgroup/help.php:22
 msgid "Hosts belonging to the group"
@@ -3526,7 +3537,7 @@ msgstr "Disponibilité du groupe d'hôtes."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/hostgroup/help.php:70
 msgid "Resource access rule to which the host group should be linked"
-msgstr ""
+msgstr "Règle d'accès aux ressources à laquelle rattacher le groupe d'hôtes"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/traps-manufacturer/help.php:4
 msgid "The alias is a longer name or description for the vendor/manufacturer."
@@ -4283,15 +4294,14 @@ msgstr ""
 "oscillations sera activée concernant ce service."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/service/help.php:344
-#, fuzzy
 msgid ""
 "By default monitoring engine will assume that all services are in OK states "
 "when it starts.You can override the initial state for a service by using "
 "this directive."
 msgstr ""
-"Par défaut, l'ordonnanceur considère que tous les services sont dans un état "
-"OK lors de son démarrage. Vous pouvez outrepasser ce comportement en "
-"utilisant cette directive."
+"Par défaut, le moteur de supervision considère que tous les services sont "
+"dans un état OK lors de son démarrage. Vous pouvez outrepasser ce "
+"comportement en utilisant cette option."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/service/help.php:350
 msgid "This setting determines whether the service must be monitored or not."
@@ -4489,9 +4499,9 @@ msgid ""
 msgstr ""
 "Cette option est utilisée pour définir une URL facultative pouvant être "
 "utilisée pour permettre d’exécuter des actions supplémentaires sur le groupe "
-"de service. N'importe quelle URL valide peut être utilisée. Si vous "
-"souhaitez utiliser des chemins relatifs d, le chemin de base sera le même "
-"que celui utilisé pour accéder aux CGIs (par ex: /cgi-bin/nagios/) "
+"de services. N'importe quelle URL valide peut être utilisée. Si vous "
+"souhaitez utiliser des chemins relatifs, le chemin de base sera le même que "
+"celui utilisé pour accéder aux CGIs (par ex: /cgi-bin/nagios/)."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/servicegroup/help.php:54
 msgid ""
@@ -4506,6 +4516,7 @@ msgstr ""
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/servicegroup/help.php:57
 msgid "Resource access rule to which the service group should be linked"
 msgstr ""
+"Règle d'accès aux ressources à laquelle rattacher le groupe de services"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/meta_service/help.php:4
 msgid "Name used for identification of this meta service."
@@ -4535,7 +4546,7 @@ msgstr "Fonction à appliquer afin de calculer le statut du méta service."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/meta_service/help.php:13
 msgid "Data source type of the meta service."
-msgstr "Source de données utilisées pour le méta service"
+msgstr "Source de données utilisées pour le métaservice."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/meta_service/help.php:16
 msgid ""
@@ -4646,7 +4657,7 @@ msgstr "Temps en secondes à attendre avant d'activer le basculement."
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configCentreonBroker/help.php:38
 msgid "Category filter for flux in output"
 msgstr ""
-"Permet de filtre les données réceptionnées par catégorie de flux entrant."
+"Permet de filtrer les données réceptionnées par catégorie de flux entrant."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configCentreonBroker/help.php:39
 msgid "Trusted CA's certificate."
@@ -4829,6 +4840,9 @@ msgid ""
 " This is a global option, go to Administration > Options > RRDTool to modify "
 "it."
 msgstr ""
+"Socket Unix utilisée pour communiquer avec rrdcached.\n"
+" Ceci est une option globale. Pour la modifier, allez à la page "
+"Administration > Paramètres > RRDTool."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configCentreonBroker/help.php:76
 msgid "Path to the file."
@@ -4847,6 +4861,9 @@ msgid ""
 " This is a global option, go to Administration > Options > RRDTool to modify "
 "it."
 msgstr ""
+"Port TCP utilisé pour communiquer avec rrdcached.\n"
+" Ceci est une option globale. Pour la modifier, allez à la page "
+"Administration > Paramètres > RRDTool."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configCentreonBroker/help.php:80
 msgid "Private key file path when TLS encryption is used."
@@ -4882,7 +4899,7 @@ msgid ""
 msgstr ""
 "Intervalle de temps entre deux contrôles du module Centreon Broker RRD afin "
 "de récupérer les directives de reconstruction des graphiques de performance. "
-"Par défaut cette valeur est positionnée à 300s."
+"Valeur par défaut : 300s."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configCentreonBroker/help.php:86
 msgid ""
@@ -4914,7 +4931,7 @@ msgstr "Active le chiffrement des données via le protocole TLS."
 msgid "This can be used to disable graph update and therefore reduce I/O"
 msgstr ""
 "Cette option peut être utilisée pour désactiver la mise à jour des "
-"graphiques de performance afin de réduire les E/S disques."
+"graphiques de performance afin de réduire les I/O disque."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configCentreonBroker/help.php:93
 msgid "Usually cpus/2."
@@ -4961,20 +4978,23 @@ msgid ""
 "Anonymized: You consent to share your platform data, but your alias and "
 "email will be anonymized."
 msgstr ""
+"Non : Vous ne consentez pas à partager les données de votre plateforme. "
+"Informations de contact : Vous consentez à partager les données de votre "
+"plateforme, y compris votre alias et votre email. Anonymisé : Vous consentez "
+"à partager les données de votre plateforme, mais votre alias et votre email "
+"seront anonymisés."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/myAccount/help.php:14
-#, fuzzy
 msgid ""
 "If checked this option will restore the use of the deprecated pages.This "
 "includes display of the deprecated pages and internal redirection between "
 "pagesIf not checked this option will enable the full use of the new "
 "Monitoring page Resource Status"
 msgstr ""
-"Si l'option est activée l'utilisation des pages dépréciées sera totalement "
-"rétablieCela inclu: l'affichage des pages mais également toutes les "
-"redirections entre pages dépréciéesSi l'option n'est pas activée "
-"l'utilisation de la nouvelle page de Monitoring Resource Status sera "
-"pleinement activée"
+"Si l'option est activée, l'utilisation des pages dépréciées sera totalement "
+"rétablie. Cela inclut non seulement l'affichage des pages mais également "
+"toutes les redirections entre pages dépréciées. Si l'option n'est pas "
+"activée, la nouvelle page Statut des Ressources sera pleinement activée."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:9
 msgid ""
@@ -4985,6 +5005,13 @@ msgid ""
 "style=\"text-decoration: underline\" href=\"http://ceip.centreon.com/\">ceip."
 "centreon.com</a>  for further details."
 msgstr ""
+"J'accepte de participer au programme d'amélioration de l'expérience client "
+"de Centreon, dans le cadre duquel des informations anonymes sur "
+"l'utilisation de ce serveur peuvent être envoyées à Centreon. Ces "
+"informations seront uniquement utilisées pour améliorer l'expérience "
+"utilisateur du logiciel. Je pourrai me désinscrire à tout moment. Voir <a "
+"style=\"text-decoration: underline\" href=\"http://ceip.centreon.com/\">ceip."
+"centreon.com</a> pour plus de détails."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:20
 msgid "Application directory of Centreon."
@@ -5018,24 +5045,25 @@ msgid ""
 "session.gc_maxlifetime value set in your php centreon.ini file."
 msgstr ""
 "Temps d'expiration en minutes de la session des utilisateurs connectés à "
-"Centreon.Cette valeur ne peut dépasser la valeur définie dans votre fichier "
-"de configuration php centreon.ini"
+"Centreon. Cette valeur ne peut dépasser la valeur définie dans votre fichier "
+"de configuration PHP centreon.ini."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:50
 msgid "Refresh interval."
 msgstr "Intervalle de rafraichissement global des objets."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:51
-#, fuzzy
 msgid "Refresh interval used for statistics (top counters). Minimum value: 10"
 msgstr ""
-"Intervalle de rafraichissement utilisé pour les statistiques des états des "
-"hôtes et services (tableaux situés en haut des pages)."
+"Intervalle de rafraîchissement des statistiques sur les hôtes et les "
+"services situées en haut des pages. Valeur minimum : 10."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:52
-#, fuzzy
 msgid "Refresh interval used in monitoring consoles. Minimum value: 10"
-msgstr "Intervalle de rafraichissement utilisé dans les pages de supervision."
+msgstr ""
+"Intervalle de rafraîchissement utilisé pour les pages Supervision > Statut "
+"des ressources et Supervision > Détails des statuts > Services/Hôtes. Valeur "
+"minimum : 10."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:55
 msgid "First refresh delay for statistics (top counters)."
@@ -5069,6 +5097,9 @@ msgid ""
 "Notification inheritance for hosts and services. Vertical for the legacy "
 "mode, Close for the first valid object and Cumulative for all valid object."
 msgstr ""
+"Héritage des notifications pour les hôtes et les services. Vertical pour le "
+"mode legacy, Closest pour le premier objet valide et Cumulative pour tous "
+"les objets valides."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:86
 msgid "Enables Autologin."
@@ -5085,7 +5116,7 @@ msgstr ""
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:93
 msgid "Default host and contact timezone."
-msgstr "fuseau horaire par défaut des hôtes et contacts."
+msgstr "Fuseau horaire par défaut des hôtes et contacts."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:100
 msgid ""
@@ -5102,8 +5133,8 @@ msgid ""
 "Authentication can be solely based on SSO or it can work with both SSO and "
 "local authentication systems."
 msgstr ""
-"L'authentification peut-être seulement basée sur SSO ou elle peut "
-"fonctionner à la fois avec SSO et un système d'authentification local. "
+"L'authentification peut être seulement basée sur SSO ou elle peut "
+"fonctionner à la fois avec SSO et un système d'authentification local."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:109
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:141
@@ -5140,7 +5171,7 @@ msgstr ""
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:125
 msgid "The string to replace."
-msgstr "Chaine de remplacement"
+msgstr "Chaîne à remplacer."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:133
 msgid "Enable login with OpenId Connect."
@@ -5196,6 +5227,8 @@ msgid ""
 "Your OpenId Connect login claim value (if empty preferred_username will be "
 "used)."
 msgstr ""
+"Chemin de l'attribut d'identifiant OpenID Connect (si l'option est vide, la "
+"valeur preferred_username sera utilisée)."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:181
 msgid ""
@@ -5203,6 +5236,9 @@ msgid ""
 "{port} can be used for substitions, default is {scheme}://{hostname}:{port}/"
 "your_centreon_path/index.php if left empty)."
 msgstr ""
+"URL de redirection OpenID Connect ({scheme}, {hostname} et {port} peuvent "
+"être utilisées comme variables. Si le champ est laissé vide, la valeur par "
+"défaut est {scheme}://{hostname}:{port}/your_centreon_path/index.php."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:186
 msgid "Your OpenId Connect client ID."
@@ -5217,6 +5253,8 @@ msgid ""
 "Switch token_endpoint_auth_method from client_secret_post to "
 "client_secret_basic"
 msgstr ""
+"Changer la valeur de token_endpoint_auth_method de client_secret_post à "
+"client_secret_basic"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:202
 msgid ""
@@ -5257,10 +5295,14 @@ msgstr "Port de connexion au proxy."
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:231
 msgid "User of the proxy (Only if you use basic authentication)."
 msgstr ""
+"Utilisateur pour se connecter au proxy (seulement si vous utilisez "
+"l'authentification basique)."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:235
 msgid "Password of the proxy (Only if you use basic authentication)."
 msgstr ""
+"Mot de passe pour la connexion au proxy (seulement si vous utilisez "
+"l'authentification basique)."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:243
 msgid ""
@@ -5273,16 +5315,15 @@ msgstr ""
 "Cette option peut ralentir le chargement des graphiques."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/help.php:248
-#, fuzzy
 msgid ""
 "If this option is enabled, the comments will be displayed on the status "
 "chart.<br><b>Warning</b> : This option can slow down the display of the "
 "chart."
 msgstr ""
-"Si cette option est activée, les périodes de plage de maintenance et "
-"d'acquittements seront visibles sur les graphiques représentant l'état du "
-"service.<br><b>Attention</b> : Cette option peut ralentir le chargement des "
-"graphiques."
+"Si cette option est activée, les commentaires seront visibles sur les "
+"graphiques de statut de la page Supervision > Informations de performance > "
+"Graphiques .<br><b>Attention</b> : Cette option peut ralentir le chargement "
+"des graphiques."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/ldap/help.php:7
 msgid "Name of configuration"
@@ -5341,9 +5382,8 @@ msgid "Set the domain for search the service"
 msgstr "Configure le domaine pour la recherche du service"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/ldap/help.php:26
-#, fuzzy
 msgid "Connection timeout"
-msgstr "Durée maximale de la recherche avant arrêt."
+msgstr "Timeout de la connexion."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/ldap/help.php:27
 msgid "Search size limit"
@@ -5399,9 +5439,9 @@ msgid ""
 "The LDAP search filter for users<br/>Use %s in filter. The %s will replaced "
 "by login in autologin or * in LDAP import"
 msgstr ""
-"Le filtre de recherche LDAP pour les utilisateurs<br/>Utiliser %s en tant "
-"que filtre. %s sera remplacé par le l'identifiant dans pour la connexion "
-"automatique (autologin) ou par * pour l'import LDAP."
+"Le filtre de recherche LDAP pour les utilisateurs<br/>Utiliser %s dans votre "
+"filtre. %s sera remplacé par l'identifiant pour la connexion automatique "
+"(autologin) ou par * pour l'import LDAP."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/ldap/help.php:51
 #, php-format
@@ -5535,17 +5575,23 @@ msgid ""
 "Retention time for partitioned tables (data_bin, logs, log_archive_host, "
 "log_archive_service), by default 365 days."
 msgstr ""
+"Période de rétention pour les tables partitionnées (data_bin, logs, "
+"log_archive_host, log_archive_service). Valeur par défaut : 365 jours."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/centstorage/help.php:60
 msgid ""
 "number of partitions created in advance to prevent issues, by default 10 "
 "days."
 msgstr ""
+"Nombre de partitions créées à l'avance pour éviter les problèmes. Valeur par "
+"défaut : 10 jours."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/centstorage/help.php:64
 msgid ""
 "Backup directory to store partition, by default /var/cache/centreon/backup."
 msgstr ""
+"Répertoire de sauvegarde pour l'archive stockant les partitions. Valeur par "
+"défaut : /var/cache/centreon/backup."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/centstorage/help.php:71
 msgid "Enable/Disable logging of all modifications in Centreon"
@@ -5557,66 +5603,78 @@ msgstr ""
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/api/help.php:9
 msgid "Timeout value in seconds. Used to make actions calls timeout."
 msgstr ""
+"Valeur du délai d'attente en secondes, utilisée pour les appels d'actions."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/gorgone/help.php:32
-#, fuzzy
 msgid ""
 "Enable Centreon Broker statistics collection into the central server. Be "
 "careful: if disabled, Broker statistics will not be available into Home > "
 "Broker statistics."
 msgstr ""
-"Active ou non la récupération des données de statistiques des module "
-"Centreon Broker des collecteurs distant. Attention, la récupération des "
-"données par le processus centcore peut générer une surcharge réseau dans le "
-"cas où le processus n’arriverait pas à récupérer le fichier dû à une "
-"mauvaise configuration du module Centreon Broker. Si l’option est "
-"désactivée, alors les données de statistiques ne seront pas visibles dans le "
-"menu dédié."
+"Active ou non la récupération des données de statistiques de Centreon Broker "
+"par le serveur central. Attention, si l’option est désactivée, les "
+"statistiques de Broker ne seront pas visibles à la page Administration > "
+"Statut de la plateforme > Statistiques du broker."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/gorgone/help.php:38
-#, fuzzy
 msgid ""
 "Illegal characters in external commands. Those characters will be removed "
 "before being processed by Centreon Gorgone."
 msgstr ""
 "Caractères illégaux dans les commandes externes. Ces caractères seront "
-"supprimés avant d'être interprétés par Centcore."
+"supprimés avant que la commande soit traitée par Centreon Gorgone."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/gorgone/help.php:43
 msgid ""
 "IP Address or hostname to communicate with Gorgone API. Should remain "
 "default value (Default: \"127.0.0.1\")."
 msgstr ""
+"Adresse IP ou hostname utilisé pour communiquer avec l'API Gorgone. Gardez "
+"la valeur par défaut (\"127.0.0.1\")."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/gorgone/help.php:48
 msgid ""
 "Port on which Gorgone API is listening. It must match Gorgone httpserver "
 "module definition. Should remain default value (Default: \"8085\")."
 msgstr ""
+"Port sur lequel écoute l'API Gorgone. La valeur doit correspondre à celle "
+"définie pour le module Gorgone httpserver. Gardez la valeur par défaut "
+"(\"8085\")."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/gorgone/help.php:53
 msgid ""
 "Username used to connect to Gorgone API. It must match Gorgone httpserver "
 "module definition (Default: none)."
 msgstr ""
+"Identifiant utilisé pour se connecter à l'API Gorgone. La valeur doit "
+"correspondre à celle définie pour le module Gorgone httpserver (valeur par "
+"défaut : Aucun)."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/gorgone/help.php:58
 msgid ""
 "Password used to connect to Gorgone API. It must match Gorgone httpserver "
 "module definition (Default: none)."
 msgstr ""
+"Mot de passe utilisé pour se connecter à l'API Gorgone. La valeur doit "
+"correspondre à celle définie pour le module Gorgone httpserver (valeur par "
+"défaut : Aucun)."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/gorgone/help.php:63
 msgid ""
 "Define if SSL/TLS must be used to connect to API. It must match Gorgone "
 "httpserver module definition (Default: no)."
 msgstr ""
+"Définissez si SSL/TLS doit être utilisé pour se connecter à l'API. La valeur "
+"doit correspondre à celle définie pour le module Gorgone httpserver (valeur "
+"par défaut : non)."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/gorgone/help.php:68
 msgid ""
 "Define if connection to Gorgone API can be done even if a self signed "
 "certificat is used (Default: yes)."
 msgstr ""
+"Définir si la connexion à l'API Gorgone est autorisée même en cas de "
+"certificat autosigné (valeur par défaut : oui)."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/knowledgeBase/help.php:9
 msgid "Knowledge wiki url. Exemple: http://wiki/mywiki"
@@ -5629,9 +5687,8 @@ msgstr ""
 "suppression des articles."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/knowledgeBase/help.php:18
-#, fuzzy
 msgid "Ignore ssl certificate."
-msgstr "Certificat CA (certificat émanant d'une autorité de certification)"
+msgstr "Ignorer le certificat SSL."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/knowledgeBase/help.php:22
 msgid "Wiki account password."
@@ -5650,20 +5707,16 @@ msgid ""
 "Enable the rrdcached for Centreon. This option is valid only with Centreon "
 "Broker"
 msgstr ""
+"Activer rrdcached pour Centreon. Cette option n'est valide qu'avec Centreon "
+"Broker."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/rrdtool/help.php:18
-#, fuzzy
 msgid "Port for communicating with rrdcached"
-msgstr ""
-"Le chemin absolu vers la socket Unix ou le port TCP pour communiquer avec le "
-"démon rrdcached."
+msgstr "Port TCP pour communiquer avec rrdcached"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/rrdtool/help.php:21
-#, fuzzy
 msgid "The absolute path to unix socket for communicating with rrdcached"
-msgstr ""
-"Le chemin absolu vers la socket Unix ou le port TCP pour communiquer avec le "
-"démon rrdcached."
+msgstr "Le chemin absolu vers la socket Unix pour communiquer avec rrdcached."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/api/help.php:13
 msgid ""
@@ -6050,7 +6103,7 @@ msgstr "Fonction NPI (Notation Polonaise Inverse) *."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/virtualMetrics/help.php:17
 msgid "Metric unit."
-msgstr "Unité de la Métrique."
+msgstr "Unité de la métrique."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/virtualMetrics/help.php:18
 msgid "Warning threshold."
@@ -6078,11 +6131,11 @@ msgstr "Étiquette Verticale (Axe Y)."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/graphTemplates/help.php:9
 msgid "Width of grid. Used to export the chart."
-msgstr ""
+msgstr "Largeur de la grille utilisée lors de l'export du graphique."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/graphTemplates/help.php:10
 msgid "Height of grid. Used to export the chart."
-msgstr ""
+msgstr "Hauteur de la grille utilisée lors de l'export du graphique."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/graphTemplates/help.php:11
 msgid "Lower limit of grid."
@@ -6110,7 +6163,7 @@ msgstr "Commentaire du modèle de graphique."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/componentTemplates/help.php:9
 msgid "Name of curve template."
-msgstr "Nom du modèle de la courbe."
+msgstr "Nom du modèle de courbe."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/componentTemplates/help.php:11
 msgid "It is possible to define a specific service for the data source."
@@ -6151,10 +6204,13 @@ msgid ""
 "curve line color with transparency.For exported graphs, the area color is "
 "defined with those fields."
 msgstr ""
+"Lorsque la propriété Remplissage est activée, la couleur de l'aire est la "
+"même que celle de la courbe, avec la valeur de Transparence appliquée. Pour "
+"les graphiques exportés, la couleur de l'aire est définie dans ces champs."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/componentTemplates/help.php:34
 msgid "Curve transparency. Used to export the chart."
-msgstr ""
+msgstr "Taux de transparence de l'aire de remplissage du graphique."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/componentTemplates/help.php:35
 msgid "Enables area filling."
@@ -6170,7 +6226,7 @@ msgstr "Affiche seulement la légende, cachant ainsi la courbe."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/componentTemplates/help.php:43
 msgid "Number of line breaks after the legend."
-msgstr "Nombre de retour à la ligne après la légende."
+msgstr "Nombre de retours à la ligne après la légende."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/componentTemplates/help.php:44
 msgid "Prints maximum value."

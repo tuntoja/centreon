@@ -1,3 +1,23 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Centreon web\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-26 13:41+0200\n"
+"PO-Revision-Date: 2024-07-25 18:18+0200\n"
+"Last-Translator: Laurent Pinsivy <lpinsivy@centreon.com>\n"
+"Language-Team: Centreon Team\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/tests/php/Centreon/Domain/Proxy/ProxyTest.php:85
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Domain/Proxy/Proxy.php:182
 #, php-format
@@ -346,6 +366,7 @@ msgstr "Services au statut OK"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:708
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:714
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:903
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:49
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/home/customViews/index.php:129
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/home/customViews/index.php:179
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/resourcesACL/listsResourcesAccess.php:87
@@ -1004,6 +1025,7 @@ msgid "Generate"
 msgstr "Gnrer"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:92
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:55
 msgid "Group"
 msgstr "Groupe"
 
@@ -1128,6 +1150,7 @@ msgstr "Fichier"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1086
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/step_upgrade/step4.php:72
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/step_upgrade/step2.php:55
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:48
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/resourcesACL/formResourcesAccess.php:247
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/resourcesACL/listsResourcesAccess.php:93
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/menusACL/listsMenusAccess.php:79
@@ -1325,6 +1348,7 @@ msgstr ""
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:87
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/step_upgrade/step4.php:71
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:99
 msgid "Step"
 msgstr "tape"
 
@@ -2409,6 +2433,7 @@ msgid "Unit"
 msgstr "Unit"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:870
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:16
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/initReport.php:171
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/csvExport/csv_ServiceGroupLogs.php:126
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/csvExport/csv_ServiceLogs.php:178
@@ -2500,6 +2525,7 @@ msgid "Data Source Type"
 msgstr "Type de source de donnes"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:888
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:129
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/performance/viewData.php:419
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/performance/viewMetrics.php:238
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/virtualMetrics/listVirtualMetrics.php:94
@@ -2536,6 +2562,7 @@ msgid "Host Information"
 msgstr "Informations sur l'hte"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:921
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:21
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/objectDetails/hostDetails.php:582
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/objectDetails/serviceDetails.php:681
 msgid "Acknowledged"
@@ -2571,6 +2598,7 @@ msgstr "Commandes et racourcis d'hte"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1068
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1071
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1077
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:39
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/csvExport/csv_ServiceGroupLogs.php:176
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/csvExport/csv_ServiceLogs.php:107
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/csvExport/csv_HostLogs.php:108
@@ -2604,6 +2632,7 @@ msgstr "Nom de l'hte"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1065
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1074
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1080
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:40
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/initReport.php:165
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/csvExport/csv_ServiceGroupLogs.php:177
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/csvExport/csv_ServiceLogs.php:108
@@ -2919,6 +2948,7 @@ msgid "Display multiple periods"
 msgstr "Paramtres d'affichage"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1248
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:138
 msgid "Curve"
 msgstr "Courbe"
 
@@ -5232,6 +5262,578 @@ msgstr ""
 "Il est fortement recommand de faire une sauvegarde de vos bases de donnes "
 "avant d'aller plus loin."
 
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:2
+#, fuzzy
+msgid "Top Bottom Settings"
+msgstr "Options basiques"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:3
+msgid "Value format"
+msgstr "Format de la valeur"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:4
+msgid "Interval"
+msgstr "Intervalle"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:5
+msgid "Display resources with this status"
+msgstr "Afficher les ressources avec ce statut"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:6
+msgid "Display resources with this state"
+msgstr "Afficher les ressources avec cet tat"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:7
+msgid "Display resources with these status types"
+msgstr "Afficher les ressources avec ces types de statuts"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:8
+msgid "Host severities"
+msgstr "Svrits des htes"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:9
+msgid "Service severities"
+msgstr "Svrits des services"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:10
+msgid "Enable Open Tickets"
+msgstr "Activer Open Tickets"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:11
+msgid "Rule (ticket provider)"
+msgstr "Rgle (fournisseur de tickets)"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:12
+msgid "Display resources"
+msgstr "Afficher les ressources"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:13
+msgid "Hide services with Down host"
+msgstr "Masquer les services dont l'hte est Indisponible"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:14
+#, fuzzy
+msgid "hide services with Unreachable host"
+msgstr "Masquer les services dont l'hte est Injoignable"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:15
+msgid "Problem (Down/Critical)"
+msgstr "Problme (Indisponible/Critique)"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:17
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/host_dependency/formHostDependency.php:134
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/host_dependency/formHostDependency.php:172
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/traps/listTraps.php:45
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/traps/listTraps.php:58
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/servicegroup_dependency/formServiceGroupDependency.php:147
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/servicegroup_dependency/formServiceGroupDependency.php:192
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/metaservice_dependency/formMetaServiceDependency.php:157
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/metaservice_dependency/formMetaServiceDependency.php:202
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/service_dependency/formServiceDependency.php:145
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/service_dependency/formServiceDependency.php:190
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/hostgroup_dependency/formHostGroupDependency.php:137
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/hostgroup_dependency/formHostGroupDependency.php:175
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Hosts/host.php:372
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Hosts/host.php:441
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Services/service.php:469
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Services/service.php:573
+msgid "Pending"
+msgstr "En attente"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:18
+msgid "Success (OK/Up)"
+msgstr "Succs (OK/Disponible)"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:19
+msgid "Undefined (Unreachable/Unknown)"
+msgstr "Indfini (Injoignable/Inconnu)"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:20
+msgid "Unhandled"
+msgstr "Non trait"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:22
+#, fuzzy
+msgid "In downtime"
+msgstr "En maintenance"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:23
+#, fuzzy
+msgid "Hard"
+msgstr "Hard"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:24
+#, fuzzy
+msgid "Soft"
+msgstr "Soft"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:25
+#, fuzzy
+msgid "All resources"
+msgstr "Toutes les ressources"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:26
+msgid "Resources linked to a ticket"
+msgstr "Ressources lies  un ticket"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:27
+msgid "Resources with no ticket"
+msgstr "Ressources sans ticket"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:28
+msgid "Select host severities"
+msgstr "Slectionner les svrits des htes"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:29
+msgid "Select service severities"
+msgstr "Slectionner les svrits des services"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:30
+msgid "Select rule (ticket provider)"
+msgstr "Slectionner la rgle (fournisseur de tickets)"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:31
+msgid "Donut chart"
+msgstr "Donut"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:32
+#, fuzzy
+msgid "Pie chart"
+msgstr "Camembert"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:33
+msgid "Horizontal bar chart"
+msgstr "Diagramme  barres horizontales"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:34
+msgid "Vertical bar chart"
+msgstr "Diagramme  barres verticales"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:35
+msgid "Display resources with this type"
+msgstr "Afficher les ressources avec ce type"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:36
+msgid "Display resources with this unit"
+msgstr "Afficher les ressources avec cette unit"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:37
+msgid "Show value on chart"
+msgstr "Afficher la valeur sur le graphique"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:38
+msgid "Show legend"
+msgstr "Afficher la lgende"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:41
+msgid "Percentage"
+msgstr "Pourcentage"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:42
+msgid "Number"
+msgstr "Numrique"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:43
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/graphTemplates/formGraphTemplate.php:85
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/componentTemplates/listComponentTemplates.php:93
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/componentTemplates/formComponentTemplate.php:137
+msgid "Legend"
+msgstr "Lgende"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:44
+msgid "Display with this view"
+msgstr "Afficher avec cette vue"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:45
+msgid "Sort by"
+msgstr "Trier par"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:46
+msgid "Standard"
+msgstr "Standard"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:47
+msgid "Condensed"
+msgstr "Condens"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:50
+msgid "Text"
+msgstr "Texte"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:51
+msgid "Gauge"
+msgstr "Jauge"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:52
+msgid "Bar"
+msgstr "Barre"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:53
+#, fuzzy
+msgid "Select field"
+msgstr "Slectionn"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:54
+msgid "Radio"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:56
+msgid "Sub input 1"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:57
+msgid "Sub input 2"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:58
+msgid "Sub input 3"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:59
+#, fuzzy
+msgid "Group name"
+msgstr "Nom du groupe"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:60
+#, fuzzy
+msgid "Option 1"
+msgstr "Options"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:61
+#, fuzzy
+msgid "Option 2"
+msgstr "Options"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:62
+msgid "Button 1"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:63
+msgid "Button 2"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:64
+msgid "Button 3"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:65
+msgid "Button 4"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:66
+msgid "sub1"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:67
+msgid "sub2"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:68
+msgid "Radio 1"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:69
+msgid "Radio 2"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:70
+msgid "sub3"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:71
+msgid "Line"
+msgstr "Ligne"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:72
+msgid "Stacked bar"
+msgstr "Barre empile"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:73
+msgid "Curve type"
+msgstr "Type de courbe"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:74
+msgid "Display curve points"
+msgstr "Afficher les points de la courbe"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:75
+msgid "Line width"
+msgstr "Largeur de la ligne"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:76
+msgid "Show area"
+msgstr "Afficher l'aire"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:77
+msgid "Fill opacity"
+msgstr "Opacit du remplissage"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:78
+msgid "Line style"
+msgstr "Style de la ligne"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:79
+msgid "Dash width"
+msgstr "Largeur du tiret"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:80
+msgid "Space"
+msgstr "Espacement"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:81
+msgid "Orientation"
+msgstr "Orientation"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:82
+msgid "Bar radius"
+msgstr "Radius de la barre"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:83
+msgid "Bar background opacity"
+msgstr "Opacit du fond de la barre"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:84
+msgid "Show axis border"
+msgstr "Afficher la bordure de l'axe"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:85
+msgid "Y-axis tick label rotation"
+msgstr "Rotation de l'tiquette de l'axe Y"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:86
+msgid "Zero-centered"
+msgstr "Centr sur zro"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:87
+msgid "Show grid lines"
+msgstr "Affichage de la grille"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:88
+#, fuzzy
+msgid "Grid lines type"
+msgstr "Type de widget"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:89
+msgid "Scale"
+msgstr "chelle"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:90
+msgid "Display mode"
+msgstr "Afficher en mode"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:91
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/reloadACL/reloadACL.php:147
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/session/connected_user.php:162
+msgid "Position"
+msgstr "Position"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:92
+msgid "Tooltip display"
+msgstr "Affichage de l'infobulle"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:93
+msgid "Value sorting"
+msgstr "Tri des valeurs"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:94
+msgid "Graph style"
+msgstr "Style de graphe"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:95
+msgid "Axis"
+msgstr "Axe"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:96
+msgid "Tooltip"
+msgstr "Infobulle"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:97
+msgid "Linear"
+msgstr "Linaire"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:98
+msgid "Natural"
+msgstr "Naturel"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:100
+msgid "Auto"
+msgstr "Auto"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:101
+msgid "Custom"
+msgstr "Personnalis"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:102
+#, fuzzy
+msgid "lineWidth"
+msgstr "Largeur de la ligne"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:103
+msgid "Show"
+msgstr "Afficher"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:104
+msgid "Hide"
+msgstr "Masquer"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:105
+msgid "areaOpacity"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:106
+msgid "Solid"
+msgstr "Uni"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:107
+msgid "Dashed"
+msgstr "Tiret"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:108
+msgid "Dotted"
+msgstr "Pointill"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:109
+#, fuzzy
+msgid "dashLength"
+msgstr "Taille"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:110
+msgid "dashOffset"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:111
+msgid "dotOffset"
+msgstr ""
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:112
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:113
+msgid "Vertical"
+msgstr "Vertical"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:114
+#, fuzzy
+msgid "gridLinesType"
+msgstr "Style de la ligne"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:115
+msgid "Both"
+msgstr "Les deux"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:116
+msgid "Logarithmic"
+msgstr "Logarithmique"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:117
+#, fuzzy
+msgid "scaleLogarithmicBase"
+msgstr "Logarithmique"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:118
+msgid "Base 2"
+msgstr "Base 2"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:119
+msgid "Base 10"
+msgstr "Base 10"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:120
+#, fuzzy
+msgid "legendDisplayMode"
+msgstr "Afficher en mode"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:121
+msgid "Grid"
+msgstr "Grille"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:122
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/groupsACL/formGroupConfig.php:327
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/media/images/formDirectory.php:137
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/formNagios.php:599
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configResources/formResources.php:138
+msgid "List"
+msgstr "Liste"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:123
+#, fuzzy
+msgid "legendPlacement"
+msgstr "Remplacement"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:124
+msgid "Left"
+msgstr "Gauche"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:125
+msgid "Bottom"
+msgstr "Bas"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:126
+msgid "Right"
+msgstr "Droite"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:127
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/initReport.php:167
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/ServicesServiceGroups/serviceGridBySG.php:70
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/ServicesServiceGroups/serviceSummaryBySG.php:67
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/ServicesHostGroups/serviceSummaryByHG.php:66
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/ServicesHostGroups/serviceGridByHG.php:117
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Hosts/host.php:180
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Services/service.php:475
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Services/serviceGrid.php:73
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/class/centreonLogAction.class.php:415
+msgid "All"
+msgstr "Tout"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:128
+msgid "Single"
+msgstr "Unique"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:130
+msgid "By name"
+msgstr "Par nom"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:131
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/form.php:158
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/form.php:164
+msgid "Ascending"
+msgstr "Croissant"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:132
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/form.php:158
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/form.php:164
+msgid "Descending"
+msgstr "Dcroissant"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:133
+msgid ""
+"The Auto value corresponds to the value defined in the Curves configuration "
+"in Centreon."
+msgstr ""
+"La valeur Auto correspond  la valeur dfinie dans la configuration des "
+"courbes dans Centreon."
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:134
+msgid "Display the diagram with this status"
+msgstr "Afficher le diagramme avec ce statut"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:135
+msgid "Link types"
+msgstr "Types de lien"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:136
+msgid "Problem (Critical)"
+msgstr "Problme (Critique)"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:137
+msgid "Success (OK)"
+msgstr "Succs (OK)"
+
+#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:139
+msgid "Generic text"
+msgstr "Texte gnrique"
+
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/home/customViews/index.php:79
 msgid "Show/Hide edit mode"
 msgstr "Afficher/Cacher le mode dition"
@@ -6593,11 +7195,6 @@ msgstr "ACL recharges"
 msgid "Connected users"
 msgstr "Utilisateurs connects"
 
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/reloadACL/reloadACL.php:147
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/session/connected_user.php:162
-msgid "Position"
-msgstr "Position"
-
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/reloadACL/reloadACL.php:149
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/session/connected_user.php:164
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configServers/listServers.php:125
@@ -7035,13 +7632,6 @@ msgstr "Actions autorises"
 msgid "Resources access"
 msgstr "Accs aux ressources"
 
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/groupsACL/formGroupConfig.php:327
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/media/images/formDirectory.php:137
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/formNagios.php:599
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configResources/formResources.php:138
-msgid "List"
-msgstr "Liste"
-
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/accessLists/groupsACL/formGroupConfig.php:328
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/options/media/images/formDirectory.php:138
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/formNagios.php:600
@@ -7360,18 +7950,6 @@ msgstr "L'anne prcdente"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/initReport.php:163
 msgid "Actual"
 msgstr "Actuellement"
-
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/initReport.php:167
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/ServicesServiceGroups/serviceGridBySG.php:70
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/ServicesServiceGroups/serviceSummaryBySG.php:67
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/ServicesHostGroups/serviceSummaryByHG.php:66
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/ServicesHostGroups/serviceGridByHG.php:117
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Hosts/host.php:180
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Services/service.php:475
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Services/serviceGrid.php:73
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/class/centreonLogAction.class.php:415
-msgid "All"
-msgstr "Tout"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/reporting/dashboard/initReport.php:168
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/meta_service/listMetric.php:36
@@ -10495,25 +11073,6 @@ msgstr "Relation de parent"
 msgid "Ok/Up"
 msgstr "Ok/Disponible"
 
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/host_dependency/formHostDependency.php:134
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/host_dependency/formHostDependency.php:172
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/traps/listTraps.php:45
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/traps/listTraps.php:58
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/servicegroup_dependency/formServiceGroupDependency.php:147
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/servicegroup_dependency/formServiceGroupDependency.php:192
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/metaservice_dependency/formMetaServiceDependency.php:157
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/metaservice_dependency/formMetaServiceDependency.php:202
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/service_dependency/formServiceDependency.php:145
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/service_dependency/formServiceDependency.php:190
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/hostgroup_dependency/formHostGroupDependency.php:137
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/hostgroup_dependency/formHostGroupDependency.php:175
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Hosts/host.php:372
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Hosts/host.php:441
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Services/service.php:469
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/monitoring/status/Services/service.php:573
-msgid "Pending"
-msgstr "En attente"
-
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/host_dependency/formHostDependency.php:144
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/servicegroup_dependency/formServiceGroupDependency.php:157
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configObject/metaservice_dependency/formMetaServiceDependency.php:167
@@ -12162,16 +12721,6 @@ msgstr "Tentative"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/form.php:157
 msgid "Sort by  "
 msgstr "Trier par"
-
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/form.php:158
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/form.php:164
-msgid "Ascending"
-msgstr "Croissant"
-
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/form.php:158
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/form.php:164
-msgid "Descending"
-msgstr "Dcroissant"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/Administration/parameters/general/form.php:160
 msgid "Order sort "
@@ -14691,12 +15240,6 @@ msgstr "Modifier un modle de graphique"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/graphTemplates/formGraphTemplate.php:78
 msgid "View a Graph Template"
 msgstr "Visualiser un modle de graphique"
-
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/graphTemplates/formGraphTemplate.php:85
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/componentTemplates/listComponentTemplates.php:93
-#: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/componentTemplates/formComponentTemplate.php:137
-msgid "Legend"
-msgstr "Lgende"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/graphTemplates/formGraphTemplate.php:86
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/views/componentTemplates/formComponentTemplate.php:138
@@ -19400,9 +19943,6 @@ msgstr ""
 #~ msgid "Split"
 #~ msgstr "Sparer"
 
-#~ msgid "Length"
-#~ msgstr "Taille"
-
 #~ msgid "SNMP information"
 #~ msgstr "Informations SNMP"
 
@@ -20600,9 +21140,6 @@ msgstr ""
 #~ msgid "Unhandled alerts"
 #~ msgstr "Alertes non traites"
 
-#~ msgid "Unhandled"
-#~ msgstr "Non trait"
-
 #~ msgid "Oops, something went wrong"
 #~ msgstr "Oups, quelque chose s'est mal pass"
 
@@ -21599,17 +22136,11 @@ msgstr ""
 #~ msgid "Manual refresh"
 #~ msgstr "Rafrachissement manuel"
 
-#~ msgid "Interval"
-#~ msgstr "Intervalle"
-
 #~ msgid "Threshold"
 #~ msgstr "Seuil"
 
 #~ msgid "Show thresholds"
 #~ msgstr "Afficher les seuils"
-
-#~ msgid "Custom"
-#~ msgstr "Personnalis"
 
 #~ msgid ""
 #~ "Thresholds are automatically hidden as soon as you select 2 metric units."
@@ -21677,17 +22208,8 @@ msgstr ""
 #~ msgid "Custom value"
 #~ msgstr "Valeur personnalise"
 
-#~ msgid "Widget type"
-#~ msgstr "Type de widget"
-
 #~ msgid "Display as"
 #~ msgstr "Afficher en tant que"
-
-#~ msgid "Text"
-#~ msgstr "Texte"
-
-#~ msgid "Gauge"
-#~ msgstr "Jauge"
 
 #~ msgid "Bar chart"
 #~ msgstr "Diagramme  barres"
@@ -21728,9 +22250,6 @@ msgstr ""
 #~ msgid "Top"
 #~ msgstr "Top"
 
-#~ msgid "Bottom"
-#~ msgstr "Bas"
-
 #~ msgid "Includes {{count}} resources"
 #~ msgstr "Inclut {{count}} ressources"
 
@@ -21770,9 +22289,6 @@ msgstr ""
 #~ msgid "Welcome to the Dashboards interface!"
 #~ msgstr "Bienvenue dans l'interface des tableaux de bord !"
 
-#~ msgid "Generic text"
-#~ msgstr "Texte gnrique"
-
 #~ msgid ""
 #~ "Allows you to add free text to your dashboards (section titles, "
 #~ "information, etc.)."
@@ -21804,9 +22320,6 @@ msgstr ""
 
 #~ msgid "Thresholds"
 #~ msgstr "Seuils"
-
-#~ msgid "Value format"
-#~ msgstr "Format de la valeur"
 
 #~ msgid "Last hour"
 #~ msgstr "La dernire heure"
@@ -21881,9 +22394,6 @@ msgstr ""
 #~ "Affiche une vue d'ensemble du statut des ressources slectionnes, groupes "
 #~ "par htes ou par services."
 
-#~ msgid "Display resources with this status"
-#~ msgstr "Afficher les ressources avec ce statut"
-
 #~ msgid ""
 #~ "For a host, the status displayed in the tile is the worst among its own "
 #~ "status and the statuses of its services."
@@ -21893,12 +22403,6 @@ msgstr ""
 
 #~ msgid "For a service, the service status is displayed."
 #~ msgstr "Pour un service, le statut du service est affich."
-
-#~ msgid "Display resources with this state"
-#~ msgstr "Afficher les ressources avec cet tat"
-
-#~ msgid "Sort by"
-#~ msgstr "Trier par"
 
 #~ msgid "See more on the Resources Status page"
 #~ msgstr "Voir plus dans la page Statut des ressources"
@@ -22074,15 +22578,6 @@ msgstr ""
 #~ "Affiche des donnes sur le statut des ressources et les vnements, "
 #~ "centralises dans un tableau."
 
-#~ msgid "Success (OK/Up)"
-#~ msgstr "Succs (OK/Disponible)"
-
-#~ msgid "Problem (Down/Critical)"
-#~ msgstr "Problme (Indisponible/Critique)"
-
-#~ msgid "Undefined (Unreachable/Unknown)"
-#~ msgstr "Indfini (Injoignable/Inconnu)"
-
 #~ msgid "Resource table"
 #~ msgstr "Tableau des ressources"
 
@@ -22095,30 +22590,6 @@ msgstr ""
 
 #~ msgid "Status chart"
 #~ msgstr "Graphique de statut"
-
-#~ msgid "Show value on chart"
-#~ msgstr "Afficher la valeur sur le graphique"
-
-#~ msgid "Number"
-#~ msgstr "Numrique"
-
-#~ msgid "Show legend"
-#~ msgstr "Afficher la lgende"
-
-#~ msgid "Percentage"
-#~ msgstr "Pourcentage"
-
-#~ msgid "Display resources with this type"
-#~ msgstr "Afficher les ressources avec ce type"
-
-#~ msgid "Horizontal bar chart"
-#~ msgstr "Diagramme  barres horizontales"
-
-#~ msgid "Vertical bar chart"
-#~ msgstr "Diagramme  barres verticales"
-
-#~ msgid "Donut chart"
-#~ msgstr "Donut"
 
 #~ msgid "Status:"
 #~ msgstr "Statut :"
@@ -22179,9 +22650,6 @@ msgstr ""
 #~ msgid "The resource access rule was successfully deleted"
 #~ msgstr "La rgle d'accs aux ressouces a t supprime avec succs"
 
-#~ msgid "Display resources with this unit"
-#~ msgstr "Afficher les ressources avec cette unit"
-
 #~ msgid "An error occurred during authentication"
 #~ msgstr "Une erreur est survenue durant l'authentification"
 
@@ -22213,15 +22681,6 @@ msgstr ""
 #~ msgid "Group monitoring"
 #~ msgstr "Group monitoring"
 
-#~ msgid "Display with this view"
-#~ msgstr "Afficher avec cette vue"
-
-#~ msgid "Standard"
-#~ msgstr "Standard"
-
-#~ msgid "Condensed"
-#~ msgstr "Condens"
-
 #~ msgid "Business Activity Diagram"
 #~ msgstr "Diagramme d'activit mtier"
 
@@ -22232,147 +22691,11 @@ msgstr ""
 #~ "Affiche graphiquement et permet la navigation dans la hirarchie d'une "
 #~ "activit mtier."
 
-#~ msgid "Display the diagram with this status"
-#~ msgstr "Afficher le diagramme avec ce statut"
-
-#~ msgid "Problem (Critical)"
-#~ msgstr "Problme (Critique)"
-
-#~ msgid "Success (OK)"
-#~ msgstr "Succs (OK)"
-
-#~ msgid "Link types"
-#~ msgstr "Types de lien"
-
-#~ msgid "Line"
-#~ msgstr "Ligne"
-
-#~ msgid "Curve type"
-#~ msgstr "Type de courbe"
-
-#~ msgid "Linear"
-#~ msgstr "Linaire"
-
-#~ msgid "Natural"
-#~ msgstr "Naturel"
-
-#~ msgid "Value sorting"
-#~ msgstr "Tri des valeurs"
-
-#~ msgid "By name"
-#~ msgstr "Par nom"
-
-#~ msgid "Tooltip display"
-#~ msgstr "Affichage de l'infobulle"
-
-#~ msgid "Single"
-#~ msgstr "Unique"
-
-#~ msgid "Hide"
-#~ msgstr "Masquer"
-
-#~ msgid "Line width"
-#~ msgstr "Largeur de la ligne"
-
-#~ msgid "Auto"
-#~ msgstr "Auto"
-
-#~ msgid "Show area"
-#~ msgstr "Afficher l'aire"
-
-#~ msgid "Show"
-#~ msgstr "Afficher"
-
-#~ msgid "Display curve points"
-#~ msgstr "Afficher les points de la courbe"
-
-#~ msgid "Show axis border"
-#~ msgstr "Afficher la bordure de l'axe"
-
-#~ msgid "Y-axis tick label rotation"
-#~ msgstr "Rotation de l'tiquette de l'axe Y"
-
-#~ msgid ""
-#~ "The Auto value corresponds to the value defined in the Curves "
-#~ "configuration in Centreon."
-#~ msgstr ""
-#~ "La valeur Auto correspond  la valeur dfinie dans la configuration des "
-#~ "courbes dans Centreon."
-
-#~ msgid "Display mode"
-#~ msgstr "Afficher en mode"
-
-#~ msgid "Grid"
-#~ msgstr "Grille"
-
-#~ msgid "Scale"
-#~ msgstr "chelle"
-
-#~ msgid "Logarithmic"
-#~ msgstr "Logarithmique"
-
-#~ msgid "Zero-centered"
-#~ msgstr "Centr sur zro"
-
-#~ msgid "Solid"
-#~ msgstr "Uni"
-
-#~ msgid "Dashed"
-#~ msgstr "Tiret"
-
-#~ msgid "Dotted"
-#~ msgstr "Pointill"
-
-#~ msgid "Graph style"
-#~ msgstr "Style de graphe"
-
 #~ msgid "Display type"
 #~ msgstr "Type d'affichage"
 
 #~ msgid "Display settings"
 #~ msgstr "Afichage des paramtres"
-
-#~ msgid "Fill opacity"
-#~ msgstr "Opacit du remplissage"
-
-#~ msgid "Line style"
-#~ msgstr "Style de la ligne"
-
-#~ msgid "Dash width"
-#~ msgstr "Largeur du tiret"
-
-#~ msgid "Space"
-#~ msgstr "Espacement"
-
-#~ msgid "Show grid lines"
-#~ msgstr "Affichage de la grille"
-
-#~ msgid "Horizontal"
-#~ msgstr "Horizontal"
-
-#~ msgid "Vertical"
-#~ msgstr "Vertical"
-
-#~ msgid "Both"
-#~ msgstr "Les deux"
-
-#~ msgid "Base 2"
-#~ msgstr "Base 2"
-
-#~ msgid "Base 10"
-#~ msgstr "Base 10"
-
-#~ msgid "Left"
-#~ msgstr "Gauche"
-
-#~ msgid "Right"
-#~ msgstr "Droite"
-
-#~ msgid "Axis"
-#~ msgstr "Axe"
-
-#~ msgid "Tooltip"
-#~ msgstr "Infobulle"
 
 #~ msgid "Unable to retrieve credentials ['%s'] from vault"
 #~ msgstr ""
@@ -22380,21 +22703,6 @@ msgstr ""
 
 #~ msgid "Unknown provider type: %s"
 #~ msgstr "Type de fournisseur inconnu : %s"
-
-#~ msgid "Bar"
-#~ msgstr "Barre"
-
-#~ msgid "Stacked bar"
-#~ msgstr "Barre empile"
-
-#~ msgid "Orientation"
-#~ msgstr "Orientation"
-
-#~ msgid "Bar radius"
-#~ msgstr "Radius de la barre"
-
-#~ msgid "Bar background opacity"
-#~ msgstr "Opacit du fond de la barre"
 
 #~ msgid "Open ticket"
 #~ msgstr "Ouvrir un ticket"
@@ -22405,41 +22713,11 @@ msgstr ""
 #~ msgid "Open ticket for service"
 #~ msgstr "Ouvrir un ticket pour le service"
 
-#~ msgid "Host severities"
-#~ msgstr "Svrits des htes"
-
-#~ msgid "Service severities"
-#~ msgstr "Svrits des services"
-
-#~ msgid "Select service severities"
-#~ msgstr "Slectionner les svrits des services"
-
-#~ msgid "Select host severities"
-#~ msgstr "Slectionner les svrits des htes"
-
-#~ msgid "Enable Open Tickets"
-#~ msgstr "Activer Open Tickets"
-
 #~ msgid "Ticket provider"
 #~ msgstr "Fournisseur de tickets"
 
 #~ msgid "Select a provider"
 #~ msgstr "Slectionner un fournisseur"
-
-#~ msgid "Display resources"
-#~ msgstr "Afficher les ressources"
-
-#~ msgid "Resources linked to a ticket"
-#~ msgstr "Ressources lies  un ticket"
-
-#~ msgid "Resources with no ticket"
-#~ msgstr "Ressources sans ticket"
-
-#~ msgid "Hide services with Down host"
-#~ msgstr "Masquer les services dont l'hte est Indisponible"
-
-#~ msgid "Hide services with Unreachable host"
-#~ msgstr "Masquer les services dont l'hte est Injoignable"
 
 #~ msgid "Ticket ID"
 #~ msgstr "ID du ticket"
@@ -22452,12 +22730,3 @@ msgstr ""
 
 #~ msgid "Create a ticket"
 #~ msgstr "Crer un ticket"
-
-#~ msgid "Rule (ticket provider)"
-#~ msgstr "Rgle (fournisseur de tickets)"
-
-#~ msgid "Select rule (ticket provider)"
-#~ msgstr "Slectionner la rgle (fournisseur de tickets)"
-
-#~ msgid "Display resources with these status types"
-#~ msgstr "Afficher les ressources avec ces types de statuts"
