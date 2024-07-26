@@ -115,7 +115,6 @@ while (false !== ($entry = $d->read())) {
             return;
         }
         if (preg_match_all($pattern1, $content, $matches)) {
-            var_dump($matches);
             foreach ($matches[1] as $string) {
                 if (isCamelCaps($string, false, true, false) === false) {
                     $data[$string] = $string;
@@ -123,19 +122,13 @@ while (false !== ($entry = $d->read())) {
             }
         }
         if (preg_match_all($pattern2, $content, $matches)) {
-            var_dump($matches);
             foreach ($matches[1] as $string) {
-                if (isCamelCaps($string, false, true, false) === false) {
-                    $data[$string] = $string;
-                }
+                $data[$string] = $string;
             }
         }
-        if (preg_match_all($pattern2, $content, $matches)) {
-            var_dump($matches);
+        if (preg_match_all($pattern3, $content, $matches)) {
             foreach ($matches[1] as $string) {
-                if (isCamelCaps($string, false, true, false) === false) {
-                    $data[$string] = $string;
-                }
+                $data[$string] = $string;
             }
         }
     }

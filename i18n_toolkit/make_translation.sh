@@ -130,6 +130,10 @@ if [ "$PROJECT" = "centreon" ]; then
     $PHP $BASE_DIR/reachjs2centreon.php $BASE_DIR_PROJECT > $BASE_DIR_PROJECT/www/install/front_translate.php
     echo -n " - 0K"
     echo
+    echo -n "Extracting strings to translate from Dashboard widgets"
+    $PHP $BASE_DIR/parseDashboardWidgets.php $BASE_DIR_PROJECT > $BASE_DIR_PROJECT/www/install/dashboard_widgets.php
+    echo -n " - 0K"
+    echo
 
     echo -e ""
     echo -n "List all PHP files excluding help.php files"
