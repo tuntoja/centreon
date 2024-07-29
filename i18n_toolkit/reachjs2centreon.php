@@ -18,7 +18,7 @@ function do_file($file)
             echo "/* $file */\n";
         }
         for ($i=0; $i < count($matches[0]); $i++) {
-            echo '_("' . $matches[1][$i] .'");' ."\n";
+            echo '_("' . trim($matches[1][$i],'\'"') .'");' ."\n";
         }
 }
 
