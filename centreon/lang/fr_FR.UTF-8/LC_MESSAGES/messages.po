@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Centreon web\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-29 11:10+0200\n"
-"PO-Revision-Date: 2024-07-30 08:38+0200\n"
+"PO-Revision-Date: 2024-08-01 18:40+0200\n"
 "Last-Translator: Laurent Pinsivy <lpinsivy@centreon.com>\n"
 "Language-Team: Centreon Team\n"
 "Language: fr\n"
@@ -273,9 +273,8 @@ msgid "Number of connection to the database"
 msgstr "Nombre de connexions à la base de données"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/centreon_broker_translation.php:60
-#, fuzzy
 msgid "TLS Host name"
-msgstr "Nom de l'hôte"
+msgstr "Nom d'hôte TLS"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/centreon_broker_translation.php:61
 msgid "Listening address (optional)"
@@ -318,7 +317,6 @@ msgid "Server port"
 msgstr "Port de connexion"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/centreon_broker_translation.php:72
-#, fuzzy
 msgid "Retry interval (seconds)"
 msgstr "Intervalle entre deux tentatives (en secondes)"
 
@@ -335,9 +333,8 @@ msgid "Metrics column"
 msgstr ""
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/centreon_broker_translation.php:77
-#, fuzzy
 msgid "Status column"
-msgstr "Nom du statut"
+msgstr "Colonne statut"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/centreon_broker_translation.php:78
 msgid "lua parameter"
@@ -348,14 +345,12 @@ msgid "Filter category"
 msgstr "Filtres par catégories de flux"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/centreon_broker_translation.php:80
-#, fuzzy
 msgid "Metrics timeseries"
-msgstr "Nom de la métrique"
+msgstr "Séries temporelles de métriques"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/centreon_broker_translation.php:81
-#, fuzzy
 msgid "Status timeseries"
-msgstr "Services au statut OK"
+msgstr "Séries temporelles de statuts"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/centreon_broker_translation.php:82
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:522
@@ -806,9 +801,8 @@ msgid "About"
 msgstr "À propos"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:49
-#, fuzzy
 msgid "API Tokens"
-msgstr "Jeton d'API"
+msgstr "Jetons d'API"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:50
 msgid "My Account"
@@ -914,7 +908,6 @@ msgid "Curves"
 msgstr "Courbes"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:64
-#, fuzzy
 msgid "Virtual Metrics"
 msgstr "Métriques/courbes virtuelles"
 
@@ -995,19 +988,16 @@ msgid "Custom Views"
 msgstr "Vues personnalisées"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:81
-#, fuzzy
 msgid "Edit View"
-msgstr "Éditer"
+msgstr "Éditer la vue"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:82
-#, fuzzy
 msgid "Share View"
 msgstr "Partager la vue"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:83
-#, fuzzy
 msgid "Widget Parameters"
-msgstr "Préférences du widget"
+msgstr "Paramètres du widget"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:84
 msgid "Add Widget"
@@ -1062,12 +1052,10 @@ msgid "System Logs"
 msgstr "Evenements liés à la collecte des données"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:95
-#, fuzzy
 msgid "Delete View"
-msgstr "Supprimer"
+msgstr "Supprimer la vue"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:96
-#, fuzzy
 msgid "Add View"
 msgstr "Ajouter une vue"
 
@@ -1093,9 +1081,8 @@ msgid "Backup"
 msgstr "Sauvegarde"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:104
-#, fuzzy
 msgid "Chart split"
-msgstr "Éclater le graphique"
+msgstr "Graphique multiple"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/menu_translation.php:105
 msgid "Chart periods"
@@ -1414,9 +1401,8 @@ msgid "Generating application cache"
 msgstr "Génération du cache de l'application en cours"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:114
-#, fuzzy
 msgid "VAULT INFORMATION"
-msgstr "Informations du coffre-fort"
+msgstr "Configuration du coffre-fort"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:117
 msgid "Vault Address"
@@ -1427,9 +1413,8 @@ msgid "Vault Port (default: 443)"
 msgstr "Port d'accès au coffre-fort (par défaut : 443)"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:123
-#, fuzzy
 msgid "Centreon Storage Path"
-msgstr "Chemin d'accès aux connecteurs"
+msgstr "Répertoire de sauvegarde des identifiants"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:126
 msgid "Role Id"
@@ -1955,9 +1940,8 @@ msgid "Engine Name"
 msgstr "Nom du moteur de supervision"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:300
-#, fuzzy
 msgid "Centreon Databases Statistics"
-msgstr "Statistiques sur les bases de données de Centreon"
+msgstr "Statistiques des bases de données"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:324
 msgid "Data free"
@@ -2036,15 +2020,13 @@ msgstr "Voir la page de wiki"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:417
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:429
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:441
-#, fuzzy
 msgid ""
 "Edit wiki\n"
 "                    page"
-msgstr "Éditer la page de wiki"
+msgstr "Éditer la page"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:399
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:444
-#, fuzzy
 msgid ""
 "View\n"
 "                    History"
@@ -2054,20 +2036,17 @@ msgstr "Voir l'historique"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:423
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:435
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:447
-#, fuzzy
 msgid "Delete wiki page"
-msgstr "Créer une page"
+msgstr "Supprimer la page"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:414
-#, fuzzy
 msgid ""
 "View wiki\n"
 "                    page"
-msgstr "Voir la page de wiki"
+msgstr "Accéder à la page"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:420
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:432
-#, fuzzy
 msgid ""
 "View\n"
 "                    history"
@@ -2381,9 +2360,8 @@ msgid "Preferences"
 msgstr "Préférences"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:777
-#, fuzzy
 msgid "Features flipping"
-msgstr "Cette Ressource est bagottante"
+msgstr ""
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:780
 msgid "Popup notifications"
@@ -2445,9 +2423,8 @@ msgid "Common Options"
 msgstr "Options communes"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:831
-#, fuzzy
 msgid "API Options"
-msgstr "Options d'API"
+msgstr "Options de l'API Gorgone"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:834
 msgid "Knowledge base"
@@ -2973,9 +2950,8 @@ msgstr "Trois colonnes"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1134
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1179
-#, fuzzy
 msgid "Chart Filters"
-msgstr "Effacer le filtre"
+msgstr "Filters"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1137
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/smarty_translate.php:1185
@@ -3263,9 +3239,8 @@ msgstr ""
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/react_translation.php:77
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:410
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configServers/formServers.php:203
-#, fuzzy
 msgid "Do not check SSL certificate validation"
-msgstr "Ne pas vérifier la validation du certificat SSL"
+msgstr "Ne pas vérifier le certificat SSL"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/react_translation.php:78
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:430
@@ -3273,7 +3248,6 @@ msgid "Do not use configured proxy to connect to this server"
 msgstr "Ne pas utiliser le proxy configuré pour se connecter à ce serveur"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:3
-#, fuzzy
 msgid "You are disconnected"
 msgstr "Vous êtes déconnecté"
 
@@ -3834,7 +3808,6 @@ msgid "Delete rule"
 msgstr "Supprimer la règle"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:90
-#, fuzzy
 msgid "is used to allow users to access resources."
 msgstr "est utilisée pour permettre aux utilisateurs d'accéder aux resources."
 
@@ -4061,7 +4034,6 @@ msgid "Acknowledge services attached to host"
 msgstr "Acquitter les services attachés à l'hôte"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:127
-#, fuzzy
 msgid "at"
 msgstr "à"
 
@@ -4103,9 +4075,8 @@ msgid "Criterias"
 msgstr "Critères"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:137
-#, fuzzy
 msgid "Check duration"
-msgstr "Temps d'exécution"
+msgstr "Durée d'exécution"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:139
 msgid "Copy"
@@ -4257,9 +4228,8 @@ msgstr "Graphique"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:168
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:1057
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:1171
-#, fuzzy
 msgid "Downtime"
-msgstr "Planifier des plages de maintenance"
+msgstr "Planifier une maintenance"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:169
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:1029
@@ -4557,13 +4527,11 @@ msgstr "Toutes les alertes"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:201
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:1216
-#, fuzzy
 msgid "Rows per page"
 msgstr "Lignes par page"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:202
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:1215
-#, fuzzy
 msgid "of"
 msgstr "de"
 
@@ -4612,9 +4580,8 @@ msgid "Information"
 msgstr "Informations"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:209
-#, fuzzy
 msgid "More"
-msgstr "Étendre"
+msgstr "Plus d'informations"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:210
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:673
@@ -5190,7 +5157,6 @@ msgid "URL"
 msgstr "URL"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:292
-#, fuzzy
 msgid "Switch to graph mode"
 msgstr "Basculer vers le mode graphique"
 
@@ -5199,9 +5165,8 @@ msgid "Switch to list mode"
 msgstr "Basculer vers le mode liste"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:294
-#, fuzzy
 msgid "No data for"
-msgstr "Aucune donnée trouvée"
+msgstr "Aucune donnée trouvée pour"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:295
 msgid "Groups"
@@ -5493,7 +5458,6 @@ msgid "Anomaly detection"
 msgstr "Détection d'anomalies"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:371
-#, fuzzy
 msgid ""
 "Are you sure you want to change the size of the envelope? The new envelope "
 "size will be applied immediately."
@@ -5520,28 +5484,24 @@ msgid "points outside of the envelope"
 msgstr "points hors enveloppe"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:377
-#, fuzzy
 msgid "Search bar"
-msgstr "Rechercher"
+msgstr "Barre de recherche"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:378
 msgid "Slider"
 msgstr ""
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:379
-#, fuzzy
 msgid "Close edit modal"
-msgstr "Fermer le panneau"
+msgstr "Fermer la fenêtre"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:380
-#, fuzzy
 msgid "Edit modal"
-msgstr "Editer le profil"
+msgstr "Editer la fenêtre"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:381
-#, fuzzy
 msgid "Modal confirmation"
-msgstr "Information sur le module"
+msgstr "Fenêtre de confirmation"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:382
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:1051
@@ -5611,18 +5571,16 @@ msgid "Check command sent !"
 msgstr "Commande de contrôle envoyée !"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:396
-#, fuzzy
 msgid "Check this resource only within configured check period"
 msgstr ""
-"Vérifier les ressources sélectionnées uniquement pendant la période de "
-"vérification configurée"
+"Contrôler les ressources sélectionnées uniquement pendant la période de "
+"contrôle configurée"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:397
-#, fuzzy
 msgid "Check this resource even outside configured check period"
 msgstr ""
-"Vérifier les ressources sélectionnées même en dehors de la période de "
-"vérification configurée"
+"Contrôler les ressources sélectionnées même en dehors de la période de "
+"contrôle configurée"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:398
 msgid "Your comment has been saved."
@@ -5647,7 +5605,6 @@ msgid "Save as"
 msgstr "Enregistrer sous"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:405
-#, fuzzy
 msgid "Export generation timeout"
 msgstr "Timeout de la génération de l'export"
 
@@ -5935,9 +5892,8 @@ msgid "Unable to copy the link"
 msgstr "Échec de la copie du lien."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:516
-#, fuzzy
 msgid "group"
-msgstr "Groupe"
+msgstr "groupe"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:517
 msgid "No contacts found"
@@ -7325,9 +7281,8 @@ msgid "At least one authorization relation is required"
 msgstr "Au moins une relation d'autorisation est requise"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:881
-#, fuzzy
 msgid "Authorization value"
-msgstr "Clé d'autorisation"
+msgstr "Valeur d'autorisation"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:882
 msgid "Access group"
@@ -7863,9 +7818,8 @@ msgid "License invalid or expired !"
 msgstr "Licence invalide ou expirée!"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:1161
-#, fuzzy
 msgid "Drop or"
-msgstr "Copier dans le fichier"
+msgstr "Déplacer ou"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/front_translate.php:1162
 msgid "select a file"
@@ -8016,7 +7970,6 @@ msgstr ""
 "b>."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/step_upgrade/step4.php:53
-#, fuzzy
 msgid "Upgrade to this release requires Centreon >= 2.8.0-beta1."
 msgstr ""
 "La montée de version vers cette release exige une version de Centreon "
@@ -8028,7 +7981,6 @@ msgid "Your current version is %s."
 msgstr "Votre version actuelle est la %s."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/step_upgrade/step4.php:55
-#, fuzzy
 msgid "Please upgrade to an intermediate release (ie. 2.8.x) first."
 msgstr ""
 "Veuillez d'abord monter de version vers une release intermédiaire (c'est-à-"
@@ -8175,7 +8127,6 @@ msgid "Hide services with Down host"
 msgstr "Masquer les services dont l'hôte est Indisponible"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:14
-#, fuzzy
 msgid "hide services with Unreachable host"
 msgstr "Masquer les services dont l'hôte est Injoignable"
 
@@ -8279,7 +8230,6 @@ msgid "Bar"
 msgstr "Barre"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/install/dashboard_widgets.php:53
-#, fuzzy
 msgid "Select field"
 msgstr "Sélectionnez un champ"
 
@@ -10368,9 +10318,8 @@ msgid "Log destination"
 msgstr "Destination du journal"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/formNagios.php:355
-#, fuzzy
 msgid "Trace"
-msgstr "Tracert"
+msgstr "Trace"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/formNagios.php:359
 msgid "Error"
@@ -10652,9 +10601,8 @@ msgid "Broker Module Options"
 msgstr "Option de lancement du module"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/formNagios.php:579
-#, fuzzy
 msgid "Enable macro filtering"
-msgstr "Active le filtrage par les macros"
+msgstr "Activer le filtrage des macros"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/formNagios.php:585
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/formNagios.php:591
@@ -10766,7 +10714,6 @@ msgid "Broker Module"
 msgstr "Commande de lancement du module"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configNagios/formNagios.php:826
-#, fuzzy
 msgid "Macros Filters Configuration"
 msgstr "Configuration des filtres des macros"
 
@@ -11108,9 +11055,8 @@ msgid "Gorgone connection protocol"
 msgstr "Protocole de connexion utilisé par Gorgone"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configServers/formServers.php:246
-#, fuzzy
 msgid "Gorgone connection port"
-msgstr "Port de connexion utilisé par Gorgone"
+msgstr "Port de connexion pour accéder à Gorgone"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/include/configuration/configServers/formServers.php:265
 msgid "Localhost ?"
@@ -17037,7 +16983,7 @@ msgstr "Connexion réussie"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/api/class/centreon_proxy.class.php:21
 msgid "Could not establish connection to Centreon IMP servers ("
-msgstr ""
+msgstr "Impossible d'établir la connexion au service Centreon SaaS ("
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/api/class/centreon_topcounter.class.php:435
 msgid "You're not authorized to access poller data"
@@ -17071,7 +17017,6 @@ msgstr "Commande externe soumise avec succès… Fermeture de la fenêtre..."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/widgets/service-monitoring/src/action.php:101
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/www/widgets/host-monitoring/src/action.php:103
-#, fuzzy
 msgid "Acknowledge services of hosts"
 msgstr "Acquitter les services liés à l'hôte"
 
@@ -17450,7 +17395,7 @@ msgstr "Aucun jeton de session fourni"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Core/Security/Authentication/Domain/Exception/ProviderException.php:37
 #, php-format
 msgid "Must not Happen, got unexpected Provider type %s"
-msgstr ""
+msgstr "Type de fournisseur non reconnu : %s"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Core/Security/Authentication/Domain/Exception/SSOAuthenticationException.php:37
 #, php-format
@@ -17534,11 +17479,8 @@ msgstr ""
 "La demande d'endpoint personnalisé  de conditions d'authentification a échoué"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Core/Security/Authentication/Domain/Exception/SSOAuthenticationException.php:250
-#, fuzzy
 msgid "Request on custom endpoint failed"
-msgstr ""
-"La demande d'association de rôles a échoué en interrogeant l'URL "
-"personnalisée"
+msgstr "La requête vers l'endpoint personnalisé a échoué"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Core/Security/Authentication/Domain/Exception/AuthenticationException.php:33
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Core/Security/Authentication/Domain/Exception/AuthenticationException.php:41
@@ -17593,7 +17535,7 @@ msgstr ""
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Core/Security/ProviderConfiguration/Domain/Exception/ConfigurationException.php:47
 #, php-format
 msgid "Must not Happen, got unexpected CustomConfiguration type %s"
-msgstr ""
+msgstr "La configuration d'accès à l'application Centreon est erronée : %s"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Core/Security/Vault/Application/Exceptions/VaultException.php:30
 msgid "Unable to migrate passwords"
@@ -17634,7 +17576,7 @@ msgid "The notification configuration name already exists"
 msgstr "Le nom de configuration de notifications existe déjà"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Core/Notification/Application/Exception/NotificationException.php:52
-#, fuzzy, php-format
+#, php-format
 msgid "You must provide at least one %s"
 msgstr "Vous devez fournir au moins un %s"
 
@@ -18178,7 +18120,7 @@ msgstr "Thème demandé introuvable"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Core/Application/Configuration/User/UseCase/PatchUser/PatchUser.php:195
 msgid "Requested user interface view mode not handled"
-msgstr ""
+msgstr "Erreur de récupération du mode d'affichage de l'interface"
 
 # msgid "You are not authorized to access the configuration"
 # msgstr "Vous n’êtes pas autorisé à accéder à la configuration"
@@ -18534,7 +18476,7 @@ msgstr "Cette opération requiert un utilisateur admin"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Core/Media/Infrastructure/API/Exception/AddMediaException.php:35
 #, php-format
 msgid "[%s] The property does not contain the file"
-msgstr ""
+msgstr "Les propriétés du media sont invalides : %s"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Core/Media/Infrastructure/API/Exception/AddMediaException.php:45
 #, php-format
@@ -18670,9 +18612,9 @@ msgid "Unable to find host by service id %d"
 msgstr "Impossible de trouver l'hôte correspondant à l'ID de service %d"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Application/Controller/Monitoring/TimelineController.php:255
-#, fuzzy, php-format
+#, php-format
 msgid "Host meta for meta service %d not found"
-msgstr "Méta-hôte lié au métaservice %d non trouvé"
+msgstr "Hôte virtuel lié au métaservice %d non trouvé"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Application/Controller/Monitoring/TimelineController.php:352
 #, php-format
@@ -18704,9 +18646,8 @@ msgid "Bad search operator"
 msgstr "Mauvais opérateur de recherche"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Infrastructure/RequestParameters/SqlRequestParametersTranslator.php:488
-#, fuzzy
 msgid "The property name of the normalizer cannot be empty."
-msgstr "Le nom de propriété du normaliseur ne peut pas être vide"
+msgstr "Le nom de propriété du normaliseur ne peut pas être vide."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Infrastructure/Serializer/Exception/SerializerException.php:39
 #, php-format
@@ -18765,7 +18706,7 @@ msgstr "Le serveur de supervision %s n'a pas été trouvé"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Infrastructure/Service/CentreonWebserviceService.php:69
 #, php-format
 msgid "Object %s must extend %s class or %s class"
-msgstr ""
+msgstr "L'objet %s doit hériter de la classe %s ou de %s"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Infrastructure/Service/Traits/ServiceContainerTrait.php:24
 #, php-format
@@ -18795,12 +18736,13 @@ msgstr "La valeur minimum du décalage doit être 1 au lieu de %d"
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Infrastructure/Service/CentreonPaginationService.php:245
 #, php-format
 msgid "Repository class %s has to implement %s"
-msgstr ""
+msgstr "La classe %s doit hériter de %s"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Infrastructure/Service/CentreonPaginationService.php:268
 #, php-format
 msgid "Class %s has to implement %s to be DataRepresenter"
 msgstr ""
+"La classe %s doit hériter de %s pour obtenir les méthodes DataRepresenter"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Infrastructure/Engine/EngineRepositoryFile.php:87
 #, php-format
@@ -18863,9 +18805,8 @@ msgstr "Impossible de décoder la réponse de L'API provenant du Central"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Infrastructure/PlatformTopology/Repository/Exception/PlatformTopologyRepositoryException.php:105
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Domain/PlatformTopology/PlatformTopologyService.php:212
-#, fuzzy
 msgid "Error from Central's register API"
-msgstr "Erreur de l'API d'enregistrement sur le Central : "
+msgstr "Erreur des API lors de l'enregistrement sur le serveur central"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Infrastructure/Event/FileLoader.php:78
 msgid "The path does not exist"
@@ -18998,13 +18939,12 @@ msgstr ""
 "renseigné comme Adresse de Serveur Central"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Domain/PlatformInformation/Exception/PlatformInformationException.php:39
-#, fuzzy
 msgid ""
 "Central platform's API data is not consistent. Please check the 'Remote "
 "Access' form."
 msgstr ""
 "Les données de l'API fournies par le central ne sont pas cohérentes. "
-"Veuillez vérifier le formulaire 'Accès au Remote'."
+"Veuillez vérifier le formulaire de configuration du remote server."
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Domain/PlatformInformation/Exception/PlatformInformationException.php:44
 msgid "You do not have sufficent rights for this action."
@@ -19474,7 +19414,7 @@ msgid "Invalid notification option (%d)"
 msgstr "Option de notification invalide (%d)"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Domain/HostConfiguration/Exception/HostTemplateArgumentException.php:47
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid stalking option (%d)"
 msgstr "Option de stalking invalide (%d)"
 
@@ -19543,7 +19483,7 @@ msgstr "Le JSON ne peut pas être décodé"
 #, php-format
 msgid ""
 "The definition model \"%s\" to validate the JSON does not exist or is empty"
-msgstr ""
+msgstr "Le modèle %s pour valider le flux JSON n'existe pas ou est vide"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Domain/Monitoring/MetaService/Exception/MetaServiceMetricException.php:39
 #, php-format
@@ -19559,11 +19499,12 @@ msgstr "Le métaservice avec l'ID %d n'a pas été trouvé"
 #, php-format
 msgid "Unkown meta metrics selection mode provided for %d"
 msgstr ""
+"La méthode de sélection des métriques pour le métaservice %d est erronée"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Domain/Monitoring/Comment/CommentService.php:186
-#, fuzzy, php-format
+#, php-format
 msgid "Meta host %d not found"
-msgstr "Méta-hôte %d non trouvé"
+msgstr "Hôte virtuel %d non trouvé"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Domain/Monitoring/Comment/CommentService.php:256
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Domain/Monitoring/Comment/CommentService.php:287
@@ -19581,9 +19522,9 @@ msgid "Error when searching for meta services"
 msgstr "Erreur lors de la recherche de métaservices"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Domain/Monitoring/SubmitResult/SubmitResultService.php:182
-#, fuzzy, php-format
+#, php-format
 msgid "Meta Host %d not found"
-msgstr "Méta-hôte %d non trouvé"
+msgstr "Hôte virtuel %d non trouvé"
 
 #: /Users/laurentpinsivy/workspace/centreon-gha/i18n_toolkit/../centreon/src/Centreon/Domain/Monitoring/SubmitResult/SubmitResult.php:132
 #, php-format
