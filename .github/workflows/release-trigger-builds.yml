@@ -52,7 +52,7 @@ jobs:
           RUNS_URL=""
 
           # Accept release prefixed or develop branches, nothing else
-          if [[ ${{ inputs.dispatch_target_release_branch }} =~ ^release-2[0-9]\.[0-9]+-next$ ]] || [[ ${{ inputs.dispatch_target_release_branch }} == "develop" ]];then
+          if [[ ${{ inputs.dispatch_target_release_branch }} =~ ^release-2[0-9]\.[0-9]+-next$ ]] || [[ ${{ inputs.dispatch_target_release_branch }} =~ "master"* ]] || [[ ${{ inputs.dispatch_target_release_branch }} == "develop" ]];then
             echo "Using ${{ inputs.dispatch_target_release_branch }} as branch to build testing packages."
             RUNS_URL="https://github.com/centreon/centreon/actions?query=branch%3A${{ inputs.dispatch_target_release_branch }}"
           else
