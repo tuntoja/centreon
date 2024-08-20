@@ -19417,3 +19417,5 @@ msgstr "Afficher le fuseau horaire"
 msgid "Show date"
 msgstr "Afficher la date"
 
+msgid "Error while searching for notification contact groups"
+msgstr "Erreur lors de la recherche des groupes de contacts des notifications"

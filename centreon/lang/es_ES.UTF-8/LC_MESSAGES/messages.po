@@ -17663,3 +17663,6 @@ msgstr "Modo avanzado"
 
 #  msgid "Changing type of an existing additional connector configuration is not allowed"
 #  msgstr ""
+
+# msgid "Error while searching for notification contact groups"
+# msgstr ""
