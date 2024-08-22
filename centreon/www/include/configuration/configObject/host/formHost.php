@@ -546,7 +546,7 @@ $checkCommandSelect->addJsCallback(
 
 $form->addElement('text', 'command_command_id_arg1', _('Args'), $attrsText);
 
-if (! $isCloudPlatform) {
+//if (! $isCloudPlatform) {
     $hostEHE[] = $form->createElement('radio', 'host_event_handler_enabled', null, _('Yes'), '1');
     $hostEHE[] = $form->createElement('radio', 'host_event_handler_enabled', null, _('No'), '0');
     $hostEHE[] = $form->createElement('radio', 'host_event_handler_enabled', null, _('Default'), '2');
@@ -560,7 +560,10 @@ if (! $isCloudPlatform) {
         'change',
         'setArgument(jQuery(this).closest("form").get(0),"command_command_id2","example2");'
     );
-    $form->addElement('text', 'command_command_id_arg2', _('Args'), $attrsText);
+
+    if (!$isCloudPlatform) {
+        $form->addElement('text', 'command_command_id_arg2', _('Args'), $attrsText);
+    }
 
     $hostACE[] = $form->createElement('radio', 'host_active_checks_enabled', null, _('Yes'), '1');
     $hostACE[] = $form->createElement('radio', 'host_active_checks_enabled', null, _('No'), '0');
@@ -577,7 +580,7 @@ if (! $isCloudPlatform) {
     if ($o !== HOST_MASSIVE_CHANGE) {
         $form->setDefaults(['host_passive_checks_enabled' => '2']);
     }
-}
+//}
 
 $form->addElement('select2', 'timeperiod_tp_id', _('Check Period'), [], $attributes['check_periods']);
 
@@ -1212,12 +1215,12 @@ if ($valid) {
         $tpl->assign('Freshness_Control_options', _('Freshness Control options'));
         $tpl->assign('Flapping_Options', _('Flapping options'));
         $tpl->assign('History_Options', _('History Options'));
-        $tpl->assign('Event_Handler', _('Event Handler'));
         $tpl->assign('hostID', $host_id);
         $tpl->assign('add_mtp_label', _('Add a template'));
         $tpl->assign('tpl', 0);
         $tpl->assign('is_not_template', $host_register);
     }
+    $tpl->assign('Event_Handler', _('Event Handler'));
     $tpl->assign('inheritance', $inheritanceMode['value']);
     $tpl->assign('topdoc', _('Documentation'));
     $tpl->assign('custom_macro_label', _('Custom macros'));
